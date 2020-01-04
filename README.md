@@ -1,0 +1,2 @@
+# weblog
+Hy Hugo weblog
