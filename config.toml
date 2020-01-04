@@ -1,0 +1,4 @@
+baseURL = "https://www.jasonscheirer.com/"
+languageCode = "en-us"
+title = "Jason Scheirer"
+theme = "ananke"
