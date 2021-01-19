@@ -1,4 +1,7 @@
 baseURL = "https://www.jasonscheirer.com/"
 languageCode = "en-us"
 title = "Jason Scheirer"
-theme = "ananke"
+theme = "smol"
+
+[params]
+    customCSS = ["css/jasonscheirer.css"]
