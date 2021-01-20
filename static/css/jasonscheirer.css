@@ -85,3 +85,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'IBM Plex Sans' !important;
   font-weight: 700 !important;
 }
+
+pre {
+  color: darkslategray !important;
+  font-family: 'Fira Code';
+  background: white !important;
+}
+
+code {
+  color: darkslategray !important;
+  font-family: 'Fira Code';
+  font-weight: 400;
+  background: white !important;
+}
