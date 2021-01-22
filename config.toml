@@ -11,19 +11,15 @@ paginate = 500
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "about"
-    url = "/about/"
-
-  [[menu.main]]
-    name = "weblog"
-    url = "/weblog/"
-    weight = 1
-
-  [[menu.main]]
     identifier = "tags"
     name = "tags"
     url = "/tags/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about/"
 
 [markup]
   [markup.highlight]

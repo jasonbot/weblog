@@ -74,11 +74,11 @@ body {
 }
 
 a {
-    color: darkblue !important;
+    color: darkslategrey !important;
 }
 
 a:visited {
-    color: darkslateblue !important;
+    color: darkslategray !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,4 +97,11 @@ code {
   font-family: 'Fira Code';
   font-weight: 400;
   background: white !important;
+}
+
+nav {
+  font-size: small;
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.5em;
 }
