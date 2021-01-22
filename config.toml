@@ -1,10 +1,20 @@
 baseURL = "https://www.jasonscheirer.com/"
 languageCode = "en-us"
 title = "Jason Scheirer"
-theme = "smol"
+theme = "smolr"
 
 [params]
     customCSS = ["css/jasonscheirer.css", "css/code.css"]
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about/"
+
+  [[menu.main]]
+    name = "weblog"
+    url = "/weblog/"
 
 [markup]
   [markup.highlight]
