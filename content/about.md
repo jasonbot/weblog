@@ -1,6 +1,5 @@
 +++
 title =  "About"
-date = 2000-01-01T08:00:00-08:00
 tags = []
 featured_image = ""
 description = "About"
