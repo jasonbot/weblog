@@ -6,6 +6,8 @@ paginate = 500
 
 [params]
     customCSS = ["css/jasonscheirer.css", "css/code.css"]
+    subtitle = "A personal web site for a computer person"
+    dateFmt = "2006-01-02"
 
 [menu]
   [[menu.main]]
@@ -16,6 +18,12 @@ paginate = 500
   [[menu.main]]
     name = "weblog"
     url = "/weblog/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "tags"
+    url = "/tags/"
 
 [markup]
   [markup.highlight]

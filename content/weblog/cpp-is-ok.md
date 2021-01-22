@@ -1,7 +1,7 @@
 +++
 title =  "C++ is not so bad"
 date = 2010-09-20T16:45:45-08:00
-tags = []
+tags = ["c++", "programming"]
 featured_image = ""
 description = ""
 +++

@@ -1,7 +1,7 @@
 +++
 title =  "Python Meetup Talk - 2019-10-09"
 date = 2019-10-10T10:18:17-08:00
-tags = []
+tags = ["python", "work"]
 featured_image = ""
 description = ""
 +++

@@ -1,7 +1,7 @@
 +++
 title =  "Own your infrastructure"
 date = 2020-02-04T16:45:45-08:00
-tags = []
+tags = ["programming", "hardware", "work"]
 featured_image = ""
 description = ""
 +++

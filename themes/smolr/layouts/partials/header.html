@@ -3,10 +3,27 @@
 	<div style="float: right;">{{ .Site.Params.subtitle }}</div><br>
 	<p>
 	<nav>
-			<a href="/"><b>main</b></a>
+			{{ if not (eq .URL "/") }}
+				<a href="/"><b>main</b></a>
+			{{ else }}
+				<b>main</b>
+			{{end}}
+
+			{{ $currentPage := . }}
+
 			{{ with .Site.Menus.main }}
 			{{ range . }}
-			| <a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
+
+			{{ $menu_item_url := .URL | relLangURL }}
+			{{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+		
+			|
+				{{ if eq $menu_item_url $page_url }}
+					<b>{{ .Name }}</b>
+				{{ else }}
+					<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
+				{{ end }}
+
 			{{ end }}
 	</nav>
 	</p>

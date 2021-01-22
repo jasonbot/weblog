@@ -1,7 +1,7 @@
 +++
 title =  "Hello, World"
 date = 2020-01-04T10:18:17-08:00
-tags = []
+tags = ["life"]
 featured_image = ""
 description = ""
 +++

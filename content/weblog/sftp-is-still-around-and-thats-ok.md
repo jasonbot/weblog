@@ -1,7 +1,7 @@
 +++
 title =  "SFTP is still around and that's OK"
 date = 2021-02-18T08:00:00-08:00
-tags = []
+tags = ["programming", "internet"]
 featured_image = ""
 description = "It's hard to get wrong"
 +++

@@ -1,7 +1,7 @@
 +++
 title =  "What I Like About My New Job"
 date = 2015-05-11T19:55:10-08:00
-tags = []
+tags = ["work", "life"]
 featured_image = ""
 description = ""
 +++

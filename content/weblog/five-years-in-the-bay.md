@@ -1,7 +1,7 @@
 +++
 title =  "Five Years in the Bay Area"
 date = 2020-02-08T06:25:45-08:00
-tags = []
+tags = ["life"]
 featured_image = ""
 description = ""
 +++

@@ -1,7 +1,7 @@
 +++
 title =  "The 2020s and the Post-Office World"
 date = 2021-02-08T07:00:00-08:00
-tags = []
+tags = ["work", "life"]
 featured_image = ""
 description = "Things got different in 2020"
 +++

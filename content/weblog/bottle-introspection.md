@@ -1,7 +1,7 @@
 +++
 title =  "Stupid simple API reference for bottle.py web services"
 date = 2012-03-25T22:11:11-08:00
-tags = []
+tags = ["bottle.py", "python"]
 featured_image = ""
 description = ""
 +++

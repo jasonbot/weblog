@@ -1,7 +1,7 @@
 +++
 title =  "You Don't Need to Make That Temporary File, Dude"
 date = 2021-02-12T08:00:00-08:00
-tags = []
+tags = ["python", "programming"]
 featured_image = ""
 description = "Keep it in memory"
 +++

@@ -1,7 +1,7 @@
 +++
 title =  "Turn a Chromebook into the ULTIMATE GOLANG/PYTHON DEVELOPER MACHINE"
 date = 2016-12-26T01:11:45-08:00
-tags = []
+tags = ["chromebook", "hardware", "programming"]
 featured_image = ""
 description = ""
 +++

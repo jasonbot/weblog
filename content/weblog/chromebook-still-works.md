@@ -1,7 +1,7 @@
 +++
 title =  "My Dingus Chromebook still works"
 date = 2020-02-10T01:11:45-08:00
-tags = []
+tags = ["hardware", "chromebook"]
 featured_image = ""
 description = "In which I mention that my Chromebook works and is still used"
 +++

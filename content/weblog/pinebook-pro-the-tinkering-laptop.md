@@ -1,7 +1,7 @@
 +++
 title =  "Pinebook Pro: The Tinkering Laptop"
 date = 2021-01-19T12:11:45-08:00
-tags = []
+tags = ["hardware", "pinebook"]
 featured_image = ""
 description = "The Pinebook Pro is Neat"
 +++
