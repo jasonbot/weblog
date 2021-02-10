@@ -25,3 +25,5 @@ I was a little reluctant to buy a home in the Bay Area initially because "everyo
 My new office is my garage -- we're going to put in the money to turn it into a mock office, complete with a sealed "phone booth" room and cubicle-like partitions. Right now, it's just a garage with a couple of desks that I share with the Christmas decorations, but it's somewhere where my work life is separate from my home life.
 
 It's been weird, but it's been weird for everyone.
+
+*Update 2021-02-10* [This essay by Paul Ford](https://www.wired.com/story/the-secret-essential-geography-of-the-office/) covers a lot of my thinking about the office, too.
