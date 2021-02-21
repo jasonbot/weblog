@@ -29,13 +29,21 @@ I left the player at my office desk when the world ended last March, and didn't 
 
 I still organize my Music library in Apple Music, which seems to be the only thing that can sensibly handle large volumes of audio files in a usable manner to date. I still buy digital albums outright (I no longer have a working optical drive in my household) and either download or convert them to open formats (MP3 or FLAC). Bandcamp and Amazon Music are my primary sources for purchase.
 
-I do backups via rsync to a [Volumio](https://volumio.org/) instance, which I use more as an Airdrop sink as it's connected to speakers than I do as a music player. For "off site" backup I rsync to another TF card which I used to take to work.
+I do backups via rsync to a [Volumio](https://volumio.org/) instance in another room, which I use more as an Airdrop sink as it's connected to speakers over its built-in music library.
+
+For "off site" backup I rsync to another TF card which I used to take to work.
 
 # Using It At First
 
-I initially would pop my "off site" TF card into the player when I got into the office, but I found the ergonomics of dealing with a separate device that 1) did not play computer audio along with it 2) had a relatively onerous UI compared to apple music and 3) did not fully scan my library so I eventually just started mounting the TF card on my work laptop at work (plugged into my USB-C desktop hub) and dragged the mount into Apple Music on my work laptop, being careful to make sure Consolidate Library was turned off so it would leave the files in place, and then a manual process of adding new tracks as they appeared.
+I initially would pop my "off site" TF card into the player when I got into the office, but I found the ergonomics of dealing with a separate device that:
 
-It wasn't super appropriate for work, so it went into the desk drawer.
+1. did not play computer audio along with it
+2. had a relatively onerous UI compared to apple music and 
+3. did not fully scan my library
+
+so I eventually just started mounting the TF card on my work laptop at work (plugged into my USB-C desktop hub). I would then drag the mount onto Apple Music on my work laptop to add the files to the library, being careful to make sure Consolidate Library was turned off so it would leave the files in place. I would do this manually every so often; my cadence was about once a month.
+
+This processas annoying so wasn't super appropriate for work, so it went into the desk drawer.
 
 # An Update Makes it More Useful
 
@@ -46,11 +54,15 @@ I first set up the Chromebook with YouTube in his room, and saw the Q1, and thou
 The update offered a bunch of really neat functionality, some of which were improvements over capabilities I never knew it previously had:
 
 * WiFi (it has a wifi card?)
-* Airplay/DLNA playback (so I can play to it as a sync, so I can theoretically replace the Volumio with this)
+* Airplay/DLNA playback (I can use it as a network audio sink, so I can theoretically replace the Volumio with this on one set of speakers)
 * WiFi File Transfer (I haven't figured this out)
 * Other things I odn't care about
 
-Upgrading happened fine and was completely smooth. Loading my library worked fully. My iPhone easily paired to the device via Bluetooth as an audio sync, which drove me nuts, and it showed up as an Airplay target on my laptop after joining WiFi, which was also infuriating because it made this device _so damn much more useful_.
+Upgrading happened fine and surprisingly worked on the first try and didn't brick it. And:
+
+* Loading my library worked fully now
+* My iPhone easily paired to the device via Bluetooth as an audio sync, which drove me nuts because I was unaware of this prior
+* It showed up as an Airplay target on my laptop after joining WiFi, which was also infuriating because it made this device _so damn much more useful_
 
 # 18 Months Later, This is Good
 
