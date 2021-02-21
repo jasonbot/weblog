@@ -56,4 +56,6 @@ Upgrading happened fine and was completely smooth. Loading my library worked ful
 
 So this piece of hardware I bought more-or-less on impulse to sate my desire for a standalone MP3 player that worked at least as well as an iPod Classic is finally at the point where it is fulfilling that desire.
 
+This device works as my wandering "off site" backup now as it still shows up as `/Media/Music` on my Mac so my rsync script just works, so it's the living TF adapter/music player for one of my backups.
+
 Anyway, they're expensive now and I don't know if I $125 love the thing, but check out the standalone MP3 player market. They still exist, they have nice, incremental improvements over older players, and are mainly targets to Audiophiles.
