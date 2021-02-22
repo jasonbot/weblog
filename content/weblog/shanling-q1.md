@@ -41,7 +41,7 @@ I initially would pop my "off site" TF card into the player when I got into the 
 2. had a relatively onerous UI compared to apple music and 
 3. did not fully scan my library
 
-so I eventually just started mounting the TF card on my work laptop at work (plugged into my USB-C desktop hub). I would then drag the mount onto Apple Music on my work laptop to add the files to the library, being careful to make sure Consolidate Library was turned off so it would leave the files in place. I would do this manually every so often; my cadence was about once a month.
+was too onerous so I eventually just started mounting the TF card on my work laptop at work (plugged into my USB-C desktop hub). I would then drag the mount onto Apple Music on my work laptop to add the files to the library, being careful to make sure Consolidate Library was turned off so it would leave the files in place. I would do this manually every so often; my cadence was about once a month.
 
 This processas annoying so wasn't super appropriate for work, so it went into the desk drawer.
 
