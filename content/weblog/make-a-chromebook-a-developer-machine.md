@@ -6,7 +6,7 @@ featured_image = ""
 description = ""
 +++
 
-This is [a recycled post from my tumblr weblog](https://jason.cleanstick.net/post/155005051345/turn-a-chromebook-into-the-ultimate-golangpython) 
+> This is [a recycled post from my tumblr weblog](https://jason.cleanstick.net/post/155005051345/turn-a-chromebook-into-the-ultimate-golangpython) 
 
 Ha ha ha just lying the real title should be
 

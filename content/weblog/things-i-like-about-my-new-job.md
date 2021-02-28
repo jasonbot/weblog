@@ -6,7 +6,7 @@ featured_image = ""
 description = ""
 +++
 
-This is [a recycled post from my tumblr weblog](https://jason.cleanstick.net/post/118755320730/things-i-like-about-my-new-job). I've since had three other jobs, but a lot of what I like still rings true 5 years later in 2020.
+> This is [a recycled post from my tumblr weblog](https://jason.cleanstick.net/post/118755320730/things-i-like-about-my-new-job). I've since had three other jobs, but a lot of what I like still rings true 5 years later in 2020.
 
 Please note I am contractually prohibited from saying what I _don't_ like about most of my prior employers so don't expect any negative posts.
 
