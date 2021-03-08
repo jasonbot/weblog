@@ -62,20 +62,15 @@ I use [letsencrypt](https://letsencrypt.org/) for SSL, [GCP for a VM/IP](https:/
 
 ```nginx
 server {
-    server_name zpl.jasonscheirer.com;
+    server_name my.zplhost.club;
 
     location / {
       proxy_set_header Host $host;
-      proxy_set_header X-Real-IP $remote_addr;
-      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-      proxy_set_header X-Forwarded-Proto https;
 
       proxy_pass http://127.0.0.1:5489;
       proxy_buffering on;
       proxy_redirect off;
       proxy_http_version 1.1;
-      proxy_set_header Upgrade $http_upgrade;
-      proxy_set_header Connection $connection_upgrade;
       proxy_cache off;
 
       tcp_nodelay on;
@@ -88,18 +83,18 @@ server {
 
     listen 443 ssl;
 
-    ssl_certificate /etc/letsencrypt/live/zpl.jasonscheirer.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/zpl.jasonscheirer.com/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/my.zplhost.club/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/my.zplhost.club/privkey.pem;
     include /etc/letsencrypt/options-ssl-nginx.conf
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem
 
 server {
-    if ($host = zpl.jasonscheirer.com) {
+    if ($host = my.zplhost.club) {
         return 301 https://$host$request_uri;
     }
 
     listen 80 ;
-    server_name zpl.jasonscheirer.com;
+    server_name my.zplhost.club;
     return 404;
 }
 ```

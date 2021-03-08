@@ -5,6 +5,14 @@ tags = ["software", "hardware", "web", "programming", "zpl-o-rama"]
 featured_image = ""
 +++
 
+# End product
+
+Please disregard the poor camera placement, it has since been fixed.
+
+![Step 1](/images/zpl-o-rama/workflow-1.png)
+![Step 2](/images/zpl-o-rama/workflow-2.png)
+![Step 3](/images/zpl-o-rama/workflow-3.png)
+
 # Thinking Back, It Was All So Simple
 
 Now we have the system up and running, let's talk random obstacles and next steps. This sis something of an epilogue to the saga, as it's a lit of small things that accrued while working on the project
