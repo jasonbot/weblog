@@ -17,7 +17,7 @@ Please disregard the poor camera placement, it has since been fixed.
 
 Now we have the system up and running, let's talk random obstacles and next steps. This sis something of an epilogue to the saga, as it's a lit of small things that accrued while working on the project
 
-## Networks are slow and the dual service thing is bad, actually
+## Networks are slow and the dual tier service thing is bad, actually
 
 I initially chose to run a service on the Nginx server that then called to a service running on the RPi. Since there were Very Large PNGs being shuttled around a LOT, this was inefficient from a speed perspecitve because of the bandwidth consumed over my shitty cable connection.
 
