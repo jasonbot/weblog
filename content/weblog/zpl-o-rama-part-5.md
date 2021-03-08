@@ -19,14 +19,14 @@ Now we have the system up and running, let's talk random obstacles and next step
 
 ## Networks are slow and the dual tier service thing is bad, actually
 
-I initially chose to run a service on the Nginx server that then called to a service running on the RPi. Since there were Very Large PNGs being shuttled around a LOT, this was inefficient from a speed perspecitve because of the bandwidth consumed over my shitty cable connection.
+I initially chose to run a service on the Nginx server that then called to a service running on the RPi. Since there were Very Large PNGs being shuttled around a LOT, this was inefficient from a speed perspective because of the bandwidth consumed over my shitty cable connection.
 
 Two band-aids I've applied:
 
 1. Moved both services to the RPi
 1. Started sending out a version of the image by default shrunken to 800px wide, with the original full size image as an optional download.
 
-I plan to refactor the service to all run in one single executable next.
+I could merge the two services into one, but having the backend be `curl`able without any sort of auth makes it easy to test the two ends more effectively.
 
 ## Networks are unreliable
 
