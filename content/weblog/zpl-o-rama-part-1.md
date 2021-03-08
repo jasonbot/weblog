@@ -1,5 +1,5 @@
 +++
-title =  "ZPL-O-Rama: A personal/work project (Introduction)"
+title =  "ZPL-O-Rama Part 1: A personal/work project (Introduction)"
 date = 2021-03-08T00:00:00-00:00
 tags = ["software", "hardware", "web", "programming", "zpl-o-rama"]
 featured_image = ""

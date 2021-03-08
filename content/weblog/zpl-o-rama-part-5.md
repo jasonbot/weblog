@@ -1,5 +1,5 @@
 +++
-title =  "ZPL-O-Rama part 5: The Theory"
+title =  "ZPL-O-Rama Part 5: Postscript"
 date = 2021-03-08T05:00:00-00:00
 tags = ["software", "hardware", "web", "programming", "zpl-o-rama"]
 featured_image = ""
@@ -32,12 +32,12 @@ I plan to refactor the service to all run in one single executable next.
 
 The SSH tunnel can go down and while I have taken efforts to mitigate it, I could take more. Currently:
 
-1. I'm setting timeouts in the SSH tunnel service
+1. Setting timeouts in the SSH tunnel service
 1. Force resetting the tunnel every 6 hours
 
 Additionally I could:
 
-1. Run another task that tries to hit a healthcheck on the zpl service, and if it's dead restart the 
+1. Run another task that tries to hit a healthcheck on the zpl service, and if it's dead restart the tunnel service unit
 1. The same idea but with my cable internet connection
 
 ## Life is a sequence of disappointments and confusion until it (usually) ends anticlimactically in a whimper
