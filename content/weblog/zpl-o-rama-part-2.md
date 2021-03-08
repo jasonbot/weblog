@@ -1,6 +1,6 @@
 +++
 title =  "ZPL-O-Rama Part 2: Concepts"
-date = 2021-03-22T00:00:00-00:00
+date = 2021-03-09T00:00:00-00:00
 tags = ["software", "hardware", "web", "programming", "zpl-o-rama"]
 featured_image = ""
 +++
