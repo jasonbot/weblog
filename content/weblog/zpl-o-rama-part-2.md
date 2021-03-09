@@ -43,3 +43,5 @@ The next thing I needed to do was plan out how this would work. I made a diagram
 I'll use Nginx at the edge to route to a frontend application. Then I'll forward to a backend application which is running on my Raspberry pi which handles the printing/photography step.
 
 Then, I'll present the user a nice web service hosted on a machine on the cloud with a Real Internet IP where the user can log in, enter ZPL, and see the output.
+
+[On to part 3 →](/weblog/zpl-o-rama-part-3)

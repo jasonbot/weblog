@@ -31,3 +31,5 @@ A picture of the front (you can see some of the cable management):
 
 How it's set up:
 ![Hardware Rig Diagram](/images/zpl-o-rama/rig-diagram.svg)
+
+[On to part 5 →](/weblog/zpl-o-rama-part-5)

@@ -84,7 +84,7 @@ a:visited {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'IBM Plex Sans' !important;
   font-weight: 700 !important;
-  border-top: 1px solid rgba(0, 0, 0, 0.048);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.048); */
   margin-top: 0.25em;
   padding-top: 0.25em;
 }
@@ -137,4 +137,27 @@ a.taglink::before {
   color: white;
   padding-right: 6px;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+}
+
+table {
+  border: 1px solid rgba(0, 0, 0, 0.048);
+}
+
+thead {
+  background-color: rgba(0, 0, 0, 0.048);
+}
+
+th {
+  padding: 1em;
+}
+
+td {
+  border-top: 1px solid rgba(0, 0, 0, 0.048);
+}
+
+blockquote {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 1em;
+  border-radius: 4px;
+  box-shadow: 0 0 30px white inset;
 }

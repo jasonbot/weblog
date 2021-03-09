@@ -21,6 +21,8 @@ Now, for those without a printer, if they need to test something they will go in
 
 We can do better than that. We can automate this.
 
+[On to part 2 →](/weblog/zpl-o-rama-part-2)
+
 _Footnotes_
 
 **1.** (Yes, I am aware of [Labelary](http://labelary.com/viewer.html), but that's also proprietary and probably in violation of all kinds of agreements)
