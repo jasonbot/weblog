@@ -172,4 +172,8 @@ blockquote {
     color: black !important;
     background: white !important;
   }
+
+  image {
+    background-color: white !important;
+  }
 }
