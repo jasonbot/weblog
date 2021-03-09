@@ -180,6 +180,6 @@ done
 
 # End
 
-This is the beefiest of the psots because it includes real code. TL;DR: the configuration of the service is larger than the actual code of the service.
+This is the beefiest of the posts because it includes real code. TL;DR: the configuration of the service is larger than the actual code of the service.
 
 [On to part 4 →](/weblog/zpl-o-rama-part-4)

@@ -161,3 +161,15 @@ blockquote {
   border-radius: 4px;
   box-shadow: 0 0 30px white inset;
 }
+
+/* This is for my dark theme homeys and homeys-adjacent */
+@media (prefers-color-scheme: dark) {
+  a, a:hover, a:visited {
+    color: white !important;
+  }
+
+  pre, code {
+    color: black !important;
+    background: white !important;
+  }
+}
