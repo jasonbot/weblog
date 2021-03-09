@@ -25,6 +25,9 @@ The Pi is running stock Raspian, I have the Pi connected to the printer via a sh
 
 The last piece is a humble power strip.
 
+
+A picture of the front (you can see some of the cable management):
 ![Hardware Rig Picture](/images/zpl-o-rama/rig-picture.png)
 
+How it's set up:
 ![Hardware Rig Diagram](/images/zpl-o-rama/rig-diagram.svg)

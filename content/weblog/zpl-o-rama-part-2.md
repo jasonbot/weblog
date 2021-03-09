@@ -1,5 +1,5 @@
 +++
-title =  "ZPL-O-Rama Part 2: Concepts"
+title =  "ZPL-O-Rama Part 2: Concepts and Architecture"
 date = 2021-03-08T02:00:00-00:00
 tags = ["software", "hardware", "web", "programming", "zpl-o-rama"]
 featured_image = ""
@@ -33,3 +33,13 @@ This is probably going to be the same thing as above, with the webapp. The print
 # Moving on
 
 Moving forward, we abstractly have all the conceptual parts we'll need to make this service thought out. Now for the details.
+
+# Let's Talk Architecture
+
+The next thing I needed to do was plan out how this would work. I made a diagram to make sure I wasn't missing anything.
+
+![Architecture Diagram](/images/zpl-o-rama/zpl-o-rama-architecture.svg)
+
+I'll use Nginx at the edge to route to a frontend application. Then I'll forward to a backend application which is running on my Raspberry pi which handles the printing/photography step.
+
+Then, I'll present the user a nice web service hosted on a machine on the cloud with a Real Internet IP where the user can log in, enter ZPL, and see the output.

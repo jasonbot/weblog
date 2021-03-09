@@ -111,6 +111,30 @@ nav {
 
 img {
   display: block;
-  width: 100%;
+  align: center;
+  width: 90%;
   height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 2px;
+  padding: 4px;
+}
+
+a.taglink {
+  font-size: x-small;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px;
+  background-color: rgba(255, 241, 115, 0.125);
+  color: black;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid rgba(255, 241, 115, 0.75);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.125);
+}
+
+a.taglink::before {
+  content: "•";
+  color: white;
+  padding-right: 6px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
 }

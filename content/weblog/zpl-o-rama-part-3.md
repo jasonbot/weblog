@@ -1,23 +1,13 @@
 +++
-title =  "ZPL-O-Rama Part 3: Concepts, Architecture, Software"
+title =  "ZPL-O-Rama Part 3: Software"
 date = 2021-03-08T03:00:00-00:00
 tags = ["software", "hardware", "web", "programming", "zpl-o-rama"]
 featured_image = ""
 +++
 
-# Let's Talk Architecture
+# Running the software
 
-The next thing I needed to do was plan out how this would work. I made a diagram to make sure I wasn't missing anything.
-
-![Architecture Diagram](/images/zpl-o-rama/zpl-o-rama-architecture.svg)
-
-I'll use Nginx at the edge to route to a frontend application. Then I'll forward to a backend application which is running on my Raspberry pi which handles the printing/photography step.
-
-Then, I'll present the user a nice web service hosted on a machine on the cloud with a Real Internet IP where the user can log in, enter ZPL, and see the output.
-
-## Running the software
-
-### Frontend server
+## Frontend server
 
 The frontend has three responsibilities:
 
@@ -31,7 +21,7 @@ The page is fast and I am attempting to capitalize on the whole "Hotwire" trend 
 
 Not that it's necessary. The pages themselves render blazingly fast since they are so resource lean.
 
-### Backend server
+## Backend server
 
 The backend server is a simple Go server with an even simpler API:
 
@@ -44,19 +34,19 @@ The only thing to be aware of is that only one job can be running at a time. The
 
 Jobs are stored in a [bolt](https://github.com/boltdb/bolt) database, which has all the ACID properties I want in a database while being stupid simple to use. Like easier than sqlite. I know, right?
 
-### Login Management
+## Login Management
 
 This lives entirely on the frontend. I'm using Google's javascript OAuth2 library along with some backend whitelisting to only allow people with approved Google logins into the privileged endpoints. Permissions are enforced via a custom Echo middleware.
 
-#### An aside: Making Peace with `systemd`
+### An aside: Making Peace with `systemd`
 
 People like to talk shit about `systemd`. It's weird, it's disruptive, it tries to do too much.
 
 First off, at leas it's not [launchd](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html), and second, this is a project for my entertainment and I find it fun to do interesting things despite the environment I'm running in.
 
-## Keeping the software running
+# Keeping the software running
 
-### Operating Environment on the Server 
+## Operating Environment on the Server 
 
 I use [letsencrypt](https://letsencrypt.org/) for SSL, [GCP for a VM/IP](https://cloud.google.com/compute) (Docker would be stupid here), and Nginx as the edge. The conf look like:
 
@@ -101,7 +91,7 @@ server {
 
 Basically: use HTTPS, pass through to the frontend service which is bound to a port on localhost via the tunnel. Neat.
 
-### Operating Environment on the Pi 
+## Operating Environment on the Pi 
 
 I have a custom user with limited permissions called `zplorama`. I had to add it to the group `video` so it could call `raspistill`.
 
@@ -170,7 +160,7 @@ WorkingDirectory=/home/zplorama
 WantedBy=multi-user.target
 ```
 
-### Deployment
+## Deployment
 
 Deployment involves doing a `git pull`, a `make clean && make`, `cp ./bin/ ~zplorama/bin`, and then using `sudo service restart`. This could be a script, even!
 
