@@ -204,7 +204,7 @@ blockquote {
 
 /* This is for my dark theme homeys and homeys-adjacent */
 @media (prefers-color-scheme: dark) {
-  @keyframes wiggle {
+  @keyframes  {
     0% {
       transform: rotate(0deg);
     }
@@ -222,58 +222,24 @@ blockquote {
     }
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: LolDarkMode, "IBM Plex Sans" !important;
-  }
-
-  a::before {
-    content: "This is totally not related having dark mode turned on at all! ";
-  }
-
   body {
     margin-left: 17em;
-    font-family: LolDarkMode, "IBM Plex Sans";
     display: inline-block;
-    background: red !important;
-    color: yellow !important;
-    animation: wiggle 16.0s infinite;
   }
 
   a,
   a:hover,
   a:visited {
     color: white !important;
-    animation: wiggle 2.0s infinite;
   }
 
   pre,
   code {
     color: black !important;
     background: white !important;
-    animation: wiggle 5.0s infinite;
   }
 
   image {
     background-color: white !important;
-    animation: wiggle 2.0s infinite;
-  }
-
-  p {
-    animation: wiggle 4.0s infinite;
-  }
-
-  p::before {
-    content: "Get ready to fart!";
-    animation: wiggle 1.0s infinite;
-  }
-
-  p::after {
-    content: "I love to fart!";
-    animation: wiggle 1.0s infinite;
   }
 }
