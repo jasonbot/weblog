@@ -1,88 +1,128 @@
 /* ibm-plex-sans-regular - latin */
 @font-face {
-    font-family: 'IBM Plex Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/fonts/ibm-plex-sans-v8-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('/fonts/ibm-plex-sans-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/ibm-plex-sans-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/fonts/ibm-plex-sans-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/ibm-plex-sans-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/ibm-plex-sans-v8-latin-regular.svg#IBMPlexSans') format('svg'); /* Legacy iOS */
-  }
-  
-  /* ibm-plex-sans-italic - latin */
-  @font-face {
-    font-family: 'IBM Plex Sans';
-    font-style: italic;
-    font-weight: 400;
-    src: url('/fonts/ibm-plex-sans-v8-latin-italic.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('/fonts/ibm-plex-sans-v8-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/ibm-plex-sans-v8-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/fonts/ibm-plex-sans-v8-latin-italic.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/ibm-plex-sans-v8-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/ibm-plex-sans-v8-latin-italic.svg#IBMPlexSans') format('svg'); /* Legacy iOS */
-  }
-  
-  /* ibm-plex-sans-700 - latin */
-  @font-face {
-    font-family: 'IBM Plex Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/fonts/ibm-plex-sans-v8-latin-700.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('/fonts/ibm-plex-sans-v8-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/ibm-plex-sans-v8-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/fonts/ibm-plex-sans-v8-latin-700.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/ibm-plex-sans-v8-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/ibm-plex-sans-v8-latin-700.svg#IBMPlexSans') format('svg'); /* Legacy iOS */
-  }
-  
-  /* ibm-plex-sans-700italic - latin */
-  @font-face {
-    font-family: 'IBM Plex Sans';
-    font-style: italic;
-    font-weight: 700;
-    src: url('/fonts/ibm-plex-sans-v8-latin-700italic.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('/fonts/ibm-plex-sans-v8-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/ibm-plex-sans-v8-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/fonts/ibm-plex-sans-v8-latin-700italic.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/ibm-plex-sans-v8-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/ibm-plex-sans-v8-latin-700italic.svg#IBMPlexSans') format('svg'); /* Legacy iOS */
-  }
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ibm-plex-sans-v8-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/ibm-plex-sans-v8-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/ibm-plex-sans-v8-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/fonts/ibm-plex-sans-v8-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("/fonts/ibm-plex-sans-v8-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/ibm-plex-sans-v8-latin-regular.svg#IBMPlexSans") format("svg"); /* Legacy iOS */
+}
+
+/* ibm-plex-sans-italic - latin */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/ibm-plex-sans-v8-latin-italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/ibm-plex-sans-v8-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/ibm-plex-sans-v8-latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/ibm-plex-sans-v8-latin-italic.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/ibm-plex-sans-v8-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/ibm-plex-sans-v8-latin-italic.svg#IBMPlexSans") format("svg"); /* Legacy iOS */
+}
+
+/* ibm-plex-sans-700 - latin */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ibm-plex-sans-v8-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/ibm-plex-sans-v8-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/ibm-plex-sans-v8-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/ibm-plex-sans-v8-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/ibm-plex-sans-v8-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/ibm-plex-sans-v8-latin-700.svg#IBMPlexSans") format("svg"); /* Legacy iOS */
+}
+
+/* ibm-plex-sans-700italic - latin */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/ibm-plex-sans-v8-latin-700italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/ibm-plex-sans-v8-latin-700italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/ibm-plex-sans-v8-latin-700italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/fonts/ibm-plex-sans-v8-latin-700italic.woff") format("woff"),
+    /* Modern Browsers */ url("/fonts/ibm-plex-sans-v8-latin-700italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/ibm-plex-sans-v8-latin-700italic.svg#IBMPlexSans")
+      format("svg"); /* Legacy iOS */
+}
 
 /* fira-code-regular - latin */
 @font-face {
-    font-family: 'Fira Code';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/fonts/fira-code-v9-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('/fonts/fira-code-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/fira-code-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/fonts/fira-code-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/fira-code-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/fira-code-v9-latin-regular.svg#FiraCode') format('svg'); /* Legacy iOS */
-  }
-  
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/fira-code-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/fira-code-v9-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/fira-code-v9-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/fira-code-v9-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/fira-code-v9-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/fira-code-v9-latin-regular.svg#FiraCode") format("svg"); /* Legacy iOS */
+}
+
+/* fira-code-regular - latin */
+@font-face {
+  font-family: "LolDarkMode";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/fira-code-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    /* Modern Browsers */ url("/fonts/business.ttf")
+      format("truetype");
+}
+
 body {
-    font-family: 'IBM Plex Sans';
-    font-weight: 400;
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
 }
 
 a {
-    color: darkslategrey !important;
+  color: darkslategrey !important;
 }
 
 a:visited {
-    color: darkslategray !important;
+  color: darkslategray !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'IBM Plex Sans' !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Sans" !important;
   font-weight: 700 !important;
   /* border-top: 1px solid rgba(0, 0, 0, 0.048); */
   margin-top: 0.25em;
@@ -91,13 +131,13 @@ h1, h2, h3, h4, h5, h6 {
 
 pre {
   color: darkslategray !important;
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   background: white !important;
 }
 
 code {
   color: darkslategray !important;
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
   font-weight: 400;
   background: white !important;
 }
@@ -164,16 +204,76 @@ blockquote {
 
 /* This is for my dark theme homeys and homeys-adjacent */
 @media (prefers-color-scheme: dark) {
-  a, a:hover, a:visited {
-    color: white !important;
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(2deg) translate(2em, 0);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    90% {
+      transform: rotate(-2deg) translate(-2em, 0);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
-  pre, code {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: LolDarkMode, "IBM Plex Sans" !important;
+  }
+
+  a::before {
+    content: "This is totally not related having dark mode turned on at all! ";
+  }
+
+  body {
+    margin-left: 17em;
+    font-family: LolDarkMode, "IBM Plex Sans";
+    display: inline-block;
+    background: red !important;
+    color: yellow !important;
+    animation: wiggle 16.0s infinite;
+  }
+
+  a,
+  a:hover,
+  a:visited {
+    color: white !important;
+    animation: wiggle 2.0s infinite;
+  }
+
+  pre,
+  code {
     color: black !important;
     background: white !important;
+    animation: wiggle 5.0s infinite;
   }
 
   image {
     background-color: white !important;
+    animation: wiggle 2.0s infinite;
+  }
+
+  p {
+    animation: wiggle 4.0s infinite;
+  }
+
+  p::before {
+    content: "Get ready to fart!";
+    animation: wiggle 1.0s infinite;
+  }
+
+  p::after {
+    content: "I love to fart!";
+    animation: wiggle 1.0s infinite;
   }
 }
