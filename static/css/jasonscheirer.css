@@ -92,15 +92,20 @@
       url("/fonts/fira-code-v9-latin-regular.svg#FiraCode") format("svg"); /* Legacy iOS */
 }
 
-/* fira-code-regular - latin */
 @font-face {
-  font-family: "LolDarkMode";
+  font-family: "Comic";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/fira-code-v9-latin-regular.eot"); /* IE9 Compat Modes */
   src: local(""),
-    /* Modern Browsers */ url("/fonts/business.ttf")
-      format("truetype");
+    /* Modern Browsers */ url("/fonts/business.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quattro";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    /* Modern Browsers */ url("/fonts/quattro.ttf") format("truetype");
 }
 
 body {
@@ -202,9 +207,17 @@ blockquote {
   box-shadow: 0 0 30px white inset;
 }
 
+time {
+  border-radius: 4px;
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.13);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
 /* This is for my dark theme homeys and homeys-adjacent */
 @media (prefers-color-scheme: dark) {
-  @keyframes  {
+  @keyframes {
     0% {
       transform: rotate(0deg);
     }
