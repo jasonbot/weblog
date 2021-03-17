@@ -1,7 +1,4 @@
 <header>
-	<h1>{{ .Site.Title }}</h1>
-	<div class="subtitle">{{ .Site.Params.subtitle }}</div><br>
-	<p>
 	<nav>
 			{{ if not (eq .URL "/") }}
 				<a href="/"><b>main</b></a>
@@ -26,6 +23,5 @@
 
 			{{ end }}
 	</nav>
-	</p>
 	{{ end }}
 </header>

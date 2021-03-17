@@ -5,7 +5,7 @@ theme = "smolr"
 paginate = 500
 
 [params]
-    customCSS = ["css/jasonscheirer.css", "css/code.css", "css/ia-duo.css", "css/ia-quattro.css"]
+    customCSS = ["css/jasonscheirer.css", "css/fonts.css"]
     subtitle = "A personal web site for a computer person"
     dateFmt = "2006-01-02"
 

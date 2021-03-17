@@ -14,6 +14,8 @@
 		        <div class="post-title">
 				{{ if eq $listtitle "Posts" }}
 				    {{ .Date.Format "2006-01-02" }} <a href="{{ .RelPermalink }}">{{.Title }}</a>
+				{{else if eq $listtitle "Tags" }}
+					<a class="taglink" href="{{ .RelPermalink }}">{{.Title }}</a>
 				{{ else }}
 				    <a href="{{ .RelPermalink }}">{{.Title }}</a>
 				{{ end }}

@@ -2,13 +2,16 @@
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
+
+			<p>
 			{{ if not .Date.IsZero }}
-			<p><b><time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time></b></p>
+			<time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time>
 			{{ end }}
 		       {{ range .Params.tags }}
 		           <a class="taglink" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
         	       {{ end }}
-
+			</p>
+			
 			<div>
 				{{ .Content }}
 			</div>
