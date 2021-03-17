@@ -32,5 +32,5 @@ paginate = 500
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "tango"
+    style = "trac"
     tabWidth = 4

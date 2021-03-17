@@ -25,7 +25,6 @@
 body {
   font-family: var(--body-font);
   font-weight: 400;
-  background: var(--cream);
 }
 
 main {
@@ -34,11 +33,11 @@ main {
 }
 
 a {
-  color: darkslategrey !important;
+  color: var(--dark-blue);
 }
 
 a:visited {
-  color: darkslategray !important;
+  color: var(--dark-purple);
 }
 
 h1,
@@ -68,12 +67,11 @@ code {
 }
 
 nav {
-  background: var(--light-cream);
   font-family: var(--header-font) !important;
   font-size: small;
-  text-align: center;
+  text-align: right;
   padding: 1em;
-  border-bottom: 0.25em solid var(--orange);
+  border-bottom: 1px solid var(--cream);
   display: block;
   text-transform: uppercase;
 }
@@ -83,8 +81,8 @@ aside {
   font-family: var(--header-font) !important;
   font-size: small;
   padding: 1em;
-  border-top: 0.25em solid var(--orange);
-  border-bottom: 0.25em solid var(--orange);
+  border-top: 2px solid var(--cream);
+  border-bottom: 2px solid var(--cream);
   display: block;
 }
 
@@ -92,12 +90,7 @@ footer {
   background: white;
   font-family: var(--header-font) !important;
   padding: 1em;
-  border-bottom: 0.25em solid var(--orange);
   display: block;
-}
-
-nav a, nav a:visited {
-  color: var(--cream);
 }
 
 img {
