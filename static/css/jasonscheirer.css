@@ -100,16 +100,14 @@
     /* Modern Browsers */ url("/fonts/business.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Quattro";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    /* Modern Browsers */ url("/fonts/quattro.ttf") format("truetype");
+:root {
+  /* font-family: "IBM Plex Sans"; */
+  --body-font: "iA Writer Duo";
+  --mono-font: "Fira Code";
 }
 
 body {
-  font-family: "IBM Plex Sans";
+  font-family: var(--body-font);
   font-weight: 400;
 }
 
@@ -127,7 +125,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "IBM Plex Sans" !important;
+  font-family: var(--body-font) !important;
   font-weight: 700 !important;
   /* border-top: 1px solid rgba(0, 0, 0, 0.048); */
   margin-top: 0.25em;
@@ -136,13 +134,13 @@ h6 {
 
 pre {
   color: darkslategray !important;
-  font-family: "Fira Code";
+  font-family: var(--mono-font);
   background: white !important;
 }
 
 code {
   color: darkslategray !important;
-  font-family: "Fira Code";
+  font-family: var(--mono-font);
   font-weight: 400;
   background: white !important;
 }

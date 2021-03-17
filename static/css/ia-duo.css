@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "iA Writer Duo";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/iAWriterDuoS-Regular.eot") format("embedded-opentype"), url("/fonts/iAWriterDuoS-Regular.woff2") format("woff2"), url("/fonts/iAWriterDuoS-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duo";
+  font-style: italic;
+  font-weight: normal;
+  src: url("/fonts/iAWriterDuoS-Italic.eot") format("embedded-opentype"), url("/fonts/iAWriterDuoS-Italic.woff2") format("woff2"), url("/fonts/iAWriterDuoS-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duo";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/iAWriterDuoS-Bold.eot") format("embedded-opentype"), url("/fonts/iAWriterDuoS-Bold.woff2") format("woff2"), url("/fonts/iAWriterDuoS-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "iA Writer Duo";
+  font-style: italic;
+  font-weight: bold;
+  src: url("/fonts/iAWriterDuoS-BoldItalic.eot") format("embedded-opentype"), url("/fonts/iAWriterDuoS-BoldItalic.woff2") format("woff2"), url("/fonts/iAWriterDuoS-BoldItalic.woff") format("woff");
+}
