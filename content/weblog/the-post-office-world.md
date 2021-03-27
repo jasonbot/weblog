@@ -27,3 +27,5 @@ My new office is my garage -- we're going to put in the money to turn it into a 
 It's been weird, but it's been weird for everyone.
 
 *Update 2021-02-10* [This essay by Paul Ford](https://www.wired.com/story/the-secret-essential-geography-of-the-office/) covers a lot of my thinking about the office, too.
+
+*Update 2021-03-27* ![This toot](/images/the-post-office-world/tweet.png) [This tweet](https://twitter.com/cafedujord/status/1375255355962261504)
