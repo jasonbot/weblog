@@ -30,6 +30,10 @@ NameError: name 'X' is not defined
 
 Python is older than my son (who is 3) and yet you abuse it. You monsters. You goblins. You haters. You fuckerinos.
 
-Look: `__all__` is a list of GOD DAMN STRING IDENTIFIERS, NOT ACTUAL OBJECTS, AND IT INFORMS A PATTERN YOU RIGHTFULLY DON'T USE BECAUSE YOU NEVER SEE THAT `NameError`. `__all_` is `['X', 'Y', 'Z']` and not your list of variable names, it's your list of export names.
+Look: `__all__` is a list of GOD DAMN STRING IDENTIFIERS, NOT ACTUAL OBJECTS, AND IT INFORMS A PATTERN YOU RIGHTFULLY DON'T USE BECAUSE YOU NEVER SEE THAT `NameError`.
+
+`__all__` is `['X', 'Y', 'Z']` and not your list of variable names, it's your list of export names.
 
 `__all__` is, and has always been, a list of *STRINGS* to be exported from your idiot module into your idiot notebook.
+
+Oh my god my irrational hate has fueled in me a series of topics I care to "engage" about (COMMENTS DISABLED).
