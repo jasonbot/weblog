@@ -20,4 +20,4 @@ I've been able to get back into web development after years of being out of it a
 
 # Quality of Life
 
-Quality of life is a mixed bag. It's crowded and expensive, but there's stuff to do. We basically throw an entuire paycheck into our apartment and single car, but I can take public transit everywhere and we're an hour away from Napa. Now that we're parents we appreciate the suburban wasteland that is the Inland Empire as a good place for kids.
+Quality of life is a mixed bag. It's crowded and expensive, but there's stuff to do. We basically throw an entire paycheck into our apartment and single car, but I can take public transit everywhere and we're an hour away from Napa. Now that we're parents we appreciate the suburban wasteland that is the Inland Empire as a good place for kids.

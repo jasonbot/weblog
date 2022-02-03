@@ -32,7 +32,7 @@ When you think about what you are doing, to download a batch file you:
 4. Verify the file
 5. Remove the remote file
 
-\* Yes, this includes opening socket connection, doing TLS negotiation, and then authenticating, which are 3 additional steps to be berought into consideration
+\* Yes, this includes opening socket connection, doing TLS negotiation, and then authenticating, which are 3 additional steps to be brought into consideration
 
 In HTTP, it's:
 1. `HTTP GET` the location (steps 1, 2, 3)
