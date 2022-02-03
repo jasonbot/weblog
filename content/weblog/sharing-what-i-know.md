@@ -10,3 +10,5 @@ https://twitter.com/zachleat/status/1488941901500010496
 > some of y’all are out here just **knowing** things without sharing what you know on a blog post—why
 
 I do not owe you a singular god damned thing, period, and it is not my job to provide internet strangers with summaries of my hard-earned lessons. Especially if idiots will comment about it on Hacker News or whatever.
+
+**Update**: Lol I got got blocked on Twitter for having a strong contrary opinion
