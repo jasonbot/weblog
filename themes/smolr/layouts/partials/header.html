@@ -7,13 +7,14 @@
 
 			{{ $menu_item_url := .URL }}
 			{{ $page_url:= $currentPage.RelPermalink }}
-		
-			|
+
+			<span class="nav-item">
 				{{ if eq $menu_item_url $page_url }}
 					<b>{{ .Name }}</b>
 				{{ else }}
 					<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
 				{{ end }}
+			</span>
 
 			{{ end }}
 	</nav>
