@@ -7,4 +7,4 @@ article{padding:24px 0}
 img {display: block; max-width: 100%; height: auto;}
 figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
 figure {margin: auto}
-nav:not(:first-child):before{content: " | ";}
+.nav-item:not(:first-child):before{content: " | ";}
