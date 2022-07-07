@@ -22,8 +22,8 @@ It advertises:
 
 * A premium DAC for audiophiles
 * A 3.5" touch screen
-* A TC card port
-* Disk mode (your TC card shows up as a passthrough mass storage device)
+* A TF card port
+* Disk mode (your TF card shows up as a passthrough mass storage device)
 * "Retro styling" (rounded corners)
 * Bluetooth (so you can play your music from ) -- _I did not know this worked well, or I would have just paired my work laptop to the Q1 and played all audio through it. Whoops_.
 
