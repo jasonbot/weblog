@@ -1,11 +1,5 @@
 <header>
 	<nav>
-			{{ if not (eq .Permalink "/") }}
-				<a href="/"><b>main</b></a>
-			{{ else }}
-				<b>main</b>
-			{{end}}
-
 			{{ $currentPage := . }}
 
 			{{ with .Site.Menus.main }}
