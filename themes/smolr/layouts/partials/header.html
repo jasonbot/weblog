@@ -1,6 +1,6 @@
 <header>
 	<nav>
-			{{ if not (eq .URL "/") }}
+			{{ if not (eq .Permalink "/") }}
 				<a href="/"><b>main</b></a>
 			{{ else }}
 				<b>main</b>
@@ -11,8 +11,8 @@
 			{{ with .Site.Menus.main }}
 			{{ range . }}
 
-			{{ $menu_item_url := .URL | relLangURL }}
-			{{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+			{{ $menu_item_url := .URL }}
+			{{ $page_url:= $currentPage.RelPermalink }}
 		
 			|
 				{{ if eq $menu_item_url $page_url }}

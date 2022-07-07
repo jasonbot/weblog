@@ -1,3 +1,3 @@
 [submodule "build"]
-	path = build
+	path = public
 	url = git@github.com:jasonbot/jasonbot.github.io.git
