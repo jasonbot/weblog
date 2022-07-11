@@ -17,7 +17,7 @@ if (thing := function_call()) != None:
     thing.do_stuff()
 ```
 
-## Positional-only parameters
+## Name-only parameters
 
 I actually use this a _lot_, especially with any function that has more than 2 arguments. Forcing the consumer of your library code to explicity name the parameters makes their code more readable. When you do
 
@@ -40,7 +40,7 @@ However, this _is_ built into the standard library and I am reluctantly starting
 
 ## Structural Pattern Matching
 
-This one seems like another way to abuse metaprogamming. It looks on its face like a `switch` statment, so will likely be misunderstood in the same way the `is` operator gets misunderstood.
+This one seems like another way to abuse metaprogamming. It looks on its face like a `switch` statment, so will likely be misunderstood in the same semantic ways the `is` operator is misunderstood.
 
 I think I may try experimenting with this and type hints to write something approximating other languages' generic coding going forward.
 
@@ -54,7 +54,7 @@ Helps with validation and obviates the need for a third-party dependency like `c
 
 ## `zoneinfo`
 
-I generally consider it a Bad Idea to bundle a static copy of the `tzinfo` db into the standard library, but it's nice that it does try to use the OS' database first as the OS gets regular updates. It's one less dependency to have to `pip install` into your venv I guess.
+I generally consider it a Bad Idea to bundle a static copy of the `tzinfo` db into the standard library, but it's nice that it does try to use the OS database first as the OS gets regular updates. It's one less dependency to have to `pip install` into your venv I guess.
 
 ## Operator Overloading Madness
 

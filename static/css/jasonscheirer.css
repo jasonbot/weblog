@@ -159,7 +159,7 @@ time:before {
 
 /* This is for my dark theme homeys and homeys-adjacent */
 @media (prefers-color-scheme: dark) {
-  @keyframes {
+  @keyframes wigglebody {
     0% {
       transform: rotate(0deg);
     }
@@ -180,6 +180,7 @@ time:before {
   body {
     margin-left: 17em;
     display: inline-block;
+    animation: wigglebody 5s infinite;
   }
 
   a,

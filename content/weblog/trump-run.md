@@ -1,6 +1,6 @@
 +++
 title =  "Trump Run: A Game"
-date = 2022-07-17T00:00:00-08:00
+date = 2022-07-25T00:00:00-08:00
 tags = ["golang", "programming", "games"]
 featured_image = ""
 description = "I did this for my own amusement."
