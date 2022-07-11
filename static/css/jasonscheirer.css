@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: "Comic";
   font-style: normal;
@@ -153,6 +151,10 @@ time:before {
   color: var(--blush);
   content: "𐂂";
   font-weight: normal;
+}
+
+.nav-item:not(:first-child):before {
+  content: " | ";
 }
 
 /* This is for my dark theme homeys and homeys-adjacent */
