@@ -1,6 +1,6 @@
 +++
 title =  "Async programming: understanding it from fundamentals"
-date = 2022-07-15T01:15:00-08:00
+date = 2022-07-12T00:00:00-00:00
 tags = ["programming", "python", "javascript"]
 featured_image = ""
 description = "It's simpler when you build up your knowledge from a base"
