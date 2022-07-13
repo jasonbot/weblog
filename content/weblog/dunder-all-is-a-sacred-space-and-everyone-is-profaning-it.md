@@ -34,6 +34,6 @@ Look: `__all__` is a list of GOD DAMN STRING IDENTIFIERS, NOT ACTUAL OBJECTS, AN
 
 `__all__` is `['X', 'Y', 'Z']` and not your list of variable names, it's your list of export names.
 
-`__all__` is, and has always been, a list of *STRINGS* to be exported from your idiot module into your idiot notebook.
+`__all__` is, and has always been, [a list of *STRINGS* to be exported from your idiot module](https://docs.python.org/3/tutorial/modules.html#importing-from-a-package) into your idiot notebook.
 
 Oh my god my irrational hate has fueled in me a series of topics I care to "engage" about (COMMENTS DISABLED).

@@ -7,7 +7,7 @@ featured_image = ""
 
 # End product
 
-Please disregard the poor camera placement, it has since been fixed.
+Please disregard the poor camera placement or the labels, it has since been fixed.
 
 ![Step 1](/images/zpl-o-rama/workflow-1.png)
 ![Step 2](/images/zpl-o-rama/workflow-2.png)
@@ -15,7 +15,7 @@ Please disregard the poor camera placement, it has since been fixed.
 
 # Thinking Back, It Was All So Simple
 
-Now we have the system up and running, let's talk random obstacles and next steps. This sis something of an epilogue to the saga, as it's a lit of small things that accrued while working on the project
+Now we have the system up and running, let's talk random obstacles and next steps. This is something of an epilogue to the saga, as it's a list of small things that accrued while working on the project.
 
 ## Networks are slow and the dual tier service thing is bad, actually
 

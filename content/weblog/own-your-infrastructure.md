@@ -1,5 +1,5 @@
 +++
-title =  "Own your infrastructure"
+title =  "Own Your Infrastructure"
 date = 2020-02-04T16:45:45-08:00
 tags = ["programming", "hardware", "work"]
 featured_image = ""
@@ -12,4 +12,4 @@ This started out great for my career because I have not built a server machine f
 
 However, when you're on-call, you no longer own your uptime. Amazon will randomly flip bits. Its hosted services will go down without warning and leave you helpless but to wait -- you're down until Amazon Hosted Whatever Thing decides to go back up (and the status page will lie about it being up).
 
-Now I'm at a new place where the systems team (I am back in plain old Software Engineering, hopefully out of DevOps forever) actually runs data centers. Everything is done in VMs and not containers. And it's so refreshing. Not only can we be 100% responsible for fixing downtime, but it provides a much stabler and less abstract system to build software on top of. When the solution to a problem is "this Bash script" and not "this Byzantine pipeline only one guy understands" it makes the infrastructure easier to reason aboue and less prone to failure.
+Now I'm at a new place where the systems team (I am back in plain old Software Engineering, hopefully out of DevOps forever) actually runs data centers. Everything is done in VMs and not containers. And it's so refreshing. Not only can we be 100% responsible for fixing downtime, but it provides a much stabler and less abstract system to build software on top of. When the solution to a problem is "this Bash script" and not "this Byzantine pipeline only one guy understands" it makes the infrastructure easier to reason about and less prone to failure.
