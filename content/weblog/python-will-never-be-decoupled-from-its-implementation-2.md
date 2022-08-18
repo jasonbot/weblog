@@ -1,5 +1,5 @@
 +++
-title =  "Python as a Language is Unescabably Coupled with its Implementation Part 2: The Tracer"
+title =  "Python as a Language is Inescabably Coupled with its Implementation Part 2: The Tracer"
 date = 2022-08-10T00:00:00-00:00
 tags = ["python"]
 featured_image = ""

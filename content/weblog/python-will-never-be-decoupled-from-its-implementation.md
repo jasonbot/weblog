@@ -1,5 +1,5 @@
 +++
-title =  "Python as a Language is Unescabably Coupled with its Implementation Part 1: LET'S DO DUMB SHIT WITH THE GC"
+title =  "Python as a Language is Inescabably Coupled with its Implementation Part 1: LET'S DO DUMB SHIT WITH THE GC"
 date = 2021-04-04T00:00:00-08:00
 tags = ["python"]
 featured_image = ""
@@ -19,6 +19,10 @@ import gc
 
 x = "HELLO"
 print("My names are:", [[key for key, value in var.items() if value is x] for var in gc.get_referrers(x)])
+```
+And it outputs:
+
+```
 My names are: [['x']]
 ```
 
