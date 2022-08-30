@@ -13,7 +13,7 @@ Python has continued to progress and introduce new features and modules. In this
 I've been aware of this for a few years. I've found about 3 times where I've found it appropriate to use. It's nice but not a huge change to the way I code. Generally in the pattern
 
 ```python3
-if (thing := function_call()) != None:
+if (thing := function_call()) is not None:
     thing.do_stuff()
 ```
 
