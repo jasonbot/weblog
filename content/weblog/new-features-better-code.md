@@ -48,7 +48,7 @@ Then commonly-used build targets like make test can include these steps as depen
 Not a new concept, but worth pointing out that both Black and Mypy analysis is done at Easypost during the lint step in our Continuous Integration process, so no code that fails automated style/type checks can get merged into the main branch.
 
 # Type Hinting
-The road to formal typing in Python started out with the [Abstract Base Class effort](https://peps.python.org/pep-3119/) many years ago and has progressed since then. They started out as a way of formally defining collections of duck-typed methods as belonging to a specific 'protocol', like a map or an array or an iterator, and went from there. They are very similar to Go's Interfaces.
+The road to formal typing in Python started out with the [Abstract Base Class effort](https://peps.python.org/pep-3119/) many years ago and has progressed since then. ABCs started out as a way of formally defining collections of duck-typed methods as belonging to a specific 'protocol', like a map or an array or an iterator, and went from there. In this regard ABCs are very similar to Go's Interfaces.
 
 [Type hinting](https://peps.python.org/pep-0484/) lets you incrementally update your code to enforce "good" data goes into it and avoids boneheaded errors that other languages don't let through by default. The good thing about incremental is it's incremental, meaning you don't have to go all-in at once but instead gradually get it right.
 
@@ -147,7 +147,7 @@ For the sake of brevity I will not get into [`TypeVar`s](https://docs.python.org
 # Dataclasses
 Doing data structures of any complexity has been a plain point for about as long as Python has been around. From the ancient days of [zope.schema](https://zopeschema.readthedocs.io/en/latest/) to more modern libraries like [marshmallow](https://marshmallow.readthedocs.io/en/stable/), [schematics](https://schematics.readthedocs.io/en/latest/), and [colander](https://docs.pylonsproject.org/projects/colander/en/latest/), the problem has a panoply of 'solutions,' each with their own individual quirks; some of which are obviated by the newer features of Python like annotations and [guaranteed in-order dictionary traversal](https://mail.python.org/pipermail/python-dev/2017-December/151283.html).
 
-Dataclasses exist in the standard library. That's a huge plus because they don't require a third party library, tiny time bombs hiding away in your `requirements.txt` just waiting to introduce random CVEs at inopportune moments. Dataclasses are just enough data model, easy to use, and are stable since they're built in to the standard library.
+Dataclasses exist in the standard library. That's a huge plus because they don't require a third party library, tiny time bombs hiding away in your `requirements.txt` just waiting to introduce random CVEs at inopportune moments. Dataclasses are just enough data model for a lot of use cases.
 
 ```python3
 import dataclasses
@@ -185,9 +185,9 @@ def do_something_to_a_dict(data_dict: dict):
    dict['other_key'] = int(dict['other_key'])
 ```
 
-when a dictionary, which in Python is a bag of key/value anythings, starts to get changed willy-nilly over the course of its lifetime it gets _really hard to tell_ just _where_ and _when_ a speccific piece of data in the dictionary was created/modified.
+When a dictionary (which in Python is a bag of key/value anythings) starts to get changed willy-nilly over the course of its lifetime it gets _really hard to tell_ just _where_ and _when_ a speccific piece of data in the dictionary was created/modified.
 
-So how do we go about _mutated_ data as needed? One of two patterns:
+So how do we go about mutating data _as needed_? One of two patterns:
 
 1. In place with a `@property`:
     ```python3
@@ -199,7 +199,7 @@ So how do we go about _mutated_ data as needed? One of two patterns:
         def what_you_say_to_get_its_attention(self):
             return self.name.upper() + "!!!"
     ```
-2. Generating a copy using [the `.replace` method](https://docs.python.org/3/library/dataclasses.html#dataclasses.replace), which also encourages the pattern of making sure you know _where_ your data came from by explictly storing new copies:
+2. Generating a copy using [the `.replace` method](https://docs.python.org/3/library/dataclasses.html#dataclasses.replace), which also encourages the pattern of making sure you know _where_ your data came from by explicitly storing new copies:
     ```python3
     def louden_my_pet(my_pet: Pet) -> Pet:
         return my_pet.replace(name=my_pet.name.upper() + "!!!")
