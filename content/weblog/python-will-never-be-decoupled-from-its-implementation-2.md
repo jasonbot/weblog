@@ -60,4 +60,4 @@ Now, this is neat and clever but it's also largely a CPython-specific set of int
 
 Note _this is in the standard library_. Those poor developers would have to either 1) write this API off and get derogatorily accused of stunting their Python or do insane things to make what is trivial in CPython with byzantine .Net or JVM internals* to achieve parity.
 
-\* How would one expect this to work when calling native .Net code? What kind of decoration would need to be annotated to the ocmpiled Python VM bytecode to make the Python runtime in that system aware that it's reentered Python? It fills me with fear.
+\* How would one expect this to work when calling native .Net code? What kind of decoration would need to be annotated to the compiled Python VM bytecode to make the Python runtime in that system aware that it's reentered Python? It fills me with fear.

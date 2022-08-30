@@ -38,5 +38,5 @@ paginate = 500
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "trac"
+    style = "pygments"
     tabWidth = 4
