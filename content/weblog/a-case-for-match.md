@@ -16,7 +16,7 @@ Namely, I'm writing a REST API at work that is _mostly_ CRUD, but for historical
 
 First off, we get a dict and want to just specify the keys we care about:
 
-```
+```python3
 import typing
 
 def copy_keys(input: dict, keep_keys: typing.Iterable[typing.Hashable]):
@@ -32,7 +32,7 @@ print(copy_keys(x, ['a', 'c']))
 
 Simple enough. Now what if we need to _remap_ our keys?
 
-```
+```python3
 print(copy_keys(x, ['a', ('c', 'b')]))  # We want:{'a': 1, 'b': 3}
 ```
 
