@@ -38,7 +38,7 @@ To enforce MyPy in test/lint steps, it's Makefiles to the rescue once more:
 ```makefile
 ## checkstatic - Run static checks
 checkstatic:
-        venv/bin/mypy $(SERVICENAME) test
+        venv/bin/mypy $(SERVICENAME)
 ```
 
 Then commonly-used build targets like make test can include these steps as dependencies.
