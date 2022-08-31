@@ -189,7 +189,7 @@ Produces:
 
 `dataclasses.FrozenInstanceError: cannot assign to field 'name'`
 
-This solves the problem of data provenance as well. One anti-pattern we have been attempting to get rid of from our codebase are functions like this:
+This solves the problem of data provenance as well. One antipattern we have been attempting to get rid of from our codebase are functions like this:
 
 ```python3
 def do_something_to_a_dict(data_dict: dict):
