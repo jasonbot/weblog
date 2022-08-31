@@ -284,7 +284,7 @@ Produces:
 
 We deal with APIs and our bread-and-butter is writing HTTP-based, RESTful services. This means a large part of what we do is translating data models to/from JSON as they interchange between various systems written in various languages and frameworks.
 
-By moving to pydantic, we get type coercion in our data structures, so for fields that are `datetime`s or `UUID`s coming from a JSON struct (where they are usually downcast to string) it will do the right thing and coerce to those types, unlike plain dataclasses.
+By moving to Pydantic, we get type coercion in our data structures, so for fields that are `datetime`s or `UUID`s coming from a JSON struct (where they are usually downcast to string) it will do the right thing and coerce to those types, unlike plain dataclasses.
 
 Pydantic also has [a default JSON encoder](https://pydantic-docs.helpmanual.io/usage/dataclasses/#json-dumping) that will attempt to do the right thing with some common datatypes (looking at `datetime` and `uuid` again). You might still need to write your own encoder to handle your own datatypes, but you can base it on pydantic's as a starting point.
 
