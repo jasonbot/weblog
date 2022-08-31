@@ -359,4 +359,4 @@ def get_shipment(request, shipment_id: UUID):
 
 # Conclusion
 
-The Python language is still a moving target, and recent versions have provided plenty of value, both in terms of new functionality and improved behavior on existing functionality. Using these new features can make code cleaner, easier to read, easier to be confident about, and generally less painful to maintain.
+The Python language is still progressing and improving. Recent versions have added plenty of value, both in terms of new functionality and improved behavior on existing functionality. Using these new features can make code cleaner, easier to read, easier to be confident about, and generally less painful to maintain.
