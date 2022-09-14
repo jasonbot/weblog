@@ -27,7 +27,7 @@ checkblack:
 
 ## black - Run the black formatter against the codebase
 black:
-    ./venv/bin/black $(SERVICENAME)
+        ./venv/bin/black $(SERVICENAME)
 ```
 
 # MyPy
@@ -106,7 +106,7 @@ my_wildcard: T.Any = None  # THERE ARE NO RULES HERE DUDE
 
 Not a great idea to litter your code with `Any` as it kind of violates the spirit of adding type annotations to your code, but it can be useful in an incremental process as you introduce types to your codebase.
 
-Special case if you want something to be a value or None: you mark as Optional or union the type with None:
+Special case if you want something to be a value or None: you mark as `Optional` or union the type with `None`:
 
 ```python3
 my_potentially_none: T.Optional[str] = "Hi"
@@ -198,7 +198,7 @@ def do_something_to_a_dict(data_dict: dict):
    dict['other_key'] = int(dict['other_key'])
 ```
 
-When a dictionary (which in Python is a bag of key/value anythings) starts to get changed willy-nilly over the course of its lifetime it gets _really hard to tell_ just _where_ and _when_ a speccific piece of data in the dictionary was created/modified.
+When a dictionary (which in Python is a bag of key/value anythings) starts to get changed willy-nilly over the course of its lifetime it gets _really hard to tell_ just _where_ and _when_ a specific piece of data in the dictionary was created/modified.
 
 So how do we go about mutating data _as needed_? One of two patterns:
 
