@@ -8,7 +8,7 @@ draft = false
 +++
 
 # Introduction
-In the time I've been at Easypost, we've been putting continuous effort into making sure our code stays up-to-date to make sure we keep ahead of potential security and support issues, as well as to make our code easier to read, write and maintain as the Python language continues to mature.
+In the time I've been at EasyPost, we've been putting continuous effort into making sure our code stays up-to-date to make sure we keep ahead of potential security and support issues, as well as to make our code easier to read, write and maintain as the Python language continues to mature.
 
 # Black
 The [Black code formatter](https://black.readthedocs.io/en/stable/) is a few years old now and [officially hosted by the PSF](https://github.com/psf/black). It follows the vein of [Gofmt](https://go.dev/blog/gofmt) (or, to a lesser degree, [Prettier](https://prettier.io/docs/en/index.html)) by being "opinionated" and having a reasonable set of defaults and few, if any, knobs that can be tweaked.
@@ -49,7 +49,7 @@ Then commonly-used build targets like make test can include these steps as depen
 
 # Continuous Integration
 
-Both Black and Mypy analysis is done at Easypost during the lint step in our Continuous Integration process, so no code that fails automated style/type checks can get merged into the main branch.
+Both Black and Mypy analysis is done at EasyPost during the lint step in our Continuous Integration process, so no code that fails automated style/type checks can get merged into the main branch.
 
 # Type Hinting
 The road to formal typing in Python started out with the [Abstract Base Class effort](https://peps.python.org/pep-3119/) many years ago and has progressed since then. ABCs started out as a way of formally defining collections of duck-typed methods as belonging to a specific 'protocol', like a map or an array or an iterator, and went from there. In this regard ABCs are very similar to Go's Interfaces.
