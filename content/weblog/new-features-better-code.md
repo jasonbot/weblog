@@ -178,7 +178,7 @@ import dataclasses
 
 @dataclasses.dataclass(frozen=True)
 class Pet:
-    name str
+    name: str
 
 my_cat = Pet(name="Spots")
 # Your new name is Ham Sandwich. I'm a cruel owner.
