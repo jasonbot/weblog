@@ -1,6 +1,6 @@
 +++
 title =  "Modern Python: New Features, Better Code"
-date = 2022-09-25T00:00:00-08:00
+date = 2022-09-15T00:00:00-08:00
 tags = ["python", "programming"]
 featured_image = ""
 description = "Python: Yeah."
