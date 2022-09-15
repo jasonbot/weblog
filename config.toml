@@ -9,11 +9,6 @@ paginate = 500
     subtitle = "A personal web site for a computer person"
     dateFmt = "2006-01-02"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
 [menu]
   [[menu.main]]
     identifier = "main"
@@ -33,6 +28,9 @@ paginate = 500
     url = "/about/"
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
