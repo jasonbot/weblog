@@ -1,5 +1,5 @@
 +++
-title =  "Mixed Syn in Async in Python: Disappointingly Simple"
+title =  "Mixed Async code in Sync Python: Disappointingly Simple"
 date = 2022-09-23T00:00:00-08:00
 tags = ["python", "programming"]
 featured_image = ""
@@ -29,14 +29,20 @@ async def fetch_url(session, url) -> tuple[str, str | Exception]:
     except Exception as e:
         return (url, e)
 
+
 async def fetch_urls_async(*urls) -> dict[str, str]:
     async with aiohttp.Session() as session:
         return {
-            url: str(status) for url, status in asyncio.gather(fetch_url(session, url) for url in urls)
+            url: str(status)
+            for url, status in asyncio.gather(fetch_url(session, url) for url in urls)
         }
 
+
 def get_multiple_urls() -> dict[str, str]:
-    return asyncio.run(fetch_urls_async("http://www.google.com", "http://www.zombo.com"))
+    return asyncio.run(
+        fetch_urls_async("http://www.google.com", "http://www.zombo.com")
+    )
+
 
 @flaskapp.route("/")
 def main_sync_route():
