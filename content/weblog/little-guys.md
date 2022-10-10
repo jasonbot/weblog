@@ -6,7 +6,7 @@ featured_image = ""
 description = "They're Just a Bunch of Little Guys"
 +++
 
-[I wrote another game game](https://jasonbot.itch.io/little-guys) for a [Weekend Game Jam with the theme _Colors_](https://itch.io/jam/mini-jam-111-colors).
+[I wrote another small puzzle game](https://jasonbot.itch.io/little-guys) for a [Weekend Game Jam with the theme _Colors_](https://itch.io/jam/mini-jam-111-colors).
 
 It's Webassembly using [ebitengine](https://ebiten.org/).
 
