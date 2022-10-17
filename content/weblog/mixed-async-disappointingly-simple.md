@@ -9,15 +9,14 @@ draft = false
 
 One thing I love about Python's practical approach to type annotations and enforcement is that it's gradual: you can rapidly code a large ball of mud and get it working, then refine it to make it safer with typing later on.
 
-Chalk this up as another cood idea (possibly by accident) for Python: you can do the same with async.
+Chalk this up as another good idea (possibly by accident) for Python: you can do the same with async.
 
 At work, someone lamented that threads aren't quite safe but they needed to do multiple http requests in parallel.
 
-After being _that asshole_ and suggesting they rewrite the entire app as an async app , I went in an experimented for a few hours. I experimented and coded and came up with a simple, almost disappointingly so, solution:
+After being _that asshole_ and suggesting they rewrite the entire app as an async app, I went in and poked around for a few hours. I experimented and coded and came up with a simple, almost disappointingly so, solution:
 
 ```python
 import asyncio
-from unittest import FunctionTestCase
 
 import aiohttp
 
