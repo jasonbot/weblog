@@ -6,18 +6,19 @@
     /* Modern Browsers */ url("/fonts/business.ttf") format("truetype");
 }
 
+/* https://lospec.com/palette-list/pear36 */
+
 :root {
-  --body-font: "IBM Plex Sans";
-  --header-font: "IBM Plex Serif";
+  --body-font: "Fira Code";
+  --header-font: "Fira Code";
   --mono-font: "Fira Code";
 
-  --orange: rgb(203, 159, 73);
-  --dark-purple: rgb(41, 25, 30);
-  --dark-blue: rgb(17, 20, 76);
-  --cream: rgb(243, 220, 195);
-  --light-cream: rgb(255, 241, 226);
-  --red: rgb(182, 44, 33);
-  --blush: rgb(187, 131, 114);
+  --light-blue: #4da6ff;
+  --dark-blue: #4b5bab;
+  --darkest-blue: #473b78;
+  --dark-purple: #5a265e;
+  --bg-grn: #ffffeb;
+  --border-color: #c2c2d1;
 }
 
 body {
@@ -44,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--dark-blue);
+  color: var(--darkest-blue);
   font-family: var(--header-font) !important;
   font-weight: 700 !important;
   margin-top: 0.25em;
@@ -69,18 +70,18 @@ nav {
   font-size: small;
   text-align: right;
   padding: 1em;
-  border-bottom: 1px solid var(--cream);
+  border-bottom: 1px solid var(--border-color);
   display: block;
   text-transform: uppercase;
 }
 
 aside {
-  background: var(--light-cream);
+  background: var(--bg-grn);
   font-family: var(--header-font) !important;
   font-size: small;
   padding: 1em;
-  border-top: 2px solid var(--cream);
-  border-bottom: 2px solid var(--cream);
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
   display: block;
 }
 
@@ -93,10 +94,10 @@ footer {
 
 img {
   display: block;
-  align: center;
+  text-align: center;
   width: 90%;
   height: auto;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid --var(--border-color);
   border-radius: 2px;
   padding: 4px;
   margin-bottom: 0.25em;
@@ -114,7 +115,7 @@ a.taglink {
 }
 
 a.taglink::before {
-  content: "𐂧";
+  content: "●";
   color: white;
   padding-right: 6px;
   text-shadow: 0 0 2px black;
@@ -148,8 +149,8 @@ time {
 }
 
 time:before {
-  color: var(--blush);
-  content: "𐂂";
+  color: var(--darkest-blue);
+  content: "@";
   font-weight: normal;
 }
 
