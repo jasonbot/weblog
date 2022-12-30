@@ -24,8 +24,14 @@ paginate = 500
 
   [[menu.main]]
     identifier = "games-by-jason"
-    name = "games by Jason"
+    name = "Games by Jason"
     url = "/tags/games-by-jason/"
+    weight = 0
+
+  [[menu.main]]
+    identifier = "hardware"
+    name = "Hardware"
+    url = "/tags/hardware/"
     weight = 0
 
   [[menu.main]]

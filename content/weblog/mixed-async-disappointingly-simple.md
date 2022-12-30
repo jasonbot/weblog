@@ -4,7 +4,6 @@ date = 2022-09-23T00:00:00-08:00
 tags = ["python", "programming"]
 featured_image = ""
 description = "Python: Yeah."
-draft = false
 +++
 
 One thing I love about Python's practical approach to type annotations and enforcement is that it's gradual: you can rapidly code a large ball of mud and get it working, then refine it to make it safer with typing later on.
