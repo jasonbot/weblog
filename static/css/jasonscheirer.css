@@ -72,7 +72,7 @@ nav {
   padding: 1em;
   border-bottom: 1px solid var(--border-color);
   display: block;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 aside {
