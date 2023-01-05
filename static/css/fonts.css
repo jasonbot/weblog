@@ -15,3 +15,14 @@
     /* Safari, Android, iOS */
       url("/fonts/fira-code-v9-latin-regular.svg#FiraCode") format("svg"); /* Legacy iOS */
 }
+
+/* Berkeley Mono */
+@font-face {
+  font-family: "Berkeley Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("/fonts/BerkeleyMonoVariable-Regular.woff2") format("woff2"),
+    url("/fonts/BerkeleyMonoVariable-Regular.woff")
+      format("woff");
+}
