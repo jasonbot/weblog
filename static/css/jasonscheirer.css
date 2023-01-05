@@ -9,9 +9,9 @@
 /* https://lospec.com/palette-list/pear36 */
 
 :root {
-  --body-font: "Fira Code";
-  --header-font: "Fira Code";
-  --mono-font: "Fira Code";
+  --body-font: "Berkeley Mono";
+  --header-font: "Berkeley Mono";
+  --mono-font: "Berkeley Mono";
 
   --light-blue: #4da6ff;
   --dark-blue: #4b5bab;
