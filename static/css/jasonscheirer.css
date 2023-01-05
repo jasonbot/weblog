@@ -23,7 +23,6 @@
 
 body {
   font-family: var(--body-font);
-  font-weight: 400;
 }
 
 main {
@@ -61,7 +60,6 @@ pre {
 code {
   color: darkslategray !important;
   font-family: var(--mono-font);
-  font-weight: 400;
   background: white !important;
 }
 
