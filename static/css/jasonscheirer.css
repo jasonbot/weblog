@@ -18,11 +18,20 @@
   --darkest-blue: #473b78;
   --dark-purple: #5a265e;
   --bg-grn: #ffffeb;
+  --tag-grn: #cfff70;
+  --tag-border-grn: #8fde5d;
+  --tag-text-grn: #3d3e4f;
+
   --border-color: #c2c2d1;
 }
 
 body {
   font-family: var(--body-font);
+}
+
+article {
+  padding: 0.25em;
+  border-bottom: 1px solid var(--border-color);
 }
 
 main {
@@ -44,11 +53,20 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--darkest-blue);
+  color: black;
   font-family: var(--header-font) !important;
   font-weight: 700 !important;
   margin-top: 0.25em;
   padding-top: 0.25em;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
 }
 
 pre {
@@ -108,9 +126,11 @@ a.taglink {
   text-decoration: none;
   font-weight: normal;
   padding: 2px;
-  color: black !important;
+  color: var(--tag-text-grn) !important;
   border-radius: 8px;
   display: inline-block;
+  background-color: var(--tag-grn);
+  border: 1px solid var(--tag-border-grn);
 }
 
 a.taglink::before {
@@ -137,7 +157,7 @@ td {
 }
 
 blockquote {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: var(--border-color);
   padding: 1em;
   border-radius: 4px;
   box-shadow: 0 0 30px white inset;
@@ -145,6 +165,10 @@ blockquote {
 
 time {
   font-family: var(--mono-font);
+  background: var(--light-blue);
+  color: var(--darkest-blue);
+  padding: 2px;
+  border-radius: 4px;
 }
 
 time:before {
@@ -155,6 +179,11 @@ time:before {
 
 .nav-item:not(:first-child):before {
   content: " | ";
+}
+
+.read-more {
+  font-size: smaller;
+  text-align: right;
 }
 
 /* This is for my dark theme homeys and homeys-adjacent */
