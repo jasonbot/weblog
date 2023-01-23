@@ -1,5 +1,5 @@
 +++
-title =  "Python as a Language is Inescabably Coupled with its Implementation Part 3: It's All Dicts All THe Time and you have No Recourse"
+title =  "Python as a Language is Inescabably Coupled with its Implementation Part 3: It's All Dicts All The Time and you have No Recourse"
 date = 2023-01-25T00:00:00-00:00
 tags = ["python"]
 featured_image = ""

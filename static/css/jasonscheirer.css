@@ -54,13 +54,14 @@ h6 {
 pre {
   color: darkslategray !important;
   font-family: var(--mono-font);
-  background: white !important;
+  background: var(--bg-grn) !important;
+  padding: 1.5em;
+  font-weight: 300 !important;
 }
 
 code {
   color: darkslategray !important;
   font-family: var(--mono-font);
-  background: white !important;
 }
 
 nav {
@@ -120,11 +121,11 @@ a.taglink::before {
 }
 
 table {
-  border: 1px solid rgba(0, 0, 0, 0.048);
+  border: 1px solid var(--bg-grn);
 }
 
 thead {
-  background-color: rgba(0, 0, 0, 0.048);
+  background-color: var(--bg-grn);
 }
 
 th {
@@ -132,7 +133,7 @@ th {
 }
 
 td {
-  border-top: 1px solid rgba(0, 0, 0, 0.048);
+  border-top: 1px solid var(--bg-grn);
 }
 
 blockquote {

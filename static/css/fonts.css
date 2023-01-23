@@ -20,7 +20,7 @@
 @font-face {
   font-family: "Berkeley Mono";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   src: local(""),
     url("/fonts/BerkeleyMonoVariable-Regular.woff2") format("woff2"),
     url("/fonts/BerkeleyMonoVariable-Regular.woff")
