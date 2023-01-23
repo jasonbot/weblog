@@ -7,6 +7,6 @@ description = "Oh no, it keeps going"
 draft = true
 +++
 
-I continue to write things like this not because I hate Python, but in a sort of open-eyed, Book of Job style clarity about the ultimate reality of the language. It's fine, and it's made my career quite a bit less painful than a life without it, but it does have weirdness, and it is a product of human activity, so it is a human process and not a perfect artifact pulled from nothing.
+I continue to write things like this not because I hate Python, but in a sort of open-eyed clarity about the . It's fine, and it's made my career quite a bit less painful than a life without it, but it does have weirdness, and it is a product of human activity, so it is a human process and not a perfect artifact pulled from nothing.
 
 Something that may surprise you:

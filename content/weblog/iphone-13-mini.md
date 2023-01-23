@@ -6,7 +6,7 @@ featured_image = ""
 description = "I Bought a New Phone"
 +++
 
-I'm not going into specs or specific details on this device. I was on an iPhone XS, which has slowly been degratding over time. Battery was slowly dying, replaced it at the Apple Store, the ribbon cable for the display was not adequately clipped back into place. It was easier to just order a new phone than to take the bus up to Emeryville again in the middle of the day for an appointment.
+I'm not going into specs or specific details on this device. I was on an iPhone XS, which has slowly been degrading over time. Battery was slowly dying, replaced it at the Apple Store, the ribbon cable for the display was not adequately clipped back into place. It was easier to just order a new phone than to take the bus up to Emeryville again in the middle of the day for an appointment.
 
 I am very happy with this piece of hardware. I held onto my iPhone 4 then original iPhone SE because I liked the form factor. Got the XS when it came out because my phone was dead and it was the smallest one on the market at the time.
 
