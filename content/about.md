@@ -24,7 +24,7 @@ A rough timeline of my entire life, including the future:
 * Writing bullet points in a text editor
 * _(Speculative)_ Dead
 
-The theme for this weblog is a fork of [smol](https://github.com/colorchestra/smol), built in [Hugo](https://gohugo.io/), and hosted on [Github Pages](https://pages.github.com/) through the magic of [a CNAME](https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site). I'm using [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) (hosted here and not on Google Fonts) so my indulgence of picking custom type shouldn't hurt the load times of the pages as much as it _could_ (or spy on you).
+The theme for this weblog is a fork of [smol](https://github.com/colorchestra/smol), built in [Hugo](https://gohugo.io/), and hosted on [Github Pages](https://pages.github.com/) through the magic of [a CNAME](https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site). I'm using [Inter](https://rsms.me/inter/) and [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) (hosted here and not on Google Fonts) so my indulgence of picking custom type shouldn't hurt the load times of the pages as much as it _could_ (or spy on you).
 
 For diagrams and artwork I use [Monodraw](https://monodraw.helftone.com/) and an older version of [Xara Photo and Graphic Designer](https://www.xara.com/us/photo-graphic-designer/). Sometimes [The Gimp](https://www.gimp.org/) and [Graphviz](https://graphviz.org/) come along for the party, too.
 

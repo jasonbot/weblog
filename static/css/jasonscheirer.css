@@ -9,8 +9,8 @@
 /* https://lospec.com/palette-list/pear36 */
 
 :root {
-  --body-font: "Berkeley Mono";
-  --header-font: "Berkeley Mono";
+  --body-font: "Inter";
+  --header-font: "Inter";
   --mono-font: "Berkeley Mono";
 
   --light-blue: #4da6ff;
