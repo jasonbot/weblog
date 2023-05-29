@@ -19,4 +19,4 @@ I cannot say enough good things about the display. Blows the Deck out of the wat
 
 *TL;DR*: The hardware is amazing, the support not so much. The screen and the gaming power are the big draws.
 
-The A1 has been supplanted by the A1 Pro at this point, so you should be able to find A1s much chaper now.
+The A1 has been supplanted by the A1 Pro at this point, so you should be able to find A1s much cheaper now.
