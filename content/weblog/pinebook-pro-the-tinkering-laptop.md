@@ -1,7 +1,7 @@
 +++
 title =  "Pinebook Pro: The Tinkering Laptop"
 date = 2021-01-19T12:11:45-08:00
-tags = ["hardware", "pinebook"]
+tags = ["hardware", "pinebook", "vscode"]
 featured_image = ""
 description = "The Pinebook Pro is Neat"
 +++
@@ -18,7 +18,7 @@ First off is I've gotten back into game programming for my own amusement using [
 
 Then, hey, why not Minecraft? These machines are still more powerful than the System76 laptop I owned over 10 years ago that I played the beta on. I found [a blog post](https://nicholasbering.ca/raspberry-pi/2020/10/18/minecraft-64bit-rpi4/) on getting it running (the two complications are getting lwjgl to build on the architecture and sidestep the fact that the latest versions of Minecraft use a native client to launch their platform-agnostic code). Building MultiMC following those directions worked fine, but Minecraft takes roughly 30 minutes to start and requires me to set the chunk render detch way down, so while it works in theory, it's unplayable in practice.
 
-Then I thought I wanted to learn i3 to deal with the slowness of the Pinebook and make it more useful, and wound up winding [Sway](https://swaywm.org/) and [Waybar](https://github.com/Alexays/Waybar). I almost got it usable but I had the option of 1) spending months redeveloping muscle memory or 2) customizing it so far into oblivion that I am the only human on earth who understand my idiomatic setup.
+Then I thought I wanted to learn i3 to deal with the slowness of the Pinebook and make it more useful, and wound up choosing [Sway](https://swaywm.org/) and [Waybar](https://github.com/Alexays/Waybar). I almost got it usable but I had the option of 1) spending months redeveloping muscle memory or 2) customizing it so far into oblivion that I am the only human on earth who understands my idiomatic setup.
 
 The usability of this environment was bad, and it mde me want something more traditional. I started getting weird and dark. I wanted to feel some nostalgia so I started building old desktop stuff. Like [AmiWM](https://www.lysator.liu.se/~marcus/amiwm.html) and [Windowmaker](https://www.windowmaker.org/) which led to me going ahead and build [the entire GNUStep stack](http://www.gnustep.org/) from scratch.
 
