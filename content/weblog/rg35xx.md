@@ -1,6 +1,6 @@
 +++
 title =  "Hardware review: Anbernic RG35XX"
-date = 2023-06-03T08:00:00-08:00
+date = 2023-06-02T08:00:00-08:00
 tags = ["hardware"]
 featured_image = ""
 description = "I like my RG35XX"
