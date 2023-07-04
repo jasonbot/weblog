@@ -12,10 +12,11 @@ So here's what I added to my `settings.json` to get the best of both worlds (lig
 
 ```json
   "workbench.colorCustomizations": {
-  
     "terminal.foreground": "#ffffff",
     "terminal.background": "#303030"
   }
 ```
 
 Simple enough!
+
+**Update:** [This site](https://glitchbone.github.io/vscode-base16-term/) has a panoply of copy-pastable terminal themes.
