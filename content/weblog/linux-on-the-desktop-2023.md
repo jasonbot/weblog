@@ -1,6 +1,6 @@
 +++
 title = "2023: Linux on the Desktop This Year"
-date = 2023-08-08T01:11:45-08:00
+date = 2023-08-07T01:11:45-08:00
 tags = ["linux", "hardware", "programming"]
 featured_image = ""
 description = "We keep doing this"
