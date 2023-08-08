@@ -12,7 +12,7 @@ Our office closed at the end of March, 2020, for what was scheduled to be 2 mont
 
 I did poorly doing remote work in 2012 when I first tried it and didn't look forward to doing it again. A big part of my day was framed around a commute, a large part of my productivity are 3 minute snippets of conversation with random people on the elevator to get an idea for what I could provide my coworkers, the majority of my socialization is in the context of work, and a large part of my sanity was my enthusiasm for figuring out byzantine ways to get around solely by public transit.
 
-Working from home has been varied as I adjust to it and go through cycles of acceptance, as well as the variance in the openness of the Bay Area. At one point places were open, which was great, and appointment based, which was even better because there was limited admittance and things were empty enough to appreciate in a way we hadn't before. The SF and Oakland Zoos, 2 of my kid's favorite places, were noticably better experiences until they locked down and shut again.
+Working from home has been varied as I adjust to it and go through cycles of acceptance, as well as the variance in the openness of the Bay Area. At one point places were open, which was great, and appointment based, which was even better because there was limited admittance and things were empty enough to appreciate in a way we hadn't before. The SF and Oakland Zoos, 2 of my kid's favorite places, were noticeably better experiences until they locked down and shut again.
 
 Now that I'm adjusting to working from home I am noting probably the same things everyone else is: that work/home boundaries are hard, that having a dedicated workspace is essential, and keeping a routine _with good sleep hygiene_ is absolutely paramount to not breaking down.
 
@@ -26,8 +26,8 @@ My new office is my garage -- we're going to put in the money to turn it into a 
 
 It's been weird, but it's been weird for everyone.
 
-*Update 2021-02-10* [This essay by Paul Ford](https://www.wired.com/story/the-secret-essential-geography-of-the-office/) covers a lot of my thinking about the office, too.
+_Update 2021-02-10_ [This essay by Paul Ford](https://www.wired.com/story/the-secret-essential-geography-of-the-office/) covers a lot of my thinking about the office, too.
 
-*Update 2021-03-27* [This tweet](https://twitter.com/cafedujord/status/1375255355962261504)
+_Update 2021-03-27_ [This tweet](https://twitter.com/cafedujord/status/1375255355962261504)
 
 ![This toot](/images/the-post-office-world/tweet.png)

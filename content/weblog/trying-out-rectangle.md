@@ -12,4 +12,4 @@ I've tried to use full tiling managers before but I've found it difficult becaus
 
 I tried sway on my Linux laptop and could never really "get" it -- I'm not smart enough, and I didn't like the idea of using Gnome again because it's gotten so big, but I've recently found great success in using [gTile](https://cinnamon-spices.linuxmint.com/extensions/view/76) in Cinnamon.
 
-I like apps like Rectangle because they take a middle ground to window management -- they don't have a complex set of layout paradigms they don't take full assumption of positionin window, and they have very, very name, very easy to learn defaults.
+I like apps like Rectangle because they take a middle ground to window management -- they don't have a complex set of layout paradigms they don't take full assumption of positioning windows, and they have very, very sane, very easy to learn defaults.

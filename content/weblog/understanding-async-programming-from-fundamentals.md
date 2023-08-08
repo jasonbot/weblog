@@ -14,8 +14,8 @@ Async programming in modern "industrial" languages is shrouded in magic, abstrac
 
 What has long, unpredictable wait times? Anything I/O bound, _especially_ network traffic. CPU bound tasks were solved long ago with several approaches, namely threading and SIMD instruction data sets. I/O can still bring a multithreaded application to its knees.
 
-Based on this, threading on its own isn't _necessarily_ the best way to approach this, or at least, not polling by spawning one thread per open connection. With a single-threaded approach, at least for the I/O part, how would we go about it? IT probably makes sense to have a blocking call on not just one socket, but _many_. 
- That is, instead of `socket.wait()` we could call `[socket1, socket2, ...].wait()`. Note we could already discount something with a `.ready()` poll instead of a `.wait()` because
+Based on this, threading on its own isn't _necessarily_ the best way to approach this, or at least, not polling by spawning one thread per open connection. With a single-threaded approach, at least for the I/O part, how would we go about it? IT probably makes sense to have a blocking call on not just one socket, but _many_.
+That is, instead of `socket.wait()` we could call `[socket1, socket2, ...].wait()`. Note we could already discount something with a `.ready()` poll instead of a `.wait()` because
 
 ```python3
 while True:
@@ -46,7 +46,7 @@ handlers = {}
 
 # Loop until loop is broken
 while True:
-    # Hanles to close this iteration
+    # Handles to close this iteration
     closed_handle_ids = set()
     handles = magic_listener(sockets)
 
@@ -141,7 +141,7 @@ def event_loop(start_generator):
 event_loop(task())
 ```
 
-This code takes a generator, iterates over it until it's done, and also allows it to add new subtasks to the cooperative job runner. Now you've got an interpreter-level event loop; the event loop could be smarter and look at each `yield`s yield value, and if it's a filehandle etc the even loop could take that, squirrel it away into a list of handles being waited on, and not add the generator back into the queue until a `select` call says that handle is ready for reading again. I.E. `yield handle.read()` where `handle.read()` sends off some sort of object with a file handle ID to the scheduler and then the event loop does a `.send()` with the data ready to be read so you could do `data = yield handle.read()` and have the event loop be able to push your corotuine aside in an efficient way until it's ready to go again. This also lets you do other blocking calls like `time.sleep()` in a cooperative manner, too.
+This code takes a generator, iterates over it until it's done, and also allows it to add new subtasks to the cooperative job runner. Now you've got an interpreter-level event loop; the event loop could be smarter and look at each `yield`s yield value, and if it's a filehandle etc the even loop could take that, squirrel it away into a list of handles being waited on, and not add the generator back into the queue until a `select` call says that handle is ready for reading again. I.E. `yield handle.read()` where `handle.read()` sends off some sort of object with a file handle ID to the scheduler and then the event loop does a `.send()` with the data ready to be read so you could do `data = yield handle.read()` and have the event loop be able to push your coroutine aside in an efficient way until it's ready to go again. This also lets you do other blocking calls like `time.sleep()` in a cooperative manner, too.
 
 That is, making our own "cooperative" event loop based on iterators makes it possible to make otherwise blocking calls non-blocking to cooperating green threads, delegating the long wait to the event loop and also making it possible to spawn new green threads within that event loop.
 
@@ -164,7 +164,7 @@ However, it's fairly ugly in practice in Javascript and is a lot more jarring to
 
 ## `async` and `await`: Syntactic and semantic sugar on Promises
 
-As we discussed above, with an interpreted langauge we can easily implement in our runtime an implicit event loop and a forced "cooperative" mode that can pause code after a certain number of opcodes.
+As we discussed above, with an interpreted language we can easily implement in our runtime an implicit event loop and a forced "cooperative" mode that can pause code after a certain number of opcodes.
 
 Many languages (Python/Javascript/C#/etc) have introduced the `async` and `await` keywords, all semantically similar. Marking a function as `async` informs the interpreter/runtime that this function will span cooperative "subtasks" and need to be put into consideration for the event loop's scheduler.
 
@@ -172,7 +172,7 @@ The `await` keyword says "push this async function onto the list of green thread
 
 ## The problem
 
-Async code _can still block_ if it calls synchronous functions, and you have to keep track of what code _is_ and _isn't_ async, avoiding mixing the two. Python, by nature of having an event loop at the interpreter level, is more susceptable to this than Javascript, but you still need to take care not to call long-running non-async functions from async code.
+Async code _can still block_ if it calls synchronous functions, and you have to keep track of what code _is_ and _isn't_ async, avoiding mixing the two. Python, by nature of having an event loop at the interpreter level, is more susceptible to this than Javascript, but you still need to take care not to call long-running non-async functions from async code.
 
 ## Conclusion
 
@@ -180,9 +180,9 @@ I hope this helps build up from fundamentals the basics of how async programming
 
 ## Further Reading
 
-* [What color is your function?](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/)
-* [Python `yield`](https://docs.python.org/3/reference/expressions.html#yieldexpr)
-* [Coroutines via enhanced iterators](https://peps.python.org/pep-0342/)
-* [Python Coroutines with `async` and `await` Syntax](https://peps.python.org/pep-0492/)
-* [Javascript Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-* [Javascript `await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+- [What color is your function?](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/)
+- [Python `yield`](https://docs.python.org/3/reference/expressions.html#yieldexpr)
+- [Coroutines via enhanced iterators](https://peps.python.org/pep-0342/)
+- [Python Coroutines with `async` and `await` Syntax](https://peps.python.org/pep-0492/)
+- [Javascript Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- [Javascript `await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)

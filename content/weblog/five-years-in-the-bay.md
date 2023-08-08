@@ -6,7 +6,7 @@ featured_image = ""
 description = ""
 +++
 
-February 8th marks the fifth anniversary of me moving to the Bay Area to work for tech startups. In restrospect it's been a great experience despite it being the Bay Area.
+February 8th marks the fifth anniversary of me moving to the Bay Area to work for tech startups. In retrospect it's been a great experience despite it being the Bay Area.
 
 # Culture
 
