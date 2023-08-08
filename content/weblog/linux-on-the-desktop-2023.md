@@ -10,7 +10,7 @@ I have a Gaming PC I bought from Costco when my wife told me "I should maybe get
 
 The thing is: Windows is _annoying_. Every time Windows ran an update I had to run [a third-party uninstall tool](https://www.wagnardsoft.com/display-driver-uninstaller-DDU-) to undo the changes Windows updates made to the graphics drivers, which started hanging and crashing if they weren't the exact specific ones the machine shipped with.
 
-We had a flood in the winter of 2022. Our new home office was under half an inch of water and many of my electronics were unsalvageably water damamged. I placed this gaming machine (whcih hardly got any usage anyway) outside to dry.
+We had a flood in the winter of 2022. Our new home office was under half an inch of water and many of my electronics were unsalvageably water damaged. I placed this gaming machine (which hardly got any usage anyway) outside to dry.
 
 The case then accrued condensation inside, which cvonvinved me this thing was now, if it had not been previously, fully water damaged e-waste.
 
