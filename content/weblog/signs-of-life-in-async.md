@@ -1,5 +1,5 @@
 +++
-title =  "Registering signs of life"
+title =  "Registering Signs of Life in Long-Running Async Jobs in Python"
 date = 2023-08-13T00:00:00-08:00
 tags = ["python", "programming"]
 featured_image = ""
@@ -36,8 +36,10 @@ And thjen basic usage is like this:
 ```python
 async def do_the_work():
     job_id = uuid.uuid4()
+
     async def announce_signs_of_life():
         responses.post("http://job-scheduler/i-am-alive/{job_id}")
+
     with run_keepalive_function_while_awaiting(announce_signs_of_life, 0.25):
         await do_long_running_task()
 ```
