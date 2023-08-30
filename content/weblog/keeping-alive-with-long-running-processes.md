@@ -10,7 +10,7 @@ In [my previous post](/weblog/signs-of-life-in-async/) I wanted to run a keepali
 
 Now, I have a long-running block of synchronous code.
 
-Herein lies the problem: synchronous code does not play nicely in the async event loop. It doesn't take breaks to "breathe." It doesn't yield control to a scheduler. It just runs and runs. This _can_ be fine in some cases where e.g. network activity stops or becomes infrequent while work is done but in this case we want the secondary green thread to
+Herein lies the problem: synchronous code does not play nicely in the async event loop. It doesn't take breaks to "breathe." It doesn't yield control to a scheduler. It just runs and runs. This _can_ be fine in some cases where e.g. network activity stops or becomes infrequent while work is done but in this case we want the secondary green thread to continue to phone back home while the process runs to let it know that, hey, this process is still alive and doing work but the work it's currently doing is taking a while.
 
 # I hate writing code
 
