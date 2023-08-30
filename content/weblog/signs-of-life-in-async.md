@@ -31,7 +31,7 @@ def run_keepalive_function_while_awaiting(
     alive = False
 ```
 
-And thjen basic usage is like this:
+And then basic usage is like this:
 
 ```python
 async def do_the_work():
