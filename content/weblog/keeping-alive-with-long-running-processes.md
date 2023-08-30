@@ -6,7 +6,7 @@ featured_image = ""
 description = ""
 +++
 
-In [my previous post](/weblog/signs-of-life-in-async/) I wanted
+In [my previous post](/weblog/signs-of-life-in-async/) I wanted to run a keepalive green thread on the wide while doing work to let the coordination framework (in this case just a plain old Postgres database) which workers were around and still processing work.
 
 Now, I have a long-running block of synchronous code.
 
