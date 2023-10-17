@@ -1,5 +1,5 @@
 +++
-title =  "Hardware review: 1st Gen SteamDeck (512MB)"
+title =  "Hardware review: 1st Gen SteamDeck (512GB)"
 date = 2023-02-08T08:00:00-08:00
 tags = ["hardware"]
 featured_image = ""
