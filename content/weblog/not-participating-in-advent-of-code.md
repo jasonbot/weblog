@@ -1,5 +1,5 @@
 +++
-title =  "Keeping Alive With Long-Running Sync Work in Python"
+title =  "I'm Not Participating in This Year's Advent of Code For Very Good Reasons"
 date = 2023-12-03T00:00:00-08:00
 tags = ["programming"]
 featured_image = ""
