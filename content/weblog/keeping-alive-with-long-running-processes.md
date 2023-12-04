@@ -32,7 +32,7 @@ def long_running_process() -> int:
     return 5
 
 async def run_long_running_process():
-    val: int = await asyncio.get_running_loop().run_in_executior(tp, long_running_process)
+    val: int = await asyncio.get_running_loop().run_in_executor(tp, long_running_process)
 ```
 
 Now the main async code will contnue to run in an async fashion, but will use a parallel executor to run the sync code.
