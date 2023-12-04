@@ -22,7 +22,7 @@ I don't write parser/combinators in my day-to-day. While they may be fun, most o
 
 In general, a "third place" is a place outside of work and home like a coffee shop where one might recharge and socialize. Advent of Code is the same thing -- it's not a work project, it's not a personal project, it's some third thing.
 
-In this way it's not constructive: it's hard to justify doing 'empty' coding where you're nod advancing a side project or your employer's goals.
+In this way it's not constructive: it's hard to justify doing 'empty' coding where you're not advancing a side project or your employer's goals.
 
 # Its timing is in the worst part of the year
 
