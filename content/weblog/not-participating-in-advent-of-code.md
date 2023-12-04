@@ -6,17 +6,21 @@ featured_image = ""
 description = ""
 +++
 
-I'm not participating in his year's Advent of Code.
+I'm not participating in his year's Advent of Code. Every year I try and get stymied by day 14 of so because of practical considerations.
 
 # It Emphasizes Fast Solutions over Good Ones
 
 The entire gamification of the problems is about solving them as quickly as possible. Not about maintainable solutions, not rewarding cleverness, the scoreboard is entirely fueled by finishing quickly.
 
-A professional software engineer does not hammer out code as quickly as possible. There are optimization and organizational and maintainability issues to consider.
+A professional software engineer does not hammer out code as quickly as possible. There are optimization and organizational and maintainability issues to consider. This only fuels the worst parts of the junior programmer ego.
 
 # It's not realistic
 
 I don't write parser/combinators in my day-to-day. While they may be fun, most of my day is reading standard library documentation and wrestling with Tailwind. These problems are fun, but flexing muscles I do not use regularly and can work out when I do need them.
+
+# It's pointless
+
+The only people you have to celebrate with are other AoC participants. And come next December, your accomplishments evaporate in favor the the next arbitrary set of problems. I get enough of this at work.
 
 # It represents a dark "Third Place"
 
