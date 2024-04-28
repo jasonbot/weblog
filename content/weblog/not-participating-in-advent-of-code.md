@@ -6,6 +6,8 @@ featured_image = ""
 description = ""
 +++
 
+I'm exhausted. I've been guilted/peer pressured into participating in the AoC for at least 5 years. I'm tired, I'm defeated, I'm unable to meet its weird expectations consistently and still I remain a competent software engineer.
+
 I'm not participating in his year's Advent of Code. Every year I try and get stymied by day 14 of so because of practical considerations.
 
 # It Emphasizes Fast Solutions Over Good Ones

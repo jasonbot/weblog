@@ -6,7 +6,7 @@ featured_image = ""
 description = "Overview of the Steam Deck"
 +++
 
-I bought a [Steam Deck](https://www.steamdeck.com/en/). I was on a waiting list that said I would get it until this year (2023), but it arrived in October 2022.
+I bought a [Steam Deck](https://www.steamdeck.com/en/). I was on a waiting list that said I wouldn't get it until this year (2023), but it arrived in October 2022.
 
 This thing is so versatile thanks to its Desktop Mode. For games like the boomer shooters I so love, I can dock the Deck and play with a mouse and keyboard and nicer monitor. I can install Flatpaks.
 

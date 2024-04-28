@@ -6,7 +6,7 @@ featured_image = ""
 description = "Overview of the AOKZOE A1"
 +++
 
-I kickstarted the [AOKZOE A1](https://aokzoestore.com/products/aokzoe-8-inch-amd%C2%AE-ryzen%C2%AE-6800u) when I was utterly convince that I would never get a Steam Deck.
+I kickstarted the [AOKZOE A1](https://aokzoestore.com/products/aokzoe-8-inch-amd%C2%AE-ryzen%C2%AE-6800u) when I was utterly convinced that I would never get a Steam Deck.
 
 Joke's on me; the Deck arrived before the A1.
 
