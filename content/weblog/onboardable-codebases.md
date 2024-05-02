@@ -1,5 +1,5 @@
 +++
-title =  "Job #1 Of Codebases is Onboardability"
+title =  "Job #1 of Codebases is Onboardability"
 date = 2024-05-02T00:55:10-08:00
 tags = ["work", "programming"]
 featured_image = ""
@@ -16,7 +16,7 @@ Your codebase _must_ have a base readme file with a getting started guide. It mu
 
 # Good Documentation on the "Deep" Stuff
 
-Code gains complexity, complexity is the demon that makes code unmaintainable. By forcing developers to explain (in documentation) their decisions you 1) make them concrete and force them to be justified (code complete is not complete) 2) throttle developer who code for the sake of coding and make them explain why they did what they did (aside from the wrong reason "I like coding").
+Code gains complexity, complexity is the demon that makes code unmaintainable. By forcing developers to explain (in documentation) their decisions you 1) make them concrete and force them to be justified (code complete is not complete) 2) throttle developers who code for the sake of coding and make them explain why they did what they did (aside from the wrong reason "I like coding").
 
 # Organizational Conventions
 
