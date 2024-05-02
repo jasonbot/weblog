@@ -1,7 +1,7 @@
 +++
 title =  "Job #1 Of Codebases is Onboardability"
 date = 2024-05-02T00:55:10-08:00
-tags = ["work", "software"]
+tags = ["work", "programming"]
 featured_image = ""
 description = ""
 +++
