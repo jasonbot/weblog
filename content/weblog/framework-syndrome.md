@@ -10,7 +10,7 @@ A common antipattern I've been both perpetrator of and victim to is what I descr
 
 # You Don't Understand the Problem, So You Code Around It
 
-It was 2005. I was working on an early SaaS product for automating Intro to Statistical Methods courses for Psychology classes. We had a few functional requirements that I could do easily (user generation, logins, survey generators) and others I simply did not have the ability to do well (namely, actually do the statistical analysis that the grant required). So I worked around it. I added support to slice and dice data and export to Excel. I added natural language date parsing for forms. I polished the hell out of the admin interface. "This system is perfect," I declared, "we just need someone to plug in the code to do that one thing it was designed to do: statistical methods. You just need to drop it in...here. See how elegant it is?"
+It was 2005. I was working on an early SaaS product for automating Intro to Statistical Methods courses for Psychology undergraduates. We had a few functional requirements that I could do easily (user generation, logins, survey generators) and others I simply did not have the ability to do well (namely, actually do the statistical analysis that the grant required). So I worked around it. I added support to slice and dice data and export to Excel. I added natural language date parsing for forms. I polished the hell out of the admin interface. "This system is perfect," I declared, "we just need someone to plug in the code to do that one thing it was designed to do: statistical methods. You just need to drop it in...here. See how elegant it is?"
 
 # "It Can Do Anything, You Just Have to Provide the Code"
 
