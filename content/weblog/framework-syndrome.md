@@ -6,7 +6,7 @@ featured_image = ""
 description = ""
 +++
 
-A common antipattern I've been both perpetrator of and victim to is what I describe as _Framework Syndrome_. This is the act of writing software that does not solve the inherent problem at hand, but provides a poorly designed scaffold in which one is expected to eventually "fill in the blanks." That is, in the absensee of the ability or desire to make the code do what it needs to do, kick the can down the road while at the same time writing mountains of not particularly useful code that will never be fully excised from th codebase.
+A common antipattern I've been both perpetrator of and victim to is what I describe as _Framework Syndrome_. This is the act of writing software that does not solve the inherent problem at hand, but provides a poorly designed scaffold in which one is expected to eventually "fill in the blanks." That is, in the absence of the ability or desire to make the code do what it needs to do, kick the can down the road while at the same time writing mountains of not particularly useful code that will never be fully excised from the codebase.
 
 # You Don't Understand the Problem, So You Code Around It
 
@@ -14,7 +14,7 @@ It was 2005. I was working on an early SaaS product for automating Intro to Stat
 
 # "It Can Do Anything, You Just Have to Provide the Code"
 
-Code that does not solve the problem, but provides an environment to add code that solves the problem, is ridiculous on its face. It's just another level of abstration that was added for the sake of engasging in the act of coding and not taking into mind any practical or business concerns.
+Code that does not solve the problem, but provides an environment to add code that solves the problem, is ridiculous on its face. It's just another level of abstraction that was added for the sake of engaging in the act of coding and not taking into mind any practical or business concerns.
 
 # You've Done the "Fun" Part and Gotten The Credit, Someone Else Does the Actual Work
 
