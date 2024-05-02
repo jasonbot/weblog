@@ -22,7 +22,7 @@ This is the unfair part of Framework Syndrome, and something that makes me deepl
 
 # A Skills Gap in Architecture Design
 
-This is not an argument against software architecture or architects. However, there tends to be a very drastic difference in a developer doing _speculative architecture_ without thinking the problem through and a more skileld, formal process of _anticipatory architecture_ that is required for a cohesive system.
+This is not an argument against software architecture or architects. However, there tends to be a very drastic difference in a developer doing _speculative architecture_ without thinking the problem through and a more skilled, formal process of _anticipatory architecture_ that is required for a cohesive system.
 
 # Let The Implementors do the Framework, Clean Up Later
 
