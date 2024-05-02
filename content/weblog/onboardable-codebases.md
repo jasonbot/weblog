@@ -8,7 +8,7 @@ description = ""
 
 I got my first job as a software engineer in 2000, so in 2024 I'm pushing a quarter century of being a developer. This is one of the topics I have begun to hold near and dear to my heart.
 
-Software engineering is a team sport. If you're not setting new players up for success, you're not being the best team player you could be.
+Software engineering is a team sport. If you're not setting new players up for success, you're not being the best teammate you could be. Supporting others is just as important as getting your needs met.
 
 The _absolute first goal_ of your codebase is to make it easy to get up and running for a new developer.
 
