@@ -20,6 +20,10 @@ Code that does not solve the problem, but provides an environment to add code th
 
 This is the unfair part of Framework Syndrome, and something that makes me deeply resentful when I run into it. A developer who arrives at the project first "designs" a solution, runs it past management, declares it Mission Complete, and moves on. The person who has to work within the constraints established by that long-gone person does the actual work that adds the business value, and is ignored by management.
 
+# A Skills Gap in Architecture Design
+
+This is not an argument against software architecture or architects. However, there tends to be a very drastic difference in a developer doing _speculative architecture_ without thinking the problem through and a more skileld, formal process of _anticipatory architecture_ that is required for a cohesive system.
+
 # Let The Implementors do the Framework, Clean Up Later
 
 From the resentment part of the section above, I propose that software be written in the following way:
