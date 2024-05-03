@@ -37,3 +37,5 @@ Your employer has given you a tremendously powerful laptop. It makes sense so ut
 # End
 
 I don't care how "complex" your needs are, your code is not special. You owe the respect to the people around you to make it possible (and, with empathy, _easy_) to get started on your team.
+
+**TL;DR** Say [DevEx](https://microsoft.github.io/code-with-engineering-playbook/developer-experience/) without saying DevEx.
