@@ -58,6 +58,8 @@ while not as elegantly self-bootstrapping as other languages like a Lisp, Python
 
 Now, this is neat and clever but it's also largely a CPython-specific set of internal details: how would one expect to implement this API in another "flavor" of Python like IronPython or Jython which have their own runtimes that look nothing like the CPython bytecode interpreter?
 
-Note _this is in the standard library_. Those poor developers would have to either 1) write this API off and get derogatorily accused of stunting their Python or do insane things to make what is trivial in CPython with byzantine .Net or JVM internals* to achieve parity.
+Note _this is in the standard library_. Those poor developers would have to either 1) write this API off and get derogatorily accused of stunting their Python or do insane things to make what is trivial in CPython with byzantine .Net or JVM internals\* to achieve parity.
+
+[This blog post](https://tratt.net/laurie/blog/2023/compiled_and_interpreted_languages_two_ways_of_saying_tomato.html) touches on a lot of what I discuss here.
 
 \* How would one expect this to work when calling native .Net code? What kind of decoration would need to be annotated to the compiled Python VM bytecode to make the Python runtime in that system aware that it's reentered Python? It fills me with fear.
