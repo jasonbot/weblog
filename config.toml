@@ -56,3 +56,7 @@ paginate = 500
     noClasses = true
     style = "pygments"
     tabWidth = 4
+  [markup.tableOfContents]
+    startLevel = 1
+    ordered = true
+    endLevel = 6
