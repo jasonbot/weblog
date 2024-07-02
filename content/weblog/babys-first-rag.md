@@ -10,7 +10,7 @@ description = ""
 
 # Introduction
 
-I promised myself (and, unfortunately, my manager) I'd implement a RAG from conception to finish by Valentine's Day, 2024. It is now Independence Day weekend. Missed the mark by a bit.
+As an exercise in self-improvement and understanding what the hell it is I actually do at work, I had promised myself (and, unfortunately, my manager) I'd implement a RAG from conception to finish by Valentine's Day, 2024. It is now Independence Day weekend 2024. Missed the mark by a bit.
 
 This post is meant to go from conception to reality in implementing a RAG on a local computer.
 
@@ -66,7 +66,7 @@ That's it. It's prompt injection with a pretty name. The injection technique may
 
 # Case Study: _The Dumbest Possible Person in the Room_
 
-On the subject of the goal of _non-commercial viability_ and my love of making the world worse, not better, I present what I wish to do with a RAG here: take the transcripts of the Joe Rogan show and turn a chat bot into a poorly-informed, blubbering idiot.
+On the subject of the goal of _non-commercial viability_ and my love of making the world worse, not better, I present what I wish to do with a RAG here: take the transcripts of the [Joe Rogan show](https://spoti.fi/JoeRoganExperience) and turn a chatbot into a poorly-informed, blubbering idiot.
 
 And so is born _The Dumbest Possible Person in the Room_: a conspiracy theory addled, misinformed LLM chat that will serve to both enrage you and make you dumber at the same time.
 
@@ -94,10 +94,163 @@ I'm going to start out by scoping out what I want to do:
 
 So to get a base script going, I'm going to ask Playwright to do a recording for me:
 
+```shell
+playwright codegen --browser chromium --target python-async --output spider.py https://www.happyscribe.com/public/the-joe-rogan-experience
+```
+
+I'm just going to click the "Next" button at the bottom of the page and stop recording. This gives me:
+
+```python
+import asyncio
+from playwright.async_api import Playwright, async_playwright, expect
+
+
+async def run(playwright: Playwright) -> None:
+    browser = await playwright.chromium.launch(headless=False)
+    context = await browser.new_context()
+    page = await context.new_page()
+    await page.goto("https://www.happyscribe.com/public/the-joe-rogan-experience")
+    await page.get_by_role("link", name="Next ›").click()
+    await page.close()
+
+    # ---------------------
+    await context.close()
+    await browser.close()
+
+
+async def main() -> None:
+    async with async_playwright() as playwright:
+        await run(playwright)
+
+
+asyncio.run(main())
+```
+
+Now I want to keep clicking next until I run out of Next buttons, so I modify part of the script as follows:
+
+```python
+# All the pages to look for transcript links on
+page_urls = []
+try:
+    while True:
+        page_urls.append(page.url)
+        # Try to click next, but give up if there is no button on
+        # the DOM within a few seconds
+        async with asyncio.timeout(2):
+            await page.get_by_role("link", name="Next ›").click()
+except TimeoutError:
+    print("Ran out of pages to click")
+finally:
+    await page.close()
+```
+
+Now I'm going to look into the DOM tree to figure out the links to the transcripts:
+
+![DOM inspector](/images/babys-first-rag/dom-inspector.png)
+
+With this we see that the links to transcript pages all have the class `hsp-card-episode`, so we can use Javascript to find them all on the page:
+
+```python
+links = await page.evaluate(
+    'Array.from(document.getElementsByClassName("hsp-card-episode")).map(a => a.href)'
+)
+```
+
+We can then use this list of links to download individual pages:
+
+```python
+async def get_transcript_files(playwright: Playwright, urls: list[str]):
+    download_path = pathlib.Path("./transcript_pages")
+    download_path.mkdir(exist_ok=True)
+
+    browser = await playwright.chromium.launch(headless=True)
+    context = await browser.new_context()
+    page = await context.new_page()
+    for transcript_page_url in urls:
+        print(transcript_page_url)
+        await page.goto(transcript_page_url)
+
+        filename = f"{transcript_page_url.split("/")[-1]}.html"
+        print(f"Downloading {filename}")
+        with open(download_path / filename, "w") as out_handle:
+            out_handle.write(await page.content())
+```
+
+# Cleaning Up the Data
+
+At this point I have the raw HTML, and I want to extract just the parts that are interesting into a JSON file I can import into SQLite for later manipulation.
+
+## Install Unstructured
+
+I'm going to use a hosted instance of [the Unstructured API](https://github.com/Unstructured-IO/unstructured-api) in Docker. Unstructured is probably the best and most widely used tool for the job.
+
+```shell
+# Grab image
+docker pull downloads.unstructured.io/unstructured-io/unstructured-api:latest
+# Run on port 5435 just because it's not commonly used and 8000 is
+docker run -p 5435:8000 -d --rm --name unstructured-api downloads.unstructured.io/unstructured-io/unstructured-api:latest
+# Should return {"healthcheck":"HEALTHCHECK STATUS: EVERYTHING OK!"}%
+curl http://localhost:5435/healthcheck
+```
+
+Unstructured is also my employer, so they have an incredible team of attractive geniuses working for them and it's a good idea to buy as many commercial licenses as your employer can afford when you get back to work next.
+
+## Processing the HTML into Something More Usable
+
+We can iterate through the downloaded HTML using [the Unstructured Python API client](https://github.com/Unstructured-IO/unstructured-python-client):
+
+```python
+in_path = pathlib.Path("./transcript_pages")
+out_path = pathlib.Path("./processed_pages")
+out_path.mkdir(exist_ok=True)
+
+s = unstructured_client.UnstructuredClient(
+    api_key_auth=None, server_url="http://localhost:5435/general/v0/"
+)
+
+for file in in_path.glob("*.html"):
+    print(f"Handling {file}...")
+    with open(file, "rb") as in_handle:
+        res = s.general.partition(
+            request=operations.PartitionRequest(
+                partition_parameters=shared.PartitionParameters(
+                    files=shared.Files(
+                        content=in_handle.read(),
+                        file_name=file.name,
+                    ),
+                    strategy=shared.Strategy.AUTO,
+                ),
+            )
+        )
+
+        if res.elements is not None:
+            # handle response
+            pass
+
+        with open(out_path / (file.name + ".json"), "w") as out_file:
+            json.dump(res.elements, out_file, indent=4)
+```
+
+# Getting a Locally-Runnable LLM
+
+This part is really easy, easier than it should be -- the [llamafile project](https://github.com/Mozilla-Ocho/llamafile) has executable files that already come with baked-in, pre-downloaded LLM models. In my case I'm going to get the example llamafile [hosted on huggingface](https://huggingface.co/Mozilla/llava-v1.5-7b-llamafile/tree/main).
+
+I can `chmod +x llava-v1.5-7b-q4.llamafile && ./llava-v1.5-7b-q4.llamafile` and a browser will open, ready to teach me the mysteries of the universe.
+
 # Finding the Right Stuff to Add to Prompts to Get The Thing
 
 There are two general ways of finding text to inject into the prompts: Embeddings, which converts your text into vector space to represent it semantically and finding semantically similar items, and full text search, which does something easier to reason about and more traditional. Think a google search for a phrase.
 
-## Making it harder
+## Doing Semantic Search
 
-[This blog post](https://techcommunity.microsoft.com/t5/microsoft-developer-community/doing-rag-vector-search-is-not-enough/ba-p/4161073) says we can't jut do one. We have to do both. So let's do that, for maximum giggles.
+We're going to deal with _embeddings_, which is going from a pile of text into an n-dimensional list of numbers that somehow, mysteriously, represents that text's place in the world in the model. These embeddings vary from model to model and nobody knows what any of the numbers mean.
+
+## Getting an embedding from text
+
+Llamafile offers an easy way to extract an embedding from a string of text: the `--embedding` flag. So we can do `./llamafile --embedding -p "<Text goes here>"` and get back the embedding vector on standard out.
+
+## Indexing our Transcripts with Embeddings
+
+# Making it harder
+
+[This blog post](https://techcommunity.microsoft.com/t5/microsoft-developer-community/doing-rag-vector-search-is-not-enough/ba-p/4161073) says we can't just do one. We have to do both. Maybe that's a task for another time.
