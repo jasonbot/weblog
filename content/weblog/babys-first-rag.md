@@ -1,6 +1,6 @@
 +++
-title =  "A (Mostly) Practical Guide to Self-Hosting a RAG"
-date = 2024-07-01T00:00:00-08:00
+title =  "A Practical Guide to Self-Hosting a RAG"
+date = 2024-07-07T00:00:00-08:00
 tags = ["programming", "llm"]
 featured_image = ""
 description = ""
@@ -28,13 +28,24 @@ What I intend for this post to be:
 And what I plan for it _not_ to be:
 
 1. **Commercially viable**: See the choice of corpus to build this on. I don't want this to provide an immediate, bundled up piece of productizable code that someone can build a business on without my knowledge. This is the same reason I don't share the source for my video games: someone will take them, plop some ads on them, and resell them on mobile devices. Or do something even worse.
-1. **Turnkey**: See the above point. I don't want this to be without speed bumps and be just a single command to get up and running locally. See the above point for my reasoning. If this could be "just for fun" I'd make it easier to do.
+1. **Turnkey**: See the above point. I don't want this to be without speed bumps and be just a single command to get up and running locally. See the above point for my reasoning. If this could be "just for fun" I'd make it easier to do, but it has too much dangerous potential for evil.
+
+## First Things First
+
+We need a pyenv:
+
+```shell
+PYTHON_CONFIGURE_OPTS="--enable-loadable-sqlite-extensions" pyenv install 3.12.4
+pyenv virtualenv 3.12.4 babys-first-rag
+pyenv activate babys-first-rag
+pip install -r requirements.txt
+```
 
 # Retrieval-Augmented Generation
 
 ## What The Hell is a RAG?
 
-This is super vague, and was the hardest thing to get a simple answer for.
+This was the hardest thing to get a simple answer for.
 
 A typical [vague-as-hell explanation](https://en.wikipedia.org/wiki/Prompt_engineering#Retrieval-augmented_generation):
 
@@ -76,7 +87,7 @@ The first step to doing the RAG is to collect the actual data. I found [this ske
 
 ## A Eulogy for `wget`
 
-The [wget project](https://www.gnu.org/software/wget/) has been my constant companion since the early 2000s. `wget -r -l 2 http://somesite/` would quickly and reliably spider a web site two links deep. However, with modern sites (and abominations like [SPAs](https://developer.mozilla.org/en-US/docs/Glossary/SPA)) the HTML the client fetches is not the document tree that is ultimately established in the browser. So many pages
+The [wget project](https://www.gnu.org/software/wget/) has been my constant companion since the early 2000s. `wget -r -l 2 http://somesite/` would quickly and reliably spider a web site two links deep onto disk. However, with modern sites (and abominations like [SPAs](https://developer.mozilla.org/en-US/docs/Glossary/SPA)) the HTML the client fetches is not the document tree that is ultimately established in the browser. So many pages are partially or fully rendered in Javscript now, requiring an entire bulky browser engine to derive the full DOM.
 
 ## Enter Playwright
 
@@ -90,7 +101,7 @@ I'm going to start out by scoping out what I want to do:
 1. Find all the links to transcript pages on the index page,
 1. Download the transcript pages,
 1. Process the transcript data and place it in a database,
-1. Hit "next" until there is no next button, going back to the find links step.
+1. If there is a next button, click it and `GOTO 2`
 
 So to get a base script going, I'm going to ask Playwright to do a recording for me:
 
@@ -126,7 +137,7 @@ async def main() -> None:
 asyncio.run(main())
 ```
 
-Now I want to keep clicking next until I run out of Next buttons, so I modify part of the script as follows:
+I've got some boilerplate I can work with rather than starting from scratch, which is nice. Now I want to keep clicking _Next >_ until I run out of Next pages (and I checked, the next button is missing on the last page), so I modify part of the script as follows:
 
 ```python
 # All the pages to look for transcript links on
@@ -146,12 +157,12 @@ finally:
 
 Now I'm going to look into the DOM tree to figure out the links to the transcripts:
 
-![DOM inspector](/images/babys-first-rag/dom-inspector.png)
+![DOM inspector screenshot](/images/babys-first-rag/dom-inspector.png)
 
-With this we see that the links to transcript pages all have the class `hsp-card-episode`, so we can use Javascript to find them all on the page:
+With this we see that the links to transcript pages all have the class `hsp-card-episode`, so we can use Javascript to find them all on the page and pull out the link URLs:
 
 ```python
-links = await page.evaluate(
+urls = await page.evaluate(
     'Array.from(document.getElementsByClassName("hsp-card-episode")).map(a => a.href)'
 )
 ```
@@ -178,7 +189,7 @@ async def get_transcript_files(playwright: Playwright, urls: list[str]):
 
 # Cleaning Up the Data
 
-At this point I have the raw HTML, and I want to extract just the parts that are interesting into a JSON file I can import into SQLite for later manipulation.
+At this point I have the page's computed HTML, and I want to extract just the parts that are interesting. Let's put them into a JSON file I use for later manipulation and maybe insert into SQLite.
 
 ## Install Unstructured
 
@@ -193,7 +204,7 @@ docker run -p 5435:8000 -d --rm --name unstructured-api downloads.unstructured.i
 curl http://localhost:5435/healthcheck
 ```
 
-Unstructured is also my employer, so they have an incredible team of attractive geniuses working for them and it's a good idea to buy as many commercial licenses as your employer can afford when you get back to work next.
+Unstructured is also my employer, so obviously they have an incredible team of attractive geniuses working for them and it's a good idea to buy as many commercial licenses as your employer can afford when you get back to work next.
 
 ## Processing the HTML into Something More Usable
 
@@ -215,8 +226,8 @@ for file in in_path.glob("*.html"):
             request=operations.PartitionRequest(
                 partition_parameters=shared.PartitionParameters(
                     files=shared.Files(
-                        content=in_handle.read(),
                         file_name=file.name,
+                        content=in_handle.read(),
                     ),
                     strategy=shared.Strategy.AUTO,
                 ),
@@ -245,12 +256,238 @@ There are two general ways of finding text to inject into the prompts: Embedding
 
 We're going to deal with _embeddings_, which is going from a pile of text into an n-dimensional list of numbers that somehow, mysteriously, represents that text's place in the world in the model. These embeddings vary from model to model and nobody knows what any of the numbers mean.
 
-## Getting an embedding from text
+### Getting an Embedding from Text
 
 Llamafile offers an easy way to extract an embedding from a string of text: the `--embedding` flag. So we can do `./llamafile --embedding -p "<Text goes here>"` and get back the embedding vector on standard out.
 
+We can write a python function that shells out to this program and returns an embedding vector:
+
+```python
+def embedding_for_text(text: str) -> list[float]:
+    return [
+        float(x)
+        for x in subprocess.run(
+            args=[f"{llama_executable} --embedding -p {shlex.quote(text)}"],
+            stdout=subprocess.PIPE,
+            stdin=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            shell=True,
+        )
+        .stdout.decode("ascii")
+        .split(" ")
+    ]
+```
+
 ## Indexing our Transcripts with Embeddings
 
-# Making it harder
+We're gonna want a table with each line item from the transcripts:
+
+```sql
+create table text_lines(
+    filename text,
+    text_line text
+);
+```
+
+And then a virtual vec0 table:
+
+```sql
+create virtual table vec_chat using vec0(
+    embedding float[2048]
+);
+```
+
+### Inserting text into DB
+
+Then we want to insert the text into the `text_lines` table:
+
+```python
+for file in folder.glob("*.json"):
+    print(file)
+    with connection as transaction, open(file, "r") as in_json:
+        json_object = json.load(in_json)
+        for item in json_object:
+            if item["type"] == "NarrativeText":
+                text = item["text"]
+                transaction.execute(
+                    "insert into text_lines(filename, text_line) values(?, ?)",
+                    (str(file), text),
+                )
+```
+
+### Premature Optimization: Use a Sliding Window
+
+After a little bit of hacking, I decided to use an overlapping window of text items. Then, I noticed that longer bits of conversation could overwhelm the embedding processor later down the line. Here's what I wound up with as a heuristic sliding window generator:
+
+```python
+def _sliding_window(
+    row_factory, window_size=4, overlap=1, min_length=20, max_length=80
+):
+    window = []
+    for row in row_factory:
+        if len(row) < min_length:
+            continue
+        elif len(row) > max_length:
+            # Use long lines as implicit breaks
+            if window:
+                yield window
+            yield [row]
+            window = []
+            continue
+        elif len("".join(window)) > max_length:
+            yield window
+            window = []
+
+        if len(window) >= window_size:
+            yield window
+            window = window[-overlap:]
+        window.append(row)
+    if window:
+        yield window
+```
+
+Then I replace
+
+```python
+for item in json_object:
+    if item["type"] == "NarrativeText":
+```
+
+with
+
+```python
+for text in _sliding_window(
+    item["text"] for item in json_object if item["type"] == "NarrativeText"
+):
+```
+
+### Adding Embeddings
+
+Then we want to use `embedding_for_text` to add an embedding value to correspond with each:
+
+```python
+with connection as transaction:
+    for row in transaction.execute("select rowid, text_line from text_lines"):
+        rowid, text = row
+        embedding = embedding_for_text(text)
+        transaction.execute(
+            "insert into vec_chat(rowid, embedding) values (?, ?)",
+            (rowid, json.dumps(embedding)),
+        )
+```
+
+### Kicking the Tires on Semantic Search
+
+Let's try out a noat particularly controversial prompt (_Anthony Fauci, as head of the CDC, helped accelerate the COVID vaccine's release_) and see what the most semantically similar things our system is calibrated to inject:
+
+```python
+def nearest_n_neighbors(
+    text: str, connection: sqlite3.Connection, limit: int = 5
+) -> list[int]:
+    limit = int(limit)
+    with connection as transaction:
+        return [
+            x
+            for x in transaction.execute(
+                f"""
+                    select rowid, distance
+                    from vec_chat
+                    where embedding match ?
+                    order by distance
+                    limit ?;
+                """,
+                (json.dumps(json.dumps(embedding_for_text(text))), limit),
+            )
+        ]
+
+
+def nearest_n_text_lines(
+    text: str, connection: sqlite3.Connection, limit: int = 5
+) -> list[str]:
+    with connection as transaction:
+        return [
+            row[0]
+            for row in connection.execute(
+                """
+                    select text_line from text_lines where rowid in ?
+                """,
+                (
+                    [
+                        c[0]
+                        for c in nearest_n_neighbors(
+                            text, connection=connection, limit=limit
+                        )
+                    ],
+                ),
+            )
+        ]
+
+connection = llm_functions.fresh_db_connection()
+print(
+    nearest_n_text_lines(
+        "Anthony Fauci helped release the COVID vaccine",
+        connection
+    )
+)
+```
+
+That gives us:
+
+```python
+
+[
+    "Right. Covid was a rerun of the AIDS chapter with AZT.\nBut the AIDS chapter seems even more terrifying because if the initial treatment was AZT, and we know AZT kills people, you're taking someone who has a compromised immune system and your response to that was give them something that's going to kill them quicker and then say there's a giant crisis and this is what Deusberg was demonized for.\nYeah, I agree. And for many years I resisted the interpretation. I was more familiar with Kerry Mullis's objections. Kerry Mullis was the inventor of PCR technology who died tragically, and some would say, strangely, at the very beginning of the COVID cris.\nHave you ever seen this piece of video where he talks about Anthony Fauci? Yeah, let's put it this way. Kerry Mullis was a outspoken, vigorous, highly intelligent person who was not corralled by fashion. And in fact, his objection to the idea that HIV was causing AIDS was an early testament to his maverick nature.",
+    ...,
+    "Chris Christie's a healthy guy and he wants to keep people healthy. He be covered. That should be the end of lockdown right there.\nHe did be covered so that whatever drugs they got.\nWell, I have a friend who is 80 and he just beat the shit, took some I.V. vitamins, said he was sick for four days.\nNew Jersey Governor Phil Murphy's highly confident marijuana will be legal. I look at him clapping.",
+    ...,
+    "So here's the thing. The controversial experiments and one lab suspected of starting the coronavirus pandemic and says the case against a human lab. And so it says why the human lab remains a suspect in the coronavirus investigation.\nI mean, it's really likely that we never really will know. But they most certainly were working on viruses similar to this one right there.\nAt the end of this article says there's another one called Rat RTG 13, which is very, very similar to the sars-cov-2 one that we're experiencing now. Oh, terrific.\nIt's thought to be the most similar to the sars-cov-2 of any known virus to share 96 percent of the genetic material, that four percent gap, but still be a formidable gap for animal passage research, says Ralph Burek, Virologist University, North Carolina, probably in bed with the Russians who collaborated with like when you found out that a Harvard guy got arrested, that because he was taking money from Russia or excuse me, taking money from China because he was doing something with them.",
+]
+```
+
+All right, not terrible. It makes me want to punch my monitor which is a good sign.
+
+# Trying it Out
+
+## You Have to Post The entire Transcript Over and Over
+
+One of the shortcomings of LLMs (with no escape that I know of) is the conversation has to _fully be injected into the LLM to maintain state_. So what I'll do is pipe an initial state with a question into the model, get the response from Llama, append a question, and do another round trip.
+
+```python
+def output_from_llama(text: str) -> str:
+    return subprocess.run(
+        args=[f"{shlex.quote(llama_executable)} -f -"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.DEVNULL,
+        shell=True,
+        input=text.encode("utf-8"),
+    ).stdout.decode("utf-8")[len(text) + 1 :]
+```
+
+From here we can cobble together a conversation.
+
+## Not Very Good End Results
+
+Well this was signficiantly dumber than I had feared:
+
+```
+Me:> What do you think about peer pressure?
+Response:  As a language model, I do not have personal opinions or thoughts, but I can provide you with some information about peer pressure.
+
+Peer pressure is the influence that peers have on an individual to adopt or act according to their values, attitudes, behaviors, and beliefs. It can be both positive and negative, as peers can encourage individuals to engage in healthy behaviors, such as exercising or studying, or discourage them from participating in risky behaviors, such as drug use or underage drinking.
+
+In the context of the conversation, it seems that the participants are discussing aspartame, a sugar substitute used in many low-calorie and sugar-free products, such as diet soda, yogurt, and desserts. They appear to be debating whether or not it's poisonous, which could be an example of the influence of peers on each other's opinions about a certain topic.
+```
+
+In retrospect, the Joe Rogan transcripts are too information sparse and conversational to provide useful context for a conversation. But thinking peer pressure and aspartame are related is sure a silly one.
+
+## Making it harder
 
 [This blog post](https://techcommunity.microsoft.com/t5/microsoft-developer-community/doing-rag-vector-search-is-not-enough/ba-p/4161073) says we can't just do one. We have to do both. Maybe that's a task for another time.
+
+# Conclusion
+
+I put together the parts. I used a horrible source corpus. I learned a valuable lesson.
+
+The important part is I was able to understand the pieces individually, I was able to host it on my own hardware, which I think is a very critical part of the LLM world nobody really thinks about since so much of it depends on cobbling together third-party services on the internet.
+
+The code is all [on Github in an appropriately named repository](https://github.com/jasonbot/babys-first-rag).
