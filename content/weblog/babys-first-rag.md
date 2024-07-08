@@ -527,7 +527,7 @@ I was deliberately trying to be funny with my choice of source material. The sou
 
 ### Use Python
 
-The code is _in_ Python, but I'm not using any Python-native libraries like [llm](https://pypi.org/project/llm/) to streamline and appropriately take advantage of the innards of exising models. The code is /in/ Python, but it could have been in any language considering the Unstructured ASI, vector store, and the llamafile were all callable from other langauges as well.
+The code is _in_ Python, but I'm not using any Python-native libraries like [llm](https://pypi.org/project/llm/) or [langchain](https://pypi.org/project/langchain/) to streamline and appropriately take advantage of the innards of exising models. The code is /in/ Python, but it could have been in any language considering the Unstructured ASI, vector store, and the llamafile were all callable from other languages as well.
 
 # The Code
 
