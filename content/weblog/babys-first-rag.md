@@ -87,7 +87,7 @@ The first step to doing the RAG is to collect the actual data. I found [this ske
 
 ## A Eulogy for `wget`
 
-The [wget project](https://www.gnu.org/software/wget/) has been my constant companion since the early 2000s. `wget -r -l 2 http://somesite/` would quickly and reliably spider a web site two links deep onto disk. However, with modern sites (and abominations like [SPAs](https://developer.mozilla.org/en-US/docs/Glossary/SPA)) the HTML the client fetches is not the document tree that is ultimately established in the browser. So many pages are partially or fully rendered in Javscript now, requiring an entire bulky browser engine to derive the full DOM.
+The [wget project](https://www.gnu.org/software/wget/) has been my constant companion since the early 2000s. `wget -r -l 2 http://somesite/` would quickly and reliably spider a web site two links deep onto disk. However, with modern sites (and abominations like [SPAs](https://developer.mozilla.org/en-US/docs/Glossary/SPA)) the HTML the client fetches is not the document tree that is ultimately established in the browser. So many pages are partially or fully rendered in Javascript now, requiring an entire bulky browser engine to derive the full DOM.
 
 ## Enter Playwright
 
@@ -378,7 +378,7 @@ with connection as transaction:
 
 ### Kicking the Tires on Semantic Search
 
-Let's try out a noat particularly controversial prompt (_Anthony Fauci, as head of the CDC, helped accelerate the COVID vaccine's release_) and see what the most semantically similar things our system is calibrated to inject:
+Let's try out a not particularly controversial prompt (_Anthony Fauci, as head of the CDC, helped accelerate the COVID vaccine's release_) and see what the most semantically similar things our system is calibrated to inject:
 
 ```python
 def nearest_n_neighbors(
@@ -467,7 +467,7 @@ From here we can cobble together a conversation.
 
 ## Not Very Good End Results
 
-Well this was signficiantly dumber than I had feared:
+Well this was significantly dumber than I had feared:
 
 ```
 Me:> What do you think about peer pressure?
