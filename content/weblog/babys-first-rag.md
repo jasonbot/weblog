@@ -289,7 +289,7 @@ create table text_lines(
 );
 ```
 
-And then a virtual vec0 table:
+And then a virtual vec0 table to store the embedding vectors ins a searchable way:
 
 ```sql
 create virtual table vec_chat using vec0(
@@ -448,7 +448,7 @@ All right, not terrible. It makes me want to punch my monitor which is a good si
 
 # Trying it Out
 
-## You Have to Post The entire Transcript Over and Over
+## You Have to Post the Entire Transcript Over and Over
 
 One of the shortcomings of LLMs (with no escape that I know of) is the conversation has to _fully be injected into the LLM to maintain state_. So what I'll do is pipe an initial state with a question into the model, get the response from Llama, append a question, and do another round trip.
 
@@ -505,7 +505,7 @@ User: What about the best press secretary?
 Llama: The best press secretary is widely considered to be Katherine Bach, who served under President James Dukes of Hazzard. She was known for her wit, intelligence, and ability to handle tough questions from the media.
 ```
 
-## Making it harder
+## Making it Harder
 
 [This blog post](https://techcommunity.microsoft.com/t5/microsoft-developer-community/doing-rag-vector-search-is-not-enough/ba-p/4161073) says we can't just do semantic search. We have to do both that and full text search. Maybe that's a task for another time.
 
@@ -517,17 +517,17 @@ The important part is I was able to understand the pieces individually, I was ab
 
 ## Things I Could Have Done Better
 
-### Realize Some Things are Slow
+### Realize Some Things Are Slow
 
 The embedding stage of the project took 4 days to complete. That took a bit of wind out of my sails and demotivated me further down the pipe. You'll also notice that the further down in the process I got the more spartan and handwavey this post gets as I get into territory I am less familiar with.
 
 ### Don't Be "Cute" With the Source of Data
 
-I was deliberately trying to be funny with my choice of source material. The source material is not only awful for its content, but also its structure. The best material for a RAG (and LLMs in general) are non-conversational, infformation dense things like refernce books and textbooks. Conversations, with their short "uh-huh" paragraphs are not a good way to add useful context to an exising LLM, and a most of the conversations I had quite obviously fell back to just using the LLM for material.
+I was deliberately trying to be funny with my choice of source material. The source material is not only awful for its content, but also its structure. The best material for a RAG (and LLMs in general) are non-conversational, information dense things like reference books and textbooks. Conversations, with their short "uh-huh" paragraphs are not a good way to add useful context to an existing LLM, and a most of the conversations I had quite obviously fell back to just using the LLM for material.
 
 ### Use Python
 
-The code is _in_ Python, but I'm not using any Python-native libraries like [llm](https://pypi.org/project/llm/) or [langchain](https://pypi.org/project/langchain/) to streamline and appropriately take advantage of the innards of exising models. The code is _in_ Python, but it could have been in any language considering the Unstructured API is just plain old REST, the vector store ist an SQlite plugin, and the llamafile is callable from other languages as well as long as they can open a subprocess (all of them).
+The code is _in_ Python, but I'm not using any Python-native libraries like [llm](https://pypi.org/project/llm/) or [langchain](https://pypi.org/project/langchain/) to streamline and appropriately take advantage of the innards of existing models. The code is _in_ Python, but it could have been in any language considering the Unstructured API is just plain old REST, the vector store is an SQlite plugin, and the llamafile is callable from other languages as well as long as they can open a subprocess (all of them).
 
 # The Code
 
