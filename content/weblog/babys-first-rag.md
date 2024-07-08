@@ -515,4 +515,20 @@ I put together the parts. I used a horrible source corpus. I learned a valuable 
 
 The important part is I was able to understand the pieces individually, I was able to host it on my own hardware, which I think is a very critical part of the LLM world nobody really thinks about since so much of it depends on cobbling together third-party services on the internet.
 
+## Things I Could Have Done Better
+
+### Realize Some Things are Slow
+
+The embedding stage of the project took 4 days to complete. That took a bit of window out of my sail. You'll also notice that the further down in the process I got the more spartan and handwavey this post gets as I get into territory I am less familiar with.
+
+### Don't Be "Cute" With the Source of Data
+
+I was deliberately trying to be funny with my choice of source material. The source material is not only awful for its content, but also its structure. The best material for a RAG (and LLMs in general) are non-conversational, infformation dense things like refernce books and textbooks. Conversations, with their short "uh-huh" paragraphs are not a good way to add useful context to an exising LLM, and a most of the conversations I had quite obviously fell back to just using the LLM for material.
+
+### Use Python
+
+The code is _in_ Python, but I'm not using any Python-native libraries like [llm](https://pypi.org/project/llm/) to streamline and appropriately take advantage of the innards of exising models. The code is /in/ Python, but it could have been in any language considering the Unstructured ASI, vector store, and the llamafile were all callable from other langauges as well.
+
+# The Code
+
 The code is all [on Github in an appropriately named repository](https://github.com/jasonbot/babys-first-rag).
