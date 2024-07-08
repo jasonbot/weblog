@@ -519,7 +519,7 @@ The important part is I was able to understand the pieces individually, I was ab
 
 ### Realize Some Things are Slow
 
-The embedding stage of the project took 4 days to complete. That took a bit of window out of my sail. You'll also notice that the further down in the process I got the more spartan and handwavey this post gets as I get into territory I am less familiar with.
+The embedding stage of the project took 4 days to complete. That took a bit of wind out of my sails and demotivated me further down the pipe. You'll also notice that the further down in the process I got the more spartan and handwavey this post gets as I get into territory I am less familiar with.
 
 ### Don't Be "Cute" With the Source of Data
 
