@@ -507,7 +507,7 @@ Llama: The best press secretary is widely considered to be Katherine Bach, who s
 
 ## Making it harder
 
-[This blog post](https://techcommunity.microsoft.com/t5/microsoft-developer-community/doing-rag-vector-search-is-not-enough/ba-p/4161073) says we can't just do one. We have to do both. Maybe that's a task for another time.
+[This blog post](https://techcommunity.microsoft.com/t5/microsoft-developer-community/doing-rag-vector-search-is-not-enough/ba-p/4161073) says we can't just do semantic search. We have to do both that and full text search. Maybe that's a task for another time.
 
 # Conclusion
 
