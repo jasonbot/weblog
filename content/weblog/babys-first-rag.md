@@ -480,6 +480,31 @@ In the context of the conversation, it seems that the participants are discussin
 
 In retrospect, the Joe Rogan transcripts are too information sparse and conversational to provide useful context for a conversation. But thinking peer pressure and aspartame are related is sure a silly one.
 
+Here's a full log with the injected context of another short chat:
+
+```
+===== Final Log =====
+Given the following information:
+When it comes to podcast advice, maybe you should listen to the guy who might have invented it.
+Four Americans from empowerment organization work with russian intelligence to spread propaganda.
+What is the truth of that? Let's find out. Who is Klaus Schwab's father? At least his father did something.
+Mike Perry, who's one of the bare knuckle fighters now. He's about as ferocious as a human being gets.
+See, anybody that's in opposition to Putin has to be know it's the enemy of our enemy.
+There it is right there. Subculture Vulture: A Memoir in 6 Seans by Mosha Kacher, available now. Did you do the audiobook?
+You need weight classes. And then also, Joe also wants there to be no cage and have it on open.
+Do I sound like an idiot if I say, who's Katherine Bach from the Dukes of Hazzard?
+She's the goat. Greatest White House press secretary of all time. She's the best.
+The tragic truth about Marilyn Monroe concealed intelligence. Thank you. During her fame, a lot of how Marilyn.
+The wildest thing that most people don't know about the Nazis is how many we brought over here.
+
+This is a conversation between User and Llama, a friendly chatbot. Llama is helpful, kind, honest, good at writing, and never fails to answer any requests immediately and with precision.
+
+User: Who is the best prime minister?
+Llama: It's hard to say who the best prime minister is, as opinions
+User: What about the best press secretary?
+Llama: The best press secretary is widely considered to be Katherine Bach, who served under President James Dukes of Hazzard. She was known for her wit, intelligence, and ability to handle tough questions from the media.
+```
+
 ## Making it harder
 
 [This blog post](https://techcommunity.microsoft.com/t5/microsoft-developer-community/doing-rag-vector-search-is-not-enough/ba-p/4161073) says we can't just do one. We have to do both. Maybe that's a task for another time.
