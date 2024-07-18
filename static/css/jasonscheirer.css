@@ -11,11 +11,11 @@
 :root {
   --body-font: "Inter";
   --header-font: "Inter";
-  --mono-font: "Berkeley Mono";
+  --mono-font: "Fira Code";
 
   --light-blue: #4da6ff;
   --dark-blue: #4b5bab;
-  --darkest-blue: #473b78;
+  --darkest-blue: #07060c;
   --dark-purple: #5a265e;
   --bg-grn: #ffffeb;
   --border-color: #c2c2d1;
