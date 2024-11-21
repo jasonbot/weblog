@@ -77,13 +77,28 @@ Colima just works, and [has multiple personalities](https://github.com/abiosoft/
 
 [The Lima Project](https://github.com/lima-vm/lima) implements the underlying functionality of running a Linux VM on macOS that can then host
 
-Why not short-circuit the process and just use the VM directly? Why bother with another abstraction layer?
+Why not short-circuit the process and just use the VM directly? Why bother with another abstraction layer? I'll just use Lima directly and not make myself sad with the extra abstraction layer that a `compose`-based solution im-...poses.
 
-{{< mermaid >}}
-graph LR;
-A--> B & C & D;
-B--> A & E;
-C--> A & E;
-D--> A & E;
-E--> B & C & D;
-{{< /mermaid >}}
+## Starting a New VM
+
+So I:
+
+- Cloned the repo `git clone git@github.com:jasonbot/cube-with-friends.git`
+- Started a new VM using `lima create default`
+- I edited the configuration so that my auto-mounted home drive was `writable: true` before launching (this is important if you're keeping the cloned repo on your Mac home dir and not on the VM)
+- Installed prereqs: `sudo apt install golang mono-runtime`
+- Ran `lima` to get into the VM
+- Edited the `/etc/hostname` to something memorable
+- Restarted the VM
+- Went back in via `lima` and Installed Tailscale via `curl -fsSL https://tailscale.com/install.sh | sh`
+- Signed in to tailscale `sudo tailscale up`
+- Ran the cube-with-friends server: `go run cmd/server.go`
+- Opened a browser to `http://my-new-machine:5555/` and verified it worked
+
+# Conclusion
+
+So there we go! Something a little more interesting than playing another card game.
+
+![Login Screen](/images/playing-classicube-at-work/ss1.png)
+
+![Success -- logged in](/images/playing-classicube-at-work/ss2.png)

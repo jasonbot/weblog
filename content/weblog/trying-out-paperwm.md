@@ -1,6 +1,6 @@
 +++
 title =  "Trying out PaperWM"
-date = 2024-11-20T10:00:00-06:00
+date = 2024-11-18T10:00:00-06:00
 tags = ["linux"]
 featured_image = ""
 description = ""
