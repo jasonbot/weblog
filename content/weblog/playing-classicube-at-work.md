@@ -75,7 +75,7 @@ Colima just works, and [has multiple personalities](https://github.com/abiosoft/
 
 ### CoLima is short for Containers on Lima
 
-[The Lima Project](https://github.com/lima-vm/lima) implements the underlying functionality of running a Linux VM on macOS that can then host
+[The Lima Project](https://github.com/lima-vm/lima) implements the underlying functionality of running a Linux VM on macOS that can then host the containers, since containers require [Linux kernel internals](https://lwn.net/Articles/236038/) to work ([or not](https://wiki.freebsd.org/Containers)).
 
 Why not short-circuit the process and just use the VM directly? Why bother with another abstraction layer? I'll just use Lima directly and not make myself sad with the extra abstraction layer that a `compose`-based solution im-...poses.
 
