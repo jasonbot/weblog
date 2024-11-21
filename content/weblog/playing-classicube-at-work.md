@@ -31,11 +31,11 @@ I don't want to pick Yet Another Card Game. That sounds boring.
 
 [ClassiCube has documentation on Github for how to run a browser-based session](https://github.com/ClassiCube/ClassiCube/blob/master/doc/hosting-flask.md).
 
-This seems pretty easy: you host a web page that has the ClassiCube JS client on it, and then configure it via Javascript in the page's code to
+This seems pretty easy: you host a web page that has the ClassiCube JS client on it, and then configure it via Javascript in the page's code to connect to your hosted server.
 
 ## Of Course I Have To Write Software to Run Software, It is my Wont
 
-The end product I made was [Cube With Friends on Github](https://github.com/jasonbot/cube-with-friends). It's a very easy to set up little program that does all the above manual steps
+The end product I made was [Cube With Friends on Github](https://github.com/jasonbot/cube-with-friends). It's a very easy to set up little program that does all the above manual steps -- at build time it embeds all the resources it needs from the internet into a single Go executable, and has other niceness like overlaying a pre-authored config that turns off ClassiCube authentication so people can join without having ClassiCube accounts.
 
 # Getting to It from Other computers
 
