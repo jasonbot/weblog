@@ -6,7 +6,7 @@ featured_image = ""
 description = ""
 +++
 
-I'm an enthusiast of playing around with different window management schemes. I like the _idea_ of a tiling winodw manager, but I'm not smart enough to ever get really porductive in something like i3 or sway.
+I'm an enthusiast of playing around with different window management schemes. I like the _idea_ of a tiling window manager, but I'm not smart enough to ever get really productive in something like i3 or sway.
 
 for the past few years [I've been using Rectangle on MacOS](/weblog/trying-out-rectangle/) as something of a band-aid
 

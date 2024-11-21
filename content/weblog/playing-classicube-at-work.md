@@ -8,7 +8,7 @@ description = "How I wired together a thing"
 
 # Problem Space
 
-At [my new job](https://www.academia.edu/), my new team engages in an activity that seems pretty unique to it: every other week we get together for 30 minutes to play a game together online. We're mixed hybrid, meaning about half of us work in office and half of us are grandfathered/exceptioned in to working remotely. this means we can't play a board/card game in person, but has to be perfomrable over the internet in a Zoom call.
+At [my new job](https://www.academia.edu/), my new team engages in an activity that seems pretty unique to it: every other week we get together for 30 minutes to play a game together online. We're mixed hybrid, meaning about half of us work in office and half of us are grandfathered/exceptioned in to working remotely. this means we can't play a board/card game in person, but has to be procurable over the internet in a Zoom call.
 
 It takes a team with a long-lived team for something like this to persist, I think. My assumption is the team's culture predates COVID-era and has remained cohesive and coherent enough to continue to this day. The first action being the establishment of a virtual game day at the dawn of the pandemic in an attempt to retain a semblance of in-person culture, then a partial shift back to in-person keeping the thing going.
 
@@ -23,7 +23,7 @@ I'm sure everyone is tired of playing Werewolf and variants at this point. I wan
 - Browser-based
 - Very low barrier to entry
 
-I don't want to pick Yet Another Card Game. Thast sounds boring.
+I don't want to pick Yet Another Card Game. That sounds boring.
 
 # Minecraft?
 
@@ -45,7 +45,7 @@ I spun up `cube-with-friends` on my laptop and started thinking my way through t
 
 ## Hosting on the Internet
 
-I don't want to sacrifice one of my Raspberry Pis to be a permanent host for this app, and I'm not going to mess with seeing if I can get to the public IP that my ISP assignes me.
+I don't want to sacrifice one of my Raspberry Pis to be a permanent host for this app, and I'm not going to mess with seeing if I can get to the public IP that my ISP assigns me.
 
 I don't want to spin up a new VM on GCP and assign it a Real Internet IP Address and do all the work of exposing a service to the world if I can help it either.
 
@@ -59,7 +59,7 @@ As is corporate policy, all of our work laptops have a firewall we can't turn of
 
 ### I Don't Want to ask the Infra Team How to Host a Minecraft Server, That's Embarrassing
 
-I could host a machine on the Tailnet on our corporate Infrastructure, but I'm not on the infra team and I don't know how to do that. I also don't think I'd get buy-in for that. I'll save my goodwill forf some other day.
+I could host a machine on the Tailnet on our corporate Infrastructure, but I'm not on the infra team and I don't know how to do that. I also don't think I'd get buy-in for that. I'll save my goodwill for some other day.
 
 ## Running a Non-Firewalled Machine: How About Linux?
 
