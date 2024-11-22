@@ -16,7 +16,7 @@ Herein lies the problem: synchronous code does not play nicely in the async even
 
 I have looked into the internals of the async event loops and don't want to hack into that.
 
-I thought about spinning up a new thread to run the sync worker, using asyncio [`Lock`s](https://docs.python.org/3/library/asyncio-sync.html#asyncio.Lock) to lock before running and the event loop's [call_soon_threadsafe](https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.call_soon_threadsafe) to unlock it from the worker thread when the woprk was done, but there's got to be a way to do this that's already done for me.
+I thought about spinning up a new thread to run the sync worker, using asyncio [`Lock`s](https://docs.python.org/3/library/asyncio-sync.html#asyncio.Lock) to lock before running and the event loop's [`call_soon_threadsafe`](https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.call_soon_threadsafe) to unlock it from the worker thread when the woprk was done, but there's got to be a way to do this that's already done for me.
 
 What can I see to do with the code that already exists in the standard library?
 

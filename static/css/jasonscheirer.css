@@ -1,17 +1,9 @@
-@font-face {
-  font-family: "Comic";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    /* Modern Browsers */ url("/fonts/business.ttf") format("truetype");
-}
-
 /* https://lospec.com/palette-list/pear36 */
 
 :root {
   --body-font: "Inter";
   --header-font: "Inter";
-  --mono-font: "Fira Code";
+  --mono-font: "0xProto";
 
   --light-blue: #4da6ff;
   --dark-blue: #4b5bab;

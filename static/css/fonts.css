@@ -1,4 +1,13 @@
-/* fira-code-regular - latin */
+/* Serious Business Typeface */
+@font-face {
+  font-family: "Business";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    /* Modern Browsers */ url("/fonts/business.ttf") format("truetype");
+}
+
+/* Fira Code */
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
@@ -16,6 +25,35 @@
       url("/fonts/fira-code-v9-latin-regular.svg#FiraCode") format("svg"); /* Legacy iOS */
 }
 
+/* 0xProto */
+@font-face {
+  font-family: "0xProto";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""), url("/fonts/0xProto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "0xProto";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("/fonts/0xProto-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "0xProto";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""), url("/fonts/0xProto-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "0xProto";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""), url("/fonts/0xProto-Regular.woff2") format("woff2");
+}
+
 /* Berkeley Mono */
 @font-face {
   font-family: "Berkeley Mono";
@@ -25,6 +63,8 @@
     url("/fonts/BerkeleyMonoVariable-Regular.woff2") format("woff2"),
     url("/fonts/BerkeleyMonoVariable-Regular.woff") format("woff");
 }
+
+/* Inter */
 @font-face {
   font-family: "Inter";
   font-style: normal;

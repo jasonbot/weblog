@@ -15,3 +15,5 @@ I've been using [the Tiling WM Extension ion Gnome](https://extensions.gnome.org
 Now I'm [trying out PaperWM](https://extensions.gnome.org/extension/6099/paperwm/). The concept simplifies and streamlines windows fro occupying a fully two dimensional space into something resembling 1.5 dimensions: windows are all arranged side-by-side infinitely, and you just traverse along the line of windows to find what you're looking for.
 
 I've been using it full time for a week and I'm pretty happy with it. Maybe this will stick for a while.
+
+**Update 2024-11-22:** PaperWS hard crashes when I launch games that try to switch to fullscreen from Steam. Back to the drawing board!
