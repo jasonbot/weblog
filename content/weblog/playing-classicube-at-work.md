@@ -8,9 +8,7 @@ description = "How I wired together a thing"
 
 # Problem Space
 
-At [my new job](https://www.academia.edu/), my new team engages in an activity that seems pretty unique to it: every other week we get together for 30 minutes to play a game together online. We're mixed hybrid, meaning about half of us work in office and half of us are grandfathered/exceptioned in to working remotely. this means we can't play a board/card game in person, but has to be procurable over the internet in a Zoom call.
-
-It takes a team with a long-lived team for something like this to persist, I think. My assumption is the team's culture predates COVID-era and has remained cohesive and coherent enough to continue to this day. The first action being the establishment of a virtual game day at the dawn of the pandemic in an attempt to retain a semblance of in-person culture, then a partial shift back to in-person keeping the thing going.
+At [my new job](https://www.academia.edu/), my new team engages in a team activity: every other week we get together for 30 minutes to play a game together online. We're mixed hybrid, meaning about half of us work in office and half of us are grandfathered/exceptioned in to working remotely. this means we can't play a board/card game in person, but has to be procurable over the internet in a Zoom call.
 
 It is now my turn to host a game.
 
@@ -33,11 +31,11 @@ I don't want to pick Yet Another Card Game. That sounds boring.
 
 This seems pretty easy: you host a web page that has the ClassiCube JS client on it, and then configure it via Javascript in the page's code to connect to your hosted server.
 
-## Of Course I Have To Write Software to Run Software, It is my Wont
+## Of Course I Have To Write Software to Run Software, It is My Wont
 
 The end product I made was [Cube With Friends on Github](https://github.com/jasonbot/cube-with-friends). It's a very easy to set up little program that does all the above manual steps -- at build time it embeds all the resources it needs from the internet into a single Go executable, and has other niceness like overlaying a pre-authored config that turns off ClassiCube authentication so people can join without having ClassiCube accounts.
 
-# Getting to It from Other computers
+# Getting to It From Other computers
 
 Now that I had something running, how do I get other players on here?
 
@@ -52,6 +50,10 @@ I don't want to spin up a new VM on GCP and assign it a Real Internet IP Address
 ## Hosting on Tailnet
 
 Here comes an idea: my employer pays for a Tailscale corporate account, and all of our dev machines belong to the work tailnet. This is good, I can just point everyone to my work Mac.
+
+### I Don't Want to Put a Personal Device on the Work Tailnet
+
+My Raspberry Pi Collection has begun to dwindle, and I am not a fan of putting personal devices on work networks anyway.
 
 ### My Work Mac Has a Firewall I Can't Disable
 
@@ -69,11 +71,11 @@ I quickly threw together a preliminary Dockerfile to make an image of a cube-wit
 
 [This guide to using docker-compose to make a container join a Tailnet](https://tailscale.com/kb/1453/quick-guide-docker) made me very sad at the complexity involved, but hopeful. I could run a Docker container on Linux, have the container join the Tailnet, and it would not be subject to the macOS firewall on the hardware network interfaces.
 
-I switched from Docker Desktop to [Colima](https://github.com/abiosoft/colima) a few years back -- I've been moving away from using brand named Docker utils for a while now since 1) Docker has a [weird licensing tripwire](https://www.docker.com/pricing/) I don't want to set off and 2) containers are just a commodity in 2024 -- I use Podman on all my Linux machines to do containerization.
+I switched from Docker Desktop to [Colima](https://github.com/abiosoft/colima) a few years back -- I've been moving away from using brand named Docker utils for a while now since 1) Docker has a [weird licensing tripwire](https://www.docker.com/pricing/) I don't want to set off and 2) [containers are just a commodity](https://github.com/containers/) in 2024 -- I use Podman on all my Linux machines to do containerization.
 
 Colima just works, and [has multiple personalities](https://github.com/abiosoft/colima?tab=readme-ov-file#runtimes) which was useful at my last job for dicking about with k8s and stuff.
 
-### CoLima is short for Containers on Lima
+### CoLima is Short for "Containers on Lima"
 
 [The Lima Project](https://github.com/lima-vm/lima) implements the underlying functionality of running a Linux VM on macOS that can then host the containers, since containers require [Linux kernel internals](https://lwn.net/Articles/236038/) to work ([or not](https://wiki.freebsd.org/Containers)).
 
