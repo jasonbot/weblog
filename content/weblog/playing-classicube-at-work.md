@@ -35,7 +35,7 @@ This seems pretty easy: you host a web page that has the ClassiCube JS client on
 
 The end product I made was [Cube With Friends on Github](https://github.com/jasonbot/cube-with-friends). It's a very easy to set up little program that does all the above manual steps -- at build time it embeds all the resources it needs from the internet into a single Go executable, and has other niceness like overlaying a pre-authored config that turns off ClassiCube authentication so people can join without having ClassiCube accounts.
 
-# Getting to It From Other computers
+# Getting to It From Other Computers
 
 Now that I had something running, how do I get other players on here?
 

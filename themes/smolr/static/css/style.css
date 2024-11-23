@@ -1,17 +1,14 @@
-html {
-  overflow-y: scroll;
-}
 body {
   max-width: 800px;
-  margin: 40px auto;
-  padding: 0 10px;
-  font: 14px/1.5 monospace;
+  margin: 0 auto;
+  padding: 0;
   color: black;
+  line-height: 1.5;
 }
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 #toc h1 {

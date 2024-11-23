@@ -2,7 +2,7 @@
 
 :root {
   --body-font: "Inter";
-  --header-font: "Inter";
+  --header-font: "Reforma2018";
   --mono-font: "0xProto";
 
   --light-blue: #4da6ff;
@@ -14,7 +14,37 @@
 }
 
 body {
+  background: white;
   font-family: var(--body-font);
+  border-radius: 4px;
+}
+
+header,
+footer {
+  font-family: var(--header-font) !important;
+  margin: 0;
+  color: white;
+  background: var(--darkest-blue);
+  padding: 4px;
+}
+
+header {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+footer {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+header a,
+header a:visited,
+header a:hover,
+footer a,
+footer a:visited,
+footer a:hover {
+  color: white;
 }
 
 main {
@@ -37,10 +67,15 @@ h4,
 h5,
 h6 {
   color: var(--darkest-blue);
-  font-family: var(--header-font) !important;
-  font-weight: 700 !important;
+  font-family: var(--body-font) !important;
   margin-top: 0.25em;
   padding-top: 0.25em;
+  font-weight: 700;
+}
+
+h1,
+h2 {
+  font-family: var(--header-font) !important;
 }
 
 pre {
@@ -61,13 +96,14 @@ code {
 }
 
 nav {
-  font-family: var(--header-font) !important;
   font-size: small;
-  text-align: right;
+  text-align: center;
   padding: 1em;
-  border-bottom: 1px solid var(--border-color);
   display: block;
-  /* text-transform: uppercase; */
+}
+
+article {
+  line-height: 1.5;
 }
 
 aside {
@@ -77,13 +113,6 @@ aside {
   padding: 1em;
   border-top: 2px solid var(--border-color);
   border-bottom: 2px solid var(--border-color);
-  display: block;
-}
-
-footer {
-  background: white;
-  font-family: var(--header-font) !important;
-  padding: 1em;
   display: block;
 }
 
@@ -133,10 +162,11 @@ td {
 }
 
 blockquote {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: var(--bg-grn);
+  border: 1px solid var(--border-color);
   padding: 1em;
   border-radius: 4px;
-  box-shadow: 0 0 30px white inset;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.048);
 }
 
 time {

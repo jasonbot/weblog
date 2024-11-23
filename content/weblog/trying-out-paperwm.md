@@ -16,4 +16,4 @@ Now I'm [trying out PaperWM](https://extensions.gnome.org/extension/6099/paperwm
 
 I've been using it full time for a week and I'm pretty happy with it. Maybe this will stick for a while.
 
-**Update 2024-11-22:** PaperWS hard crashes when I launch games that try to switch to fullscreen from Steam. Back to the drawing board!
+> **Update 2024-11-22:** PaperWM hard crashes when I launch games that try to switch to fullscreen from Steam. Back to the drawing board!
