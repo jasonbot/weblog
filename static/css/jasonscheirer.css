@@ -1,8 +1,6 @@
-/* https://lospec.com/palette-list/pear36 */
-
 :root {
-  --body-font: "Inter";
   --header-font: "Reforma2018";
+  --body-font: "Inter";
   --mono-font: "0xProto";
 
   --light-blue: #4da6ff;
@@ -10,7 +8,7 @@
   --darkest-blue: #07060c;
   --dark-purple: #5a265e;
   --bg-grn: #ffffeb;
-  --border-color: #c2c2d1;
+  --border-color: #bddeff;
 }
 
 body {
@@ -147,11 +145,11 @@ a.taglink::before {
 }
 
 table {
-  border: 1px solid rgba(0, 0, 0, 0.048);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 thead {
-  background-color: rgba(0, 0, 0, 0.048);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 th {
@@ -159,7 +157,7 @@ th {
 }
 
 td {
-  border-top: 1px solid rgba(0, 0, 0, 0.048);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 blockquote {
@@ -167,7 +165,7 @@ blockquote {
   border: 1px solid var(--border-color);
   padding: 1em;
   border-radius: 4px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.048);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 time {
