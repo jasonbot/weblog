@@ -16,6 +16,7 @@ body {
   background: white;
   font-family: var(--body-font);
   border-radius: 4px;
+  scrollbar-gutter: stable both-edges;
 }
 
 header,
