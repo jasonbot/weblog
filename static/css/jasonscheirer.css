@@ -73,9 +73,20 @@ h2 {
 }
 
 h1.page-title {
-  font-size: 42pt;
+  font-size: 36pt;
   text-align: center;
   line-height: 1;
+}
+
+h1.summary-title {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 8px;
+}
+
+h1.summary-title a {
+  color: var(--darkest-blue);
+  text-decoration: none;
 }
 
 pre {
@@ -172,7 +183,7 @@ td {
 
 blockquote {
   background-color: var(--bg-grn);
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1em;
   border-radius: 4px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);

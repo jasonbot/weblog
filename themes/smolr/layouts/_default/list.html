@@ -8,17 +8,20 @@
     <div>{{ . }}</div>
     {{ end }}
   </div>
-  {{ end }}
+  {{ end }} {{ $.Scratch.Set "links" ( collections.Sort .Paginator.Pages "Date"
+  "desc" ) }} {{if eq $listtitle "Tags" }} {{ $.Scratch.Set "links" (
+  collections.Sort ( $.Scratch.Get "links" ) "Title" "asc" ) }} {{ end }}
 
   <ul>
-    {{ range collections.Sort ( collections.Sort .Paginator.Pages "Title" "asc"
-    ) "Date" "desc" }}
+    {{ range $.Scratch.Get "links" }}
     <li>
       <div>
         {{ if eq $listtitle "Posts" }} {{ .Date.Format "2006-01-02" }}
         <a href="{{ .RelPermalink }}">{{.Title }}</a>
         {{else if eq $listtitle "Tags" }}
-        <a class="taglink" href="{{ .RelPermalink }}">{{.Title }}</a>
+        <a class="taglink" href="{{ .RelPermalink }}"
+          >{{ strings.Replace .Title "-" " " | strings.Title}}</a
+        >
         {{ else }}
         <a class="post-title" href="{{ .RelPermalink }}">{{.Title }}</a>
         {{ end }}
