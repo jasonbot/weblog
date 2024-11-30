@@ -79,9 +79,10 @@ h1.page-title {
 }
 
 h1.summary-title {
+  margin: 0;
+  padding: 8px;
   text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  padding-bottom: 8px;
+  font-size: 20pt;
 }
 
 h1.summary-title a {
@@ -112,6 +113,20 @@ nav {
   display: block;
 }
 
+div.byline-etc {
+  font-size: 12pt;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.025);
+}
+
+div.read-more {
+  text-align: right;
+  padding-right: 8px;
+  font-weight: 700;
+}
+
 article {
   line-height: 1.5;
 }
@@ -138,16 +153,17 @@ img {
 }
 
 a.taglink {
-  font-size: x-small;
+  font-size: smaller;
   font-family: var(--mono-font);
   text-decoration: none;
   font-weight: normal;
   padding: 2px;
   color: black !important;
-  border-radius: 8px;
+  border-radius: 12px;
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
 }
 
 a.taglink::before {
@@ -158,11 +174,25 @@ a.taglink::before {
   text-shadow: 0 0 2px white;
 }
 
+span.tag-count {
+  font-family: var(--body-font);
+  color: rgba(255, 255, 255, 0.85);
+  padding-left: 8px;
+  padding-right: 8px;
+  background: rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: smaller;
+}
+
 article.summary {
-  padding: 4px;
   margin-bottom: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 6px;
+}
+
+div.summary-text {
+  padding: 4px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 table {
@@ -182,7 +212,7 @@ td {
 }
 
 blockquote {
-  background-color: var(--bg-grn);
+  background-color: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1em;
   border-radius: 4px;
@@ -193,6 +223,10 @@ time {
   font-family: var(--mono-font);
   font-size: smaller;
   font-weight: 300;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.125);
+  border-radius: 2px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.125);
 }
 
 time:before {
@@ -203,4 +237,14 @@ time:before {
 
 .nav-item:not(:first-child):before {
   content: " | ";
+}
+
+ul.links-tags {
+  list-style-type: none;
+}
+
+ul.links-tags li {
+  font-size: 16pt;
+  display: inline-block;
+  margin: 4px;
 }
