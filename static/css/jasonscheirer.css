@@ -27,9 +27,6 @@ footer {
   background: var(--darkest-blue);
   padding: 4px;
   text-align: center;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  border-radius: 6px;
 }
 
 header a,
@@ -39,6 +36,15 @@ footer a,
 footer a:visited,
 footer a:hover {
   color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  header,
+  footer {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+  }
 }
 
 main {
@@ -82,7 +88,7 @@ h1.summary-title {
   margin: 0;
   padding: 8px;
   text-align: center;
-  font-size: 20pt;
+  font-size: 30pt;
 }
 
 h1.summary-title a {
