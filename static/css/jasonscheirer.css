@@ -71,6 +71,7 @@ h6 {
   margin-top: 0.25em;
   padding-top: 0.25em;
   font-weight: 700;
+  line-height: 1;
 }
 
 h1,
@@ -81,7 +82,6 @@ h2 {
 h1.page-title {
   font-size: 36pt;
   text-align: center;
-  line-height: 1;
 }
 
 h1.summary-title {
