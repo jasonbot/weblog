@@ -124,7 +124,14 @@ div.byline-etc {
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   padding: 4px;
-  background: rgba(0, 0, 0, 0.025);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 1px,
+    rgba(0, 0, 0, 0.125) 2px,
+    rgba(0, 0, 0, 0.1) 4px,
+    rgba(0, 0, 0, 0.1) 100%
+  );
 }
 
 div.read-more {
@@ -159,14 +166,15 @@ img {
 }
 
 a.taglink {
-  font-size: smaller;
+  font-size: small;
   font-family: var(--mono-font);
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 300;
   padding: 2px;
   color: black !important;
   border-radius: 12px;
   display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.25);
   background-color: rgba(0, 0, 0, 0.05);
   padding: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
@@ -230,15 +238,19 @@ time {
   font-size: smaller;
   font-weight: 300;
   padding: 4px;
-  background: rgba(255, 255, 255, 0.125);
-  border-radius: 2px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.125);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  color: black;
 }
 
 time:before {
   color: var(--darkest-blue);
   content: "📅";
   font-weight: normal;
+  text-shadow: 0 0 2px black;
+  margin-right: 2px;
 }
 
 .nav-item:not(:first-child):before {
