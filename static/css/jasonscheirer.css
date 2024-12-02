@@ -127,10 +127,10 @@ div.byline-etc {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.1) 1px,
-    rgba(0, 0, 0, 0.125) 2px,
-    rgba(0, 0, 0, 0.1) 4px,
-    rgba(0, 0, 0, 0.1) 100%
+    rgba(0, 0, 0, 0.05) 1px,
+    rgba(0, 0, 0, 0.025) 3px,
+    rgba(0, 0, 0, 0.05) 4px,
+    rgba(0, 0, 0, 0.05) 100%
   );
 }
 
