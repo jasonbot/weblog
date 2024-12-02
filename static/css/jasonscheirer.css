@@ -99,6 +99,8 @@ h1.summary-title a {
 pre {
   color: darkslategray !important;
   font-family: var(--mono-font);
+  font-weight: 300;
+  font-size: 10pt;
   background: white !important;
   margin: 1em;
   padding: 1em;
@@ -108,7 +110,7 @@ pre {
 }
 
 code {
-  color: darkslategray !important;
+  color: var(--darkest-blue) !important;
   font-family: var(--mono-font);
   background: white !important;
 }
@@ -265,4 +267,48 @@ ul.links-tags li {
   font-size: 16pt;
   display: inline-block;
   margin: 4px;
+}
+
+/* Syntax highlighting */
+
+span.k {
+  color: var(--darkest-blue);
+}
+
+span.o {
+  opacity: 0.5;
+}
+
+span.ow,
+span.k {
+  font-style: italic;
+  color: var(--darkest-blue);
+}
+
+span.n {
+  color: var(--darkest-blue);
+  opacity: 0.55;
+}
+
+span.nb {
+  color: var(--dark-purple);
+  opacity: 0.85;
+  font-weight: 600;
+}
+
+span.nf {
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+span.kc {
+  color: var(--darkest-blue);
+}
+
+span.o {
+  color: var(--dark-blue);
+}
+
+span.p {
+  color: var(--dark-purple);
 }
