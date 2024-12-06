@@ -123,7 +123,7 @@ nav {
 
 div.byline-etc {
   font-size: 12pt;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 4px;
   padding: 4px;
   background: rgb(0, 0, 0);
@@ -137,6 +137,7 @@ div.byline-etc {
 }
 
 div.read-more {
+  padding: 4px;
   text-align: right;
   padding-right: 8px;
   font-weight: 700;
@@ -176,10 +177,10 @@ a.taglink {
   color: black !important;
   border-radius: 12px;
   display: inline-block;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   background-color: rgba(0, 0, 0, 0.05);
   padding: 4px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 3px rgb(255, 255, 255);
 }
 
 a.taglink::before {
@@ -192,17 +193,24 @@ a.taglink::before {
 
 span.tag-count {
   font-family: var(--body-font);
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(0, 0, 0, 0.5);
   padding-left: 8px;
   padding-right: 8px;
   background: rgba(0, 0, 0, 0.125);
   border-radius: 8px;
   font-weight: 600;
   font-size: smaller;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 3px rgba(255, 255, 255);
 }
 
 article.summary {
   margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  padding: 2px;
 }
 
 div.summary-text {
