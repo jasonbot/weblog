@@ -47,9 +47,18 @@ footer a:hover {
   }
 }
 
+div.everything {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   border: 1em solid white;
   background: white;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 a {
