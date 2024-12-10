@@ -38,7 +38,7 @@
           const [isTerminal, childMap] = node;
 
           if (isTerminal && (allLengthPossibilities || lettersLeft.length === 0)) {
-            words.push(wordSoFar);
+            words.unshift(wordSoFar);
           }
 
           for (const combo of letterCombination(lettersLeft)) {
