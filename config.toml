@@ -35,6 +35,12 @@ paginate = 500
     weight = 0
 
   [[menu.main]]
+    identifier = "toys"
+    name = "Toys"
+    url = "/tags/toys/"
+    weight = 0
+
+  [[menu.main]]
     identifier = "about"
     name = "about"
     url = "/about/"
