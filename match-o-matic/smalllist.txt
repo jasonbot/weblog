@@ -1,0 +1,5 @@
+ham
+cheese
+chicken
+sandwich
+bread
