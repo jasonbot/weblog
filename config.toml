@@ -20,31 +20,31 @@ paginate = 500
     identifier = "tags"
     name = "tags"
     url = "/tags/"
-    weight = 0
+    weight = 4
 
   [[menu.main]]
     identifier = "games-by-jason"
     name = "Games by Jason"
     url = "/tags/games-by-jason/"
-    weight = 0
+    weight = 2
 
   [[menu.main]]
     identifier = "hardware"
     name = "Hardware"
     url = "/tags/hardware/"
-    weight = 0
+    weight = 2
 
   [[menu.main]]
     identifier = "toys"
     name = "Toys"
     url = "/tags/toys/"
-    weight = 0
+    weight = 2
 
   [[menu.main]]
     identifier = "about"
     name = "about"
     url = "/about/"
-    weight = 0
+    weight = 2
 
 [markup]
   [markup.goldmark]
