@@ -33,6 +33,7 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
       const calculatePossibilities = (letterList, allLengthPossibilities = true) => {
         const gen = generation;
         const words = [];
+        const visited = new Set();
 
         const startTime = Date.now();
         const nodes = [["", letterList, rootWordNode]];
@@ -41,7 +42,10 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
           const [isTerminal, childMap] = node;
 
           if (isTerminal && (allLengthPossibilities || lettersLeft.length === 0)) {
-            words.unshift(wordSoFar);
+            if (!visited.has(wordSoFar)) {
+              words.unshift(wordSoFar);
+              visited.add(wordSoFar);
+            }
           }
 
           for (const combo of letterCombination(lettersLeft)) {
@@ -54,7 +58,7 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
               }
             }
 
-            if (Date.now() - startTime > 3000 || generation !== gen) {
+            if (Date.now() - startTime > 250 || generation !== gen) {
               return words;
             }
           }
