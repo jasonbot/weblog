@@ -11,7 +11,7 @@
 		</div>
 
 		<div class="summary-text">
-			{{ .Summary | plainify }}
+			{{ .Summary | htmlUnescape }}
 			{{ if .Truncated }}
 			<div class="read-more">
 				<a  href="{{ .Permalink }}">Read more...</a>

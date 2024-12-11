@@ -17,16 +17,16 @@ for line in open("wordlist.txt"):
 
 json_tree = json.dumps(root)
 
-with open("index.html", "r") as in_handle:
+with open("match-o-matic.html", "r") as in_handle:
     core = in_handle.read()
     starty = "const rootWordNode = "
 
-    startpt = core[:(core.index(starty) + len(starty))]
+    startpt = core[: (core.index(starty) + len(starty))]
     endy = core.index(";", core.index(starty))
     endpt = core[endy:]
 
     core = startpt + json_tree + endpt
 
 
-with open("index.html", "w") as out_handle:
+with open("match-o-matic.html", "w") as out_handle:
     out_handle.write(core)

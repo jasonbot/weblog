@@ -30,7 +30,10 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
         }
       };
 
-      const calculatePossibilities = (letterList, allLengthPossibilities = true) => {
+      const calculatePossibilities = (
+        letterList,
+        allLengthPossibilities = true
+      ) => {
         const gen = generation;
         const words = [];
         const visited = new Set();
@@ -41,7 +44,10 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
           const [wordSoFar, lettersLeft, node] = nodes.shift();
           const [isTerminal, childMap] = node;
 
-          if (isTerminal && (allLengthPossibilities || lettersLeft.length === 0)) {
+          if (
+            isTerminal &&
+            (allLengthPossibilities || lettersLeft.length === 0)
+          ) {
             if (!visited.has(wordSoFar)) {
               words.unshift(wordSoFar);
               visited.add(wordSoFar);
@@ -91,19 +97,23 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
         }
 
         if (itemList.length === 0) {
-            const elt = document.createElement("div");
+          const elt = document.createElement("div");
           elt.classList.add("match-o-matic-message");
           elt.innerText = "Nothing found";
           resultElt.appendChild(elt);
         }
       };
 
-      const populatePossbilities = (valueString) => {
+      const populatePossbilities = (valueString, matchLength) => {
         const resultElt = document.getElementById("results");
         resultElt.innerText = "Thinking";
 
-        setItems(calculatePossibilities(valueString.toLowerCase()));
+        setItems(
+          calculatePossibilities(valueString.toLowerCase(), matchLength)
+        );
       };
+
+      let matchLength = false;
 
       const updateValue = (e) => {
         const str = e.target.value;
@@ -112,13 +122,19 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
           generation = 0;
         }
 
-        populatePossbilities(str);
+        populatePossbilities(str, matchLength);
       };
 
       const bind = () => {
         const inputElt = document.getElementById("textinput");
-
         inputElt.addEventListener("input", debounce(updateValue, 250));
+
+        const matchlengthCheck = document.getElementById("matchlength");
+        matchlengthCheck.checked = !matchLength;
+        matchlengthCheck.addEventListener("change", (e) => {
+          matchLength = !e.target.checked;
+          populatePossbilities(inputElt.value, matchLength);
+        });
       };
 
       document.addEventListener("DOMContentLoaded", bind);
@@ -137,12 +153,20 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
         font-family: monospace;
       }
 
+      .match-o-matic-input-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
       .match-o-matic-input {
         margin: 4px;
         padding: 4px;
         border: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.25);
         font-size: xx-large;
+        flex-grow: 1;
       }
 
       .match-o-matic-results {
@@ -175,12 +199,15 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
       }
     </style>
     <div class="match-o-matic">
-      <input
-        class="match-o-matic-input"
-        placeholder="Type in letters here"
-        type="text"
-        id="textinput"
-      />
+      <div class="match-o-matic-input-area">
+        <input
+          class="match-o-matic-input"
+          placeholder="Type in letters here"
+          type="text"
+          id="textinput"
+        />
+        <label><input type="checkbox" id="matchlength" />Match length</label>
+      </div>
       <div class="match-o-matic-results" id="results"></div>
     </div>
   {{< /raw >}}
