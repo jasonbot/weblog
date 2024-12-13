@@ -150,7 +150,6 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
         padding: 2px;
         background: white;
         color: black;
-        font-family: monospace;
       }
 
       .match-o-matic-input-area {
@@ -196,6 +195,12 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
         text-align: center;
         padding: 16px;
         font-family: sans-serif;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .match-o-matic-input-area {
+          flex-direction: column;
+        }
       }
     </style>
     <div class="match-o-matic">
