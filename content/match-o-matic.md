@@ -71,6 +71,12 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
           }
         }
 
+        if (allLengthPossibilities) {
+          words.sort((a, b) =>
+            a.length !== b.length ? b.length - a.length : a.localeCompare(b)
+          );
+        }
+
         return words;
       };
 
@@ -114,7 +120,7 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
         );
       };
 
-      let matchLength = false;
+      let matchLength = true;
 
       const updateValue = (e) => {
         const str = e.target.value;
@@ -129,6 +135,9 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
       const bind = () => {
         const inputElt = document.getElementById("textinput");
         inputElt.addEventListener("input", debounce(updateValue, 250));
+
+        // On load
+        populatePossbilities(inputElt.value, matchLength);
 
         const matchlengthCheck = document.getElementById("matchlength");
         matchlengthCheck.checked = !matchLength;
