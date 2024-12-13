@@ -147,7 +147,7 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 2px;
+        padding: 4px;
         background: white;
         color: black;
       }
@@ -157,12 +157,14 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin: 8px;
       }
 
       .match-o-matic-input {
         margin: 4px;
         padding: 4px;
         border: none;
+        border-radius: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.25);
         font-size: xx-large;
         flex-grow: 1;
@@ -200,6 +202,11 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
       @media only screen and (max-width: 800px) {
         .match-o-matic-input-area {
           flex-direction: column;
+        }
+
+        .match-o-matic-input {
+          align-self: stretch;
+          font-size: xx-large;
         }
       }
     </style>
