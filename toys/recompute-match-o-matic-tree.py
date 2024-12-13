@@ -15,7 +15,8 @@ for line in open("wordlist.txt"):
     branch = root
     for letter in line.strip():
         branch = branch[1][letter]
-        letters.add(letter)
+        if letter.isalpha():
+            letters.add(letter)
     branch[0] = 1
 
 json_tree = json.dumps(root, separators=(",", ":"))
