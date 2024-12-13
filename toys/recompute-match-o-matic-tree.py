@@ -4,18 +4,25 @@ import json
 
 class node(list):
     def __init__(self):
-        self.extend([False, collections.defaultdict(node)])
+        self.extend([0, collections.defaultdict(node)])
 
 
 root = node()
+
+letters = set()
 
 for line in open("wordlist.txt"):
     branch = root
     for letter in line.strip():
         branch = branch[1][letter]
-    branch[0] = True
+        letters.add(letter)
+    branch[0] = 1
 
-json_tree = json.dumps(root)
+json_tree = json.dumps(root, separators=(",", ":"))
+for l in letters:
+    json_tree = json_tree.replace(f'"{l}":', f"{l}:")
+
+json_tree = json_tree.replace("[1,{}]", "[1]")
 
 with open("match-o-matic.html", "r") as in_handle:
     core = in_handle.read()
