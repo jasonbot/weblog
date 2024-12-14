@@ -103,7 +103,7 @@ description = "Another /uses page, just like the others"
 - [Mastodon](https://github.com/mastodon) for one Fediverse server
 - [GotoSocial](https://gotosocial.org/) for the other
 - [Miniflux](https://miniflux.app/) for keeping up on news
-- [Gitea](https://about.gitea.com/) for hosting my private repos but considering the upgrade to Forgejo
+- [Forgejo](https://forgejo.org/) for hosting my private repos
 
 # Computer Hardware
 
