@@ -228,7 +228,7 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
           type="text"
           id="textinput"
         />
-        <label><input type="checkbox" id="matchlength" />Match length</label>
+        <label><input type="checkbox" id="matchlength" />Use all letters</label>
       </div>
       <div class="match-o-matic-results" id="results"></div>
     </div>
