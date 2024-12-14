@@ -26,7 +26,7 @@ description = "Tools I use"
 
 - My muscle memory is [Vim](https://www.vim.org/), I use it everywhere
 - Most of my polyglot development is via [VS Code](https://code.visualstudio.com/)
-- I am forcing myself to use [Zed](https://zed.dev/) more too, just because monocultures are aa Bad Idea and VSC is a monoculture now
+- I am forcing myself to use [Zed](https://zed.dev/) more too, just because monocultures are a Bad Idea and VSC is a monoculture now
 - I like using [Ebitengine](https://ebitengine.org/) to make silly 2D games
 - I like [git-delta](https://github.com/dandavison/delta) for command line diffing
 - I usually use zsh and start out with [oh-my-zsh](https://ohmyz.sh/) on new systems
