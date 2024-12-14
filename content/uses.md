@@ -68,7 +68,7 @@ I have a handful of computers I use regularly!
 
 ### Mac
 
-- [BetterDisplay](https://github.com/waydabber/BetterDisplay) for better extgernal monitor support
+- [BetterDisplay](https://github.com/waydabber/BetterDisplay) for better external monitor support
 - [SyncThing](https://syncthing.net/) to move files around
 - [MeetingBar](https://github.com/leits/MeetingBar) to see what I'm supposed to be doing
 - [Rectange](https://rectangleapp.com/) to move windows around
