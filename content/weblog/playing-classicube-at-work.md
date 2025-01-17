@@ -1,7 +1,7 @@
 +++
 title =  "Classicube at Work"
 date = 2024-11-20T08:00:00-08:00
-tags = ["programming", "work", "go", "minecraft", "games"]
+tags = ["programming", "work", "golang", "minecraft", "games"]
 featured_image = ""
 description = "How I wired together a thing"
 +++
