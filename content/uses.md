@@ -33,6 +33,7 @@ description = "Another /uses page, just like the others"
 - I also (rarely) play around with [Picotron](https://www.lexaloffle.com/picotron.php), [Pico-8](https://www.lexaloffle.com/pico-8.php), [TIC-80](https://tic80.com/) and [LÖVE](https://love2d.org/) for the same
 
 ## Command line
+
 - [Here is the bootstrap set of dotfiles I use](https://github.com/jasonbot/dotfiles) on new computers
 - I use zsh and bash almost equally, though I think I have more zsh machines now
 - I usually start out with [oh-my-zsh](https://ohmyz.sh/) or [oh-my-bash](https://github.com/ohmybash/oh-my-bash) on new systems
@@ -42,11 +43,11 @@ description = "Another /uses page, just like the others"
 
 ### It Came from Userspace
 
-- I always add `~/.local/bin` and `~/bin/` to my `$PATH` so I can manage my own binaries without superuser perms 
+- I always add `~/.local/bin` and `~/bin/` to my `$PATH` so I can manage my own binaries without superuser perms
 - I download [VS Code](https://code.visualstudio.com/download) and [Go](https://go.dev/doc/install) (setting `$GOPATH` to `~/.go`) from tarballs and manage them myself, adding `~/go/bin` and `~/VSCode-linux-x64/bin` to `$PATH` -- that way I don't need to deal with native packages or elevated install permissions
 - Same with [Deno](https://deno.com/)
 - Currently in `~/bin`: `btm` `slirp4netns`[^1] `tmux` `tic80` (static binaries acquired from their release pages)
-[^1]: This is missing in ChimeraOS for some reason and the only part absent from a working podman setup on my handheld
+  [^1]: This is missing in ChimeraOS for some reason and the only part absent from a working podman setup on my handheld
 
 ## Cloud Stuff
 
@@ -82,7 +83,7 @@ description = "Another /uses page, just like the others"
 - [BetterDisplay](https://github.com/waydabber/BetterDisplay) for better external monitor support
 - [SyncThing](https://syncthing.net/) to move files around
 - [MeetingBar](https://github.com/leits/MeetingBar) to see what I'm supposed to be doing
-- [Rectange](https://rectangleapp.com/) to move windows around
+- [Rectangle](https://rectangleapp.com/) to move windows around
 - [Enchanted](https://github.com/AugustDev/enchanted) as a standalone frontend to Ollama
 - [iTerm2](https://iterm2.com/) as my terminal emulator
 
