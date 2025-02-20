@@ -38,6 +38,22 @@ footer a:hover {
   color: white;
 }
 
+#toc {
+  margin-top: 1em;
+}
+
+#toc h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#toc li {
+  text-align: left !important;
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (min-width: 800px) {
   header,
   footer {
@@ -67,6 +83,10 @@ a {
 
 a:visited {
   color: var(--dark-purple);
+}
+
+h1 {
+  font-size: xx-large;
 }
 
 h1,
