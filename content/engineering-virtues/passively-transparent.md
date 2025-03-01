@@ -45,4 +45,9 @@ Make decisions (choose one end, these are opposite ends of a continuum):
 
 # Encourage This Behavior In Others
 
-One way to promote this way of working is to practice it yourself: when working in a team, engage with your peers with the expectation that they are working in a passively transparent manner themselves. A quick, no-expectations "I was reading your draft PR, looks good," or "is there a Jira queue I'm not watching where you're doing daily updates?" on Slack can do wonders in a non-forceful way.
+One way to promote this way of working is to practice it yourself: when working in a team, engage with your peers with the assumption that they are working in a passively transparent manner themselves.
+
+Quick, no-expectations messages on Slack can do wonders in a non-forceful way by gently framing your working style as conventionial:
+
+- "I was reading your draft PR, looks good"
+- "Is there a Jira queue I'm not watching where you're doing daily updates?"
