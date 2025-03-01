@@ -1,7 +1,7 @@
 +++
 title =  "Trying out Rectangle"
 date = 2021-02-08T10:00:00-06:00
-tags = ["mac"]
+tags = ["mac", "apple"]
 featured_image = ""
 description = ""
 +++

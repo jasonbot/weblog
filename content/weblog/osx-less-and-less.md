@@ -1,7 +1,7 @@
 +++
 title =  "I don’t really use OSX anymore"
 date = 2010-02-09T01:15:00-08:00
-tags = ["programming", "mac"]
+tags = ["programming", "mac", "apple"]
 featured_image = ""
 description = ""
 +++

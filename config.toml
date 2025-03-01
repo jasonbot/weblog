@@ -23,9 +23,9 @@ paginate = 500
     weight = 4
 
   [[menu.main]]
-    identifier = "games-by-jason"
-    name = "Games by Jason"
-    url = "/tags/games-by-jason/"
+    identifier = "engineering-virtues"
+    name = "Engineering Virtues"
+    url = "/engineering-virtues/"
     weight = 3
 
   [[menu.main]]
