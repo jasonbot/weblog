@@ -8,9 +8,9 @@ description = ""
 
 One thing that is important to me as an engineer that I don't think I've seen put in writing is something I have distilled into the term _passively transparent_.
 
-It should be obvious to the people in leadership what is motiviating you to work and what you are working on (transparency), and it should not require an on-demand effort on your part to communicate this to them (passivity).
+It should be obvious to the people in leadership what is motivating you to work and what you are working on (transparency), and it should not require an on-demand effort on your part to communicate this to them (passivity).
 
-You should also be transparent for the reason that you are setting a baseline of what you are expecting to share with your manager: if they feel like you aren't giving good status it gives them tacit permission to ask _too many questions_ or _questions that are inappropriately deep_. Calibrate the level of communication by setting it yourself: keep your management at an arm's length in how they use your time and attention. "I refer you to this query on Github, which you may access at any time" when someone asks about your deliverables should be a response you aspire for and your leadership accepts.
+You should also be transparent for the reason that you are setting a baseline of what you are expecting to share with your manager: if they feel like you aren't giving good status it gives them tacit permission to ask _too many questions_ or _questions that are inappropriately deep_. Calibrate the level of communication by setting it yourself: keep your management at an arm's length in how they use your time and attention. "I refer you to this query on GitHub, which you may access at any time" when someone asks about your deliverables should be a response you aspire for and your leadership accepts.
 
 A lot of the agile software movement and its offshoots attempt to codify and formalize processes of behavior that boil down to expressing these values:
 
@@ -19,7 +19,7 @@ A lot of the agile software movement and its offshoots attempt to codify and for
 If a manager or peer wants to see what you are working on, they shouldn't have to ask for a status update: they should be able to figure it out on their own at any time on demand.
 
 - Open a draft PR the _second_ you begin coding, push to it regularly. Hourly during standard hour, if you can.
-- Broadcast your current status on your isue tracking site: it is more work in the short run, but give you warm fuzzies (line go down on burndown) and lets you give high-value opportunities to course correct before going too far.
+- Broadcast your current status on your issue tracking site: it is more work in the short run, but give you warm fuzzies (line go down on burndown) and lets you give high-value opportunities to course correct before going too far.
   - Keep tickets at a 1-3 working day granularity and
   - Move them along the started -> in progress -> finished pipeline quickly to telegraph to your management that you are working
     1. Independently
