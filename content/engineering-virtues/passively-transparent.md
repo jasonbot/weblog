@@ -44,11 +44,3 @@ Make decisions (choose one end, these are opposite ends of a continuum):
 # Encourage This Behavior In Others
 
 One way to promote this way of working is to practice it yourself: when working in a team, engage with your peers with the expectation that they are working in a passively transparent manner themselves. A quick, no-expectations "I was reading your draft PR, looks good," or "is there a Jira queue I'm not watching where you're doing daily updates?" on Slack can do wonders in a non-forceful way.
-
-# Be An Iceberg
-
-![Iceberg](/images/passively-transparent/iceberg.svg)
-
-When operating transparently, as the phrase goes, _don't let your mouth write checks your ass can't cash_. Send along curated information that is a good summary of what you are doing, but be able to support it with research, opinion, or buy-in when pushed. Reveal enough to convey that you are a force, but do not reveal _everything_.
-
-Do not operate at 100% capacity at all times, aim to operate at 80% so that when you _really_ need to you can crank up your productivity in a sustainable way.
