@@ -8,7 +8,7 @@ description = ""
 
 One thing that is important to me as an engineer that I don't think I've seen put in writing is something I have distilled into the term _passively transparent_.
 
-It should be obvious to the people in leadership what is motivating you to work and what you are working on (transparency), and it should not require an on-demand effort on your part to communicate this to them (passivity).
+It should be obvious to the people in leadership what is motivating you to work and what you are working on (transparency), and it should not require an on-demand effort on your part to communicate this to them (passive access).
 
 You should also be transparent for the reason that you are setting a baseline of what you are expecting to share with your manager: if they feel like you aren't giving good status it gives them tacit permission to ask _too many questions_ or _questions that are inappropriately deep_. Calibrate the level of communication by setting it yourself: keep your management at an arm's length in how they use your time and attention. "I refer you to this query on GitHub, which you may access at any time" when someone asks about your deliverables should be a response you aspire for and your leadership accepts.
 
@@ -40,6 +40,10 @@ Make decisions (choose one end, these are opposite ends of a continuum):
 
 - As quickly as possible with minimal consensus but easy to change course on
 - As late as possible with as long as reasonable to get input on
+
+# Encourage This Behavior In Others
+
+One way to promote this way of working is to practice it yourself: when working in a team, engage with your peers with the expectation that they are working in a passively transparent manner themselves. A quick, no-expectations "I was reading your draft PR, looks good," or "is there a Jira queue I'm not watching where you're doing daily updates?" on Slack can do wonders in a non-forceful way.
 
 # Be An Iceberg
 
