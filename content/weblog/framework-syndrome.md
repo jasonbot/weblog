@@ -1,7 +1,7 @@
 +++
 title =  "Framework Syndrome: Solving Software Problems by Not Solving Them"
 date = 2024-05-01T19:55:10-08:00
-tags = ["work", "programming"]
+tags = ["work", "programming", "virtues"]
 featured_image = ""
 description = ""
 +++
