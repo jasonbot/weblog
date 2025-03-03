@@ -20,7 +20,7 @@ A lot of the agile software movement and its offshoots attempt to codify and for
 
 If a manager or peer wants to see what you are working on, they shouldn't have to ask for a status update: they should be able to figure it out on their own at any time on demand.
 
-- Open a draft PR the _second_ you begin coding, push to it regularly. Hourly during standard hour, if you can.
+- Open a draft PR the _second_ you begin coding, push to it regularly. Hourly, during a standard working day, if you can.
 - Broadcast your current status on your issue tracking site: it is more work in the short run, but give you warm fuzzies (line go down on burndown) and lets you give high-value opportunities to course correct before going too far.
   - Keep tickets at a 1-3 working day granularity and
   - Move them along the started -> in progress -> finished pipeline quickly to telegraph to your management that you are working

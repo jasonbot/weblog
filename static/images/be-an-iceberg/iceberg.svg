@@ -103,7 +103,7 @@
    <stop offset="1" stop-color="#000000"/>
   </linearGradient>
  </defs>
- <g id="Document" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)">
+ <g id="Document" fill="none" stroke="black" font-family="Inter" font-size="16" transform="scale(1 -1)">
   <g id="Spread" transform="translate(0 -360)">
    <g id="Layer 1">
     <mask id="TranspMask">
@@ -116,8 +116,8 @@
     </mask>
     <path d="M 73.197,79.12 L 49.331,148.473 L 36.134,138.926 L 22.938,199.294 L 11.706,206.594 L 9.741,263.591 L 10.173,263.759 L 191.176,263.759 L 164.45,196.205 L 141.707,197.328 L 128.51,149.315 L 104.924,142.576 L 73.197,79.12 Z" fill="#000000" stroke-linejoin="miter" stroke-linecap="round" stroke-width="1" stroke="none" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" mask="url(#TranspMask_1)"/>
     <path d="M 0.124,263.787 L 194.723,263.787" fill="none" stroke-width="0.25" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="79.8403193612775"/>
-    <text xml:space="preserve" transform="matrix(0 -1 -1 0 208.116 330.463)" font-size="6.942" font-family="Gotham Book" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.174" stroke="none" fill="#000000" stroke-miterlimit="79.8403193612775"><tspan x="0" y="0">Impr</tspan><tspan x="15.891" y="0">es</tspan><tspan x="23.389" y="0">siv</tspan><tspan x="32.541" y="0">e</tspan></text>
-    <text xml:space="preserve" transform="matrix(0 -1 -1 0 208.116 150.428)" font-size="6.942" font-family="Gotham Book" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.174" stroke="none" fill="#000000" stroke-miterlimit="79.8403193612775"><tspan x="0" y="0">T</tspan><tspan x="3.618" y="0">errifying</tspan></text>
+    <text xml:space="preserve" transform="matrix(0 -1 -1 0 208.116 330.463)" font-size="6.942" font-family="Inter" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.174" stroke="none" fill="#000000" stroke-miterlimit="79.8403193612775"><tspan x="0" y="0">Impr</tspan><tspan x="15.891" y="0">es</tspan><tspan x="23.389" y="0">siv</tspan><tspan x="32.541" y="0">e</tspan></text>
+    <text xml:space="preserve" transform="matrix(0 -1 -1 0 208.116 150.428)" font-size="6.942" font-family="Inter" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.174" stroke="none" fill="#000000" stroke-miterlimit="79.8403193612775"><tspan x="0" y="0">T</tspan><tspan x="3.618" y="0">errifying</tspan></text>
     <path d="M 198.921,266.703 L 204.553,266.703 L 204.553,350.328 L 198.921,350.328" fill="none" stroke-linecap="round" stroke-width="0.25" stroke-linejoin="round" stroke-miterlimit="79.8403193612775"/>
     <path d="M 198.921,12.423 L 204.553,12.423 L 204.553,261.048 L 198.921,261.048" fill="none" stroke-linecap="round" stroke-width="0.25" stroke-linejoin="round" stroke-miterlimit="79.8403193612775"/>
    </g>
