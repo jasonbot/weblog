@@ -12,7 +12,7 @@ That said, I can't declare them an unqualified success or a miracle cure for any
 
 # How LLMs are Made
 
-As an undergraduate and a couple of years into my post-university life, I did research in what could be considered "natural language processing" or "computational linguistics": I worked on the [HAL Model](https://link.springer.com/article/10.3758/BF03204766), which was an early high-dimensional model for approximating language understanding, and later [a software systems employing all kinds of cool cutting-edge techniques](https://dlib.org/dlib/january03/mitchell/01mitchell.html) (early Support Vector Machine tooling being one I worked on) and there was one lesson I learned from both:
+As an undergraduate and a couple of years into my post-university life, I did research in what could be considered "natural language processing" or "computational linguistics": I worked on the [HAL Model](https://link.springer.com/article/10.3758/BF03204766), which was an early high-dimensional model for approximating language understanding, and later [a software system employing all kinds of cool cutting-edge techniques](https://dlib.org/dlib/january03/mitchell/01mitchell.html) (early Support Vector Machine tooling being one I worked on) and there was one lesson I learned from both:
 
 > **Better models are good, but better data is _better_.**
 
@@ -150,3 +150,19 @@ This would be like C never taking off because someone invented a better assembly
 I'll say this is my least objective or reasonable prong critiquing LLMs as they are currently practiced, but the strongest one I go to when asked what I think about LLMs: **cheerleaders are fucking annoying**. When I hear ridiculously stupid, not-backed-up-by-evidence claims about what LLMs can and will do I immediately knee-jerk block the person for being so stupid. The people who know the least about what they are talking about are being the loudest.
 
 We _had_ "agentic" software before, it was just called "computer programs" or sometimes "automations" or "APIs" or "integrations" or "cronjobs." The generic term "AI" was hijacked to represent LLMs and only LLMs, and the terms for traditional software were unecessarily thrown away for a new term for the same thing. _There is so much marketing baked into the terminology_. We've gone from arguing the virtues of the thing to arguing based on pure enthusiasm for the thing.
+
+# Conclusion
+
+I pose the following questions (the answer to some of these are unequivocally _yes_, but they are still important to keep in mind):
+
+- Are LLMs, in general, an improvement to what was there before?
+- Are LLMs, in your specific cases, worth the financial cost? Will the be worth it at 2x the cost? 10x?
+- Are the benefits of LLMs worth the _social_ cost?
+  - Are you willing and able to live in a world in which creative work is impacted in a transformatively negative way?
+  - Are you able to look to your friends and peers and tell them that anything they produce in written form belongs contribute to the public good without compensation?
+- Do LLMs make coding _better_, or just _different_?
+  - Are you actually more productive using an LLM agent to code, or it it just novel?
+  - Are you aware of what you are giving up in terms of control and understanding when yielding control to an LLM?
+  - Are you willing to give up that understanding and control long-term?
+
+You may come to the conclusion that yes, LLMs are worth it. That's fine. I just hope you went though a process of thought and introspection and considered the pros and cons of the technology before loudly and enthusiastically adopting them into your life.
