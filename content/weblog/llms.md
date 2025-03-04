@@ -131,6 +131,12 @@ Writing code is usually an exploratory process for me in which I 'feel out' the 
 
 Not to mention that fact that _reading code is always harder than writing it_. We have let the computer do the easy part and asked it to inflict the hard part on us from minute one of the code existing. By letting the tool do the coding _we're adding cognitive load to a process that already worked fine as-is for many of us_.
 
+## Maintenance is Job None
+
+LLM-generated code can only be up to about two years old at this point (early March 2025). In my 2+ decades of software enginering, getting a product out _is_ important, but then there are years, if not decades, of follow-up fixes and explansion on that software. We have no idea how maintainable LLM-assisted codebases will be, and there are already examples of LLM-driven code growing beyond the scope of e.g. Claud'es ability to understand them and leaving the developers high and dry; unable to understand or extend the existing code.
+
+I've fixed Fortran that was older than myself at one point. Getting a new React app out is not the hard part, it's the toil of maintenance that happens over the course of years that is where most of what I would consider "software engineering" happens and it does not seem like that has been a focus or a strong point of LLM-driven development thus far.
+
 ## Every Prior Advancement in Developer Productivity Followed a Pattern Entirely Unlike this One
 
 I don't think an LLM is going to steal my job. Every change in technology that made devlopers more productive over the last 50 years has only increased the demand for software, and every productivity boost that was supposed to cut the number of people needed to make and run software has only grown the number of people involved. Examples: your startup probably has more Infra/DevOps engineers than a startup of the equivalent size had Sysadmins in the pre-cloud era. CRUD apps becoming easy to make with better tools led to a Cambrian Explosion of people writing CRUD apps.
@@ -143,4 +149,4 @@ This would be like C never taking off because someone invented a better assembly
 
 I'll say this is my least objective or reasonable prong critiquing LLMs as they are currently practiced, but the strongest one I go to when asked what I think about LLMs: **cheerleaders are fucking annoying**. When I hear ridiculously stupid, not-backed-up-by-evidence claims about what LLMs can and will do I immediately knee-jerk block the person for being so stupid. The people who know the least about what they are talking about are being the loudest.
 
-We _had_ "agentic" software before, it was just called "computer programs" or sometimes "automations" or "APIs" or "integrations" or "cronjobs." The generic term "AI" was hijacked to represent LLMs and only LLMs, and the terms for traditional software were unecessarily thrown away for a new term for the same thing. _There is so much marketing baked into the terminology_.
+We _had_ "agentic" software before, it was just called "computer programs" or sometimes "automations" or "APIs" or "integrations" or "cronjobs." The generic term "AI" was hijacked to represent LLMs and only LLMs, and the terms for traditional software were unecessarily thrown away for a new term for the same thing. _There is so much marketing baked into the terminology_. We've gone from arguing the virtues of the thing to arguing based on pure enthusiasm for the thing.
