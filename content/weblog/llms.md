@@ -1,6 +1,6 @@
 +++
 title =  "A Children's Treasury of Critiques and Concerns about the Current LLM Hype Cycle"
-date = 2025-03-07T00:00:00-00:00
+date = 2025-03-03T00:00:00-00:00
 tags = ["llm"]
 featured_image = ""
 description = ""
@@ -18,15 +18,15 @@ As an undergraduate and a couple of years into my post-university life, I did re
 
 Far and away, the best way to get better results was not to develop a better model, it was to develop toolchains for collecting more and better data. We got good results even with okay models when we fed them Wikipedia. We got bad results even with cutting edge models if we just fed them a couple of emails. Good data was what made these things effective.
 
-That said, it paints my experience of the current success of LLMs: they are interesting technology from a modeling perspective. The more interesting part is _all the data that went into making them_.
+That said, it paints my experience of the current success of LLMs: they are interesting technology from a modeling perspective, but the more interesting part is _all the data that went into making them_.
 
 ## LLMs Are Not Sourced from Above-Board Places
 
-Even "open-source" models do not share their training sets. We have no idea where thee impressive troves of training data have come from. We know that there are pirated books in Meta's Lllama models for sure. Screenwriters' Guild protected screenplays have shows up in other datasets by virtue of the fact that there are pirated copies on the internet, which the training sets then integrate. Nobody's getting paid money if their work is added to an LLM. The value is contributed by armies of human authors, and the profits, whenever they may come, are collected by the companies using the data.
+Even "open-source" models do not share their training sets. We have no idea where these impressive troves of training data have come from. We know that there are pirated books in Meta's Lllama models for sure. Screenwriters' Guild protected screenplays have shows up in other datasets by virtue of the fact that there are pirated copies on the internet, which the training sets then integrate. Nobody's getting paid money if their work is added to an LLM. The value is contributed by armies of human authors, and the profits, whenever they may come, are collected by the companies using the data.
 
-Spotify's model is genius in that it barely pays its artists. OpenAI's model is even better: it doesn't pay its artists at all.
+Spotify's model is genius in that it barely pays its artists. OpenAI's model is even better: it doesn't pay its artists at all. It doesn't even acknowledge that humans _made_ the fuel it needs to go.
 
-You can argue that people consented to use their 'content,' which is a sterile way of simplfying any product a human being can express into words, be it art, opinion, fact, conversation, etc., but _not everybody consented_, there is nonsonsensually acquired material in them **right now**, and many people, knowing now what their data is being used for, _want ways to possibly opt out of consenting in the future_. A Reddit user is screwed, essentially, in that a community they have spent decades of sweat and tears contributing to is now just training data to a robot somewhere. They're going to have to _sever their relationship with their friends and community on Reddit_ in order to stop feeding a machine they do not like, which did not exist 7 years ago.
+You can argue that people consented to use their 'content,' which is a sterile way of simplfying any product a human being can express into words, be it art, opinion, fact, conversation, etc., but _not everybody consented_, there is nonsonsensually acquired material in them **right now**, and many people, knowing now what their data is being used for, _want ways to possibly opt out of consenting in the future_. A Reddit user is screwed, essentially, in that a community they have spent decades of sweat and tears contributing to is now just training data to a robot somewhere. They're going to have to _sever their relationship with their friends and community on Reddit_ in order to stop feeding a machine they do not like (or are fundamentally, ethically opposed to), which did not exist 7 years ago.
 
 ## LLMs Are Not Up-to-Date
 
@@ -45,7 +45,11 @@ Even a model that is trained last week will not be able to tell you the current 
 LLMs are not predictable, and I mean this in two ways:
 
 1. Given an input, there is no reliable way of getting the same output every time
-1. This is exacerbated by models being a 'black box' -- OpenAI or Anthropic can make tweaks to the model, change parameters, even by _hosting the same system on a new data center_ you can get wildly varying, unpredictable results.
+1. This is exacerbated by models being a 'black box' -- OpenAI or Anthropic can make tweaks to the model, putting ut a slightly different training on the model, change temperature parameters, even by _hosting the same system on a new data center_ you can get wildly varying, unpredictable results.
+
+If we can't depend on an LLM to reliably do the same thing the same way every time, it's not nearly as dependable as a simple machine in a factory.
+
+I would not want my car randomly changing its gear ratios every time I left it in a parking lot.
 
 ## We're Already Approaching their Upper Limits
 
@@ -55,6 +59,10 @@ We've seen emergent issues with LLMs that give us pause and act as comical, wide
 - The Strawberry problem
 
 In every case, we're finding limits to the technology that get fixed in the next release, but are something of an indicator that we are no longer in the world of boundless possibilities and uninterruptible optimism for what they are capable of: the problems get fixed in subsequent models with what are essentially "bugfixes" to work around these cases. **We aren't discovering substantially new, greenfield capabilities with new LLM models anymore, we are in a stable "bug fix" phase**.
+
+I'm copying a graph from an old book ([_Putt's Law_](https://davewentzel.com/content/putts-law/)) to demonstrate my thoughts here: we're at _C_, everyone is projecting a straight line up, we're only going to make it to _D_.
+
+![S-Curve Law](/images/llms/s-curve.png)
 
 ### Band-Aid 1: Tools and the MCP
 
@@ -125,7 +133,7 @@ Not to mention that fact that _reading code is always harder than writing it_. W
 
 ## Every Prior Advancement in Developer Productivity Followed a Pattern Entirely Unlike this One
 
-I don't think an LLM is going to steal my job. Every change in technology that made devlopers more productive over the last 50 years has only increased the demand for software, and every productivity boost that was supposed to cut the number of people needed has only grown it. For example: your startup probably has more Infra/DevOps engineers than a startup of the equivalent size had Sysadmins in the pre-cloud era.
+I don't think an LLM is going to steal my job. Every change in technology that made devlopers more productive over the last 50 years has only increased the demand for software, and every productivity boost that was supposed to cut the number of people needed to make and run software has only grown the number of people involved. Examples: your startup probably has more Infra/DevOps engineers than a startup of the equivalent size had Sysadmins in the pre-cloud era. CRUD apps becoming easy to make with better tools led to a Cambrian Explosion of people writing CRUD apps.
 
 Usually improvements to the craft of software engineering have been via _better tools and languages_. In the instance of the LLM-assisted coding world, we have given up on the idea of amking a better progrmaming language and have instead decided we can't do any better and are using non-deterministic macro expansion/copy-paste agents in teh form of LLM-enabled development tools.
 
