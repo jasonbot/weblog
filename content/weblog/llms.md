@@ -8,7 +8,7 @@ description = ""
 
 We're a couple of years into the LLM hype cycle and the volume at this point is _deafening_. I use LLMs, and I find them interesting, and they have played a major part of my professional life for the past three years.
 
-That said, I can't declare them an unqualified success or a miracle cure for anything. I approach them with a combination of skepticism and grief. I understand they are here to stay and I will do my best to use them effectively in the use cases where they are indeed effective. However, I think it is both foolish and ireeposnible to myself, my employers, and society in general to seem them solely in a positive light and think we need to think critically about how we want to approach them.
+That said, I can't declare them an unqualified success or a miracle cure for anything. I approach them with a combination of skepticism and grief. I understand they are here to stay and I will do my best to use them effectively in the use cases where they are indeed effective. However, I think it is both foolish and irresponsible to myself, my employers, and society in general to seem them solely in a positive light and think we need to think critically about how we want to approach them.
 
 # How LLMs are Made
 
