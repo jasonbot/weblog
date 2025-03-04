@@ -38,6 +38,15 @@ All models rely on their training sets, which are fixed at a point in time. To g
 
 Even a model that is trained last week will not be able to tell you the current weather.
 
+# How LLMs work
+
+## LLMs are Non-Deterministic
+
+LLMs are not predictable, and I mean this in two ways:
+
+1. Given an input, there is no reliable way of getting the same output every time
+1. This is exacerbated by models being a 'black box' -- OpenAI or Anthropic can make tweaks to the model, change parameters, even by _hosting the same system on a new data center_ you can get wildly varying, unpredictable results.
+
 ## We're Already Approaching their Upper Limits
 
 We've seen emergent issues with LLMs that give us pause and act as comical, widely-published issues that these things aren't armed with the unlimited potential they claim to have:
@@ -45,7 +54,7 @@ We've seen emergent issues with LLMs that give us pause and act as comical, wide
 - Prompt injection
 - The Strawberry problem
 
-In every case, we're finding limits to the technology that get fixed in the next release, but are something of an indicator that we are no longer in the world of boundless possibilities and uninterruptible optimism for what they are capable of: the problems get fixed in subsequent models with what are essentially "bugfixes" to work around these cases. **We aren't doing anything substantially new with new LLM models, we are in a stable "bug fix" phase**.
+In every case, we're finding limits to the technology that get fixed in the next release, but are something of an indicator that we are no longer in the world of boundless possibilities and uninterruptible optimism for what they are capable of: the problems get fixed in subsequent models with what are essentially "bugfixes" to work around these cases. **We aren't discovering substantially new, greenfield capabilities with new LLM models anymore, we are in a stable "bug fix" phase**.
 
 ### Band-Aid 1: Tools and the MCP
 
@@ -61,7 +70,9 @@ Just as a human being can use a search engine to find relevant information, we c
 
 Very similar to the last point above with the search engine, we can make an LLM "know" things not baked into its model by pre-emptively doing a search engine queries on its behalf and by injecting snippets into its conversation context it can "know about" in its context to appear to be able to comment on user-relevant data.
 
-# How LLMs are Monetized
+Some models now have larger context models in which the RAG approach is 'obsolete,' but technically the methodology is the same: inject massive amounts of non-model data into the context to get the LLM to 'know' about it.
+
+# How LLMs are Monetized (Theft and Planned Enshittification)
 
 LLMs as a business plan don't seem very viable long-term unless they engage in some major enshittification. Enjoy ChatGPT and Claude at afforable rates without embedded advertisements now, because as soon as they're a part of your workflow they're going to bet _real bad, real fast_.
 
@@ -76,11 +87,11 @@ LLMs are, in essence, a lossily-compressed, fuzzy searchable copy of the interne
 
 Google used to be good. We used to be able to type these things into Google and get answers. Using an LLM as a search engine is just an indictment that through slow decay of Google's core product functions and the fact that we can't have nice things -- SEO monsters started posting garbage on the internet to game the search engines and ruined it for all of us.
 
-Your chat with an AI session is a sad, watered-down echo of a quality user experience we once had a quarter of a century ago.
+Your chat with an AI session is a sad, watered-down echo of a quality user experience we once had a quarter of a century ago with a single text input box on Google.com.
 
 # Widespread Adoption in LLM ins in its Uber/AirBNB Phase
 
-I like to tell people that commercial LLMs are in their Uber phase, and I mean this in two ways: 1) they are blatantly illegal and hoping to normalize their bad behavior through mass adoption and 2) priced in a way to hook you, do get you dependent on using it in fiscally unsustainable ways.
+I like to tell people that commercial LLMs are in their Uber phase, and I mean this in two ways: 1) they are blatantly illegal and hoping to normalize their bad behavior through mass adoption and 2) priced in a way to hook you, to get you dependent on using it in fiscally unsustainable ways.
 
 ## Normalizing Lawlessness
 
@@ -88,7 +99,7 @@ When Uber and AirBNB were first entering widespread release, there was immediate
 
 We're all engaging in intellectual property theft right now when we use these models. They're betting on a "they can't arrest all of us" approach in which the norms and laws which worked are forcefully changed to further enable this theft of creators' property.
 
-Again: the value of the LLMs is the data, not the model, and human beings have to provide that data. Large LLM companies are only going to be profitable if they are allowed to steal training data with impunity.
+Again: the value of the LLMs is the data, not the model, and human beings have to provide that data. Large LLM companies are only going to be profitable if they are allowed to use data at very small margins, if not zero cost (stealing training data with impunity).
 
 I have not heard a single compelling case for the unequivocal legality of what's going on: every assertion I've seen that OpenAI has a 'right' to this data is qualified with an _apparently_ or a _probably_.
 
@@ -98,6 +109,30 @@ I remember when every Uber ride was heavily subsidized by its investors. I could
 
 Don't fool yourselves into thinking that once your default choice is 'I'll ask ChatGPT' that ChatGPT won't find a way to squeeze for as much as ity can because it's insinuated itself into your lifestyle.
 
+# LLM Tools as Developer Aids
+
+This is something that I see regularly on my radar as a software engineer. _I USE LLM CODE ASSISTANCE_, but _I do not think it is worth the trouble at least 75% of the time_.
+
+## An LLM Assistant Is Trained On Already Written Code
+
+Languages and frameworks that exist today can be handled no problem, but if we limit ourselves to what models are trained on, we can't adopt new languages, frameworks, libraries. An LLM-guided software engineering world is a world where software engineering is frozen in time.
+
+## Writing Code Is Probably The Easiest Part Of Coding
+
+Writing code is usually an exploratory process for me in which I 'feel out' the problem space. I very seldom use plain English to describe my problems because English is less precise and less able to express to the computer what I want it to do. It's also harder to write. We use programming languages because they're good at telling computers what to do. Telling a computer to write its own code by asking it in English is just adding a step.
+
+Not to mention that fact that _reading code is always harder than writing it_. We have let the computer do the easy part and asked it to inflict the hard part on us from minute one of the code existing. By letting the tool do the coding _we're adding cognitive load to a process that already worked fine as-is for many of us_.
+
+## Every Prior Advancement in Developer Productivity Followed a Pattern Entirely Unlike this One
+
+I don't think an LLM is going to steal my job. Every change in technology that made devlopers more productive over the last 50 years has only increased the demand for software, and every productivity boost that was supposed to cut the number of people needed has only grown it. For example: your startup probably has more Infra/DevOps engineers than a startup of the equivalent size had Sysadmins in the pre-cloud era.
+
+Usually improvements to the craft of software engineering have been via _better tools and languages_. In the instance of the LLM-assisted coding world, we have given up on the idea of amking a better progrmaming language and have instead decided we can't do any better and are using non-deterministic macro expansion/copy-paste agents in teh form of LLM-enabled development tools.
+
+This would be like C never taking off because someone invented a better assembly macro processor, or Python/Ruby/etc never taking off because the interpreters could never get memory management right. We'll just ask an LLM to translate our machine code into a different machine code, rather than find an appropriate way of expressing these computing concepts in a better way.
+
 # How LLMs are Sold
 
 I'll say this is my least objective or reasonable prong critiquing LLMs as they are currently practiced, but the strongest one I go to when asked what I think about LLMs: **cheerleaders are fucking annoying**. When I hear ridiculously stupid, not-backed-up-by-evidence claims about what LLMs can and will do I immediately knee-jerk block the person for being so stupid. The people who know the least about what they are talking about are being the loudest.
+
+We _had_ "agentic" software before, it was just called "computer programs" or sometimes "automations" or "APIs" or "integrations" or "cronjobs." The generic term "AI" was hijacked to represent LLMs and only LLMs, and the terms for traditional software were unecessarily thrown away for a new term for the same thing. _There is so much marketing baked into the terminology_.
