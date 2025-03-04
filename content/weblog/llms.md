@@ -164,5 +164,7 @@ I pose the following questions (the answer to some of these are unequivocally _y
   - Are you actually more productive using an LLM agent to code, or it it just novel?
   - Are you aware of what you are giving up in terms of control and understanding when yielding control to an LLM?
   - Are you willing to give up that understanding and control long-term?
+  - Are you willing to take personal responsibility for code you did not personally write?
+  - Are you willing to take the risk that generated code derived from models trained on GPL-licensed code may taint your codebase?
 
 You may come to the conclusion that yes, LLMs are worth it. That's fine. I just hope you went though a process of thought and introspection and considered the pros and cons of the technology before loudly and enthusiastically adopting them into your life.
