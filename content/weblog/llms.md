@@ -97,7 +97,7 @@ Google used to be good. We used to be able to type these things into Google and 
 
 Your chat with an AI session is a sad, watered-down echo of a quality user experience we once had a quarter of a century ago with a single text input box on Google.com.
 
-# Widespread Adoption in LLM ins in its Uber/AirBNB Phase
+# Widespread Adoption in LLM is in its Uber/AirBNB Phase
 
 I like to tell people that commercial LLMs are in their Uber phase, and I mean this in two ways: 1) they are blatantly illegal and hoping to normalize their bad behavior through mass adoption and 2) priced in a way to hook you, to get you dependent on using it in fiscally unsustainable ways.
 
