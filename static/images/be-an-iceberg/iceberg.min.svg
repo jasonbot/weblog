@@ -1,0 +1,46 @@
+<svg stroke-width=".501" stroke-linejoin="bevel" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg"
+    overflow="visible" width="288" height="480" viewBox="0 0 216 360">
+    <defs>
+        <linearGradient id="prefix__c" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="226.923" y2="0"
+            gradientTransform="rotate(-94.58 206.337 37.543) skewX(1.049)">
+            <stop offset="0" stop-color="#b4cfdd" />
+            <stop offset="1" />
+        </linearGradient>
+        <linearGradient id="prefix__a" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="109.658" y2="0"
+            gradientTransform="rotate(-91.065 174.88 83.754) skewX(.245)">
+            <stop offset="0" stop-color="#fff" />
+            <stop offset="1" />
+        </linearGradient>
+        <linearGradient id="prefix__d" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-2.26" y2="-109.64"
+            gradientTransform="translate(104.701 260.16)">
+            <stop offset="0" stop-color="#191919" />
+            <stop offset="1" />
+        </linearGradient>
+    </defs>
+    <g transform="matrix(1 0 0 -1 0 360)" fill="none" stroke="#000" font-family="Inter" font-size="16">
+        <mask id="prefix__b">
+            <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#prefix__a)" stroke="none" />
+        </mask>
+        <path d="M-.001 263.759V35.16H195v228.599H-.001z" mask="url(#prefix__b)" fill="url(#prefix__c)" stroke="none" />
+        <path
+            d="M28.553 270.892l31.728 51.944 10.67-31.728 33.29 59.511 25.199-60.6 32.7 14.1 29.1-40.2-26.79-67.714-22.743 1.123-13.197-48.013-23.586-6.739L72.141 24.76l-22.81 123.713-13.197-9.547-13.196 60.368-11.232 7.3-1.965 56.997 18.812 7.301z"
+            stroke-width="1" fill="#fff" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="79.84" />
+        <mask id="prefix__e">
+            <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#prefix__d)" stroke="none" />
+        </mask>
+        <path
+            d="M73.197 79.12l-23.866 69.353-13.197-9.547-13.196 60.368-11.232 7.3-1.965 56.997.432.168h181.003l-26.726-67.554-22.743 1.123-13.197-48.013-23.586-6.739L73.197 79.12z"
+            fill="#000" mask="url(#prefix__e)" stroke="none" />
+        <path d="M.124 263.787h194.599" stroke-width=".25" stroke-linejoin="round" stroke-linecap="round"
+            stroke-miterlimit="79.84" /><text transform="matrix(0 -1 -1 0 208.116 330.463)" font-size="6.942"
+            stroke-linejoin="round" stroke-linecap="round" stroke-width=".174" stroke="none" fill="#000"
+            stroke-miterlimit="79.84">
+            <tspan x="0" y="0">Impressive</tspan>
+        </text><text transform="matrix(0 -1 -1 0 208.116 150.428)" font-size="6.942" stroke-linejoin="round"
+            stroke-linecap="round" stroke-width=".174" stroke="none" fill="#000" stroke-miterlimit="79.84">
+            <tspan x="0" y="0">Terrifying</tspan>
+        </text>
+        <path d="M198.921 266.703h5.632v83.625h-5.632M198.921 12.423h5.632v248.625h-5.632" stroke-linecap="round"
+            stroke-width=".25" stroke-linejoin="round" stroke-miterlimit="79.84" />
+    </g>
+</svg>

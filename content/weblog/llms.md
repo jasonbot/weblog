@@ -1,0 +1,103 @@
++++
+title =  "A Children's Treasury of Critiques and Concerns about the Current LLM Hype Cycle"
+date = 2025-03-07T00:00:00-00:00
+tags = ["llm"]
+featured_image = ""
+description = ""
++++
+
+We're a couple of years into the LLM hype cycle and the volume at this point is _deafening_. I use LLMs, and I find them interesting, and they have played a major part of my professional life for the past three years.
+
+That said, I can't declare them an unqualified success or a miracle cure for anything. I approach them with a combination of skepticism and grief. I understand they are here to stay and I will do my best to use them effectively in the use cases where they are indeed effective. However, I think it is both foolish and ireeposnible to myself, my employers, and society in general to seem them solely in a positive light and think we need to think critically about how we want to approach them.
+
+# How LLMs are Made
+
+As an undergraduate and a couple of years into my post-university life, I did research in what could be considered "natural language processing" or "computational linguistics": I worked on the [HAL Model](https://link.springer.com/article/10.3758/BF03204766), which was an early high-dimensional model for approximating language understanding, and later [a software systems employing all kinds of cool cutting-edge techniques](https://dlib.org/dlib/january03/mitchell/01mitchell.html) (early Support Vector Machine tooling being one I worked on) and there was one lesson I learned from both:
+
+> **Better models are good, but better data is _better_.**
+
+Far and away, the best way to get better results was not to develop a better model, it was to develop toolchains for collecting more and better data. We got good results even with okay models when we fed them Wikipedia. We got bad results even with cutting edge models if we just fed them a couple of emails. Good data was what made these things effective.
+
+That said, it paints my experience of the current success of LLMs: they are interesting technology from a modeling perspective. The more interesting part is _all the data that went into making them_.
+
+## LLMs Are Not Sourced from Above-Board Places
+
+Even "open-source" models do not share their training sets. We have no idea where thee impressive troves of training data have come from. We know that there are pirated books in Meta's Lllama models for sure. Screenwriters' Guild protected screenplays have shows up in other datasets by virtue of the fact that there are pirated copies on the internet, which the training sets then integrate. Nobody's getting paid money if their work is added to an LLM. The value is contributed by armies of human authors, and the profits, whenever they may come, are collected by the companies using the data.
+
+Spotify's model is genius in that it barely pays its artists. OpenAI's model is even better: it doesn't pay its artists at all.
+
+You can argue that people consented to use their 'content,' which is a sterile way of simplfying any product a human being can express into words, be it art, opinion, fact, conversation, etc., but _not everybody consented_, there is nonsonsensually acquired material in them **right now**, and many people, knowing now what their data is being used for, _want ways to possibly opt out of consenting in the future_. A Reddit user is screwed, essentially, in that a community they have spent decades of sweat and tears contributing to is now just training data to a robot somewhere. They're going to have to _sever their relationship with their friends and community on Reddit_ in order to stop feeding a machine they do not like, which did not exist 7 years ago.
+
+## LLMs Are Not Up-to-Date
+
+All models rely on their training sets, which are fixed at a point in time. To get accurate information beyond the date a model was trained, you need to do one of three things:
+
+- Create a new model with the additional up-to-date information (expensive)
+- Fine-tune an existing model with additional up-to-date information (expensive, error-prone)
+- Inject contextual data into your prompt sessions with things like extended context windows and RAG architectures (these work all right in practical use, I would say this is the least bad tradeoff for now)
+
+Even a model that is trained last week will not be able to tell you the current weather.
+
+## We're Already Approaching their Upper Limits
+
+We've seen emergent issues with LLMs that give us pause and act as comical, widely-published issues that these things aren't armed with the unlimited potential they claim to have:
+
+- Prompt injection
+- The Strawberry problem
+
+In every case, we're finding limits to the technology that get fixed in the next release, but are something of an indicator that we are no longer in the world of boundless possibilities and uninterruptible optimism for what they are capable of: the problems get fixed in subsequent models with what are essentially "bugfixes" to work around these cases. **We aren't doing anything substantially new with new LLM models, we are in a stable "bug fix" phase**.
+
+### Band-Aid 1: Tools and the MCP
+
+One way that we're getting around the recency and context problem is with _tool-call enabled models_.
+
+Just as a human being can use a pocket calculator, we can give an LLM access to a clculator tool to do math, which LLMs structurally can't do like humans can.
+
+Just as a human being can use a web browser to look up weather, we can give an LLM access to a weather API (or, more roundabout, a browser automation that can open a weather web site).
+
+Just as a human being can use a search engine to find relevant information, we can give an LLM a tool to search through masses of text and use that to enhance its answers.
+
+### Band-Aid 2: Injected Context (RAG)
+
+Very similar to the last point above with the search engine, we can make an LLM "know" things not baked into its model by pre-emptively doing a search engine queries on its behalf and by injecting snippets into its conversation context it can "know about" in its context to appear to be able to comment on user-relevant data.
+
+# How LLMs are Monetized
+
+LLMs as a business plan don't seem very viable long-term unless they engage in some major enshittification. Enjoy ChatGPT and Claude at afforable rates without embedded advertisements now, because as soon as they're a part of your workflow they're going to bet _real bad, real fast_.
+
+1. They are an incredibly expensive product to make (millions of dollars to train one)
+2. Sold for well below the cost to recoup the cost of their production (OpenAI and Anthropic are running comically massive losses)
+3. Replaced with newer models at a dizzying pace, with no real way of comparing them apples-to-apples (see the disjoint and inconsistent "benchmarks," which themsleves are gamed by vendors and can't be trusted)
+4. While themselves becoming commodity products within days of their release (each model immediately is replaced with a new one)
+
+# LLMs In Usage Are Just A Reminder Of What We Once Had
+
+LLMs are, in essence, a lossily-compressed, fuzzy searchable copy of the internet (and a lot of pirated material).
+
+Google used to be good. We used to be able to type these things into Google and get answers. Using an LLM as a search engine is just an indictment that through slow decay of Google's core product functions and the fact that we can't have nice things -- SEO monsters started posting garbage on the internet to game the search engines and ruined it for all of us.
+
+Your chat with an AI session is a sad, watered-down echo of a quality user experience we once had a quarter of a century ago.
+
+# Widespread Adoption in LLM ins in its Uber/AirBNB Phase
+
+I like to tell people that commercial LLMs are in their Uber phase, and I mean this in two ways: 1) they are blatantly illegal and hoping to normalize their bad behavior through mass adoption and 2) priced in a way to hook you, do get you dependent on using it in fiscally unsustainable ways.
+
+## Normalizing Lawlessness
+
+When Uber and AirBNB were first entering widespread release, there was immediate backlash: these things were illegal. Uber famously paid its drivers' fines and tickets for operating as drivers, and AirBNB lobbied the hell out of local municipalities. Both
+
+We're all engaging in intellectual property theft right now when we use these models. They're betting on a "they can't arrest all of us" approach in which the norms and laws which worked are forcefully changed to further enable this theft of creators' property.
+
+Again: the value of the LLMs is the data, not the model, and human beings have to provide that data. Large LLM companies are only going to be profitable if they are allowed to steal training data with impunity.
+
+I have not heard a single compelling case for the unequivocal legality of what's going on: every assertion I've seen that OpenAI has a 'right' to this data is qualified with an _apparently_ or a _probably_.
+
+## The First Taste is Free
+
+I remember when every Uber ride was heavily subsidized by its investors. I could Uber Pool to multiple venues across San Francisco for about $10 on an evening out. Now that Uber has to be profitable, I don't even consider it except as a strategic last choice, and it's signficantly more expensive now (that same night out now would run me $75).
+
+Don't fool yourselves into thinking that once your default choice is 'I'll ask ChatGPT' that ChatGPT won't find a way to squeeze for as much as ity can because it's insinuated itself into your lifestyle.
+
+# How LLMs are Sold
+
+I'll say this is my least objective or reasonable prong critiquing LLMs as they are currently practiced, but the strongest one I go to when asked what I think about LLMs: **cheerleaders are fucking annoying**. When I hear ridiculously stupid, not-backed-up-by-evidence claims about what LLMs can and will do I immediately knee-jerk block the person for being so stupid. The people who know the least about what they are talking about are being the loudest.
