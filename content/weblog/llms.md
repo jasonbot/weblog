@@ -93,7 +93,7 @@ LLMs as a business plan don't seem very viable long-term unless they engage in s
 
 LLMs are, in essence, a lossily-compressed, fuzzy searchable copy of the internet (and a lot of pirated material).
 
-Google used to be good. We used to be able to type these things into Google and get answers. Using an LLM as a search engine is just an indictment that through slow decay of Google's core product functions and the fact that we can't have nice things -- SEO monsters started posting garbage on the internet to game the search engines and ruined it for all of us.
+Google used to be good. We used to be able to type these things into Google and get answers. Using an LLM as a search engine is just an indictment of that slow decay of Google's core product functions and the fact that we can't have nice things -- SEO monsters started posting garbage on the internet to game the search engines and ruined it for all of us.
 
 Your chat with an AI session is a sad, watered-down echo of a quality user experience we once had a quarter of a century ago with a single text input box on Google.com.
 
