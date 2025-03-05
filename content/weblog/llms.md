@@ -142,7 +142,7 @@ Not to mention that fact that _reading code is always harder than writing it_. W
 
 ## Maintenance is Job None
 
-LLM-generated code can only be up to about two years old at this point ("this point" being early March 2025). In my 2+ decades of software engineering, getting a product out _is_ important, but then there are years, if not decades, of follow-up fixes and expansion on that software. We have no idea how maintainable LLM-assisted codebases will be, and there are already examples of LLM-driven code growing beyond the scope of e.g. Claude's ability to understand them and leaving the developers high and dry; unable to understand or extend the existing code.
+LLM-generated code can only be up to about two years old at this point ("this point" being early March 2025): we're in very early days. In my 2+ decades of software engineering, getting a product out _is_ important, but then there are years, if not decades, of follow-up fixes and expansion on that software. We have no idea how maintainable LLM-assisted codebases will be, and there are already examples of LLM-driven projects growing beyond the scope of e.g. Claude's ability to understand them and leaving the developers high and dry; unable to understand or extend the existing codebase.
 
 I've fixed Fortran that was older than myself at one point. Getting a new React app out with trivial functionality is not the hard part, it's the toil of maintenance that happens over the course of years that is where most of what I would consider "software engineering" happens and it does not seem like that has been a focus or a strong point of LLM-driven development thus far.
 
@@ -154,7 +154,7 @@ I don't think an LLM is going to steal my job. Every change in technology that m
 
 Usually improvements to the craft of software engineering have been via _better tools and languages_. In the instance of the LLM-assisted coding world, we have given up on the idea of inventing a better programming language and have instead decided we can't do any better and are using non-deterministic macro expansion/copy-paste agents in the form of LLM-enabled development tools.
 
-This would be like C never taking off because someone invented a better assembly macro processor, or Python/Ruby/etc never taking off because we never trusted the interpreters to get memory management right on our behalf. We hav always come to _trust_ the abstractions below us, we didn't stop where we were because we didn't think things could be easier.
+This would be like C never taking off because someone invented a better assembly macro processor, or Python/Ruby/etc never taking off because we never trusted the interpreters to get memory management right on our behalf. We have always come to _trust_ the abstractions below us, we didn't stop where we were because we didn't think things could be easier.
 
 We'll just ask an LLM to write more and more code at the same abstraction level, rather than find an appropriate way of expressing these computing concepts in a better way. C compilers wrote mountains of assembly, but did it deterministically and hid the details from us with an abstraction layer. Python interpreters run massive amounts of C under the hood, but as a developer you never see them. Decent web frameworks never expose raw TCP sockets to developers. We used to climb the mountain, not make camp halfway up and decide this was high enough.
 
