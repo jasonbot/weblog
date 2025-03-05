@@ -69,7 +69,7 @@ description = "Another /uses page, just like the others"
 ## Producing and Manipulating Visual Artifacts
 
 - [Monodraw](https://monodraw.helftone.com/) for cool text-mode diagrams
-- [Xara Photo and Graphic Designer](https://www.xara.com/us/photo-graphic-designer/) as I have muscle memeory and it's fast to make drawings in
+- [Xara Photo and Graphic Designer](https://www.xara.com/us/photo-graphic-designer/) as I have muscle memory and it's fast to make drawings in
 - [The Gimp](https://www.gimp.org/) for quick raster touchups
 - [Inkscape](https://flathub.org/apps/org.inkscape.Inkscape) to touch up SVGs
 - [D2](https://d2lang.com/) for diagrams as code -- I like it in terms of how clean the language looks, how clean the output looks, and how easy it is to use
@@ -85,7 +85,7 @@ description = "Another /uses page, just like the others"
 - [MeetingBar](https://github.com/leits/MeetingBar) to see what I'm supposed to be doing
 - [Rectangle](https://rectangleapp.com/) to move windows around
 - [Enchanted](https://github.com/AugustDev/enchanted) as a standalone frontend to Ollama
-- [iTerm2](https://iterm2.com/) as my terminal emulator
+- [Ghosttty](https://ghostty.org/) as my terminal emulator
 
 ### Linux
 
