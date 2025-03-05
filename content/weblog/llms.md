@@ -104,13 +104,13 @@ Google used to be good. We used to be able to type these types of question into 
 
 Your chat with an AI session is a sad, watered-down echo of a quality user experience we once had a quarter of a century ago with a single text input box on `google.com`.
 
-# Widespread Adoption of LLMs is in its Uber/AirBNB Phase
+# Widespread Adoption of LLMs is in its Uber/AirBnB Phase
 
 I like to tell people that commercial LLMs are in their Uber phase, and I mean this in two ways: 1) they are blatantly illegal and hoping to normalize their bad behavior through mass adoption and 2) priced in a way to hook you, to get you dependent on using it in fiscally unsustainable ways.
 
 ## Normalizing Lawlessness
 
-When Uber and AirBNB were first entering widespread release, there was immediate backlash: these things were illegal. Uber famously paid its drivers' fines and tickets for operating as drivers, and AirBNB lobbied the hell out of local municipalities. Both also played heavily into FOMO: "San Francisco is doing it and San Francisco is a world class city, don't you want to be a world class city?" [Famous smart-on-paper people pushed real hard on this](https://x.com/paulg/status/222462460978937856), even claiming that [Uber's right to break the law was akin to the civil rights struggle](https://businesslawreview.uchicago.edu/print-archive/lawbreaking-lawmaking) -- a stultifyingly wrong claim that can be immediately and viscerally rejected by anyone with common sense.
+When Uber and AirBnB were first entering widespread release, there was immediate backlash: these things were illegal. Uber famously paid its drivers' fines and tickets for operating as drivers, and AirBnB lobbied the hell out of local municipalities. Both also played heavily into FOMO: "San Francisco is doing it and San Francisco is a world class city, don't you want to be a world class city?" [Famous smart-on-paper people pushed real hard on this](https://x.com/paulg/status/222462460978937856), even claiming that [Uber's right to break the law was akin to the civil rights struggle](https://businesslawreview.uchicago.edu/print-archive/lawbreaking-lawmaking) -- a stultifyingly wrong claim that can be immediately and viscerally rejected by anyone with common sense.
 
 We're all engaging in intellectual property theft right now when we use these models. They're betting on a "they can't arrest all of us" approach in which the norms and laws which worked are forcefully changed to further enable this theft of creators' property.
 
