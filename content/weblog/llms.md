@@ -60,9 +60,9 @@ We've seen emergent issues with LLMs that give us pause and act as comical, wide
 
 In every case, we're finding limits to the technology that get fixed in the next release, but are something of an indicator that we are no longer in the world of boundless possibilities and uninterruptible optimism for what they are capable of: the problems get fixed in subsequent models with what are essentially "bugfixes" to work around these cases. **We aren't discovering substantially new, greenfield capabilities with new LLM models anymore, we are in a stable "bug fix" phase**.
 
-I'm copying a graph from an old book ([_Putt's Law_](https://davewentzel.com/content/putts-law/)) to demonstrate my thoughts here: we're at _C_, everyone is projecting a straight line up, we're only going to make it to _D_.
+I'm copying a graph from an old book ([_Putt's Law_](https://en.wikipedia.org/wiki/Putt%27s_Law_and_the_Successful_Technocrat)) to demonstrate my thoughts here: we're rounding the _success_ intersection point, everyone is projecting a straight line up, we're going to slow down at some point.
 
-![S-Curve Law](/images/llms/s-curve.png)
+![S-Curve Law](/images/llms/s-curve.svg)
 
 ### Band-Aid 1: Tools and the MCP
 
