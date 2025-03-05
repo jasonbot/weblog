@@ -85,7 +85,7 @@ description = "Another /uses page, just like the others"
 - [MeetingBar](https://github.com/leits/MeetingBar) to see what I'm supposed to be doing
 - [Rectangle](https://rectangleapp.com/) to move windows around
 - [Enchanted](https://github.com/AugustDev/enchanted) as a standalone frontend to Ollama
-- [Ghosttty](https://ghostty.org/) as my terminal emulator
+- [Ghostty](https://ghostty.org/) as my terminal emulator
 
 ### Linux
 
