@@ -82,7 +82,7 @@ Some models now have larger context models in which the RAG approach is 'obsolet
 
 # How LLMs are Monetized (Theft and Planned Enshittification)
 
-LLMs as a business plan don't seem very viable long-term unless they engage in some major enshittification. Enjoy ChatGPT and Claude at affordable rates without embedded advertisements now, because as soon as they're a part of your workflow they're going to bet _real bad, real fast_.
+LLMs as a business plan don't seem very viable long-term unless they engage in some major enshittification. Enjoy ChatGPT and Claude at affordable rates without embedded advertisements now, because not long after you've let them become an indispensable part of your workflow they're going to get _real bad, real fast_.
 
 1. They are an incredibly expensive product to make (millions of dollars to train one)
 2. Sold for well below the price point needed to recoup the cost of their production (OpenAI and Anthropic are running comically massive losses)
