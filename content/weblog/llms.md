@@ -170,7 +170,7 @@ I pose the following questions (the answer to some of these are unequivocally _y
 
 - Are LLMs, in general, an improvement to what was there before?
 - Are LLMs, in your specific cases, worth the financial cost?
-  - Will the be worth it at 2x the cost?
+  - Will they be worth it at 2x the cost?
   - 10x?
 - Are the benefits of LLMs worth the _social_ cost?
   - Are you willing and able to live in a world in which creative work is impacted in a transformatively negative way?
