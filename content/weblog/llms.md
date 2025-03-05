@@ -24,7 +24,7 @@ That said, it paints my experience of the current success of LLMs: they are inte
 
 Even "open-source" LLM models do not share their training sets. We have no idea of the full provenance of these troves of training data driving current models.
 
-We know that there are pirated books in Meta's Llama models for sure. Screenwriters' Guild protected screenplays have shows up in other datasets by virtue of the fact that there are pirated copies on the internet, which the training sets then integrate. Autocompletes obviously trained on code with restrictive licenses show up in coding assistants.
+We know that [there are pirated books in Meta's Llama models](https://arstechnica.com/tech-policy/2025/02/meta-torrented-over-81-7tb-of-pirated-books-to-train-ai-authors-say/) for sure. [Screenwriters' Guild protected screenplays](https://www.wired.com/story/hollywood-screenwriters-artificial-intelligence-guardrails/) have shows up in other datasets by virtue of the fact that there are pirated copies on the internet, which the training sets then integrate. Autocompletes obviously trained on code with restrictive licenses show up in coding assistants.
 
 Nobody's getting paid money if their work is added to an LLM. The value is contributed by armies of human authors, and the profits, whenever they may come, are collected by the companies using the data.
 
@@ -40,7 +40,7 @@ All models rely on their training sets, which are fixed at a point in time. To g
 - Fine-tune an existing model with additional up-to-date information (expensive, error-prone)
 - Inject contextual data into your prompt sessions with things like extended context windows and RAG architectures (these work all right in practical use, I would say this is the least bad trade-off for now)
 
-Even a model that is trained last week will not be able to tell you the current weather.
+Even a model that was trained last week will not be able to tell you the current weather.
 
 # How LLMs work
 
@@ -48,7 +48,7 @@ Even a model that is trained last week will not be able to tell you the current 
 
 LLMs are not predictable, and I mean this in two ways:
 
-1. Given an input, there is no reliable way of getting the same output every time. You can't even get a sentence back from the trainign data fully verbatim in a reliable way. Facts can't happen when a machine is dreaming half-truths based on superpositions of sentences.
+1. Given an input, there is no reliable way of getting the same output every time. You can't even get a sentence back from the training data fully verbatim in a reliable way. Facts can't happen when a machine is dreaming half-truths based on superpositions of sentences.
 1. This is exacerbated by models being a 'black box' -- OpenAI or Anthropic can make tweaks to the model, putting out a slightly model on the same product offering, change operating parameters like temperature, even by _hosting the same system on a new data center_ you can get wildly varying, unpredictable results.
 
 If we can't depend on an LLM to reliably do the same thing the same way every time, it's not dependable like a simple machine in a factory. Or a computer running deterministic software. We have added nondeterminism to a set of tools that used to be deterministic. We've given up as property of general-purpose computing.
@@ -59,8 +59,8 @@ Manufactured goods are made within tolerance margins for the dimensions of their
 
 We've seen emergent issues with LLMs that give us pause and act as comical, widely-published issues that suggest these things aren't armed with the unlimited potential they claim to have:
 
-- Prompt injection: Get an LLM to betray its initial instructions with plain text.
-- The Strawberry problem: Shows limitations of an LLM's ability to reason (none) -- if a problem is not solved enough times in the training set, it cannot pattern match an appropriate solution without explicit intervention in the training stage.
+- [Prompt injection](https://simonwillison.net/tags/prompt-injection/): Get an LLM to betray its initial instructions with plain text.
+- [The Strawberry problem](https://techcrunch.com/2024/08/27/why-ai-cant-spell-strawberry/): Shows limitations of an LLM's ability to reason (none) -- if a problem is not solved enough times in the training set, it cannot pattern match an appropriate solution without explicit intervention in the training stage.
 
 In every case, we're finding limits to the technology that get fixed in the next release, but are something of an indicator that we are no longer in the world of boundless possibilities and uninterruptible optimism for what they are capable of: the problems get fixed in subsequent models with what are essentially "patches" to work around these cases. **We aren't greenfield, discovering staggering capabilities with new LLM models anymore, we are in a stable "bugfix" phase**.
 
@@ -104,7 +104,7 @@ Google used to be good. We used to be able to type these types of question into 
 
 Your chat with an AI session is a sad, watered-down echo of a quality user experience we once had a quarter of a century ago with a single text input box on `google.com`.
 
-# Widespread Adoption in LLM is in its Uber/AirBNB Phase
+# Widespread Adoption of LLMs is in its Uber/AirBNB Phase
 
 I like to tell people that commercial LLMs are in their Uber phase, and I mean this in two ways: 1) they are blatantly illegal and hoping to normalize their bad behavior through mass adoption and 2) priced in a way to hook you, to get you dependent on using it in fiscally unsustainable ways.
 
@@ -126,7 +126,7 @@ Don't fool yourselves into thinking that once your default choice is 'I'll ask C
 
 # LLM Tools as Developer Aids
 
-This is something that I see regularly on my radar as a software engineer. _I use llm code assistance_, but _I do not think it is worth the trouble at least 75% of the time_.
+This is something that I see regularly on my radar as a software engineer. _I use LLM code assistance_, but _I do not think it is worth the trouble at least 75% of the time_.
 
 ## An LLM Assistant Is Trained On Already Written Code
 
@@ -142,7 +142,7 @@ Not to mention that fact that _reading code is always harder than writing it_. W
 
 ## Maintenance is Job None
 
-LLM-generated code can only be up to about two years old at this point ("this point" being early March 2025): we're in very early days. In my 2+ decades of software engineering, getting a product out _is_ important, but then there are years, if not decades, of follow-up fixes and expansion on that software. We have no idea how maintainable LLM-assisted codebases will be, and there are already examples of LLM-driven projects growing beyond the scope of e.g. Claude's ability to understand them and leaving the developers high and dry; unable to understand or extend the existing codebase.
+LLM-generated code can only be up to about two years old at this point ("this point" being early March 2025): we're in very early days. In my 2+ decades of software engineering, getting a product out _is_ important, but then there are years, if not decades, of follow-up fixes and expansion on that software. We have no idea how maintainable LLM-assisted codebases will be, and [there are already examples of LLM-driven projects growing beyond the scope of e.g. Claude's ability to understand them](https://www.threads.net/@codingmermaid.ai/post/DG0CoFVxPnQ) and leaving the developers high and dry; unable to understand or extend the existing codebase.
 
 I've fixed Fortran that was older than myself at one point. Getting a new React app out with trivial functionality is not the hard part, it's the toil of maintenance that happens over the course of years that is where most of what I would consider "software engineering" happens and it does not seem like that has been a focus or a strong point of LLM-driven development thus far.
 
@@ -156,13 +156,13 @@ Usually improvements to the craft of software engineering have been via _better 
 
 This would be like C never taking off because someone invented a better assembly macro processor, or Python/Ruby/etc never taking off because we never trusted the interpreters to get memory management right on our behalf. We have always come to _trust_ the abstractions below us, we didn't stop where we were because we didn't think things could be easier.
 
-We'll just ask an LLM to write more and more code at the same abstraction level, rather than find an appropriate way of expressing these computing concepts in a better way. C compilers wrote mountains of assembly, but did it deterministically and hid the details from us with an abstraction layer. Python interpreters run massive amounts of C under the hood, but as a developer you never see them. Decent web frameworks never expose raw TCP sockets to developers. We used to climb the mountain, not make camp halfway up and decide this was high enough.
+We're just asking an LLM to write more and more code at the same abstraction level, rather than find an appropriate way of expressing these computing concepts in a better way. C compilers wrote mountains of assembly, but did it deterministically and hid the details from us with an abstraction layer. Python interpreters run massive amounts of C under the hood (also deterministically), but as a developer you're shielded from the runtime through abstractions. Decent web frameworks never expose raw TCP sockets to developers. We used to climb the mountain, not make camp halfway up and decide this was high enough.
 
 # How LLMs are Sold
 
-I'll say this is my least objective or reasonable prong critiquing LLMs as they are currently practiced, but the strongest one I go to when asked what I think about LLMs: **cheerleaders are fucking annoying, and FOMO is not a good reason to do something**. When I hear ridiculously stupid, not-backed-up-by-evidence claims about what LLMs can and will do I immediately knee-jerk block the person for being so stupid. The people who know the least about what they are talking about are being the loudest.
-
 We _had_ "agentic" software before, it was just called "computer programs" or sometimes "automations" or "APIs" or "integrations" or "cronjobs." The generic term "AI" was hijacked to represent LLMs and only LLMs, and the terms for traditional software were unnecessarily thrown away for a new set of terms for the same thing. _There is so much marketing baked into the terminology_. We've gone from arguing the virtues of the thing to arguing based on pure enthusiasm for the thing.
+
+I'll say this is my least objective or reasonable prong critiquing LLMs as they are currently practiced, but the strongest one I go to when asked what I think about LLMs: **cheerleaders are fucking annoying, and FOMO is not a good reason to do something**. When I hear ridiculously stupid, not-backed-up-by-evidence claims about what LLMs can and will do I immediately knee-jerk block the person for being so stupid. The people who know the least about what they are talking about are being the loudest.
 
 # Conclusion
 
