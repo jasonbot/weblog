@@ -126,11 +126,13 @@ Don't fool yourselves into thinking that once your default choice is 'I'll ask C
 
 # LLM Tools as Developer Aids
 
-This is something that I see regularly on my radar as a software engineer. _I USE LLM CODE ASSISTANCE_, but _I do not think it is worth the trouble at least 75% of the time_.
+This is something that I see regularly on my radar as a software engineer. _I use llm code assistance_, but _I do not think it is worth the trouble at least 75% of the time_.
 
 ## An LLM Assistant Is Trained On Already Written Code
 
 Languages and frameworks that exist today can be handled no problem, but if we limit ourselves to what models are trained on, we can't adopt new languages, frameworks, libraries. An LLM-guided software engineering world is a world where software engineering is frozen in time.
+
+I've already seen open-source projects which provide RAG-like pipelines trained on their documentation since they are not old enough to be embedded in models' training sets. This seems like a regression. Open source developers will be expected to write and maintain code, then write and maintain documentation, then write and maintain toolchains to enable other developers to supervise coding assistants clumsily attempting to write code. Burnout is high enough for open source projects. This will, in my estimation, make open source even less attractive of a pastime as the sheer amount of time and effort and toil will bias toward fully commercial solutions.
 
 ## Writing Code Is Probably The Easiest Part Of Coding
 
@@ -140,9 +142,9 @@ Not to mention that fact that _reading code is always harder than writing it_. W
 
 ## Maintenance is Job None
 
-LLM-generated code can only be up to about two years old at this point (early March 2025). In my 2+ decades of software engineering, getting a product out _is_ important, but then there are years, if not decades, of follow-up fixes and expansion on that software. We have no idea how maintainable LLM-assisted codebases will be, and there are already examples of LLM-driven code growing beyond the scope of e.g. Claude's ability to understand them and leaving the developers high and dry; unable to understand or extend the existing code.
+LLM-generated code can only be up to about two years old at this point ("this point" being early March 2025). In my 2+ decades of software engineering, getting a product out _is_ important, but then there are years, if not decades, of follow-up fixes and expansion on that software. We have no idea how maintainable LLM-assisted codebases will be, and there are already examples of LLM-driven code growing beyond the scope of e.g. Claude's ability to understand them and leaving the developers high and dry; unable to understand or extend the existing code.
 
-I've fixed Fortran that was older than myself at one point. Getting a new React app out is not the hard part, it's the toil of maintenance that happens over the course of years that is where most of what I would consider "software engineering" happens and it does not seem like that has been a focus or a strong point of LLM-driven development thus far.
+I've fixed Fortran that was older than myself at one point. Getting a new React app out with trivial functionality is not the hard part, it's the toil of maintenance that happens over the course of years that is where most of what I would consider "software engineering" happens and it does not seem like that has been a focus or a strong point of LLM-driven development thus far.
 
 ## Every Prior Advancement in Developer Productivity Followed a Pattern Entirely Unlike this One
 
@@ -152,7 +154,7 @@ I don't think an LLM is going to steal my job. Every change in technology that m
 
 Usually improvements to the craft of software engineering have been via _better tools and languages_. In the instance of the LLM-assisted coding world, we have given up on the idea of inventing a better programming language and have instead decided we can't do any better and are using non-deterministic macro expansion/copy-paste agents in the form of LLM-enabled development tools.
 
-This would be like C never taking off because someone invented a better assembly macro processor, or Python/Ruby/etc never taking off because the interpreters could never get memory management right. We trusted the abstractions below us, we didn't stop where we were because we didn't think things could be easier.
+This would be like C never taking off because someone invented a better assembly macro processor, or Python/Ruby/etc never taking off because we never trusted the interpreters to get memory management right on our behalf. We hav always come to _trust_ the abstractions below us, we didn't stop where we were because we didn't think things could be easier.
 
 We'll just ask an LLM to write more and more code at the same abstraction level, rather than find an appropriate way of expressing these computing concepts in a better way. C compilers wrote mountains of assembly, but did it deterministically and hid the details from us with an abstraction layer. Python interpreters run massive amounts of C under the hood, but as a developer you never see them. Decent web frameworks never expose raw TCP sockets to developers. We used to climb the mountain, not make camp halfway up and decide this was high enough.
 
@@ -175,7 +177,7 @@ I pose the following questions (the answer to some of these are unequivocally _y
   - Are you able to look to your friends and peers and tell them that anything they produce in written form belongs as a contribution to the public good without compensation?
     - Doubly so: that private companies can use their work for a private good without compensation?
 - Do LLMs make coding _better_, or just _different_?
-  - Are you actually more productive using an LLM agent to code, or it it just novel?
+  - Are you actually more productive using an LLM agent to code, or is it just novel?
   - Are you aware of what you are giving up in terms of control and understanding when yielding control to an LLM?
   - Are you willing to give up that understanding and control long-term?
   - Are you willing to take personal responsibility for code you did not personally write?
