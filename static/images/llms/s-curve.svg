@@ -83,7 +83,7 @@
        id="text5"><tspan
          sodipodi:role="line"
          id="tspan5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Inter;-inkscape-font-specification:Inter;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3175"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Inter, Arial;-inkscape-font-specification:Inter, Arial;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3175"
          x="47.473011"
          y="100.94631">Time</tspan></text>
     <text
@@ -94,7 +94,7 @@
        id="text5-39"><tspan
          sodipodi:role="line"
          id="tspan5-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Inter;-inkscape-font-specification:Inter;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3175"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Inter, Arial;-inkscape-font-specification:Inter, Arial;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3175"
          x="53.628414"
          y="50.333088">Success</tspan></text>
     <text
@@ -105,7 +105,7 @@
        id="text5-39-2"><tspan
          sodipodi:role="line"
          id="tspan5-0-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:Inter;-inkscape-font-specification:Inter;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3175"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:Inter, Arial;-inkscape-font-specification:Inter, Arial;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3175"
          x="75.075676"
          y="23.676344">Actual Trajectory</tspan></text>
     <text
@@ -117,7 +117,7 @@
        transform="rotate(-79.198395)"><tspan
          sodipodi:role="line"
          id="tspan5-0-9-1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:Inter;-inkscape-font-specification:Inter;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3175"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:Inter, Arial;-inkscape-font-specification:Inter, Arial;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.3175"
          x="-34.987545"
          y="61.077869">Projected (corporate) Trajectory</tspan></text>
     <text
