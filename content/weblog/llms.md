@@ -110,7 +110,7 @@ I like to tell people that commercial LLMs are in their Uber phase, and I mean t
 
 ## Normalizing Lawlessness
 
-When Uber and AirBNB were first entering widespread release, there was immediate backlash: these things were illegal. Uber famously paid its drivers' fines and tickets for operating as drivers, and AirBNB lobbied the hell out of local municipalities. Both also played heavily into FOMO: "San Francisco is doing it and San Francisco is a world class city, don't you want to be a world class city?"
+When Uber and AirBNB were first entering widespread release, there was immediate backlash: these things were illegal. Uber famously paid its drivers' fines and tickets for operating as drivers, and AirBNB lobbied the hell out of local municipalities. Both also played heavily into FOMO: "San Francisco is doing it and San Francisco is a world class city, don't you want to be a world class city?" [Famous smart-on-paper people pushed real hard on this](https://x.com/paulg/status/222462460978937856), even claiming that [Uber's right to break the law was akin to the civil rights struggle](https://businesslawreview.uchicago.edu/print-archive/lawbreaking-lawmaking) -- a stultifyingly wrong claim that can be immediately and viscerally rejected by anyone with common sense.
 
 We're all engaging in intellectual property theft right now when we use these models. They're betting on a "they can't arrest all of us" approach in which the norms and laws which worked are forcefully changed to further enable this theft of creators' property.
 
