@@ -82,7 +82,7 @@ Unlike (sober) human beings, models can imagine that their pocket calculators ha
 
 ### Band-Aid 2: Injected Context (RAG)
 
-Very similar to the last point above with the search engine, we can make an LLM "know" things not baked into its model by pre-emptively doing a search engine queries on its behalf and by injecting snippets into its conversation context it can "know about" in its context to appear to be able to comment on user-relevant data.
+Very similar to the last point above with the search engine, we can make an LLM "know" things not baked into its model by preëmptively doing search engine queries on its behalf and by injecting snippets into its conversation context it can "know about" in its context to appear to be able to comment on user-relevant data.
 
 Some models now have larger context models in which the RAG approach is 'obsolete,' but technically the methodology is the same: inject massive amounts of non-model data into the context to get the LLM to be able to make mention of it.
 
@@ -102,9 +102,9 @@ LLMs as a business plan don't seem very viable long-term unless they engage in s
 
 Using the term "Open Source" to describe openly available models is, frankly, an incorrect term. Not overly generous, not iffy, straight up factually false. A lie. A freely available model as a digital artifact is not the source code that was used to generate the model and it is not a delivery mechanism for unveiling the data that went into them.
 
-Open models are largely produced by large organizations as a strategic hedge against the larger commercial players -- IBM, Meta, etc don't want to find themselves in a place where they are dependnent on LLMs -- if they succeeed long term -- hosted by a semi-hostile third party.
+Open models are largely produced by large organizations as a strategic hedge against the larger commercial players -- IBM, Meta, etc don't want to find themselves in a place where they are dependent on LLMs -- if they succeed long term -- hosted by a semi-hostile third party.
 
-When the commercial gravy train ends, the open source gravy train will end as well.
+When the commercial gravy train ends, the open access model gravy train will end as well.
 
 One credit and a voice in the dark in favor of these open models is this: you can control the hardware they run on, you can control your own uptime, you can control the fact that you are _still operating on the same underlying model file from day-to-day_. If the commercial players go dark for whatever reason, you can still use these models on your own servers to drive LLM functionality where it makes sense. If LLMs are ever fully forbidden you still have a local copy you can run _in secret_ for research/entertainment purposes.
 
