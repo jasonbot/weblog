@@ -86,6 +86,8 @@ Very similar to the last point above with the search engine, we can make an LLM 
 
 Some models now have larger context models in which the RAG approach is 'obsolete,' but technically the methodology is the same: inject massive amounts of non-model data into the context to get the LLM to be able to make mention of it.
 
+This is where "synthetic data" is training sets can also come in in a big way: injecting thousands of copies of times tables and lookup tables for the values of trig functions so that [an innumerate model can emulate numeracy](https://x.com/yuntiandeng/status/1889704768135905332).
+
 # How LLMs are Monetized (Theft and Planned Enshittification)
 
 LLMs as a business plan don't seem very viable long-term unless they engage in some major enshittification. Enjoy ChatGPT and Claude at affordable rates and without annoying limitations now, because not long after you've let them become an indispensable part of your workflow they're going to get _real bad, real fast_.
@@ -96,15 +98,19 @@ LLMs as a business plan don't seem very viable long-term unless they engage in s
 4. While themselves becoming commodity products within days of their release (each model immediately is replaced with a new one)
 5. All the while, the supply of quality data used to train them has dried up and newer models are already worse than older ones in fundamental ways
 
-# LLMs In Usage Are Just A Reminder Of What We Once Had
+## Open Source Will Not Save Us
 
-LLMs are, in essence, a lossily-compressed, fuzzy searchable copy of a lot of contents found on the internet.
+Using the term "Open Source" to describe openly available models is, frankly, an incorrect term. Not overly generous, not iffy, straight up factually false. A lie. A freely available model as a digital artifact is not the source code that was used to generate the model and it is not a delivery mechanism for unveiling the data that went into them.
 
-Google used to be good. We used to be able to type these types of question into Google and get answers. Using an LLM as a search engine is just an indictment of that slow decay of Google's core product and the fact that we simply can't have nice things without other people messing it up -- SEO monsters started posting garbage on the internet to game the search engines and ruined it for all of us.
+Open models are largely produced by large organizations as a strategic hedge against the larger commercial players -- IBM, Meta, etc don't want to find themselves in a place where they are dependnent on LLMs -- if they succeeed long term -- hosted by a semi-hostile third party.
 
-Your chat with an AI session is a sad, watered-down echo of a quality user experience we once had a quarter of a century ago with a single text input box on `google.com`.
+When the commercial gravy train ends, the open source gravy train will end as well.
 
-# Widespread Adoption of LLMs is in its Uber/AirBnB Phase
+One credit and a voice in the dark in favor of these open models is this: you can control the hardware they run on, you can control your own uptime, you can control the fact that you are _still operating on the same underlying model file from day-to-day_. If the commercial palyers go dark for whatever reason, you can still use these models on your own servers to drive LLM functionality where it makes sense.
+
+I end the section with this because it's my biggest concern with open models over cloud hosted: open models still suffer from the same ethical problems of the black box training sets ([IBM alleges it's less guilty, though](https://github.com/ibm-granite/granite-3.0-language-models?tab=readme-ov-file#data-collection)). If there _is_ an intellectual property reckoning for LLMs and the big players are forced to leave the market and you still have LLMs running, you may be legally obligated to disclose which models you use, similarly to how much commercial software in modern times offers a very large colophon of open source license agreements for all the libraries they consume. It's very confusing t osee something that does not access the internet post the curl license in its documentation, it will be equally confusing to see accounting software disclose it uses Deepseek somehow.
+
+# Widespread Adoption of LLMs is in its Early Uber/AirBnB Phase
 
 I like to tell people that commercial LLMs are in their Uber phase, and I mean this in two ways: 1) they are blatantly illegal and hoping to normalize their bad behavior through mass adoption and 2) priced in a way to hook you, to get you dependent on using it in fiscally unsustainable ways.
 
@@ -123,6 +129,14 @@ I have not heard a single compelling case for the unequivocal legality of what's
 I remember when every Uber ride was heavily subsidized by its investors. I could Uber Pool to multiple venues across San Francisco for about $10 on an evening out. Now that Uber has to be profitable, I don't even consider it except as a strategic last choice, and it's significantly more expensive now (that same night out now would run me $75).
 
 Don't fool yourselves into thinking that once your default choice is 'I'll ask ChatGPT' that ChatGPT won't find a way to squeeze for as much as it can because it's insinuated itself into your lifestyle.
+
+# LLMs In Usage Are Just A Reminder Of What We Once Had
+
+LLMs are, in essence, a lossily-compressed, fuzzy searchable copy of a lot of contents found on the internet.
+
+Google used to be good. We used to be able to type these types of question into Google and get answers. Using an LLM as a search engine is just an indictment of that slow decay of Google's core product and the fact that we simply can't have nice things without other people messing it up -- SEO monsters started posting garbage on the internet to game the search engines and ruined it for all of us.
+
+Your chat with an AI session is a sad, watered-down echo of a quality user experience we once had a quarter of a century ago with a single text input box on `google.com`.
 
 # LLM Tools as Developer Aids
 
@@ -148,7 +162,7 @@ I've fixed Fortran that was older than myself at one point. Getting a new React 
 
 ## Every Prior Advancement in Developer Productivity Followed a Pattern Entirely Unlike this One
 
-I don't think an LLM is going to steal my job. Every change in technology that made developers more productive over the last 50 years has only increased the demand for software, and every productivity boost that was supposed to cut the number of people needed to make and run software has only grown the number of people involved.
+[I don't think an LLM is going to steal my job](https://www.threads.net/@benedictevans/post/DG1q-xnuflz). Every change in technology that made developers more productive over the last 50 years has only increased the demand for software, and every productivity boost that was supposed to cut the number of people needed to make and run software has only grown the number of people involved.
 
 > **Examples:** your startup probably has more Infra/DevOps engineers than a startup of the equivalent size had Sysadmins in the pre-cloud era. CRUD apps becoming easy to make with better tools led to a Cambrian Explosion of people writing CRUD apps.
 
