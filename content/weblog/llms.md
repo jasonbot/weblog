@@ -12,7 +12,7 @@ That said, I can't declare them an unqualified success or a miracle cure for any
 
 # How LLMs are Made
 
-As an undergraduate some years into my post-collegiate life, I did research in what could be considered "natural language processing" or "computational linguistics": I worked on the [HAL Model](https://link.springer.com/article/10.3758/BF03204766), which was an early high-dimensional model for approximating language understanding, and later [a software system employing all kinds of cool cutting-edge language-in-computers techniques](https://dlib.org/dlib/january03/mitchell/01mitchell.html) (early Support Vector Machine tooling being one I worked on) and there was one lesson I learned from both:
+As an undergraduate and about three years into my post-collegiate life, I did research in what could be considered "natural language processing" or "computational linguistics": I worked on the [HAL Model](https://link.springer.com/article/10.3758/BF03204766), which was an early high-dimensional model for approximating language understanding, and later [a software system employing all kinds of cool cutting-edge language-in-computers techniques](https://dlib.org/dlib/january03/mitchell/01mitchell.html) (early Support Vector Machine tooling being one I worked on) and there was one lesson I learned from both:
 
 > **Better models are good, but better data is _better_.**
 
@@ -51,7 +51,7 @@ LLMs are not predictable, and I mean this in two ways:
 1. Given an input, there is no reliable way of getting the same output every time. You can't even get a sentence back from the training data fully verbatim in a reliable way. Facts can't happen when a machine is dreaming half-truths based on superpositions of sentences.
 1. This is exacerbated by models being a 'black box' -- OpenAI or Anthropic can make tweaks to the model, putting out a slightly model on the same product offering, change operating parameters like temperature, even by _hosting the same system on a new data center_ you can get wildly varying, unpredictable results.
 
-If we can't depend on an LLM to reliably do the same thing the same way every time, it's not dependable like a simple machine in a factory. Or a computer running deterministic software. We have added nondeterminism to a set of tools that used to be deterministic. We've given up as property of general-purpose computing.
+If we can't depend on an LLM to reliably do the same thing the same way every time, it's not dependable like a simple machine in a factory. Or a computer running deterministic software. We have added nondeterminism to a set of tools that used to be deterministic. We've given up a property of general-purpose computing.
 
 Manufactured goods are made within tolerance margins for the dimensions of their parts. Classical computation models are usually accurate, and in cases where they may not be fully accurate (see IEEE 754 floating point numbers) they are still inaccurate in a predictable, regular way.
 
