@@ -306,6 +306,39 @@ ul.links-tags li {
   margin: 4px;
 }
 
+div.pagination {
+  background: rgba(0, 0, 0, 0.025);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin: 0 auto;
+  font-size: small;
+  padding: 4px;
+}
+
+div.pagination > a {
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+a.pagination-prev {
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  padding-right: 4px;
+}
+
+a.pagination-prev::before {
+  content: "<-";
+}
+
+a.pagination-next {
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  padding-left: 4px;
+}
+
+a.pagination-next::after {
+  content: "->";
+}
+
 /* Syntax highlighting */
 
 span.k {

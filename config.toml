@@ -2,7 +2,6 @@ baseURL = "https://www.jasonscheirer.com/"
 languageCode = "en-us"
 title = "Jason Scheirer"
 theme = "smolr"
-pagination.pagerSize = 500
 
 [params]
     customCSS = ["css/jasonscheirer.css", "css/fonts.css"]
