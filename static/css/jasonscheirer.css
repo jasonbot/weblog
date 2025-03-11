@@ -313,6 +313,10 @@ div.pagination {
   margin: 0 auto;
   font-size: small;
   padding: 4px;
+
+  &:empty {
+    display: none;
+  }
 }
 
 div.pagination > a {
