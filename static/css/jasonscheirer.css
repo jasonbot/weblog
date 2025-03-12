@@ -166,6 +166,11 @@ div.pagination {
   );
 }
 
+div.byline-etc:empty,
+div.pagination:empty {
+  display: none;
+}
+
 div.read-more {
   padding: 4px;
   text-align: right;

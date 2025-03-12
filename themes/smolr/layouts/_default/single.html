@@ -2,15 +2,18 @@
 	<main>
 		<article>
 			<h1 class="page-title">
-				{{ .Title | strings.Title }}</h1>
-			<div class="byline-etc">
-				{{ if not .Date.IsZero }}
-				<time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time>
-				{{ end }}
-				{{ range collections.Sort .Params.tags }}
-					<a class="taglink" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+				{{ .Title | strings.Title }}
+			</h1>
+			{{ if or (not .Date.IsZero) (ne (len .Params.tags) 0) }}
+				<div class="byline-etc">
+					{{ if not .Date.IsZero }}
+					<time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time>
 					{{ end }}
-			</div>
+					{{ range collections.Sort .Params.tags }}
+						<a class="taglink" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+						{{ end }}
+				</div>
+			{{ end }}
 			
 			<div>
 				{{ .Content }}

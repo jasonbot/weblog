@@ -7,7 +7,6 @@
     {{ end }} {{ with .Content }}
     <div>{{ . }}</div>
     {{ end }}
-    <div class="byline-etc"></div>
   </div>
   {{ end }} {{ $links := ( collections.Sort .Paginator.Pages "Date" "desc" ) }}
   {{if eq $listtitle "Tags" }} {{ $links = ( collections.Sort $links "Title"
