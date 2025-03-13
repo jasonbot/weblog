@@ -17,3 +17,5 @@ Now I'm [trying out PaperWM](https://extensions.gnome.org/extension/6099/paperwm
 I've been using it full time for a week and I'm pretty happy with it. Maybe this will stick for a while.
 
 > **Update 2024-11-22:** PaperWM hard crashes when I launch games that try to switch to fullscreen from Steam. Back to the drawing board!
+
+> **Update 2025-03-12:** [Here's a fun blog post about Niri](https://ersei.net/en/blog/niri), another window manager inspired by Gnome Paper. I might try that next, though I'd have to get swaybar and friends up and running so it may be a test of patience.
