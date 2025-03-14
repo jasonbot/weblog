@@ -13,3 +13,5 @@ As the phrase goes, _don't let your mouth write checks your ass can't cash_. Sen
 Do not operate at 100% capacity at all times, aim to operate at 80% so that when you _really_ need to you can crank up your productivity in a sustainable way.
 
 Always have a strategic reserve of competence.
+
+> This is not an advocacy of actual laziness, it is pace-setting to prevent burnout.
