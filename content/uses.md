@@ -62,7 +62,7 @@ description = "Another /uses page, just like the others"
 
 - The theme for this weblog is a fork of [smol](https://github.com/colorchestra/smol), built in [Hugo](https://gohugo.io/)
 - Hosted on [Github Pages](https://pages.github.com/) through the magic of [a CNAME](https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
-- **Fonts**: I'm using [Reforma](https://pampatype.com/reforma), [Inter](https://rsms.me/inter/) and [0xProto](https://github.com/0xType/0xProto) (hosted here and not on Google Fonts).
+- **Fonts**: I'm using [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), [Inter](https://rsms.me/inter/) and [0xProto](https://github.com/0xType/0xProto) (hosted here and not on Google Fonts).
 
 # Productivity
 

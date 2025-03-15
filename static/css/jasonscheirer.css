@@ -1,5 +1,5 @@
 :root {
-  --header-font: "Reforma2018";
+  --header-font: "Atkinson Hyperlegible Next";
   --body-font: "Inter";
   --mono-font: "0xProto";
 
@@ -21,7 +21,6 @@ body {
 
 header,
 footer {
-  font-family: var(--header-font) !important;
   margin: 0;
   color: white;
   background: var(--darkest-blue);
@@ -106,17 +105,16 @@ h6 {
 h1,
 h2 {
   font-family: var(--header-font) !important;
+  font-weight: 600;
 }
 
 h1.page-title {
   font-size: 36pt;
-  text-align: center;
 }
 
 h1.summary-title {
   margin: 0;
   padding: 8px;
-  text-align: center;
   font-size: 30pt;
 }
 
