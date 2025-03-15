@@ -32,7 +32,7 @@ There's also no Javascript on this page. I can't justify "enhancing" the "experi
 
 (Late 2022 update: Javascript exists, where necessary, for "functional" pages like to display games but not for content load or navigation UI trickery.)
 
-(Early 2025 update: Javascript exists on pages with `mermaid` codeblocks to convert them to SVG inline. Still no deep tricks, though.
+(Early 2025 update: Javascript exists on pages with `mermaid` codeblocks to convert them to SVG inline. Still no deep tricks, though.)
 
 If I can ask you but one favor, it is this: if you like the site, tell immediate friends and subscribe to it in your favorite RSS reader. I do not write to provide Internet Brain Geniuses with material to fractally complain about to feel better about themselves on Social Media. I would rather those people not know I exist. Please only share these posts on places where the comments section do not devolve into utter idiocy.
 
