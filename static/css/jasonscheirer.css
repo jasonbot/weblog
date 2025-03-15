@@ -238,9 +238,10 @@ article.summary {
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 4px;
-  padding: 2px;
+}
+
+article.summary:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 div.summary-text {

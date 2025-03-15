@@ -24,7 +24,7 @@ paginate = 500
 
   [[menu.main]]
     identifier = "engineering-virtues"
-    name = "Engineering Virtues"
+    name = "Virtues"
     url = "/engineering-virtues/"
     weight = 3
 

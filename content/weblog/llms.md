@@ -90,7 +90,7 @@ This is where "synthetic data" is training sets can also come in in a big way: i
 
 # How LLMs are Monetized (Theft and Planned Enshittification)
 
-LLMs as a business plan don't seem very viable long-term unless they engage in some major enshittification. Enjoy ChatGPT and Claude at affordable rates and without annoying limitations now, because not long after you've let them become an indispensable part of your workflow they're going to get _real bad, real fast_.
+LLM APIs as a business plan [don't seem very viable long-term](https://www.pymnts.com/ai/2024/openai-reportedly-projects-5-billion-loss-this-year/) unless they engage in some [major enshittification](https://techcrunch.com/2025/03/05/openai-reportedly-plans-to-charge-up-to-20000-a-month-for-specialized-ai-agents/). Enjoy ChatGPT and Claude at affordable rates and without annoying limitations now, because not long after you've let them become an indispensable part of your workflow they're going to get _real bad, real fast_.
 
 1. They are an incredibly expensive product to make (millions of dollars to train one)
 2. Sold for well below the price point needed to recoup the cost of their production (OpenAI and Anthropic are running comically massive losses)
@@ -120,7 +120,7 @@ When Uber and AirBnB were first entering widespread release, there was immediate
 
 We're all engaging in intellectual property theft right now when we use these models. They're betting on a "they can't arrest all of us" approach in which the norms and laws which worked are forcefully changed to further enable this theft of creators' property.
 
-Again: the value of the LLMs is the data, not the model, and human beings have to provide that data. Large LLM companies are only going to be profitable if they are allowed to use data at very small margins, if not zero cost (stealing training data with impunity).
+Again: the value of the LLMs is the data, not the model, and human beings have to provide that data. Large LLM companies are only going to be profitable if they are allowed to use data at very small margins, [if not zero cost (stealing training data with impunity)](https://web.archive.org/web/20250313130027/https://cdn.openai.com/global-affairs/ostp-rfi/ec680b75-d539-4653-b297-8bcf6e5f7686/openai-response-ostp-nsf-rfi-notice-request-for-information-on-the-development-of-an-artificial-intelligence-ai-action-plan.pdf).
 
 I have not heard a single compelling case for the unequivocal legality of what's going on: every assertion I've seen that OpenAI has a 'right' to this data is qualified with an _apparently_ or a _probably_.
 
@@ -198,3 +198,5 @@ I pose the following questions (the answer to some of these are unequivocally _y
   - Are you willing to take the risk that generated code derived from models trained on incompatibly-licensed code may taint your codebase?
 
 You may come to the conclusion that yes, LLMs are worth it. That's fine. I just hope you went though a process of thought and introspection and considered the pros and cons of the technology before loudly and enthusiastically adopting them into your life.
+
+> [Document edit history](https://github.com/jasonbot/weblog/commits/master/content/weblog/llms.md) -- There may have been changes since you last visited.

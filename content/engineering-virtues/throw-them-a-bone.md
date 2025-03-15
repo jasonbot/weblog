@@ -6,7 +6,7 @@ featured_image = ""
 description = ""
 +++
 
-You like [little treats](../little-treats), so do other people! Sometimes you gotta give your peers something to make them feel good too.
+You like [little treats](../little-treats/), so do other people! Sometimes you gotta give your peers something to make them feel good too.
 
 Sometimes this is called [the hariy arm technique](https://www.theguardian.com/lifeandstyle/2013/nov/23/change-your-life-hairy-arm-tactics), sometimes it's a manifestation of [Cunningham's Law](https://en.wikipedia.org/wiki/Ward_Cunningham#%22Cunningham's_Law%22). What you do is this: present something obviously wrong or easily correctable when you make a presentation. This lets the other person feel smart ("you need to fix this broken thing that you made broken") and changes the focus of the argument so that you get the nitpicking out of the way early and the uneeded but inevitable stage where it happens doesn't derail the conversation when discussing actual work.
 
