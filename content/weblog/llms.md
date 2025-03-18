@@ -199,4 +199,8 @@ I pose the following questions (the answer to some of these are unequivocally _y
 
 You may come to the conclusion that yes, LLMs are worth it. That's fine. I just hope you went though a process of thought and introspection and considered the pros and cons of the technology before loudly and enthusiastically adopting them into your life.
 
+[Here is a similar blog post that shares many of my points](https://nedbatchelder.com/blog/202503/horseless_intelligence.html). One particularly resonant quote:
+
+> ...I’m more concerned with Dickens-style harms: people losing jobs not because AI can do their work, but because people in charge will think AI can do other people’s work. Harms due to people misunderstanding what AI does and doesn’t do well and misusing it.
+
 > [Document edit history](https://github.com/jasonbot/weblog/commits/master/content/weblog/llms.md) -- There may have been changes since you last visited.
