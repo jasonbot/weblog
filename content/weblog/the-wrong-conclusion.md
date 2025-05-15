@@ -22,6 +22,6 @@ The example I see most currently is about AI somehow matching human intelligence
 1. Therefore, LLMs are the same as humans producing language
 1. Therefore, LLMs have all the other capacities of humans and have been endowed with human nature and will replace us all
 
-I've decorated these talking points with some straw men that are usually left implicit when the idea is presented, but you get the idea.
+I've decorated these talking points with some straw men that are usually left implicit when usually presented, but you get the idea.
 
 Just because you agree with the problem statement does not mean that the conclusion is correct just because it occurs a few sentences later.
