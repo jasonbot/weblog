@@ -33,7 +33,7 @@ You should hate this person with the same intensity as that person at the bank, 
 
 You should aspire to withhold loud, public judgment of a technology until you can look at it with a "well, sure, but..." and a long wistful sigh.
 
-# You Should Be Aware of Your Tools and How it Could be Better
+# You Should Be Aware of Your Tools and How they Could do Better by You
 
 Hate, as opposed to love, comes with a much different place of origin when setting expectations: you presume the worst rather than the best when approaching it. This sets you up for disillusionment when the thing you can see no wrong in eventually fails you in some way. Never meet your heroes. Heck, never watch a hero on a bad day.
 
@@ -47,6 +47,10 @@ Every time you have solved a problem with a tool, try solving it with a differen
 The contrast should give you a wider perspective on how your preferred way of getting things done could be better. I've gone in a full circle with CSS frameworks recently: I forced myself to use Tailwind until I liked it, then at work I had to use Sass. Sass sucks in a lot of ways that Tailwind doesn't. The converse is true, too. But knowing how other people solved the same problem, you can recognize the clumsy parts of other approaches and take the good parts of one and try to apply them to the other.
 
 And the conclusion to this, of course, was me becoming better at vanilla CSS, because the world should not make sense.
+
+# You Should Be Aware of Your Tools and How You Could do Better by Them
+
+Again with the not-quite-hatred talk: are you growing in your tool? Is it making you ~hate it~ uncomfortable? Is it because you're in a place where you're being challenged by it and growing? Are you putting in the appropriate effort to give the tool a fair shake? Is it because you're outgrowing it? Have you grown out of it for absolute reasons (it is not a useful tool) or relative ones (you've mastered it or you want to grow in a different direction)? After you've outgrown it, can you still advocate it to others who are earlier in their journey?
 
 # Anyhoo
 
