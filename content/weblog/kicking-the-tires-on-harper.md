@@ -14,4 +14,4 @@ But I've come around to the idea that rewriting old tools isn't a horrible notio
 
 Anyway, so far so good. It's a little less annoying than piping my posts through `aspell`, which is about as sophisticated as I've managed to get myself in this writing workflow.
 
-It's nice. A little annoying sometimes, but it integrates well and can run ubiquitously as it builds to WASM and an LSP.
+It's nice. I thought it was too invasive and preachy on first use long ago, but this time around, at least on first shake, it's just enough for grammar/spell smell testing. It can run ubiquitously as it builds to WASM and an LSP, so I can learn to lean on it in a wide variety of environments.
