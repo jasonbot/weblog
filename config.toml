@@ -4,67 +4,73 @@ title = "Jason Scheirer"
 theme = "smolr"
 
 [pagination]
-    pagerSize = 500
+pagerSize = 500
 
 [params]
-    customCSS = ["css/jasonscheirer.css", "css/fonts.css"]
-    subtitle = "A personal web site for a computer person"
-    dateFmt = "2006-01-02"
+customCSS = ["css/jasonscheirer.css", "css/fonts.css"]
+subtitle = "A personal web site for a computer person"
+dateFmt = "2006-01-02"
 
 [menu]
-  [[menu.main]]
-    identifier = "main"
-    name = "main"
-    url = "/"
-    weight = 1
+[[menu.main]]
+identifier = "main"
+name = "main"
+url = "/"
+weight = 1
 
-  [[menu.main]]
-    identifier = "tags"
-    name = "tags"
-    url = "/tags/"
-    weight = 4
+[[menu.main]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 4
 
-  [[menu.main]]
-    identifier = "engineering-virtues"
-    name = "Virtues"
-    url = "/engineering-virtues/"
-    weight = 3
+[[menu.main]]
+identifier = "engineering-virtues"
+name = "Virtues"
+url = "/engineering-virtues/"
+weight = 3
 
-  [[menu.main]]
-    identifier = "uses"
-    name = "Uses"
-    url = "/uses/"
-    weight = 2
+[[menu.main]]
+identifier = "uses"
+name = "Uses"
+url = "/uses/"
+weight = 2
 
-  [[menu.main]]
-    identifier = "toys"
-    name = "Toys"
-    url = "/tags/toys/"
-    weight = 3
+[[menu.main]]
+identifier = "toys"
+name = "Toys"
+url = "/tags/toys/"
+weight = 3
 
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    url = "/about/"
-    weight = 2
+[[menu.main]]
+identifier = "about"
+name = "about"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "search"
+name = "search"
+url = "/search/"
+weight = 5
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineAnchors = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = false
-    style = "pygments"
-    tabWidth = 4
-  [markup.tableOfContents]
-    startLevel = 1
-    ordered = true
-    endLevel = 6
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineAnchors = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = false
+style = "pygments"
+tabWidth = 4
+[markup.tableOfContents]
+startLevel = 1
+ordered = true
+endLevel = 6

@@ -28,11 +28,13 @@ See my [`/uses` page](/uses) for more information about my things.
 
 I do not have any sort of analytics on this page. I have no idea what my traffic or "engagement" stats look like. I could be getting 1 hit a month, I could be getting 100000 hits a day on some single blog post. I honestly have no idea and it's not something I want to think about.
 
-There's also no Javascript on this page. I can't justify "enhancing" the "experience" of viewing words on a screen with some stupid runtime-in-the-browser trickery.
+There's also ~no~ _very little_ Javascript on this page. I can't justify "enhancing" the "experience" of viewing words on a screen with some stupid runtime-in-the-browser trickery.
 
 (Late 2022 update: Javascript exists, where necessary, for "functional" pages like to display games but not for content load or navigation UI trickery.)
 
 (Early 2025 update: Javascript exists on pages with `mermaid` codeblocks to convert them to SVG inline. Still no deep tricks, though.)
+
+(Mid 2025 update: I use Javascript for the <a href="/search/">search feature</a> via pagefind client-side.)
 
 If I can ask you but one favor, it is this: if you like the site, tell immediate friends and subscribe to it in your favorite RSS reader. I do not write to provide Internet Brain Geniuses with material to fractally complain about to feel better about themselves on Social Media. I would rather those people not know I exist. Please only share these posts on places where the comments section do not devolve into utter idiocy.
 
