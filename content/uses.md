@@ -13,7 +13,6 @@ description = "Another /uses page, just like the others"
 - I am primarily a Python expert (25 years!)
 - I am primarily a [FastAPI](https://github.com/fastapi/fastapi) user, and I am better than average at doing async programming (which sucks and is bad, but it's fun to do bad things)
 - I primarily choose Postgres as my database
-- I reluctantly use Ruby at my office
 - I do most of my personal dev projects in Go
 - If you ask me to write something in C++ I will say no but I _will_ write C++ to spite you
 - I prefer Linux on the desktop to Mac on the desktop at this point
@@ -29,7 +28,6 @@ description = "Another /uses page, just like the others"
 - My muscle memory is [Vim](https://www.vim.org/), I use it everywhere
 - Most of my polyglot development is via [VS Code](https://code.visualstudio.com/)
   - I use LLMs for developing code signficiantly less than other people on the cutting edge of tech. I have the [Continue plugin](https://www.continue.dev/) installed at home against local Ollama but use its features quite sparingly.
-  - At work I use [Cursor, a VS Code parasite](https://www.cursor.com/) IDE because the Thought Leaders in Engineering Leadership have mandated it, partly as an assertion of thought leadership and partly to assuage the board of directors that we are, as an organization, indeed taking AI seriously. It's also configured to use local Ollama in the places where it works. I use the chat window occasionally and it fixes some trivial mistakes fine, but I don't use the non-vanilla-VSCode stuff any more than I use Continue at home (which is to say, maybe 3-5 chats/autocompletes a week).
 - I am forcing myself to use [Zed](https://zed.dev/) more too, just because monocultures are a Bad Idea and VSC is a monoculture now
 - I like using [Ebitengine](https://ebitengine.org/) to make silly 2D games
 - I also (rarely) play around with [Picotron](https://www.lexaloffle.com/picotron.php), [Pico-8](https://www.lexaloffle.com/pico-8.php), [TIC-80](https://tic80.com/) and [LÖVE](https://love2d.org/) for the same
