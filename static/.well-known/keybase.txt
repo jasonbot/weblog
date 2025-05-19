@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jasonscheirer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jasonscheirer.com
+  * I am jasonscheirer (https://keybase.io/jasonscheirer) on keybase.
+  * I have a public key ASBpLwc10AL6TYwn4vRiUu8cw3--I_u4Eu3vzL2MlnvxjQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120692f0735d002fa4d8c27e2f46252ef1cc37fbe23fbb812edefccbd8c967bf18d0a",
+      "host": "keybase.io",
+      "kid": "0120692f0735d002fa4d8c27e2f46252ef1cc37fbe23fbb812edefccbd8c967bf18d0a",
+      "uid": "51bd01169fdc29ff4e96d8c162f13219",
+      "username": "jasonscheirer"
+    },
+    "merkle_root": {
+      "ctime": 1745957545,
+      "hash": "cb58c17aff88dc6e8dd03a11ae72d073505093e2444c6f3808bbe6c1b9138bfef4e5ff04400b60d35c075b3ef62b0a05afd1d5a55148ce007791c82d8c0c94bb",
+      "hash_meta": "e4e696764065b2ffe10f5d01cb5dadeaca2a3f8e8a676df5b420124d0fa17092",
+      "seqno": 26756530
+    },
+    "service": {
+      "entropy": "fqRxaWupXXHURurmJVoissvP",
+      "hostname": "jasonscheirer.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1745957656,
+  "expire_in": 504576000,
+  "prev": "bcac7e2412d37e6c6996959c7660ca0074c20a7bc89c3f2c05adc2d0bd7b0699",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgaS8HNdAC+k2MJ+L0YlLvHMN/viP7uBLt78y9jJZ78Y0Kp3BheWxvYWTESpcCCMQgvKx+JBLTfmxplpWcdmDKAHTCCnvInD8sBa3C0L17BpnEIJBcHHCuA6yLhnAdLvrbxpdHChKjuO9zUtQmVXBjxJBMAgHCo3NpZ8RAAzdg9sv90buNLCfigbbmd0wQ4vxdw/TPtK6b4MtfjSWHGIgOS6q1P2Rj2OgLfGFd8QWhZlCfGW0E4Y9jjumoBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIG3pPQKsE7mKKkx8BRZnbMsX+3+IeY194kMZ3Qxawe4To3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jasonscheirer
+
+==================================================================
