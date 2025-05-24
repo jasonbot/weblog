@@ -92,7 +92,7 @@ Got the base case down.
 
 ## Things I Never Had in Itertools: Merging Iterators
 
-`itertools.chain` works in a pinch for "gluing" together iterators in Python, and that was pretty trivial to write ([I called it "Flatten"](https://pkg.go.dev/github.com/jasonbot/chains#Flatten) because the first iteration took an iterator of iterators, thanks to Ruby/Javascript brain, [then made one that took variadic iterator args as `FlattenArgs`](https://pkg.go.dev/github.com/jasonbot/chains#FlattenArgs) too). Some common use cases I find myself writing a lot just aren't in the stdlib in Python. They generally involve taking many iterators and unifying then in ways dependent on the structure of the iterators themselves; either by length or by value.
+[`itertools.chain` works in a pinch for "gluing" together iterators in Python](https://docs.python.org/3/library/itertools.html#itertools.chain), and that was pretty trivial to write ([I called it "Flatten"](https://pkg.go.dev/github.com/jasonbot/chains#Flatten) because the first iteration took an iterator of iterators, thanks to Ruby/Javascript brain, [then made one that took variadic iterator args as `FlattenArgs`](https://pkg.go.dev/github.com/jasonbot/chains#FlattenArgs) too). Some common use cases I find myself writing a lot just aren't in the stdlib in Python. They generally involve taking many iterators and unifying then in ways dependent on the structure of the iterators themselves; either by length or by value.
 
 ### Combining Streams "Fairly"
 
