@@ -58,7 +58,8 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 | Function                              | Length                   | Ordering | Repetition |
 | ------------------------------------- | ------------------------ | -------- | ---------- |
 | (Identity function, superfluous)      | N (Length of inputs)     | Fixed    | No         |
-| `OrderedPermutations`                 | 1...N (Length of inputs) | Fixed    | No         |
+| `AllOrderedPermutations`              | 1...N (Length of inputs) | Fixed    | No         |
+| `OrderedPermutations`                 | 1...M (User specified)   | Fixed    | No         |
 | `OrderedPermutationsOfLength`         | M (User-specified)       | Fixed    | No         |
 | `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
 | `Permutations`                        | N (Length of inputs)     | Free     | No         |
@@ -122,7 +123,35 @@ for x := range Merged(Each(item1), Each(item2), Each(item3)) {
 }
 ```
 
-# My Journey of Discovery got me Using My Favored Pattern in a More Go-Like Way in Go
+# My Journey Of Discovery Got Me Using My Favored Pattern In A More Go-Like Way In Go
+
+## Starting Out: The `Chain`
+
+I wanted to be able to chain calls like I can in _those other_ languages, so the first thing I thought to do was design some sort of struct or interface with various `.Map`/`.Reduce`/`.Filter`/etc methods -- so like
+
+```
+type Chainable interface {
+    Map(mapFunc(T) V) Chainable[V]
+    Reduce(mapFunc(T) V) Chainable[V]
+    Filter(mapFunc(T) V) Chainable[V]
+}
+```
+
+Immediately there's a problem because Interfaces can't use generics in Go, so we do a struct instead:
+
+```
+type Chainable[T] struct {
+    func(c *Chainable) Map(mapFunc(T) V) Chainable[V] { ... }
+    Reduce(mapFunc(T) V) Chainable[V] Chainable[V] { ... }
+    Filter(mapFunc(T) V) Chainable[T] Chainable[V] { ... }
+}
+```
+
+This sort of works! You can see in the [`IterableSequence` type ](https://pkg.go.dev/github.com/jasonbot/chains#IterableSequence) we do this. But to do two types (say we're mapping from `int` to `string`), we have to have an `IterableSequence` that does two, and so [`IterableSequence2` was born](https://pkg.go.dev/github.com/jasonbot/chains#IterableSequence2).
+
+Now how to get from an `IterableSequence` to an `IterableSequence2`? I decided on a top-level function to create [a type called a `Junction`](https://pkg.go.dev/github.com/jasonbot/chains#ChainJunction) to go from a one-typed chainable to a two-typed one. Now what if we need a third type? This is getting messy.
+
+This pattern works for simple cases just fine, but it falld down once we get into the variadic world. Go's obviously stunted-on-purpose generics are preventing us from doing this syntactic sugar in a clean way, but it is also suggesting a different way to do it.
 
 I was in love with my ability to do chained iterators, but they got clunky. Go generics only apply to functions and you can't template an interface. So while `X.Filter(...).Map(...)` is fun and cute, in Go you're better off doing something like:
 
@@ -135,8 +164,77 @@ for results := range m {...}
 
 ...which, quite frankly, feels a lot more Go-like and less foreign than the cute way we do it in other languages. You can see I gave up on chaining in the above examples and just do individual iterators.
 
+And so, instead I found myself using single iterators via [the `Each` adapter function](https://pkg.go.dev/github.com/jasonbot/chains#Each) and back to slices [with `ToSlice`](https://pkg.go.dev/github.com/jasonbot/chains#ToSlice). As I got further into impklementing the various functions I wanted, I moved away from the `Chainable` pattern into simple functions. It's still ugly to do `Map(Filter(Reduce(...)))` because the pipeline appears in opposite order but doing each as an assignment keeps the order at the expense of slightly more verbosity. It's not as _aesthetic_ but it works.
+
+I think the most practical example I can give is the test in the cookbook that generates a sequence of fights in Street Fighter. If you play as a playable character you can fight all the other playable characters _and_ each of the bosses. You _cannot_ play as the bosses. As such, we have two separate matchup types:
+
+- Player v Player, unordered
+- Player v Boss, unordered
+
+And gluing the two together is pretty clean:
+
+```go
+regularFighters := []string{"Ryu", "Chun Li", "Guile", "E. Honda"}
+bosses := []string{"Sagat", "Vega", "M. Bison"}
+
+allExpectedFights := []string{
+    "Ryu vs. Chun Li",
+    "Ryu vs. Guile",
+    "Ryu vs. E. Honda",
+    "Chun Li vs. Guile",
+    "Chun Li vs. E. Honda",
+    "Guile vs. E. Honda",
+    "Ryu vs. Sagat",
+    "Chun Li vs. Sagat",
+    "Guile vs. Sagat",
+    "E. Honda vs. Sagat",
+    "Ryu vs. Vega",
+    "Chun Li vs. Vega",
+    "Guile vs. Vega",
+    "E. Honda vs. Vega",
+    "Ryu vs. M. Bison",
+    "Chun Li vs. M. Bison",
+    "Guile vs. M. Bison",
+    "E. Honda vs. M. Bison",
+}
+
+// Each combination of players without replacement
+matchups := CombinationsOfLength(regularFighters, 2)
+singlePlayerFights := Map(matchups, func(names []string) string {
+    return strings.Join(names, " vs. ")
+})
+
+// Trick to get pairwise fights from two lists -- lengthen the one by
+// the number of elements in the other, then cycle.
+// e.g. if you have P1, P2, P3 and B1, B2:
+// Cycle --> P1, P2, P3, P1, P2, P3, P1, ...
+// Lengthen --> B1, B1, B1, B2, B2, B2
+//      (each boss is repeated number of players times)
+bossMatchups := Zip(
+    Cycle(Each(regularFighters)),
+    Lengthen(
+        Each(bosses),
+        len(regularFighters),
+    ),
+)
+
+bossMatchupFights := Map2(bossMatchups,
+    func(p1, p2 string) string {
+        return strings.Join([]string{p1, p2}, " vs. ")
+    },
+)
+
+// Combine all iterators into one
+allFightsCombined := FlattenArgs(singlePlayerFights, bossMatchupFights)
+allFights := ToSlice(allFightsCombined)
+
+if !slices.Equal(allFights, allExpectedFights) {
+    t.Fatalf("%v != %v", allFights, allExpectedFights)
+}
+```
+
 Once I started doing things the Go way, it really increased the pace of development as well. Being able to implement each iterator as a simple function meant I could focus on implementation and not boilerplate. Constraining myself to `iter.Seq` and `iter.Seq2` relieved me of the analysis paralysis of variadic iterators: one value, and when it made sense, two.
 
-# Don't Use this as a Library
+# Don't Use This As A Library
 
 I've made this available as an importable library, but many of these patterns are easier to just copy and paste into your code. They should also be inspiration: this is a fun problem to solve! Solve it yourself!
