@@ -151,7 +151,7 @@ This sort of works! You can see in the [`IterableSequence` type ](https://pkg.go
 
 Now how to get from an `IterableSequence` to an `IterableSequence2`? I decided on a top-level function to create [a type called a `Junction`](https://pkg.go.dev/github.com/jasonbot/chains#ChainJunction) to go from a one-typed chainable to a two-typed one. Now what if we need a third type? This is getting messy.
 
-This pattern works for simple cases just fine, but it falld down once we get into the variadic world. Go's obviously stunted-on-purpose generics are preventing us from doing this syntactic sugar in a clean way, but it is also suggesting a different way to do it.
+This pattern works for simple cases just fine, but it falls down once we get into the variadic world. Go's obviously stunted-on-purpose generics are preventing us from doing this syntactic sugar in a clean way, but it is also suggesting a different way to do it.
 
 I was in love with my ability to do chained iterators, but they got clunky. Go generics only apply to functions and you can't template an interface. So while `X.Filter(...).Map(...)` is fun and cute, in Go you're better off doing something like:
 
