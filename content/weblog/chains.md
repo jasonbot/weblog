@@ -47,6 +47,11 @@ Not much to write home about here, anyone can write these and I encourage each p
 
 Similar to the above, pretty trivial to write. Can even treat these as specific cases of `Filter`.
 
+## Ruby Silliness
+
+- [`Flatten` takes an iterable of iterables and turns it into a flat iterable](https://pkg.go.dev/github.com/jasonbot/chains@v0.0.10#Flatten), but it doesn't do it to arbitrray levels of nesting like Ruby does. There are rules here dude.
+- [`Tap` is largely useless](https://pkg.go.dev/github.com/jasonbot/chains@v0.0.10#Tap), kind of like a forEach or a visitor that passes the item along.
+
 ## Combinatorics
 
 I wanted `combinations` and `permutations`, so those were high on the list. I found myself writing the code more and more generically as I went along, eventually ending with the mess that is [`combinatorics.go`](https://github.com/jasonbot/chains/blob/main/combinatorics.go). Funnily enough, each combinatorial case was some combination of:
