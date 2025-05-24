@@ -9,6 +9,7 @@
   --dark-purple: #5a265e;
   --bg-grn: #ffffeb;
   --border-color: #bddeff;
+  --comment-color: #69816b;
 }
 
 body {
@@ -379,4 +380,8 @@ span.o {
 
 span.p {
   color: var(--dark-purple);
+}
+
+span.c1 {
+  color: var(--comment-color);
 }
