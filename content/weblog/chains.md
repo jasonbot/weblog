@@ -164,7 +164,7 @@ for results := range m {...}
 
 ...which, quite frankly, feels a lot more Go-like and less foreign than the cute way we do it in other languages. You can see I gave up on chaining in the above examples and just do individual iterators.
 
-And so, instead I found myself using single iterators via [the `Each` adapter function](https://pkg.go.dev/github.com/jasonbot/chains#Each) and back to slices [with `ToSlice`](https://pkg.go.dev/github.com/jasonbot/chains#ToSlice). As I got further into impklementing the various functions I wanted, I moved away from the `Chainable` pattern into simple functions. It's still ugly to do `Map(Filter(Reduce(...)))` because the pipeline appears in opposite order but doing each as an assignment keeps the order at the expense of slightly more verbosity. It's not as _aesthetic_ but it works.
+And so, instead I found myself using single iterators via [the `Each` adapter function](https://pkg.go.dev/github.com/jasonbot/chains#Each) and back to slices [with `ToSlice`](https://pkg.go.dev/github.com/jasonbot/chains#ToSlice). As I got further into implementing the various functions I wanted, I moved away from the `Chainable` pattern into simple functions. It's still ugly to do `Map(Filter(Reduce(...)))` because the pipeline appears in opposite order but doing each as an assignment keeps the order at the expense of slightly more verbosity. It's not as _aesthetic_ but it works.
 
 I think the most practical example I can give is the test in the cookbook that generates a sequence of fights in Street Fighter. If you play as a playable character you can fight all the other playable characters _and_ each of the bosses. You _cannot_ play as the bosses. As such, we have two separate matchup types:
 
