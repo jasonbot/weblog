@@ -110,7 +110,7 @@ for x := range RoundRobin(Each(item1), Each(item2), Each(item3)) {
 
 ### Merging Sorted Streams
 
-Use case: I have 3000 CSVs, each has rows in order of date. The time ranges _may_ overlap in some cases. I wanted a unified stream of all the rows in order. For that, I wrote [`Merged`](https://github.com/jasonbot/chains/blob/main/cookbook_test.go#L231-L259), which is at its core a pull-on-demand heap. Once the smallest value has been pulled off, pull another item from the iterator to got that item from and put it back on the heap.
+Use case: I have 3000 CSVs, each has rows in order of date. The time ranges _may_ overlap in some cases. I wanted a unified stream of all the rows in order. For that, I wrote [`Merged`](https://github.com/jasonbot/chains/blob/main/cookbook_test.go#L231-L259), which is at its core a pull-on-demand heap. Once the smallest value has been pulled off the heap, yield it, then grab the next value from the iterator that provided the value to place on the heap.
 
 ```go
 item1 := []int{1, 2, 3, 4}
