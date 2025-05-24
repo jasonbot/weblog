@@ -104,7 +104,7 @@ item2 := []int{5, 6, 7, 8, 9}
 item3 := []int{10, 11, 12}
 
 for x := range RoundRobin(Each(item1), Each(item2), Each(item3)) {
-    // Equivalent of ...[]int{1, 5, 9, 2, 6, 10, 3, 7, 11, 4, 8, 12}
+    // Equivalent of ...[]int{1, 5, 10, 2, 6, 11, 3, 7, 12, 4, 8, 9}
 }
 ```
 
