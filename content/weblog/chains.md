@@ -100,8 +100,8 @@ Another use case is Round-Robining a set of iterators until they are all exhaust
 
 ```go
 item1 := []int{1, 2, 3, 4}
-item2 := []int{5, 6, 7, 8}
-item3 := []int{9, 10, 11, 12}
+item2 := []int{5, 6, 7, 8, 9}
+item3 := []int{10, 11, 12}
 
 for x := range RoundRobin(Each(item1), Each(item2), Each(item3)) {
     // Equivalent of ...[]int{1, 5, 9, 2, 6, 10, 3, 7, 11, 4, 8, 12}
