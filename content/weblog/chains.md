@@ -67,8 +67,9 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 | `AllOrderedPermutations`              | 1...N (Length of inputs) | Fixed    | No         |
 | `OrderedPermutations`                 | 1...M (User specified)   | Fixed    | No         |
 | `Permutations`                        | N (Length of inputs)     | Free     | No         |
-| `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
 | `PermutationsOfLength`                | M (User-specified)       | Free     | No         |
+| `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
+| `PermutationsToLength`                | 1...M (User specified)   | Free     | No         |
 | `PermutationsWithReplacement`         | N (Length of inputs)     | Free     | Yes        |
 | `PermutationsOfLengthWithReplacement` | M (User-specified)       | Free     | Yes        |
 | `Combinations`                        | 1...N (Length of inputs) | Free     | Yes        |
