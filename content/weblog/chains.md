@@ -6,7 +6,7 @@ featured_image = ""
 description = "Here I Go (this is a pun and I regret it immediately)"
 +++
 
-> **Top Matter**: [Doc for this library](https://pkg.go.dev/github.com/jasonbot/chains).
+> **Top Matter**: [Github for the library](https://github.com/jasonbot/chains), [doc for the library](https://pkg.go.dev/github.com/jasonbot/chains).
 
 It's been six months since I've done this, but I'm finally writing about it!
 
@@ -22,11 +22,11 @@ Object.entries(thing)
   .map(([key, value]) => `${key.replace(/^data-/, "")}: ${value}`);
 ```
 
-Ruby like to add lots of [compact](https://docs.ruby-lang.org/en/2.5.0/Array.html#method-i-compact) calls etc as well to handle bad data.
+Ruby likes to add lots of [compact](https://docs.ruby-lang.org/en/2.5.0/Array.html#method-i-compact) calls etc. as well to handle bad data.
 
 Having this syntactic sugar makes it easier to write complex logic, and it also helps conform the logic to one's brain.
 
-Anyway, Go has iterators now, and I like using iterators. The first thing I wanted was my brain poisoning syntactic sugar from Ruby/Typescript; how could I go about doing `X.Filter(g => g > 100)` in Go?
+Anyway, Go has iterators now, and I like using iterators. The first thing I wanted was my brain poisoning syntactic sugar from Ruby/Typescript; how could I go about doing `X.Filter(g => g > 100).Map(h => fmt.Sprintf("Hello, %v!", h))` in Go?
 
 # The Cookbook is the Requirements Doc
 
@@ -55,23 +55,27 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 - Ordering (in order of occurrence, free variance)
 - Repetition of elements (on/off)
 
-| Function                              | Length                   | Repetition |
-| ------------------------------------- | ------------------------ | ---------- |
-| `Permutations`                        | N (Length of inputs)     | No         |
-| `PermutationsOfLength`                | M (User-specified)       | No         |
-| `PermutationsWithReplacement`         | N (Length of inputs)     | Yes        |
-| `PermutationsOfLengthWithReplacement` | M (User-specified)       | Yes        |
-| `Combinations`                        | 1...N (Length of inputs) | Yes        |
-| `CombinationsOfLength`                | 1...M (User-specified)   | Yes        |
+| Function                              | Length                   | Ordering | Repetition |
+| ------------------------------------- | ------------------------ | -------- | ---------- |
+| (Identity function, superfluous)      | N (Length of inputs)     | Fixed    | No         |
+| `OrderedPermutations`                 | 1...N (Length of inputs) | Fixed    | No         |
+| `OrderedPermutationsOfLength`         | M (User-specified)       | Fixed    | No         |
+| `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
+| `Permutations`                        | N (Length of inputs)     | Free     | No         |
+| `PermutationsOfLength`                | M (User-specified)       | Free     | No         |
+| `PermutationsWithReplacement`         | N (Length of inputs)     | Free     | Yes        |
+| `PermutationsOfLengthWithReplacement` | M (User-specified)       | Free     | Yes        |
+| `Combinations`                        | 1...N (Length of inputs) | Free     | Yes        |
+| `CombinationsOfLength`                | 1...M (User-specified)   | Free     | Yes        |
 
 ## Windows
 
 Not as high-level as Combinatorics, but I wanted to take a window of N at as time.
 
-| Function         | Length | Overlaps |
-| ---------------- | ------ | -------- |
-| `Windows`        | 1...M  | No       |
-| `SlidingWindows` | 1...M  | No       |
+| Function         | Length | Overlaps | Examples                              |
+| ---------------- | ------ | -------- | ------------------------------------- |
+| `Windows`        | 1...M  | No       | `{1, 2, 3}, 2 -> {1, 2}, {3}`         |
+| `SlidingWindows` | 1...M  | Yes      | `{1, 2, 3}, 2 -> {1, 2}, {2, 3}, {3}` |
 
 ## Higher-Level Chaining
 
