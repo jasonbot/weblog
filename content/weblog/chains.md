@@ -58,11 +58,11 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 | Function                              | Length                   | Ordering | Repetition |
 | ------------------------------------- | ------------------------ | -------- | ---------- |
 | (Identity function, superfluous)      | N (Length of inputs)     | Fixed    | No         |
+| `OrderedPermutationsOfLength`         | M (User-specified)       | Fixed    | No         |
 | `AllOrderedPermutations`              | 1...N (Length of inputs) | Fixed    | No         |
 | `OrderedPermutations`                 | 1...M (User specified)   | Fixed    | No         |
-| `OrderedPermutationsOfLength`         | M (User-specified)       | Fixed    | No         |
-| `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
 | `Permutations`                        | N (Length of inputs)     | Free     | No         |
+| `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
 | `PermutationsOfLength`                | M (User-specified)       | Free     | No         |
 | `PermutationsWithReplacement`         | N (Length of inputs)     | Free     | Yes        |
 | `PermutationsOfLengthWithReplacement` | M (User-specified)       | Free     | Yes        |
@@ -73,10 +73,10 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 
 Not as high-level as Combinatorics, but I wanted to take a window of N at as time.
 
-| Function         | Length | Overlaps | Examples                              |
-| ---------------- | ------ | -------- | ------------------------------------- |
-| `Windows`        | 1...M  | No       | `{1, 2, 3}, 2 -> {1, 2}, {3}`         |
-| `SlidingWindows` | 1...M  | Yes      | `{1, 2, 3}, 2 -> {1, 2}, {2, 3}, {3}` |
+| Function         | Length | Overlaps | Examples                         |
+| ---------------- | ------ | -------- | -------------------------------- |
+| `Windows`        | 1...M  | No       | `{1, 2, 3}, 2 -> {1, 2}, {3}`    |
+| `SlidingWindows` | 1...M  | Yes      | `{1, 2, 3}, 2 -> {1, 2}, {2, 3}` |
 
 ## Higher-Level Chaining
 
