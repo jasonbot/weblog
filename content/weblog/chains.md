@@ -78,11 +78,11 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 | (Identity function, superfluous)      | N (Length of inputs)     | Fixed    | No         |
 | `OrderedPermutationsOfLength`         | M (User-specified)       | Fixed    | No         |
 | `AllOrderedPermutations`              | 1...N (Length of inputs) | Fixed    | No         |
-| `OrderedPermutationsToLength`         | 1...M (User specified)   | Fixed    | No         |
+| `OrderedPermutationsToLength`         | 1...M (User-specified)   | Fixed    | No         |
 | `Permutations`                        | N (Length of inputs)     | Free     | No         |
 | `PermutationsOfLength`                | M (User-specified)       | Free     | No         |
 | `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
-| `PermutationsToLength`                | 1...M (User specified)   | Free     | No         |
+| `PermutationsToLength`                | 1...M (User-specified)   | Free     | No         |
 | `PermutationsWithReplacement`         | N (Length of inputs)     | Free     | Yes        |
 | `PermutationsOfLengthWithReplacement` | M (User-specified)       | Free     | Yes        |
 | `AllCombinations`                     | 1...N (Length of inputs) | Free     | Yes        |
