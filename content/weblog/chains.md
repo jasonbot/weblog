@@ -73,20 +73,20 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 - Ordering (in order of occurrence, free variance)
 - Repetition of elements (on/off)
 
-| Function                              | Length                   | Ordering | Repetition |
-| ------------------------------------- | ------------------------ | -------- | ---------- |
-| (Identity function, superfluous)      | N (Length of inputs)     | Fixed    | No         |
-| `OrderedPermutationsOfLength`         | M (User-specified)       | Fixed    | No         |
-| `AllOrderedPermutations`              | 1...N (Length of inputs) | Fixed    | No         |
-| `OrderedPermutationsToLength`         | 1...M (User-specified)   | Fixed    | No         |
-| `Permutations`                        | N (Length of inputs)     | Free     | No         |
-| `PermutationsOfLength`                | M (User-specified)       | Free     | No         |
-| `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
-| `PermutationsToLength`                | 1...M (User-specified)   | Free     | No         |
-| `PermutationsWithReplacement`         | N (Length of inputs)     | Free     | Yes        |
-| `PermutationsWithReplacementToLength` | M (User-specified)       | Free     | Yes        |
-| `AllCombinations`                     | 1...N (Length of inputs) | Free     | Yes        |
-| `CombinationsToLength`                | 1...M (User-specified)   | Free     | Yes        |
+| Function                         | Length                   | Ordering | Repetition |
+| -------------------------------- | ------------------------ | -------- | ---------- |
+| (Identity function, superfluous) | N (Length of inputs)     | Fixed    | No         |
+| `OrderedPermutationsOfLength`    | M (User-specified)       | Fixed    | No         |
+| `AllOrderedPermutations`         | 1...N (Length of inputs) | Fixed    | No         |
+| `OrderedPermutationsToLength`    | 1...M (User-specified)   | Fixed    | No         |
+| `Permutations`                   | N (Length of inputs)     | Free     | No         |
+| `PermutationsOfLength`           | M (User-specified)       | Free     | No         |
+| `AllPermutations`                | 1...N (Length of inputs) | Free     | No         |
+| `PermutationsToLength`           | 1...M (User-specified)   | Free     | No         |
+| `Combinations`                   | N (Length of inputs)     | Free     | Yes        |
+| `CombinationsOfLength`           | M (User-specified)       | Free     | Yes        |
+| `AllCombinations`                | 1...N (Length of inputs) | Free     | Yes        |
+| `CombinationsToLength`           | 1...M (User-specified)   | Free     | Yes        |
 
 ## Windows
 
