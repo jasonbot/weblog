@@ -30,7 +30,7 @@ Anyway, Go has iterators now, and I like using iterators. The first thing I want
 
 # The Cookbook is the Requirements Doc
 
-Once I had a framework cooking I could start thinking of examples. [My test suite took a backdoor to being a test of cases I cared about](https://github.com/jasonbot/chains/blob/main/cookbook_test.go), in cookbook form.
+Once I had a framework cooking I could start thinking of examples. [My test suite took a backseat to being a test of cases I cared about](https://github.com/jasonbot/chains/blob/main/cookbook_test.go), in cookbook form.
 
 Some things I wanted:
 
