@@ -381,7 +381,11 @@ span.kc {
   color: var(--darkest-blue);
 }
 
-span.o,
+span.o {
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
 span.s,
 span.s2 {
   color: var(--dark-blue);
