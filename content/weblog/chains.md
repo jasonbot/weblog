@@ -84,7 +84,7 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 | `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
 | `PermutationsToLength`                | 1...M (User-specified)   | Free     | No         |
 | `PermutationsWithReplacement`         | N (Length of inputs)     | Free     | Yes        |
-| `PermutationsOfLengthWithReplacement` | M (User-specified)       | Free     | Yes        |
+| `PermutationsWithReplacementToLength` | M (User-specified)       | Free     | Yes        |
 | `AllCombinations`                     | 1...N (Length of inputs) | Free     | Yes        |
 | `CombinationsToLength`                | 1...M (User-specified)   | Free     | Yes        |
 
