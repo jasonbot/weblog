@@ -388,3 +388,7 @@ span.p {
 span.c1 {
   color: var(--comment-color);
 }
+
+span.nx {
+  font-weight: bold;
+}
