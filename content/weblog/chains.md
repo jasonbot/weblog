@@ -62,8 +62,8 @@ Similar to the above, pretty trivial to write. Can even treat these as specific 
 - [`Flatten` takes an iterable of iterables and turns it into a flat iterable](https://pkg.go.dev/github.com/jasonbot/chains#Flatten), but it doesn't do it to arbitrary levels of nesting like Ruby does. There are rules here dude.
 - [`Tap` is largely useless](https://pkg.go.dev/github.com/jasonbot/chains#Tap), kind of like a forEach or a visitor that passes the item along.
 - [`Partition` splits an iterator into two](https://pkg.go.dev/github.com/jasonbot/chains#Partition) based on a partition function, allowing you to e.g. split good/bad inputs into separate pipelines. A simpler [`Uniq`](https://pkg.go.dev/github.com/jasonbot/chains#Uniq) function just returns the first value of each key grouping instead.
-- There's also a `Tee` to get a tear-off copy of the iterator.
 - Similarly, [`GroupBy`](https://pkg.go.dev/github.com/jasonbot/chains#GroupBy) takes an ordered set of items and "bins" them based on a key function, allowing you to `for key, vals := range Partition { for val := range vals { ...} }`
+- There's also a `Tee` to get a tear-off copy of the iterator.
 
 ## Combinatorics
 
