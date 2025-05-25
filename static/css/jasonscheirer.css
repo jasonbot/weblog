@@ -377,7 +377,8 @@ span.kc {
   color: var(--darkest-blue);
 }
 
-span.o {
+span.o,
+span.s {
   color: var(--dark-blue);
 }
 
@@ -391,4 +392,8 @@ span.c1 {
 
 span.nx {
   font-weight: bold;
+}
+
+span.kt {
+  color: var(--dark-purple);
 }
