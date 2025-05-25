@@ -382,7 +382,8 @@ span.kc {
 }
 
 span.o,
-span.s {
+span.s,
+span.s2 {
   color: var(--dark-blue);
 }
 
