@@ -74,28 +74,28 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 - Repetition of elements (on/off)
 
 | Function                         | Length                   | Ordering | Repetition |
-| -------------------------------- | ------------------------ | -------- | ---------- |
-| (Identity function, superfluous) | N (Length of inputs)     | Fixed    | No         |
-| `OrderedPermutationsOfLength`    | M (User-specified)       | Fixed    | No         |
-| `AllOrderedPermutations`         | 1...N (Length of inputs) | Fixed    | No         |
-| `OrderedPermutationsToLength`    | 1...M (User-specified)   | Fixed    | No         |
-| `Permutations`                   | N (Length of inputs)     | Free     | No         |
-| `PermutationsOfLength`           | M (User-specified)       | Free     | No         |
-| `AllPermutations`                | 1...N (Length of inputs) | Free     | No         |
-| `PermutationsToLength`           | 1...M (User-specified)   | Free     | No         |
-| `Combinations`                   | N (Length of inputs)     | Free     | Yes        |
-| `CombinationsOfLength`           | M (User-specified)       | Free     | Yes        |
-| `AllCombinations`                | 1...N (Length of inputs) | Free     | Yes        |
-| `CombinationsToLength`           | 1...M (User-specified)   | Free     | Yes        |
+| -------------------------------- | ------------------------ | :------: | :--------: |
+| (Identity function, superfluous) | N (Length of inputs)     |  Fixed   |     No     |
+| `OrderedPermutationsOfLength`    | M (User-specified)       |  Fixed   |     No     |
+| `AllOrderedPermutations`         | 1...N (Length of inputs) |  Fixed   |     No     |
+| `OrderedPermutationsToLength`    | 1...M (User-specified)   |  Fixed   |     No     |
+| `Permutations`                   | N (Length of inputs)     |   Free   |     No     |
+| `PermutationsOfLength`           | M (User-specified)       |   Free   |     No     |
+| `AllPermutations`                | 1...N (Length of inputs) |   Free   |     No     |
+| `PermutationsToLength`           | 1...M (User-specified)   |   Free   |     No     |
+| `Combinations`                   | N (Length of inputs)     |   Free   |    Yes     |
+| `CombinationsOfLength`           | M (User-specified)       |   Free   |    Yes     |
+| `AllCombinations`                | 1...N (Length of inputs) |   Free   |    Yes     |
+| `CombinationsToLength`           | 1...M (User-specified)   |   Free   |    Yes     |
 
 ## Windows
 
 Not as high-level as Combinatorics, but I wanted to take a window of N at as time.
 
 | Function         | Length | Overlaps | Examples                         |
-| ---------------- | ------ | -------- | -------------------------------- |
-| `Windows`        | 1...M  | No       | `{1, 2, 3}, 2 -> {1, 2}, {3}`    |
-| `SlidingWindows` | 1...M  | Yes      | `{1, 2, 3}, 2 -> {1, 2}, {2, 3}` |
+| ---------------- | :----: | :------: | -------------------------------- |
+| `Windows`        | 1...M  |    No    | `{1, 2, 3}, 2 -> {1, 2}, {3}`    |
+| `SlidingWindows` |   M    |   Yes    | `{1, 2, 3}, 2 -> {1, 2}, {2, 3}` |
 
 ## Higher-Level Chaining
 
