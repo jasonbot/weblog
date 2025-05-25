@@ -148,7 +148,7 @@ for x := range Merged(Each(item1), Each(item2), Each(item3)) {
 
 I wanted to be able to chain calls like I can in _those other_ languages, so the first thing I thought to do was design some sort of struct or interface with various `.Map`/`.Reduce`/`.Filter`/etc methods -- so like
 
-```
+```go
 type Chainable interface {
     Map(mapFunc(T) V) Chainable[V]
     Reduce(mapFunc(T) V) Chainable[V]
@@ -158,7 +158,7 @@ type Chainable interface {
 
 Immediately there's a problem because Interfaces can't use generics in Go, so we do a struct instead:
 
-```
+```go
 type Chainable[T] struct {
     func(c *Chainable) Map(mapFunc(T) V) Chainable[V] { ... }
     Reduce(mapFunc(T) V) Chainable[V] Chainable[V] { ... }
