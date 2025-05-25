@@ -368,6 +368,10 @@ span.nb {
   font-weight: 600;
 }
 
+span.sr {
+  color: var(--dark-purple);
+}
+
 span.nf {
   color: var(--dark-blue);
   font-weight: 600;
