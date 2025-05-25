@@ -6,7 +6,7 @@ featured_image = ""
 description = "Here I Go (this is a pun and I regret it immediately)"
 +++
 
-> **Top Matter**: [Github for the library](https://github.com/jasonbot/chains), [doc for the library](https://pkg.go.dev/github.com/jasonbot/chains).
+> **Top Matter**: [GitHub for the library](https://github.com/jasonbot/chains), [doc for the library](https://pkg.go.dev/github.com/jasonbot/chains).
 
 It's been six months since I've done this, but I'm finally writing about it!
 
@@ -41,16 +41,29 @@ Some things I wanted:
 
 ## Map/Filter/Reduce
 
-Not much to write home about here, anyone can write these and I encourage each person to do it themselves using Go iterators.
+Not much to write home about here, anyone can write these and I encourage each person to do it themselves using Go iterators. There's the usual suspects here along with various types of `Reduce` that all boil down to the base [`Accumulate`](https://pkg.go.dev/github.com/jasonbot/chains#Accumulate).
 
 ## Cleanups
 
-Similar to the above, pretty trivial to write. Can even treat these as specific cases of `Filter`.
+Similar to the above, pretty trivial to write. Can even treat these as specific cases of `Filter`. [`Compact` is one such case](https://pkg.go.dev/github.com/jasonbot/chains#Compact).
+
+## Basic Tests
+
+- There's an `Any` and an `All` for testing for conditions satisfied by the entire sequence; `Count` gets just the length. All are useful with `Tee`!
+
+## Slicing
+
+- `First` and `Last` do what they say; `FirstAndRest` is the CAR/CDR you didn't know you needed.
+- You can `TakeWhile` and `DropUntil` to start/end at a particular point.
+- You can `Repeat` an item N times, `Rotate` a slice so the first N items are moved to the back, `Repeat` each element N times, and `Cycle` the iterator which is just infinite repeats.
 
 ## Ruby Silliness
 
-- [`Flatten` takes an iterable of iterables and turns it into a flat iterable](https://pkg.go.dev/github.com/jasonbot/chains@v0.0.10#Flatten), but it doesn't do it to arbitrray levels of nesting like Ruby does. There are rules here dude.
-- [`Tap` is largely useless](https://pkg.go.dev/github.com/jasonbot/chains@v0.0.10#Tap), kind of like a forEach or a visitor that passes the item along.
+- [`Flatten` takes an iterable of iterables and turns it into a flat iterable](https://pkg.go.dev/github.com/jasonbot/chains#Flatten), but it doesn't do it to arbitrary levels of nesting like Ruby does. There are rules here dude.
+- [`Tap` is largely useless](https://pkg.go.dev/github.com/jasonbot/chains#Tap), kind of like a forEach or a visitor that passes the item along.
+- [`Partition` splits an iterator into two](https://pkg.go.dev/github.com/jasonbot/chains#Partition) based on a partition function, allowing you to e.g. split good/bad inputs into separate pipelines. A simpler [`Uniq`](https://pkg.go.dev/github.com/jasonbot/chains#Uniq) function just returns the first value of each key grouping instead.
+- There's also a `Tee` to get a tear-off copy of the iterator.
+- Similarly, [`GroupBy`](https://pkg.go.dev/github.com/jasonbot/chains#GroupBy) takes an ordered set of items and "bins' them based on a key function, allowing you to `for key, vals := range Partition { for val := range vals { ...} }`
 
 ## Combinatorics
 
@@ -65,15 +78,15 @@ I wanted `combinations` and `permutations`, so those were high on the list. I fo
 | (Identity function, superfluous)      | N (Length of inputs)     | Fixed    | No         |
 | `OrderedPermutationsOfLength`         | M (User-specified)       | Fixed    | No         |
 | `AllOrderedPermutations`              | 1...N (Length of inputs) | Fixed    | No         |
-| `OrderedPermutations`                 | 1...M (User specified)   | Fixed    | No         |
+| `OrderedPermutationsToLength`         | 1...M (User specified)   | Fixed    | No         |
 | `Permutations`                        | N (Length of inputs)     | Free     | No         |
 | `PermutationsOfLength`                | M (User-specified)       | Free     | No         |
 | `AllPermutations`                     | 1...N (Length of inputs) | Free     | No         |
 | `PermutationsToLength`                | 1...M (User specified)   | Free     | No         |
 | `PermutationsWithReplacement`         | N (Length of inputs)     | Free     | Yes        |
 | `PermutationsOfLengthWithReplacement` | M (User-specified)       | Free     | Yes        |
-| `Combinations`                        | 1...N (Length of inputs) | Free     | Yes        |
-| `CombinationsOfLength`                | 1...M (User-specified)   | Free     | Yes        |
+| `AllCombinations`                     | 1...N (Length of inputs) | Free     | Yes        |
+| `CombinationsToLength`                | 1...M (User-specified)   | Free     | Yes        |
 
 ## Windows
 

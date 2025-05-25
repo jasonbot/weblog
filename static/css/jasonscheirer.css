@@ -250,12 +250,15 @@ div.summary-text {
 }
 
 table {
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 6px;
   padding: 0;
   border-spacing: 0;
+  display: block;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 thead {
