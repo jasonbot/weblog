@@ -115,7 +115,7 @@ Got the base case down.
 
 ### Combining Streams "Fairly"
 
-Another use case is Round-Robining a set of iterators until they are all exhausted. We've got a set of inputs and want to consume from all of them until we run out. For that, there's [`RoundRobin`](https://github.com/jasonbot/chains/blob/main/cookbook_test.go#L261-L272), which works exactly as expected. Each iterator can have a variable number of entries but all entries are considered by index, so we don't exhaust one before going to the next but try to consume them all equally.
+Another use case is Round-Robining a set of iterators until they are all exhausted. We've got a set of inputs and want to consume from all of them until we run out. For that, there's [`RoundRobin`](https://github.com/jasonbot/chains/blob/main/cookbook_test.go), which works exactly as expected. Each iterator can have a variable number of entries but all entries are considered by index, so we don't exhaust one before going to the next but try to consume them all equally.
 
 ```go
 item1 := []int{1, 2, 3, 4}
@@ -129,7 +129,7 @@ for x := range RoundRobin(Each(item1), Each(item2), Each(item3)) {
 
 ### Merging Sorted Streams
 
-Use case: I have 3000 CSVs, each has rows in order of date. The time ranges _may_ overlap in some cases. I wanted a unified stream of all the rows in order. For that, I wrote [`Merged`](https://github.com/jasonbot/chains/blob/main/cookbook_test.go#L231-L259), which is at its core a pull-on-demand heap. Once the smallest value has been pulled off the heap, yield it, then grab the next value from the iterator that provided the value to place on the heap.
+Use case: I have 3000 CSVs, each has rows in order of date. The time ranges _may_ overlap in some cases. I wanted a unified stream of all the rows in order. For that, I wrote [`Merged`](https://github.com/jasonbot/chains/blob/main/cookbook_test.go), which is at its core a pull-on-demand heap. Once the smallest value has been pulled off the heap, yield it, then grab the next value from the iterator that provided the value to place on the heap.
 
 ```go
 item1 := []int{1, 2, 3, 4}
@@ -168,7 +168,7 @@ type Chainable[T] struct {
 
 This sort of works! You can see in the [`IterableSequence` type ](https://pkg.go.dev/github.com/jasonbot/chains#IterableSequence) we do this. But to do two types (say we're mapping from `int` to `string`), we have to have an `IterableSequence` that does two, and so [`IterableSequence2` was born](https://pkg.go.dev/github.com/jasonbot/chains#IterableSequence2).
 
-Now how to get from an `IterableSequence` to an `IterableSequence2`? I decided on a top-level function to create [a type called a `Junction`](https://pkg.go.dev/github.com/jasonbot/chains#ChainJunction) to go from a one-typed chainable to a two-typed one. Now what if we need a third type? This is getting messy.
+Now how to get from an `IterableSequence` to an `IterableSequence2`? I decided on a top-level function to create [a type called a `Junction`](https://pkg.go.dev/github.com/jasonbot/chains#ChainJunction) to go from a one-typed chainable to a two-typed one. Now what if we need a third type? This is getting messy[^1].
 
 This pattern works for simple cases just fine, but it falls down once we get into the variadic world. Go's obviously stunted-on-purpose generics are preventing us from doing this syntactic sugar in a clean way, but it is also suggesting a different way to do it.
 
@@ -257,3 +257,5 @@ Once I started doing things the Go way, it really increased the pace of developm
 # Don't Use This As A Library
 
 I've made this available as an importable library, but many of these patterns are easier to just copy and paste into your code. They should also be inspiration: this is a fun problem to solve! Solve it yourself!
+
+[^1]: After posting this, I discovered another person [had done something similar](https://github.com/PsionicAlch/byteforge) but used runtime reflection to sacrifice compile-time safety for the syntactic cleanliness I was going after. I respect the approach and I like the depth of knowledge of the language needed to do this. I'm going to say which implementation is better is a matter of knowing the tradeoffs: are you willing to sacrifice compile-time safety for convenience? It's probably an unequivocal yes if you have good test coverage.
