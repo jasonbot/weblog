@@ -1,6 +1,6 @@
 :root {
   --header-font: "Atkinson Hyperlegible Next";
-  --body-font: "Luciole";
+  --body-font: "Inter";
   --mono-font: "0xProto";
 
   --light-blue: #4da6ff;
@@ -9,7 +9,6 @@
   --dark-purple: #5a265e;
   --bg-grn: #ffffeb;
   --border-color: #bddeff;
-  --comment-color: #69816b;
 }
 
 body {
@@ -130,10 +129,11 @@ pre {
   font-weight: 300;
   font-size: 10pt;
   background: white !important;
+  margin: 1em;
   padding: 1em;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
-  overflow-x: auto;
+  overflow: scroll;
 }
 
 code {
@@ -249,20 +249,11 @@ div.summary-text {
 }
 
 table {
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 6px;
-  padding: 0;
-  border-spacing: 0;
-  display: block;
-  max-width: fit-content;
-  margin: 0 auto;
-  overflow-x: auto;
-  white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 thead {
   background-color: rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 th {
@@ -270,7 +261,6 @@ th {
 }
 
 td {
-  padding: 4px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -367,10 +357,6 @@ span.nb {
   font-weight: 600;
 }
 
-span.sr {
-  color: var(--dark-purple);
-}
-
 span.nf {
   color: var(--dark-blue);
   font-weight: 600;
@@ -381,27 +367,9 @@ span.kc {
 }
 
 span.o {
-  font-weight: 600;
-  color: var(--dark-blue);
-}
-
-span.s,
-span.s2 {
   color: var(--dark-blue);
 }
 
 span.p {
-  color: var(--dark-purple);
-}
-
-span.c1 {
-  color: var(--comment-color);
-}
-
-span.nx {
-  font-weight: 600;
-}
-
-span.kt {
   color: var(--dark-purple);
 }
