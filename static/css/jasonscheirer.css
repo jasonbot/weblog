@@ -1,6 +1,6 @@
 :root {
   --header-font: "Atkinson Hyperlegible Next";
-  --body-font: "Inter";
+  --body-font: "Luciole";
   --mono-font: "0xProto";
 
   --light-blue: #4da6ff;
@@ -130,11 +130,10 @@ pre {
   font-weight: 300;
   font-size: 10pt;
   background: white !important;
-  margin: 1em;
   padding: 1em;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
-  overflow: scroll;
+  overflow-x: auto;
 }
 
 code {
