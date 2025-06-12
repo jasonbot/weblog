@@ -25,3 +25,5 @@ The example I see most currently is about AI somehow matching human intelligence
 I've decorated these talking points with some straw men that are usually left implicit when usually presented, but you get the idea.
 
 Just because you agree with the problem statement does not mean that the conclusion is correct just because it occurs a few sentences later.
+
+> [Here's an interesting blog post elsewhere](https://ludic.mataroa.blog/blog/the-narrative-fallacy/) on narratives and being misleading as well.
