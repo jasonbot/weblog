@@ -95,7 +95,6 @@ description = "Another /uses page, just like the others"
 
 - [BetterDisplay](https://github.com/waydabber/BetterDisplay) for better external monitor support
 - [SyncThing](https://syncthing.net/) to move files around
-- ~~[MeetingBar](https://github.com/leits/MeetingBar) to see what I'm supposed to be doing~~
 - [Notion Calendar](https://www.notion.com/product/calendar) to see what I'm supposed to be doing
 - [Notion Desktop](https://www.notion.com/desktop) to do work
 - [Rectangle](https://rectangleapp.com/) to move windows around
