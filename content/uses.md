@@ -38,7 +38,7 @@ description = "Another /uses page, just like the others"
 - [Here is the bootstrap set of dotfiles I use](https://github.com/jasonbot/dotfiles) on new computers
 - I use zsh and bash almost equally, though I think I have more zsh machines now
 - I usually start out with [oh-my-zsh](https://ohmyz.sh/) or [oh-my-bash](https://github.com/ohmybash/oh-my-bash) on new systems
-- I use [nvm](https://github.com/nvm-sh/nvm), [pyenv](https://github.com/pyenv/pyenv) and [rbenv](https://github.com/rbenv/rbenv) to manage node/python/ruby installs
+- I use [nvm](https://github.com/nvm-sh/nvm), [rbenv](https://github.com/rbenv/rbenv), and [pyenv](https://github.com/pyenv/pyenv) to manage node/ruby/python installs -- I can't get the hang of [uv](https://github.com/astral-sh/uv) but that looks like the future at this point for Python.
 - I use `grep`, [`rg`](https://github.com/BurntSushi/ripgrep) and [`ag`](https://github.com/ggreer/the_silver_searcher) in descending order of frequency
 - I like [git-delta](https://github.com/dandavison/delta) for command line diffing
 - I like [lazygit](https://github.com/jesseduffield/lazygit) for some easy to explain but harder to do than necessary git operations. Sometimes a GUI (or a TUI) is nice! Not everythnig has to be commands or code!
