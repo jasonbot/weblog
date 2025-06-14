@@ -106,12 +106,12 @@ description = "Another /uses page, just like the others"
 - [Syncthing](https://flathub.org/apps/me.kozec.syncthingtk) to move files around easily
 - [Rhythmbox](https://flathub.org/apps/org.gnome.Rhythmbox3) to handle my large music library
 - [Boxes](https://flathub.org/apps/org.gnome.Boxes) for light virtualization work
-- [Ptyxis](https://flathub.org/apps/app.devsuite.Ptyxis) as my terminal emulator
 - [Podman Desktop](https://podman-desktop.io/) for container-fu
 - [virt-manager](https://virt-manager.org/) for my Windows VMs
 - [Prism Launcher](https://prismlauncher.org/) to play Minecraft with my kid
 - [Alpaca](https://flathub.org/apps/com.jeffser.Alpaca) as a standalone frontend to Ollama
 - [Steam](https://store.steampowered.com/about/) for Steam
+- [Ghostty](https://ghostty.org/) as my terminal emulator
 
 ## Networked Software
 
