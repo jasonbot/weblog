@@ -18,10 +18,11 @@ description = "Another /uses page, just like the others"
 - I prefer Linux on the desktop to Mac on the desktop at this point
   - I do not value my time or sanity
   - If something is reliable, I get bored and self-destructive so I need to be in a state of crisis in all aspects of my life and a Linux desktop fills that need in this space
+- I now prefer Fedora and other Fedoralikes for desktop Linux
 - I usually prefer Debian stable or one of its relatives for servers and Alpine for container base images
-- I use [Tailwind](https://tailwindcss.com/) at home, [Sass](https://sass-lang.com/) at work
+- I use [Tailwind](https://tailwindcss.com/) at home for CSS, often tableflipping and reverting to vanilla CSS
 - I use [Solid](https://www.solidjs.com/) and [plain old JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) at home, [React](https://react.dev/) at work
-- I use [Ollama](https://ollama.com/) on Mac and Linux to locally run LLMs
+- I use [Ollama](https://ollama.com/) on Windows, Mac and Linux to locally run LLMs
 
 ## Editors/Environments
 
@@ -41,6 +42,7 @@ description = "Another /uses page, just like the others"
 - I use `grep`, [`rg`](https://github.com/BurntSushi/ripgrep) and [`ag`](https://github.com/ggreer/the_silver_searcher) in descending order of frequency
 - I like [git-delta](https://github.com/dandavison/delta) for command line diffing
 - I like [lazygit](https://github.com/jesseduffield/lazygit) for some easy to explain but harder to do than necessary git operations. Sometimes a GUI (or a TUI) is nice! Not everythnig has to be commands or code!
+- [lazydocker](https://github.com/jesseduffield/lazydocker) loads a hell of a lot faster than any other offering for looking at running containers in a reasonably high level way
 
 ### It Came from Userspace
 
@@ -79,11 +81,23 @@ description = "Another /uses page, just like the others"
 
 ## Desktop Apps
 
+### Windows
+
+- I run [Win11Debloat](https://github.com/Raphire/Win11Debloat) immediately upon starting on a new Windows desktop machine
+- [Winget](https://github.com/microsoft/winget-cli) is a command line utility built into the operating system you are sleeping on.
+- [Windows Terminal](https://github.com/microsoft/terminal) for my terminal emulator
+- [Powertoys](https://learn.microsoft.com/en-us/windows/powertoys/) for various tweaks, [the rnner in particular](https://learn.microsoft.com/en-us/windows/powertoys/run) is nice
+- [Notion Desktop](https://www.notion.com/desktop) to do work
+- [Notion Calendar](https://www.notion.com/product/calendar) as my calendar
+- [SyncThing](https://syncthing.net/) to move files around
+
 ### Mac
 
 - [BetterDisplay](https://github.com/waydabber/BetterDisplay) for better external monitor support
 - [SyncThing](https://syncthing.net/) to move files around
-- [MeetingBar](https://github.com/leits/MeetingBar) to see what I'm supposed to be doing
+- ~~[MeetingBar](https://github.com/leits/MeetingBar) to see what I'm supposed to be doing~~
+- [Notion Calendar](https://www.notion.com/product/calendar) to see what I'm supposed to be doing
+- [Notion Desktop](https://www.notion.com/desktop) to do work
 - [Rectangle](https://rectangleapp.com/) to move windows around
 - [Enchanted](https://github.com/AugustDev/enchanted) as a standalone frontend to Ollama
 - [Ghostty](https://ghostty.org/) as my terminal emulator
