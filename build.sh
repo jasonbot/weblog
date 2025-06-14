@@ -3,8 +3,9 @@
 set -eux
 
 hugo
-npx -y pagefind --site public
 cd public
+git rm -r pagefind
+npx -y pagefind --site .
 git add * && git commit -m "Rebuild" && git push
 cd ..
 git add public
