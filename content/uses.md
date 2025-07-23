@@ -14,6 +14,7 @@ description = "Another /uses page, just like the others"
 - I am primarily a [FastAPI](https://github.com/fastapi/fastapi) user, and I am better than average at doing async programming (which sucks and is bad, but it's fun to do bad things)
 - I primarily choose Postgres as my database
 - I do most of my personal dev projects in Go
+- Over the last 3-5 years, Typescript has become the dominant language I use at work
 - If you ask me to write something in C++ I will say no but I _will_ write C++ to spite you
 - I prefer Linux on the desktop to Mac on the desktop at this point
   - I do not value my time or sanity
@@ -133,7 +134,7 @@ I have a handful of computers I use regularly!
 
 ## Toys
 
-- [Shanling Q1](https://en.shanling.com/product/259) for listening to music outside of my home office
+- [Shanling M0s](https://en.shanling.com/article-IntroM0s.html) for listening to music outside of my home office
 - [RG35XX](https://anbernic.com/products/rg35xx) running [MyMinUI](https://github.com/Turro75/MyMinUI) for video games during my commute hours
 - [Flipper](https://flipperzero.one/) that I never break the law with
 
