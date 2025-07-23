@@ -9,7 +9,7 @@ draft = false
 
 The title _Hate What You Know_ is admittedly vague, I know! There are a handful of directions I'll go with it, bear with me. And at least to some extent I don't mean "hate," I just mean "know well."
 
-I'm an advocate of being a craftsperson out of anger. Do things because they need doing and dammit, tyou can't live in a world where this problem isn't solved anymore.
+I'm an advocate of being a craftsperson out of anger. Do things because they need doing and dammit, you can't live in a world where this problem isn't solved anymore.
 
 I'll make a deliberately outrageous claim: doing something out of need is craft, doing something out of compulsion is art. A craftsman makes a work because they see something missing in the world. An artist makes a work because they see something of a possibility in the world. Professionally, at least, you're hopefully operating in the former camp. In the latter, you're either outrageously lucky doing what you love in a place of psychological safety or secretly pissing everyone off around you by being a perfectionist primadonna.
 
@@ -42,8 +42,9 @@ Hate, as opposed to love, comes with a much different place of origin when setti
 You should look for ways to hate your tools. By this, I mean the following:
 
 > Every time you have solved a problem with a tool, try solving it with a different one.
-> * In what ways was it easier?
-> * In what ways was it harder?
+>
+> - In what ways was it easier?
+> - In what ways was it harder?
 
 The contrast should give you a wider perspective on how your preferred way of getting things done could be better. I've gone in a full circle with CSS frameworks recently: I forced myself to use Tailwind until I liked it, then at work I had to use Sass. Sass sucks in a lot of ways that Tailwind doesn't. The converse is true, too. But knowing how other people solved the same problem, you can recognize the clumsy parts of other approaches and take the good parts of one and try to apply them to the other.
 
@@ -52,15 +53,16 @@ And the conclusion to this, of course, was me becoming better at vanilla CSS, be
 # You Should Be Aware of Your Tools and How You Could do Better by Them
 
 Again with the not-quite-hatred talk:
-* Are you growing in your use of the tool?
-* Is it making you ~hate it~ uncomfortable?
-  * Is it because you're in a place where you're being challenged by it and growing?
-  * Are you putting in the appropriate effort to give the tool a fair shake? 
-* Is it because you're outgrowing it? 
-  * Have you grown out of it for 
-    * Absolute reasons (it is not a useful tool) or
-    * Relative ones (you've mastered it or you want to grow in a different direction)?
-* After you've outgrown it, can you still advocate it to others who are earlier in their journey?
+
+- Are you growing in your use of the tool?
+- Is it making you ~hate it~ uncomfortable?
+  - Is it because you're in a place where you're being challenged by it and growing?
+  - Are you putting in the appropriate effort to give the tool a fair shake?
+- Is it because you're outgrowing it?
+  - Have you grown out of it for
+    - Absolute reasons (it is not a useful tool) or
+    - Relative ones (you've mastered it or you want to grow in a different direction)?
+- After you've outgrown it, can you still advocate it to others who are earlier in their journey?
 
 # Anyhoo
 

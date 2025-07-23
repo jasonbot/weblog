@@ -14,4 +14,4 @@ Do not operate at 100% capacity at all times, aim to operate at 80% so that when
 
 Always have a strategic reserve of competence.
 
-> This is not an advocacy of actual laziness, it is pace-setting to prevent burnout and preparation to in anticipation of future needs.
+> This is not an advocacy of actual laziness, it is pace-setting to prevent burn out and preparation to in anticipation of future needs.
