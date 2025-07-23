@@ -1,6 +1,6 @@
 +++
 title =  "This Shouldn't Be Hard"
-date = 2025-07-25T00:00:00-08:00
+date = 2025-07-21T00:00:00-08:00
 tags = ["virtues"]
 featured_image = ""
 description = ""

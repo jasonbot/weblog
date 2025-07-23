@@ -6,7 +6,7 @@ featured_image = ""
 description = "I Like Tailwind, I went through stages"
 +++
 
-I've been using [the Tailwind CSS Framework](https://tailwindcss.com/) for abut two and a half years (as of July 2025) for my personal projects, and I used it professionally in my time at [unstructured](https://unstructured.io/) as well. In all, I think it's a good thing. However, I don't find myself thinking I'd use it for new projects at this point: I believe I have outgrown it. Here is a short story.
+I've been using [the Tailwind CSS Framework](https://tailwindcss.com/) for about two and a half years (as of July 2025) for my personal projects, and I used it professionally in my time at [unstructured](https://unstructured.io/) as well. In all, I think it's a good thing. However, I don't find myself thinking I'd use it for new projects at this point: I believe I have outgrown it. Here is a short story.
 
 # Tailwind as Style Guide
 
