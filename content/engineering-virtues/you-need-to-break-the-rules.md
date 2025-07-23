@@ -6,7 +6,9 @@ featured_image = ""
 description = ""
 +++
 
-This is a short one: over the course of your job, you are going to need to operate outside of the range of your defined permissions and responsibilities. You should do this _sparingly_ and _secretly_. You should be able to operate outside of the system when you need to, and you need to know how to do it in non-obvious ways so you don't get your escape hatches taken away from you.
+> Over the course of your job, you are going to need to operate outside of the range of your defined permissions and responsibilities.
+
+You should do this _sparingly_ and _secretly_. You should be able to operate outside of the system when you need to, and you need to know how to do it in non-obvious ways so you don't get your escape hatches taken away from you.
 
 Some benign examples of this:
 

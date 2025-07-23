@@ -6,6 +6,8 @@ featured_image = ""
 description = ""
 +++
 
+> Be overprepared.
+
 ![Iceberg](/images/passively-transparent/iceberg.svg)
 
 As the phrase goes, _don't let your mouth write checks your ass can't cash_. Send along curated information that is a good summary of what you are doing, but be able to support it with research, opinion, or buy-in when pushed. Reveal enough to convey that you are a force, but do not reveal _everything_.

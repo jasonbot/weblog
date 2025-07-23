@@ -6,9 +6,9 @@ featured_image = ""
 description = ""
 +++
 
-In the course of my problem solving, _especially_ when I am solving a problem I think [shouldn't be hard](../this-shouldnt-be-hard/), I think back to the essential _core_ of the problem
-
 > For the 500 lines of boilerplate, _what are the five truly interesting lines that solve the problem_?
+
+In the course of my problem solving, _especially_ when I am solving a problem I think [shouldn't be hard](../this-shouldnt-be-hard/), I think back to the essential _core_ of the problem
 
 Typically a fix is a couple of API calls or a single clever data structure.
 

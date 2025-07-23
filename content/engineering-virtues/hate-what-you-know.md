@@ -7,6 +7,8 @@ description = ""
 draft = false
 +++
 
+> You should be familiar enough with your tools to be able list critical things about them, even though they're what you still choose to use every day.
+
 The title _Hate What You Know_ is admittedly vague, I know! There are a handful of directions I'll go with it, bear with me. And at least to some extent I don't mean "hate," I just mean "know well."
 
 I'm an advocate of being a craftsperson out of anger. Do things because they need doing and dammit, you can't live in a world where this problem isn't solved anymore.

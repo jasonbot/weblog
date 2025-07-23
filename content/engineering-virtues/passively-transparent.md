@@ -6,6 +6,8 @@ featured_image = ""
 description = ""
 +++
 
+> Nobody should have to _ask_ what you're working on. You should leave an obvious, loud trail. Encourage this pattern in others.
+
 One thing that is important to me as an engineer that I don't think I've seen put in writing is something I have distilled into the term _passively transparent_.
 
 It should be obvious to the people in leadership what is motivating you to work and what you are working on (transparency), and it should not require an on-demand effort on your part to communicate this to them (passive access).

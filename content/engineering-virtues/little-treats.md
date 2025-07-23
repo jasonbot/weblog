@@ -6,6 +6,8 @@ featured_image = ""
 description = ""
 +++
 
+> Palate cleanser tasks are morale boosts
+
 I've found that my productivity varies wildly based on the time of year, the phase of the moon, my mental state, the quality of my morning shower thought session, and **how enthusiastic I am about what I'm working on**.
 
 I like to give myself "little treat" issues occasionally to keep my motivation up: issues I pick up outside of the product backlog that are quick to fix, fun to do, and give me little dopamine hits.
