@@ -12,6 +12,8 @@ Oftentimes we get stuck on the actual specifics of a task: how do we set up the 
 
 These are obstacles. Keep your eyes on the prize. If you can imagine a problem, if you have a clear vision for how to do it, this is all that matters. Process and tools are a means to the goal, not necessarily a requisite of getting to it.
 
+> In short, as you are working your way to the goal, you should be able to be clearminded about how you aim on getting there and when you are slowed down for silly reasons do not accept them as excuses. Say to yourself, "I know what I need to do, it shouldn't be this hard."
+
 You must achieve your end goals despite everything in front of you. You have a vision and it should be as little friction as possible. This means minimizing unnecessary steps and busywork. Automate it. Don't do it if you don't have to.
 
 1. Document and work around pain points, make sure they do not remain painful for long.
