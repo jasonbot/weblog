@@ -330,7 +330,7 @@ a.pagination-next::after {
   content: "->";
 }
 
-/* Syntax highlighting */
+/* Syntax highlighting for code blocks */
 
 span.k {
   color: var(--darkest-blue);
@@ -372,4 +372,40 @@ span.o {
 
 span.p {
   color: var(--dark-purple);
+}
+
+/* NOW YOU'RE COOKING WITH NINTENDO */
+
+@view-transition {
+  navigation: auto;
+}
+
+@keyframes move-out {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    opacity: 0.125;
+    transform: translateY(-50%) rotateX(90deg);
+  }
+}
+
+@keyframes move-in {
+  from {
+    opacity: 0;
+    transform: translateY(200%) rotateX(90deg);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+::view-transition-old(root) {
+  animation: 0.25s linear both move-out;
+}
+
+::view-transition-new(root) {
+  animation: 0.25s linear both move-in;
 }
