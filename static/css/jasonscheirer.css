@@ -376,6 +376,7 @@ span.p {
 
 /* NOW YOU'RE COOKING WITH NINTENDO */
 
+/*
 @view-transition {
   navigation: auto;
 }
@@ -409,3 +410,4 @@ span.p {
 ::view-transition-new(root) {
   animation: 0.25s linear both move-in;
 }
+*/
