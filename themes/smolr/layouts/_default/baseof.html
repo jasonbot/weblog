@@ -6,8 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ .Title }}</title>
 	{{if .Page.Params.vanity -}}
-	<meta name="go-import" content="{{ $.Site.BaseURL }}{{substr .Page.RelPermalink 0 -1}} git {{.Page.Params.vanity}}">
-	<meta name="go-source" content="{{ $.Site.BaseURL }}{{substr .Page.RelPermalink 0 -1}} {{.Page.Params.vanity}} {{.Page.Params.vanity}}/tree/master{/dir} {{.Page.Params.vanity}}/blob/master{/dir}/{file}#L{line}">
+	{{ $hostname := urls.Parse $.Site.BaseURL }}
+	<meta name="go-import" content="{{ $hostname.Hostname }}/{{strings.TrimPrefix "/" (substr .Page.RelPermalink 0 -1 )}} git {{.Page.Params.vanity}}">
+	<meta name="go-source" content="{{ $hostname.Hostname }}/{{strings.TrimPrefix "/" (substr .Page.RelPermalink 0 -1 )}} {{.Page.Params.vanity}} {{.Page.Params.vanity}}/tree/master{/dir} {{.Page.Params.vanity}}/blob/master{/dir}/{file}#L{line}">
 	{{- end}}
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="{{ .Title }}" />

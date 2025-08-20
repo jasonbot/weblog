@@ -4,6 +4,8 @@ date = 2025-05-24T00:00:00-08:00
 tags = ["golang", "programming"]
 featured_image = ""
 description = "Here I Go (this is a pun and I regret it immediately)"
+vanity = "https://github.com/jasonbot/chains"
+aliases = ["/chains"]
 +++
 
 > **Top Matter**: [GitHub for the library](https://github.com/jasonbot/chains), [doc for the library](https://pkg.go.dev/github.com/jasonbot/chains).
