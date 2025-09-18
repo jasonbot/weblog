@@ -6,11 +6,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="robots" content="nosnippet">
 	<title>{{ .Title }}</title>
-	{{if .Page.Params.vanity -}}
-	{{ $hostname := urls.Parse $.Site.BaseURL }}
-	<meta name="go-import" content="{{ $hostname.Hostname }}/{{strings.TrimPrefix "/" (substr .Page.RelPermalink 0 -1 )}} git {{.Page.Params.vanity}}">
-	<meta name="go-source" content="{{ $hostname.Hostname }}/{{strings.TrimPrefix "/" (substr .Page.RelPermalink 0 -1 )}} {{.Page.Params.vanity}} {{.Page.Params.vanity}}/tree/master{/dir} {{.Page.Params.vanity}}/blob/master{/dir}/{file}#L{line}">
-	{{- end}}
+    {{if ( and .Page.Params.gomodvanityhost .Page.Params.gomodvanityrepo ) -}} {{ $hostname :=
+    urls.Parse $.Site.BaseURL }} {{ $pageParams := .Page.Params }} {{ range
+    .Page.Aliases }}
+    <meta
+      name="go-import"
+      content="{{ $pageParams.gomodvanityhost }}{{ . }} git {{$pageParams.gomodvanityrepo}}"
+    />
+    <meta
+      name="go-source"
+      content="{{ $pageParams.gomodvanityhost }}{{ . }} {{$pageParams.gomodvanityrepo}} {{$pageParams.gomodvanityrepo}}/tree/master{/dir} {{$pageParams.gomodvanityrepo}}/blob/master{/dir}/{file}#L{line}"
+    />
+    {{ end }} {{- end}}
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="{{ .Title }}" />
 	{{ with .Site.Params.description }}<meta name="og:description" content="{{ . }}">{{ end }}

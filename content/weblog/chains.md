@@ -4,7 +4,8 @@ date = 2025-05-24T00:00:00-08:00
 tags = ["golang", "programming"]
 featured_image = ""
 description = "Here I Go (this is a pun and I regret it immediately)"
-vanity = "https://github.com/jasonbot/chains"
+gomodvanityhost = "jasonscheirer.com"
+gomodvanityrepo = "https://github.com/jasonbot/chains"
 aliases = ["/chains"]
 +++
 
