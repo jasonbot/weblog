@@ -37,6 +37,10 @@
 I know how you struggle just to get by
 I know they got farm fresh eggs down in Chino
 And tract homes reasonably priced`,
+                  `I don't wanna pay for anything
+Clothes and food and drugs for free
+If it was 1970
+I'd have a job at a factory`,
                 ])
               : mappingString),
           ]
@@ -832,7 +836,10 @@ And tract homes reasonably priced`,
         const text = t.innerText;
 
         if (!!text && activeTranslations.length === 0) {
-          addToListOfActiveTranslations(randomChoice(Object.keys(translators)));
+          addToListOfActiveTranslations(
+            randomChoice(Object.keys(translators)),
+            true
+          );
         }
 
         activeTranslations.forEach((display) => {
@@ -855,7 +862,7 @@ And tract homes reasonably priced`,
         inputTextHasChanged();
       };
 
-      const addToListOfActiveTranslations = (name) => {
+      const addToListOfActiveTranslations = (name, addedByDefault) => {
         const template = document.getElementById("translation-item-template");
         const resultElt = document.getElementById("multi-alphabet-results");
 
@@ -877,25 +884,28 @@ And tract homes reasonably priced`,
           navigator.clipboard.writeText(translationTextelt.innerText);
         });
 
-        deleteButton.addEventListener("click", (e) => {
+        const deleteMethod = () => {
           const idx = activeTranslations.findIndex((e) => e.name === name);
-          console.log("Index", idx, activeTranslations);
           if (idx >= 0) {
             activeTranslations.splice(idx, 1);
             updateSelectedTranslationItemsInList();
             resultElt.removeChild(translationElt);
           }
-        });
+        };
+        deleteButton.addEventListener("click", deleteMethod);
 
         activeTranslations.push({
-          name: name,
+          name,
+          addedByDefault,
           update: (text) => {
             const translationBlank = text.trim().length === 0;
             copyButton.disabled = translationBlank;
 
             translationTextelt.innerText = translators[name](text);
           },
+          remove: deleteMethod,
         });
+
         updateSelectedTranslationItemsInList();
       };
 
@@ -928,7 +938,7 @@ And tract homes reasonably priced`,
         font-size: larger;
 
         &:empty::before {
-          content: "Type your dumb words here";
+          content: "Type what you want to make 𝒶𝓮𝓈𝓉𝒽𝓮𝓉𝒾𝒸 here";
           opacity: 0.75;
           font-style: italic;
         }
