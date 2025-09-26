@@ -20,9 +20,26 @@
   </head>
   <body>
     <script>
+      const randomChoice = (array) =>
+        array[Math.floor(Math.random() * array.length)];
+
       const plainAlphabetMapping = (...alphabetString) => {
         return (mappingString) =>
-          [...mappingString]
+          [
+            ...(mappingString.length === 0
+              ? randomChoice([
+                  "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.",
+                  "Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,",
+                  "Space: the final frontier. These are the voyages of the starship Enterprise. Its continuing mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before",
+                  `So, I want you to get up now. I want all of you to get up out of your chairs. I want you to get up right now and go to the window, open it, and stick your head out and yell, "I'm as mad as hell, and I'm not going to take this anymore!!"`,
+                  "Hello from the children of planet Earth.",
+                  `I know how hard it is down in Chino
+I know how you struggle just to get by
+I know they got farm fresh eggs down in Chino
+And tract homes reasonably priced`,
+                ])
+              : mappingString),
+          ]
             .map((letter, i) => {
               const charCode = letter.charCodeAt(0);
               if (charCode >= 65 && charCode <= 91) {
@@ -878,6 +895,7 @@
         const selectElt = document.getElementById("multi-alphabet-selector");
         selectElt.addEventListener("change", (e) => {
           addToListOfActiveTranslations(e.target.value);
+          selectElt.value = "";
         });
 
         Object.entries(translators).forEach(([name, translator]) => {
@@ -917,7 +935,7 @@
 
       div.translation-text {
         padding: 4px;
-        white-space: pre;
+        white-space: pre-wrap;
         padding: 4px;
         font-size: larger;
       }
@@ -929,8 +947,13 @@
         display: flex;
         flex-direction: row;
 
+        .translator-name {
+          text-align: center;
+        }
+
         & > * {
           flex-grow: 1;
+          align-items: center;
         }
 
         .copy-button,
@@ -968,11 +991,12 @@
       ></div>
       <div class="multi-alphabet-results" id="multi-alphabet-results"></div>
       <div class="multi-alphabet-add-another">
-        Add another:
         <select
           class="multi-alphabet-translation-selector"
           id="multi-alphabet-selector"
-        ></select>
+        >
+          <option disabled value="" selected>Add another:</option>
+        </select>
       </div>
 
       <template id="translation-item-template">
