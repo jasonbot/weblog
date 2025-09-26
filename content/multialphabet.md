@@ -835,10 +835,7 @@ And tract homes reasonably priced`,
         const selectElt = document.getElementById("multi-alphabet-selector");
         [...selectElt.querySelectorAll("option")].forEach((e, i) => {
           if (i === 0) {
-            e.innerText =
-              activeTranslations.length === 0
-                ? "Choose a transformation"
-                : randomChoice(["One more?", "Another", "Keep going"]);
+            e.innerText = randomChoice(["One more?", "Another", "Keep going"]);
             e.disabled = true;
           } else {
             e.disabled = namesUsed.has(e.value);
@@ -871,8 +868,9 @@ And tract homes reasonably priced`,
 
         deleteButton.addEventListener("click", (e) => {
           const idx = activeTranslations.findIndex((e) => e.name === name);
+          console.log("Index", idx, activeTranslations);
           if (idx >= 0) {
-            activeTranslations.pop(idx);
+            activeTranslations.splice(idx, 1);
             updateSelectedTranslationItemsInList();
             resultElt.removeChild(translationElt);
           }
@@ -994,9 +992,7 @@ And tract homes reasonably priced`,
           class="multi-alphabet-translation-selector"
           id="multi-alphabet-selector"
         >
-          <option disabled value="" selected>
-            Choose a translation method
-          </option>
+          <option disabled value="" selected>Choose a transformation</option>
         </select>
       </div>
 
