@@ -874,9 +874,11 @@ And tract homes reasonably priced`,
 
         deleteButton.addEventListener("click", (e) => {
           const idx = activeTranslations.indexOf((e) => e.name === name);
-          activeTranslations.pop(idx);
-          resultElt.removeChild(translationElt);
-          updateSelectedTranslationItemsInList();
+          if (idx >= 0) {
+            activeTranslations.pop(idx);
+            resultElt.removeChild(translationElt);
+            updateSelectedTranslationItemsInList();
+          }
         });
 
         activeTranslations.push({
