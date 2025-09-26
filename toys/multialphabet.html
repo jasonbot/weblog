@@ -859,6 +859,7 @@
           const idx = activeTranslations.indexOf((e) => e.name === name);
           activeTranslations.pop(idx);
           resultElt.removeChild(translationElt);
+          updateSelectedTranslationItemsInList();
         });
 
         activeTranslations.push({

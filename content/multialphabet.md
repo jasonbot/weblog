@@ -848,6 +848,7 @@ There are so many tools to do this online and a lot of them are annoying or cove
           const idx = activeTranslations.indexOf((e) => e.name === name);
           activeTranslations.pop(idx);
           resultElt.removeChild(translationElt);
+          updateSelectedTranslationItemsInList();
         });
 
         activeTranslations.push({
