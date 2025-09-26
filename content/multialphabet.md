@@ -10,8 +10,6 @@ There are so many tools to do this online and a lot of them are annoying or cove
 {{< raw >}}
     <script>
       const plainAlphabetMapping = (...alphabetString) => {
-        console.log(alphabetString, alphabetString[0]);
-
         return (mappingString) =>
           [...mappingString]
             .map((letter, i) => {
@@ -787,7 +785,7 @@ There are so many tools to do this online and a lot of them are annoying or cove
         ),
       };
 
-      const translationDisplays = [];
+      const activeTranslations = [];
 
       const debounce = (func, delay) => {
         let timeoutId;
@@ -801,30 +799,30 @@ There are so many tools to do this online and a lot of them are annoying or cove
         };
       };
 
-      const changeInputText = () => {
+      const inputTextHasChanged = () => {
         const t = document.getElementById("multi-alphabet-input");
         const text = t.innerText;
 
-        if (!!text && translationDisplays.length === 0) {
-          addTranslation(Object.keys(translators)[0]);
+        if (!!text && activeTranslations.length === 0) {
+          addToListOfActiveTranslations(Object.keys(translators)[0]);
         }
 
-        translationDisplays.forEach((display) => {
+        activeTranslations.forEach((display) => {
           display.update(text);
         });
       };
 
-      const updateList = () => {
-        namesUsed = new Set(translationDisplays.map((b) => b.name));
+      const updateSelectedTranslationItemsInList = () => {
+        namesUsed = new Set(activeTranslations.map((b) => b.name));
 
         const selectElt = document.getElementById("multi-alphabet-selector");
         [...selectElt.querySelectorAll("option")].forEach((e) => {
           e.disabled = namesUsed.has(e.value);
         });
-        changeInputText();
+        inputTextHasChanged();
       };
 
-      const addTranslation = (name) => {
+      const addToListOfActiveTranslations = (name) => {
         const template = document.getElementById("translation-item-template");
         const resultElt = document.getElementById("multi-alphabet-results");
 
@@ -834,25 +832,25 @@ There are so many tools to do this online and a lot of them are annoying or cove
         ).firstElementChild;
         resultElt.appendChild(translationElt);
 
-        const translationTextelt = translationElt.querySelector(".translation");
-        const copyButton = translationElt.querySelector(".copy-button");
-        const deleteButton = translationElt.querySelector(".remove-button");
-
         translationElt.querySelector(
           ".name"
         ).innerText = `${name} (${translators[name](name)})`;
+
+        const translationTextelt = translationElt.querySelector(".translation");
+        const copyButton = translationElt.querySelector(".copy-button");
+        const deleteButton = translationElt.querySelector(".remove-button");
 
         copyButton.addEventListener("click", (e) => {
           navigator.clipboard.writeText(translationTextelt.innerText);
         });
 
         deleteButton.addEventListener("click", (e) => {
-          const idx = translationDisplays.indexOf((e) => e.name === name);
-          translationDisplays.pop(idx);
+          const idx = activeTranslations.indexOf((e) => e.name === name);
+          activeTranslations.pop(idx);
           resultElt.removeChild(translationElt);
         });
 
-        translationDisplays.push({
+        activeTranslations.push({
           name: name,
           update: (text) => {
             const translationBlank = text.trim().length === 0;
@@ -861,15 +859,13 @@ There are so many tools to do this online and a lot of them are annoying or cove
             translationTextelt.innerText = translators[name](text);
           },
         });
-        updateList();
-
-        console.log(translationDisplays);
+        updateSelectedTranslationItemsInList();
       };
 
-      const bind = () => {
+      const startupAndBindElements = () => {
         const selectElt = document.getElementById("multi-alphabet-selector");
         selectElt.addEventListener("change", (e) => {
-          addTranslation(e.target.value);
+          addToListOfActiveTranslations(e.target.value);
         });
 
         Object.entries(translators).forEach(([name, translator]) => {
@@ -881,10 +877,10 @@ There are so many tools to do this online and a lot of them are annoying or cove
         });
 
         const inputElt = document.getElementById("multi-alphabet-input");
-        inputElt.addEventListener("input", debounce(changeInputText, 150));
+        inputElt.addEventListener("input", debounce(inputTextHasChanged, 150));
       };
 
-      document.addEventListener("DOMContentLoaded", bind);
+      document.addEventListener("DOMContentLoaded", startupAndBindElements);
     </script>
     <style type="text/css">
       div.multi-alphabet-input-area {
@@ -971,8 +967,8 @@ There are so many tools to do this online and a lot of them are annoying or cove
         <div class="translation-item">
           <div class="translation-header">
             <div class="name translator-name"></div>
-            <button class="copy-button">📋</button>
-            <button class="remove-button">❌</button>
+            <button class="copy-button">⧉Copy</button>
+            <button class="remove-button">🗙</button>
           </div>
           <div class="translation translation-text"></div>
         </div>
