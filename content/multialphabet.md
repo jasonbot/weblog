@@ -15,7 +15,7 @@ There are so many tools to do this online and a lot of them are annoying or cove
       const plainAlphabetMapping = (...alphabetString) => {
         return (mappingString) =>
           [
-            ...(mappingString.length === 0
+            ...(mappingString.trim().length === 0
               ? randomChoice([
                   "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.",
                   "Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,",
@@ -833,8 +833,16 @@ And tract homes reasonably priced`,
         namesUsed = new Set(activeTranslations.map((b) => b.name));
 
         const selectElt = document.getElementById("multi-alphabet-selector");
-        [...selectElt.querySelectorAll("option")].forEach((e) => {
-          e.disabled = namesUsed.has(e.value);
+        [...selectElt.querySelectorAll("option")].forEach((e, i) => {
+          if (i === 0) {
+            e.innerText =
+              activeTranslations.length === 0
+                ? "Choose a transformation"
+                : randomChoice(["One more?", "Another", "Keep going"]);
+            e.disabled = true;
+          } else {
+            e.disabled = namesUsed.has(e.value);
+          }
         });
         inputTextHasChanged();
       };
@@ -862,10 +870,10 @@ And tract homes reasonably priced`,
         });
 
         deleteButton.addEventListener("click", (e) => {
-          const idx = activeTranslations.indexOf((e) => e.name === name);
+          const idx = activeTranslations.findIndex((e) => e.name === name);
+          resultElt.removeChild(translationElt);
           if (idx >= 0) {
             activeTranslations.pop(idx);
-            resultElt.removeChild(translationElt);
             updateSelectedTranslationItemsInList();
           }
         });
@@ -986,7 +994,9 @@ And tract homes reasonably priced`,
           class="multi-alphabet-translation-selector"
           id="multi-alphabet-selector"
         >
-          <option disabled value="" selected>Add another:</option>
+          <option disabled value="" selected>
+            Choose a translation method
+          </option>
         </select>
       </div>
 
