@@ -832,7 +832,7 @@ And tract homes reasonably priced`,
         const text = t.innerText;
 
         if (!!text && activeTranslations.length === 0) {
-          addToListOfActiveTranslations(Object.keys(translators)[0]);
+          addToListOfActiveTranslations(randomChoice(Object.keys(translators)));
         }
 
         activeTranslations.forEach((display) => {

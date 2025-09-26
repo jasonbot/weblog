@@ -821,7 +821,7 @@ And tract homes reasonably priced`,
         const text = t.innerText;
 
         if (!!text && activeTranslations.length === 0) {
-          addToListOfActiveTranslations(Object.keys(translators)[0]);
+          addToListOfActiveTranslations(randomChoice(Object.keys(translators)));
         }
 
         activeTranslations.forEach((display) => {
@@ -863,9 +863,11 @@ And tract homes reasonably priced`,
 
         deleteButton.addEventListener("click", (e) => {
           const idx = activeTranslations.indexOf((e) => e.name === name);
-          activeTranslations.pop(idx);
-          resultElt.removeChild(translationElt);
-          updateSelectedTranslationItemsInList();
+          if (idx >= 0) {
+            activeTranslations.pop(idx);
+            resultElt.removeChild(translationElt);
+            updateSelectedTranslationItemsInList();
+          }
         });
 
         activeTranslations.push({
