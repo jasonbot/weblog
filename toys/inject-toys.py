@@ -1,11 +1,12 @@
+import pathlib
 import glob
 
 import match_o_matic_tree
 
 transforms = {"match-o-matic.html": match_o_matic_tree.inject}
 
-for filename in glob.glob("*.html"):
-    out_fn = f"../content/{filename.replace('.html', '')}.md"
+for filename in glob.glob(str(pathlib.Path(__file__).parent.absolute() / "*.html")):
+    out_fn = str(pathlib.Path(__file__).parent.parent / "content" / (pathlib.Path(filename).name.replace('.html', '')+".md"))
 
     print(filename, "->", out_fn)
 
