@@ -1011,7 +1011,7 @@ I'd have a job at a factory`,
           <div class="translation-header">
             <div class="name translator-name"></div>
             <button class="copy-button">⧉Copy</button>
-            <button class="remove-button">🗙</button>
+            <button class="remove-button">×</button>
           </div>
           <div class="translation translation-text"></div>
         </div>
