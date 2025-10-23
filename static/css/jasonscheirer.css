@@ -11,12 +11,15 @@
   --border-color: #bddeff;
 }
 
+html, body {
+  scrollbar-gutter: stable both-edges;
+}
+
 body {
   font-smooth: antialiased;
   background: white;
   font-family: var(--body-font);
   border-radius: 4px;
-  scrollbar-gutter: stable both-edges;
 }
 
 header,
