@@ -6,6 +6,8 @@
 
   --bg-color: #fbf9f7;
   --main-color: #fdfcfb;
+  --main-border: #f0efee;
+  --borders: #c4c3c3;
   --light-blue: #577498;
   --dark-blue: #3e6089;
   --darkest-blue: #0f396c;
@@ -74,6 +76,9 @@ div.everything {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: var(--main-border);
 }
 
 main {
@@ -146,18 +151,18 @@ pre {
   font-family: var(--mono-font);
   font-weight: 300;
   font-size: 10pt;
-  background: white !important;
+  background: var(--bg-color) !important;
   margin: 1em;
   padding: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid color-mix(in srgb, var(--dark-blue), transparent 20%);
   border-radius: 0.5rem;
   overflow: scroll;
 }
 
 code {
-  color: var(--darkest-blue) !important;
+  color: var(--darkest-blue);
   font-family: var(--mono-font);
-  background: white !important;
+  background: var(--bg-color);
 }
 
 nav {
@@ -169,17 +174,10 @@ nav {
 div.byline-etc,
 div.pagination {
   font-size: 12pt;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid color-mix(in srgb, var(--borders), transparent 85%);
   border-radius: 4px;
   padding: 4px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.05) 1px,
-    rgba(0, 0, 0, 0.025) 3px,
-    rgba(0, 0, 0, 0.05) 4px,
-    rgba(0, 0, 0, 0.05) 100%
-  );
+  background: color-mix(in srgb, var(--borders), transparent 95%);
 }
 
 div.read-more {
@@ -223,10 +221,10 @@ a.taglink {
   color: black !important;
   border-radius: 12px;
   display: inline-block;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid color-mix(in srgb, var(--borders), transparent 80%);
+  background-color: color-mix(in srgb, var(--borders), transparent 75%);
   padding: 4px;
-  box-shadow: 0 0 3px rgb(255, 255, 255);
+  box-shadow: 0 0 3px var(--bg-color);
 }
 
 a.taglink::before {
@@ -242,12 +240,12 @@ span.tag-count {
   color: rgba(0, 0, 0, 0.5);
   padding-left: 8px;
   padding-right: 8px;
-  background: rgba(0, 0, 0, 0.125);
+  background: color-mix(in srgb, var(--borders), transparent 50%);
   border-radius: 8px;
   font-weight: 600;
   font-size: smaller;
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 3px rgba(255, 255, 255);
+  text-shadow: 0 0 2px color-mix(in srgb, var(--bg-color), transparent 75%);
+  box-shadow: 0 0 3px color-mix(in srgb, var(--bg-color), transparent 95%);
 }
 
 article.summary {
@@ -257,7 +255,7 @@ article.summary {
 }
 
 article.summary:not(:first-child) {
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 1px solid color-mix(in srgb, var(--borders), transparent 75%);
 }
 
 div.summary-text {
@@ -295,8 +293,8 @@ time {
   font-size: smaller;
   font-weight: 300;
   padding: 4px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: color-mix(in srgb, var(--bg-color), transparent 75%);
+  border: 1px solid color-mix(in srgb, var(--borders), transparent 50%);
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
   color: black;
@@ -341,7 +339,7 @@ div.pagination > a {
 }
 
 a.pagination-prev {
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  border-right: 1px solid color-mix(in srgb, var(--borders), transparent 50%);
   padding-right: 4px;
 }
 
@@ -350,7 +348,7 @@ a.pagination-prev::before {
 }
 
 a.pagination-next {
-  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: 1px solid color-mix(in srgb, var(--borders), transparent 50%);
   padding-left: 4px;
 }
 
@@ -404,7 +402,6 @@ span.p {
 
 /* NOW YOU'RE COOKING WITH NINTENDO */
 
-/*
 @view-transition {
   navigation: auto;
 }
@@ -432,10 +429,9 @@ span.p {
 }
 
 ::view-transition-old(root) {
-  animation: 0.25s linear both move-out;
+  animation: 0.125s ease-in both move-out;
 }
 
 ::view-transition-new(root) {
-  animation: 0.25s linear both move-in;
+  animation: 0.125s ease-in both move-in;
 }
-*/
