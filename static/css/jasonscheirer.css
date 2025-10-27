@@ -1,7 +1,7 @@
 :root {
   --alt-header-font: "Forevs";
   --header-font: "Forevs";
-  --body-font: "Inter";
+  --body-font: "Instrument Sans";
   --mono-font: "0xProto";
 
   --bg-color: #fbf9f7;
@@ -156,7 +156,7 @@ pre {
   background: var(--bg-color) !important;
   margin: 1em;
   padding: 1em;
-  border: 1px solid color-mix(in srgb, var(--dark-blue), transparent 20%);
+  border: 1px solid color-mix(in srgb, var(--borders), transparent 70%);
   border-radius: 0.5rem;
   overflow: scroll;
 }
@@ -267,27 +267,41 @@ div.summary-text {
 }
 
 table {
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid color-mix(in srgb, var(--borders), transparent 55%);
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 thead {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: color-mix(in srgb, var(--borders), transparent 75%);
+  margin: 0;
 }
 
 th {
+  margin: 0;
   padding: 1em;
 }
 
 td {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid color-mix(in srgb, var(--borders), transparent 75%);
 }
 
 blockquote {
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: color-mix(in srgb, var(--borders), transparent 85%);
+  border: 1px solid color-mix(in srgb, var(--borders), transparent 75%);
   padding: 1em;
   border-radius: 4px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--borders), transparent 90%);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+  }
 }
 
 time {
