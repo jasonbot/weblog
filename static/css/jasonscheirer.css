@@ -428,15 +428,15 @@ span.p {
   }
 
   to {
-    opacity: 0.125;
-    transform: translateY(-50%) rotateX(90deg);
+    opacity: 0;
+    transform: translateY(-5em);
   }
 }
 
 @keyframes move-in {
   from {
     opacity: 0;
-    transform: translateY(200%) rotateX(90deg);
+    transform: translateY(5em);
   }
 
   to {
