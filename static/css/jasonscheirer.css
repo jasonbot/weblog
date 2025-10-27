@@ -76,9 +76,11 @@ div.everything {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  border-width: 0 1px 0 1px;
-  border-style: solid;
-  border-color: var(--main-border);
+  @media only screen and (min-width: 800px) {
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: var(--main-border);
+  }
 }
 
 main {
