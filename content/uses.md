@@ -37,6 +37,7 @@ description = "Another /uses page, just like the others"
 ## Command line
 
 - [Here is the bootstrap set of dotfiles I use](https://github.com/jasonbot/dotfiles) on new computers
+- On Windows, [I'm doing the same thing but different](https://github.com/jasonbot/bootstrap-windows-development-machine) with setting up a new machine.
 - I use zsh and bash almost equally, though I think I have more zsh machines now
 - I usually start out with [oh-my-zsh](https://ohmyz.sh/) or [oh-my-bash](https://github.com/ohmybash/oh-my-bash) on new systems
 - I use [nvm](https://github.com/nvm-sh/nvm), [rbenv](https://github.com/rbenv/rbenv), and [pyenv](https://github.com/pyenv/pyenv) to manage node/ruby/python installs -- I can't get the hang of [uv](https://github.com/astral-sh/uv) but that looks like the future at this point for Python.
@@ -66,7 +67,7 @@ description = "Another /uses page, just like the others"
 
 - The theme for this weblog is a fork of [smol](https://github.com/colorchestra/smol), built in [Hugo](https://gohugo.io/)
 - Hosted on [Github Pages](https://pages.github.com/) through the magic of [a CNAME](https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
-- **Fonts**: I'm using [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/), [Inter](https://rsms.me/inter/) and [0xProto](https://github.com/0xType/0xProto) (hosted here and not on Google Fonts).
+- **Fonts**: I'm using [Forevs](https://ohnotype.co/fonts/forevs), [Inter](https://rsms.me/inter/) and [0xProto](https://github.com/0xType/0xProto) (hosted here and not on Google Fonts).
 
 # Productivity
 
@@ -87,7 +88,7 @@ description = "Another /uses page, just like the others"
 - I run [Win11Debloat](https://github.com/Raphire/Win11Debloat) immediately upon starting on a new Windows desktop machine
 - [Winget](https://github.com/microsoft/winget-cli) is a command line utility built into the operating system you are sleeping on.
 - [Windows Terminal](https://github.com/microsoft/terminal) for my terminal emulator
-- [Powertoys](https://learn.microsoft.com/en-us/windows/powertoys/) for various tweaks, [the rnner in particular](https://learn.microsoft.com/en-us/windows/powertoys/run) is nice
+- [Powertoys](https://learn.microsoft.com/en-us/windows/powertoys/) for various tweaks, [the runner in particular](https://learn.microsoft.com/en-us/windows/powertoys/run) is nice
 - [Notion Desktop](https://www.notion.com/desktop) to do work
 - [Notion Calendar](https://www.notion.com/product/calendar) as my calendar
 - [SyncThing](https://syncthing.net/) to move files around
