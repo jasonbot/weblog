@@ -31,7 +31,6 @@ body {
 
 header,
 footer {
-  view-transition-name: page-navigation;
   margin: 0;
   color: var(--bg-color);
   background: var(--text-color);
@@ -90,7 +89,6 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  view-transition-name: page-content;
 }
 
 a {
@@ -202,7 +200,6 @@ article {
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  view-transition-name: page-content;
 }
 
 aside {
