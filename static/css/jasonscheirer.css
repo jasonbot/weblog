@@ -31,6 +31,7 @@ body {
 
 header,
 footer {
+  view-transition-name: page-navigation;
   margin: 0;
   color: var(--bg-color);
   background: var(--text-color);
@@ -77,7 +78,7 @@ div.everything {
   display: flex;
   flex-direction: column;
   @media only screen and (min-width: 800px) {
-    border-width: 0 1px 0 1px;
+    border-width: 0 2px 0 2px;
     border-style: solid;
     border-color: var(--main-border);
   }
@@ -89,6 +90,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  view-transition-name: page-content;
 }
 
 a {
@@ -130,10 +132,17 @@ h2 {
 
 h1.page-title {
   font-family: var(--alt-header-font) !important;
-  font-size: 56pt;
+  font-size: 36pt;
   text-align: center;
   text-wrap: balance;
   font-weight: 700;
+  hyphens: auto;
+}
+
+@media only screen and (min-width: 800px) {
+  h1.page-title {
+    font-size: 56pt;
+  }
 }
 
 h1.summary-title {
@@ -191,6 +200,9 @@ div.read-more {
 
 article {
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  view-transition-name: page-content;
 }
 
 aside {
