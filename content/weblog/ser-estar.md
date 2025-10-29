@@ -8,21 +8,23 @@ description = "Chungus dungus?"
 
 Similar to [The Wrong Conclusion](../the-wrong-conclusion/) is another cognitive anti-pattern: in the pursuit of identity we see ourselves as _being_ something as an inherent quality of ourselves versus _doing something_ as a role, a quality being temporarily practiced. This can lead to bad behavior on our part and it limits our ability to grow and engage in introspection.
 
-I have this hard-won lesson over my lifetime: when I stake my identity as _being_ a thing, when I can no longer _do_ the thing I lose my sense of self and spiral into crisis. I _am_ a good programmer, so _I **am** an entity only when **I am programming**_.
+I have this hard-won lesson over my lifetime: when I stake my identity as _being_ a thing, when I can no longer _do_ the thing I lose my sense of self and spiral into crisis. I _am_ a good programmer, so I am a thing with a clear identity _only when I am programming_.
 
-If I spend a week in the hospital, as I did a few years ago, I _am no longer programming_. I have lost my anchor. This is upsetting! I need to find a better _I AM_ or accept that programming is an _I DO_.
+If I spend a week in the hospital, as I did a few years ago, I _am no longer programming, I am infirm_. I have lost my anchor. This is upsetting! I need to find a better _I am_ or accept that programming is an _I do_.
 
-Alternatively, I never really thought of myself as a future parent growing up. Then I had a kid! Whether I like it or not, I am a parent, and I _do_ parenting things _every day_.
+Alternatively, I never really thought of myself as a parent or a future parent. Then I had a kid! Whether I cop to it or not, I am a parent -- I do parenting things _every day_.
 
-People who take moral stances often consider themselves to _be the good guys_, a quality inherent in themselves, versus being people who happen to strive to _do the good thing_. When you are tautologically good, this is bad! You can do evil but by definition you are _doing good because good is what you are_. I see it in this quote:
+People who take moral stances often consider themselves to _be the good guys_, a quality inherent in themselves, versus being people who happen to strive to _do good things_. When you are tautologically good, this is bad! You can do evil but by definition you are _doing good because good is what you are_. I see it in this quote:
 
 > Conservatism consists of exactly one proposition, to wit: There must be in-groups whom the law protects but does not bind, alongside out-groups whom the law binds but does not protect.
 >
 > _Francis M. Wilhoit_
 
-I see this as pithy but extremely cutting and insightful: if you cannot see what _you are doing is counter to your identity_, you can be convinced that _what you are doing is inconsequential to your identity_.
+Entirely an "we are" versus "you do" mentality: _the law is meant to protect citizens from harm_. We _are_ citizens, you _are_ harm. We do bad but do not run afoul of the law, you do bad and have committed a crime.
 
-Going from an _I am_ to an _I do_ mindset has been a tough lesson for me, but it's been transformative in my worldview. It is, in many ways, tied to a growth mindset versus a fixed mindset: (I am / I am only) and (I do / I can become) being very closely related. I don't 'consider myself' a Javascript Guy, for instance, but if _I make a presentation about some Javascript thing I researched and shared_ I have _done Javascript Guy things_.
+That is; if you cannot see _what you are doing is counter to your identity_, you can be convinced that _what you are doing is inconsequential to your identity_.
+
+Going from an _I am_ to an _I do_ mindset has been a tough lesson for me, but it's been transformative in my worldview. It is, in many ways, tied to a growth mindset versus a fixed mindset: (I am / I am only) and (I do / I can become) being very closely related. I don't 'consider myself' a Javascript Guy, for instance, but if _I make a presentation about some Javascript thing I researched and shared_ I have done _Javascript Guy things_, and I am technically a Javascript guy.
 
 As far as this goes, back to the growth mindset: you are only alive so long as you are active, and there is plenty of life left in you to be active. You are not a (metaphoric) flag planted in the (metaphoric) ground, you have (metaphoric) legs and can (metaphorically) walk to the next (metaphoric) place. You are capable of cruelty and laziness, and you are capable of kindness and industry. You need to be constantly vigilant to make sure you _are currently doing good_ and do not rest on the laurels of _I once did good_ or _I **am** good so what I do is, by definition, good_.
 
