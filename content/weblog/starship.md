@@ -21,7 +21,7 @@ I can have a growth mindset and accept that
 
 But its killer features:
 
-- **On Rails/Limit/Constrained/Opinionated**: Other prompt customization schemes I've used have let you do _anything_, but you had to know _how to do anything_. I can't think of cleverness I want in my prompt, I just want to see which Git branch I'm on. We're all doing that. We all want that. [Starship has a way to do that](https://starship.rs/config/#git-branch) which isn't brittle bash I have to maintain myself.
+- **Limited/Constrained/Opinionated**: Other prompt customization schemes I've used have let you do _anything_, but you had to know _how to do anything_. I can't think of cleverness I want in my prompt, I just want to see which Git branch I'm on. We're all doing that. We all want that. [Starship has a way to do that](https://starship.rs/config/#git-branch) which isn't brittle bash I have to maintain myself.
 - **Multiplatform**: I have Windows Bash, Windows PowerShell, Linux Bash/Zsh, and macOS Bash/Zsh all driven by the same seed config. I can have it show the same information everywhere. I can use little emblems to let me know if I'm on my Mac, on a Linux machine, if I'm on Windows and if that's PowerShell or Bash all right there.
 - **The Nerd Font Dark Horse**: This system takes advantage of [the glyphs](https://www.nerdfonts.com/cheat-sheet) in [Nerd Fonts](https://www.nerdfonts.com/) and normalizes abusing them. This adds the additional "burden" of installing a Nerd Font enabled typeface on all my apps with terminal editors, but I've already normalized that.
 
