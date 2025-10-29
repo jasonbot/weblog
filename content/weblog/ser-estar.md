@@ -18,7 +18,7 @@ People who take moral stances often consider themselves to _be the good guys_, a
 >
 > _Francis M. Wilhoit_
 
-I see this quote as pithy but extremely cutting and insightful: if you cannot see what _you are doing is counter to your identity_, you can be convinced that _what you are doing is inconsequential to your identity_.
+I see this as pithy but extremely cutting and insightful: if you cannot see what _you are doing is counter to your identity_, you can be convinced that _what you are doing is inconsequential to your identity_.
 
 Going from an _I am_ to an _I do_ mindset has been a tough lesson for me, but it's been transformative in my worldview. It is, in many ways, tied to a growth mindset versus a fixed mindset: (I am / I am only) and (I do / I can become) being very closely related. I don't 'consider myself' a Javascript Guy, for instance, but if _I make a presentation about some Javascript thing I researched and shared_ I have _done Javascript Guy things_.
 
