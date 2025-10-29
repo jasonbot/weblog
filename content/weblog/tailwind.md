@@ -1,5 +1,5 @@
 +++
-title =  "There and Back Again: My Journey Into (And Out Of) Tailwind"
+title =  "There and Back Again: My Journey Into (and out of) Tailwind"
 date = 2025-07-23T00:00:00-00:00
 tags = ["css", "html", "programming"]
 featured_image = ""
