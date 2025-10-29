@@ -6,7 +6,7 @@ featured_image = ""
 description = "Chungus dungus?"
 +++
 
-Similar to [The Wrong Conclusion](../the-wrong-conclusion/) is another cognitive anti-pattern: in the pursuit of identity we see ourselves as _being_ something as an inherent quality of ourselves versus _doing something_ as a role, a quality being temporarily practiced. This can lead to bad behavior on our part and it limits out ability to grow.
+Similar to [The Wrong Conclusion](../the-wrong-conclusion/) is another cognitive anti-pattern: in the pursuit of identity we see ourselves as _being_ something as an inherent quality of ourselves versus _doing something_ as a role, a quality being temporarily practiced. This can lead to bad behavior on our part and it limits our ability to grow and engage in introspection.
 
 I have this hard-won lesson over my lifetime: when I stake my identity as _being_ a thing, when I can no longer _do_ the thing I lose my sense of self and spiral into crisis. I _am_ a good programmer, so _I **am** an entity only when **I am programming**_.
 
