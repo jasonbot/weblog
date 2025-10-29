@@ -337,6 +337,12 @@ time:before {
   content: " | ";
 }
 
+ul {
+  padding-inline-start: 1.25em;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
 ul.links-tags {
   list-style-type: none;
   text-align: center;
