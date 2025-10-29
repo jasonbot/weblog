@@ -28,6 +28,6 @@ But its killer features:
 - **Multiplatform**: I have Windows Bash, Windows PowerShell, Linux Bash/Zsh, and macOS Bash/Zsh all driven by the same seed config. I can have it show the same information everywhere. I can use little emblems to let me know if I'm on my Mac, on a Linux machine, if I'm on Windows and if that's PowerShell or Bash all right there.
 - **The Nerd Font Dark Horse**: This system takes advantage of [the glyphs](https://www.nerdfonts.com/cheat-sheet) in [Nerd Fonts](https://www.nerdfonts.com/) and normalizes abusing them. This adds the additional "burden" of installing a Nerd Font enabled typeface on all my apps with terminal editors, but I've already normalized that.
 
-So here it is. All this talk something that doesn't _look_ substantively different but compounds into _feeling_ different over the course of the days and weeks I use it:
+So here it is. All this talk for something that doesn't _look_ substantively different but compounds into _feeling_ different over the course of the days and weeks I use it:
 
 ![Image](/images/starship/starship.png)
