@@ -3,10 +3,7 @@ title = "I Don't Like that I Like Starship"
 date = 2025-10-29T00:00:00-08:00
 tags = ["software", "programming"]
 featured_image = ""
-description = "Here I Go (this is a pun and I regret it immediately)"
-gomodvanityhost = "jasonscheirer.com"
-gomodvanityrepo = "https://github.com/jasonbot/chains"
-aliases = ["/chains"]
+description = "Custom $PS1s: threat or menace?"
 +++
 
 > I have [my seed Starship config](https://gist.github.com/jasonbot/26e894be371417ee20b973c0def1d366) up as a Gist.

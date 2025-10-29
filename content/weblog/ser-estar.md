@@ -10,7 +10,7 @@ Similar to [The Wrong Conclusion](../the-wrong-conclusion/) is another cognitive
 
 I have this hard-won lesson over my lifetime: when I stake my identity as _being_ a thing, when I can no longer _do_ the thing I lose my sense of self and spiral into crisis. I _am_ a good programmer, so _I **am** an entity only when **I am programming**_.
 
-If I spend a week in the hospital, as I did a few years ago, I _am no longer programming_. I have lost my anchor. This is upsetting! I need to find a better _I AM_ or accept that programming in an _I DO_.
+If I spend a week in the hospital, as I did a few years ago, I _am no longer programming_. I have lost my anchor. This is upsetting! I need to find a better _I AM_ or accept that programming is an _I DO_.
 
 People who take moral stances often consider themselves to _be the good guys_, a quality inherent in themselves, versus being people who happen to strive to _do the good thing_. When you are tautologically good, this is bad! You can do evil but by definition you are _doing good because good is what you are_. I see it in this quote:
 
