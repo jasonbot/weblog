@@ -12,6 +12,8 @@ I have this hard-won lesson over my lifetime: when I stake my identity as _being
 
 If I spend a week in the hospital, as I did a few years ago, I _am no longer programming_. I have lost my anchor. This is upsetting! I need to find a better _I AM_ or accept that programming is an _I DO_.
 
+Alternatively, I never really thought of myself as a future parent growing up. Then I had a kid! Whether I like it or not, I am a parent, and I _do_ parenting things _every day_.
+
 People who take moral stances often consider themselves to _be the good guys_, a quality inherent in themselves, versus being people who happen to strive to _do the good thing_. When you are tautologically good, this is bad! You can do evil but by definition you are _doing good because good is what you are_. I see it in this quote:
 
 > Conservatism consists of exactly one proposition, to wit: There must be in-groups whom the law protects but does not bind, alongside out-groups whom the law binds but does not protect.
