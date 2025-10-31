@@ -3,6 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <title>Match-O-Matic</title>
+    <style>
+      :root {
+        --header-font: "Atkinson Hyperlegible Next";
+        --body-font: "Inter";
+        --mono-font: "0xProto";
+
+        --bg-color: #fbf9f7;
+        --main-color: #fdfcfb;
+        --main-border: #f0efee;
+        --borders: #c4c3c3;
+        --light-blue: #577498;
+        --dark-blue: #3e6089;
+        --darkest-blue: #0f396c;
+        --dark-purple: #301a41;
+        --bg-grn: #8ff0a4;
+        --border-color: #99c1f1;
+        --text-color: #241f31;
+      }
+    </style>
   </head>
   <body>
     <script>
@@ -187,14 +206,14 @@
     <style type="text/css">
       .match-o-matic {
         margin-top: 12px;
-        border: 1px solid rgba(0, 0, 0, 0.25);
+        border: 1px solid var(--borders);
         border-radius: 4px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 4px;
-        background: white;
-        color: black;
+        background: var(--main-color);
+        color: var(--text-color);
       }
 
       .match-o-matic-input-area {
@@ -210,14 +229,16 @@
         padding: 4px;
         border: none;
         border-radius: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        border-bottom: 1px solid var(--main-border);
         font-size: xx-large;
         flex-grow: 1;
+        background: var(--main-color);
+        color: var(--text-color);
       }
 
       .match-o-matic-results {
         margin-top: 4px;
-        border: 1px solid rgba(0, 0, 0, 0.125);
+        border: 1px solid var(--main-border);
         border-radius: 4px;
         flex-grow: 1;
         font-size: large;
@@ -229,7 +250,7 @@
       }
 
       .match-o-matic-results div + div {
-        border-top: 1px solid rgba(0, 0, 0, 0.125);
+        border-top: 1px solid var(--main-border);
       }
 
       .match-o-matic-result {

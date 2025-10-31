@@ -190,14 +190,14 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
     <style type="text/css">
       .match-o-matic {
         margin-top: 12px;
-        border: 1px solid rgba(0, 0, 0, 0.25);
+        border: 1px solid var(--borders);
         border-radius: 4px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 4px;
-        background: white;
-        color: black;
+        background: var(--main-color);
+        color: var(--text-color);
       }
 
       .match-o-matic-input-area {
@@ -213,14 +213,16 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
         padding: 4px;
         border: none;
         border-radius: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        border-bottom: 1px solid var(--main-border);
         font-size: xx-large;
         flex-grow: 1;
+        background: var(--main-color);
+        color: var(--text-color);
       }
 
       .match-o-matic-results {
         margin-top: 4px;
-        border: 1px solid rgba(0, 0, 0, 0.125);
+        border: 1px solid var(--main-border);
         border-radius: 4px;
         flex-grow: 1;
         font-size: large;
@@ -232,7 +234,7 @@ This is a small toy for figuring out what to do with a set of letters. Use `_` a
       }
 
       .match-o-matic-results div + div {
-        border-top: 1px solid rgba(0, 0, 0, 0.125);
+        border-top: 1px solid var(--main-border);
       }
 
       .match-o-matic-result {
