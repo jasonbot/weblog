@@ -462,5 +462,4 @@ span.p {
 
 ::view-transition-new(root) {
   animation: 0.125s ease-in both move-in;
-  animation-delay: 0.125s;
 }
