@@ -6,7 +6,11 @@ import match_o_matic_tree
 transforms = {"match-o-matic.html": match_o_matic_tree.inject}
 
 for filename in glob.glob(str(pathlib.Path(__file__).parent.absolute() / "*.html")):
-    out_fn = str(pathlib.Path(__file__).parent.parent / "content" / (pathlib.Path(filename).name.replace('.html', '')+".md"))
+    out_fn = str(
+        pathlib.Path(__file__).parent.parent
+        / "content"
+        / (pathlib.Path(filename).name.replace(".html", "") + ".md")
+    )
 
     print(filename, "->", out_fn)
 
@@ -17,9 +21,11 @@ for filename in glob.glob(str(pathlib.Path(__file__).parent.absolute() / "*.html
 
     body = core[core.index(within[0]) + len(within[0]) :]
     body = body[: body.index(within[1])]
-    if filename in transforms:
+    fn = filename.split("/")[-1]
+
+    if fn in transforms:
         print("    transforming...")
-        body = transforms[filename](body)
+        body = transforms[fn](body)
 
     with open(out_fn, "r") as in_handle:
         inner_body = in_handle.read()
