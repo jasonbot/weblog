@@ -914,14 +914,14 @@ I'd have a job at a factory`,
         });
 
         const inputElt = document.getElementById("multi-alphabet-input");
-        inputElt.addEventListener("input", debounce(inputTextHasChanged, 150));
+        inputElt.addEventListener("input", debounce(inputTextHasChanged, 50));
       };
 
       document.addEventListener("DOMContentLoaded", startupAndBindElements);
     </script>
     <style type="text/css">
       div.multi-alphabet-input-area {
-        border: 1px solid rgba(0, 0, 0, 0.125);
+        border: 1px solid var(--borders);
         border-radius: 4px;
         padding: 4px;
         font-size: larger;
@@ -936,8 +936,9 @@ I'd have a job at a factory`,
       }
 
       div.translation-item {
-        border: 1px solid rgba(0, 0, 0, 0.125);
+        border: 1px solid var(--borders);
         border-radius: 4px;
+        overflow: hidden;
       }
 
       div.translation-text {
@@ -948,7 +949,7 @@ I'd have a job at a factory`,
       }
 
       div.translation-header {
-        background-color: rgba(0, 0, 0, 0.075);
+        background: var(--main-border);
         padding: 2px;
         user-select: none;
         display: flex;
@@ -981,7 +982,11 @@ I'd have a job at a factory`,
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+
+        #multi-alphabet-selector {
+          font-size: x-large;
+        }
       }
 
       div.translation-item:not(:last-child) {

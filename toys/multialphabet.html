@@ -9,12 +9,17 @@
         --body-font: "Inter";
         --mono-font: "0xProto";
 
-        --light-blue: #4da6ff;
-        --dark-blue: #4b5bab;
-        --darkest-blue: #07060c;
-        --dark-purple: #5a265e;
-        --bg-grn: #ffffeb;
-        --border-color: #bddeff;
+        --bg-color: #fbf9f7;
+        --main-color: #fdfcfb;
+        --main-border: #f0efee;
+        --borders: #c4c3c3;
+        --light-blue: #577498;
+        --dark-blue: #3e6089;
+        --darkest-blue: #0f396c;
+        --dark-purple: #301a41;
+        --bg-grn: #8ff0a4;
+        --border-color: #99c1f1;
+        --text-color: #241f31;
       }
     </style>
   </head>
@@ -925,14 +930,14 @@ I'd have a job at a factory`,
         });
 
         const inputElt = document.getElementById("multi-alphabet-input");
-        inputElt.addEventListener("input", debounce(inputTextHasChanged, 150));
+        inputElt.addEventListener("input", debounce(inputTextHasChanged, 50));
       };
 
       document.addEventListener("DOMContentLoaded", startupAndBindElements);
     </script>
     <style type="text/css">
       div.multi-alphabet-input-area {
-        border: 1px solid rgba(0, 0, 0, 0.125);
+        border: 1px solid var(--borders);
         border-radius: 4px;
         padding: 4px;
         font-size: larger;
@@ -947,8 +952,9 @@ I'd have a job at a factory`,
       }
 
       div.translation-item {
-        border: 1px solid rgba(0, 0, 0, 0.125);
+        border: 1px solid var(--borders);
         border-radius: 4px;
+        overflow: hidden;
       }
 
       div.translation-text {
@@ -959,7 +965,7 @@ I'd have a job at a factory`,
       }
 
       div.translation-header {
-        background-color: rgba(0, 0, 0, 0.075);
+        background: var(--main-border);
         padding: 2px;
         user-select: none;
         display: flex;
@@ -992,7 +998,11 @@ I'd have a job at a factory`,
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+
+        #multi-alphabet-selector {
+          font-size: x-large;
+        }
       }
 
       div.translation-item:not(:last-child) {
