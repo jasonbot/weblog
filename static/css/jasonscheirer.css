@@ -439,19 +439,17 @@ span.p {
 
 @keyframes move-out {
   from {
-    transform: translateY(0%);
   }
 
   to {
-    opacity: 0;
-    transform: translateY(-5em);
+    filter: blur(4px);
   }
 }
 
 @keyframes move-in {
   from {
     opacity: 0;
-    transform: translateY(5em);
+    filter: blur(4px);
   }
 
   to {
