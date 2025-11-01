@@ -442,7 +442,7 @@ span.p {
   }
 
   to {
-    filter: blur(4px);
+    /* filter: blur(4px); */
   }
 }
 
@@ -457,7 +457,9 @@ span.p {
 }
 
 ::view-transition-old(root) {
-  animation: 0.125s ease-in both move-out;
+  main {
+    animation: 0.125s ease-in both move-out;
+  }
 }
 
 ::view-transition-new(root) {
