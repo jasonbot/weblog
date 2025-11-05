@@ -19,7 +19,7 @@
 
 html,
 body {
-  scrollbar-gutter: stable both-edges;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -110,9 +110,10 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 4px;
+  margin-bottom: 8px;
   color: var(--text-color);
   font-family: var(--header-font) !important;
-  margin-top: 0.25em;
   padding-top: 0.25em;
   font-weight: 500;
   line-height: 1;
@@ -182,11 +183,12 @@ nav {
 
 div.byline-etc,
 div.pagination {
-  font-size: 12pt;
-  border: 1px solid color-mix(in srgb, var(--borders), transparent 85%);
-  border-radius: 4px;
-  padding: 4px;
-  background: color-mix(in srgb, var(--borders), transparent 95%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  border-top: 1px solid color-mix(in srgb, var(--borders), transparent 70%);
+  font-size: 10pt;
+  text-align: center;
 }
 
 div.read-more {
@@ -224,33 +226,23 @@ img {
 }
 
 a.taglink {
-  font-size: small;
   font-family: var(--mono-font);
   text-decoration: none;
   font-weight: 300;
   padding: 2px;
   color: black !important;
-  border-radius: 12px;
+  border-radius: 4px;
   display: inline-block;
   border: 1px solid color-mix(in srgb, var(--borders), transparent 80%);
   background-color: color-mix(in srgb, var(--borders), transparent 75%);
-  padding: 4px;
   box-shadow: 0 0 3px var(--bg-color);
-}
-
-a.taglink::before {
-  content: "🏷️";
-  font-size: 8pt;
-  color: var(--bg-color);
-  padding-right: 6px;
-  text-shadow: 0 0 2px white;
 }
 
 span.tag-count {
   font-family: var(--body-font);
   color: rgba(0, 0, 0, 0.5);
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
   background: color-mix(in srgb, var(--borders), transparent 50%);
   border-radius: 8px;
   font-weight: 600;
@@ -318,19 +310,12 @@ time {
   font-size: smaller;
   font-weight: 300;
   padding: 4px;
-  background: color-mix(in srgb, var(--bg-color), transparent 75%);
-  border: 1px solid color-mix(in srgb, var(--borders), transparent 50%);
+  user-select: all;
+  background-color: color-mix(in srgb, var(--borders), transparent 90%);
+  border: 1px solid color-mix(in srgb, var(--borders), transparent 70%);
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
   color: black;
-}
-
-time:before {
-  color: var(--darkest-blue);
-  content: "📅";
-  font-weight: normal;
-  text-shadow: 0 0 2px black;
-  margin-right: 2px;
 }
 
 .nav-item:not(:first-child):before {
@@ -349,10 +334,8 @@ ul.links-tags {
 }
 
 ul.links-tags li {
-  font-size: 16pt;
   display: inline-block;
   margin: 4px;
-  transform: rotate(-1deg);
   transition: all;
   transition-duration: 100ms;
 
@@ -442,7 +425,7 @@ span.p {
   }
 
   to {
-    /* filter: blur(4px); */
+    filter: blur(4px);
   }
 }
 
@@ -463,5 +446,6 @@ span.p {
 }
 
 ::view-transition-new(root) {
+  animation-delay: 0.125s;
   animation: 0.125s ease-in both move-in;
 }
