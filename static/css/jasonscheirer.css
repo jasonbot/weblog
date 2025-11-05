@@ -42,6 +42,10 @@
       }
     }
   }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--light-blue), transparent 80%);
+  }
 }
 
 html,
