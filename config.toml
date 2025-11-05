@@ -27,7 +27,7 @@ weight = 4
 [[menu.main]]
 identifier = "engineering-virtues"
 name = "Virtues"
-url = "/tags/virtues/"
+url = "/engineering-virtues/"
 weight = 3
 
 [[menu.main]]
