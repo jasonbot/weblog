@@ -21,7 +21,7 @@ description = "Another /uses page, just like the others"
   - If something is reliable, I get bored and self-destructive so I need to be in a state of crisis in all aspects of my life and a Linux desktop fills that need in this space
 - I now prefer Fedora and Fedoralikes for desktop Linux
 - I usually prefer Debian stable or one of its relatives for servers and Alpine for container base images
-- I use [Tailwind](https://tailwindcss.com/) at home for CSS, often tableflipping and reverting to vanilla CSS
+- I use [Tailwind](https://tailwindcss.com/) at home for CSS, often [tableflipping and reverting to vanilla CSS](/weblog/tailwind/)
 - I use [Solid](https://www.solidjs.com/) and [plain old JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) at home, [React](https://react.dev/) at work
 - I use [Ollama](https://ollama.com/) on Windows, Mac and Linux to locally run LLMs
 
