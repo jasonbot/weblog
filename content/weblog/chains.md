@@ -5,11 +5,11 @@ tags = ["golang", "programming"]
 featured_image = ""
 description = "Here I Go (this is a pun and I regret it immediately)"
 gomodvanityhost = "jasonscheirer.com"
-gomodvanityrepo = "https://github.com/jasonbot/chains"
+gomodvanityrepo = "https://codeberg.org/jasonbot/chains"
 aliases = ["/chains"]
 +++
 
-> **Top Matter**: [GitHub for the library](https://github.com/jasonbot/chains), [doc for the library](https://pkg.go.dev/jasonscheirer.com/chains).
+> **Top Matter**: [GitHub for the library](https://codeberg.org/jasonbot/chains), [doc for the library](https://pkg.go.dev/jasonscheirer.com/chains).
 
 It's been six months since I've done this, but I'm finally writing about it!
 
