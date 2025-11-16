@@ -28,9 +28,9 @@ description = "Another /uses page, just like the others"
 ## Editors/Environments
 
 - My muscle memory is [Vim](https://www.vim.org/), I use it everywhere
-- Most of my polyglot development is via [VS Code](https://code.visualstudio.com/)
-  - I use LLMs for developing code signficiantly less than other people on the cutting edge of tech. I have the [Continue plugin](https://www.continue.dev/) installed at home against local Ollama but use its features quite sparingly.
-- I am forcing myself to use [Zed](https://zed.dev/) more too, just because monocultures are a Bad Idea and VSC is a monoculture now
+- I have hit the point of no return and use [Zed](https://zed.dev/) more than anoy other development tool
+  - I no longer use LLM code assistance in any measurable amount, I find a lot more value using LLMs as code review tools than code generation tools
+- Much of my polyglot development is via [VS Code](https://code.visualstudio.com/)
 - I like using [Ebitengine](https://ebitengine.org/) to make silly 2D games
 - I also (rarely) play around with [Picotron](https://www.lexaloffle.com/picotron.php), [Pico-8](https://www.lexaloffle.com/pico-8.php), [TIC-80](https://tic80.com/) and [LÖVE](https://love2d.org/) for the same
 
@@ -57,34 +57,34 @@ description = "Another /uses page, just like the others"
 ## Cloud Stuff
 
 - In the past, I did [Terraform](https://www.terraform.io/)
-- At my last job, I learned a little [Pulumi](https://www.pulumi.com/)
+- A couple of jobs ago, I learned a little [Pulumi](https://www.pulumi.com/)
 - At most places of employment, I use [AWS](https://health.aws.amazon.com/health/status)
 - I had to learn [Azure](https://azure.status.microsoft/en-us/status) at my last job
-- At home, I use [GCP](https://status.cloud.google.com/)
-- I am in the process of switching my self-hosted stuff over to [fly.io](https://fly.io/)
+- At home, I use [GCP](https://status.cloud.google.com/) for personal projects
 
 # This Site
 
-- The theme for this weblog is a fork of [smol](https://github.com/colorchestra/smol), built in [Hugo](https://gohugo.io/)
+- The theme for this weblog is a no-longer-recognizable fork of [smol](https://github.com/colorchestra/smol), built in [Hugo](https://gohugo.io/)
 - Hosted on [Github Pages](https://pages.github.com/) through the magic of [a CNAME](https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
-- **Fonts**: I'm using [Forevs](https://ohnotype.co/fonts/forevs), [Instrument Sans](https://github.com/Instrument/instrument-sans) and [0xProto](https://github.com/0xType/0xProto) (hosted here and not on Google Fonts).
+- **Fonts**: I'm using [Forevs](https://ohnotype.co/fonts/forevs), [Instrument Sans](https://github.com/Instrument/instrument-sans) and [0xProto](https://github.com/0xType/0xProto) (hosted here with this page and not on Google Fonts).
 
 # Productivity
 
 ## Producing and Manipulating Visual Artifacts
 
-- [Monodraw](https://monodraw.helftone.com/) for cool text-mode diagrams
 - [Xara Photo and Graphic Designer](https://www.xara.com/us/photo-graphic-designer/) as I have muscle memory and it's fast to make drawings in
 - [The Gimp](https://www.gimp.org/) for quick raster touchups
 - [Inkscape](https://flathub.org/apps/org.inkscape.Inkscape) to touch up SVGs
-- [D2](https://d2lang.com/) for diagrams as code -- I like it in terms of how clean the language looks, how clean the output looks, and how easy it is to use
 - [Mermaid](https://mermaid.js.org/) for diagrams extensively because it's everywhere, mark a code block as `mermaid` in markdown and you get the rendering for free in things like Obsidian and on Github
+- [Monodraw](https://monodraw.helftone.com/) for cool text-mode diagrams
+- [D2](https://d2lang.com/) for diagrams as code -- I like it in terms of how clean the language looks, how clean the output looks, and how easy it is to use
 - [Graphviz](https://graphviz.org/) comes along for the party, too -- it's old but it gets the job done for a large range of jobs
 
 ## Desktop Apps
 
 ### Windows
 
+- I have [a script I wrote for work](https://github.com/jasonbot/bootstrap-windows-development-machine) to boostrap a new Windows machine; it installs and configures most of the tools below
 - I run [Win11Debloat](https://github.com/Raphire/Win11Debloat) immediately upon starting on a new Windows desktop machine
 - [Winget](https://github.com/microsoft/winget-cli) is a command line utility built into the operating system you are sleeping on.
 - [Windows Terminal](https://github.com/microsoft/terminal) for my terminal emulator
