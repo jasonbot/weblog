@@ -1,5 +1,5 @@
 +++
-title =  "The Shanling Q1 Media Player"
+title =  "The Shanling Q1 Music Player"
 date = 2021-02-21T00:00:00-00:00
 tags = ["hardware", "music"]
 featured_image = ""

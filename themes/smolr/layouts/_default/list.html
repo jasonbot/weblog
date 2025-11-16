@@ -20,7 +20,7 @@
         <a href="{{ .RelPermalink }}">{{.Title }}</a>
         {{else if eq $listtitle "Tags" }}
         <a class="taglink" href="{{ .RelPermalink }}"
-          >{{ strings.Replace .Title "-" " " | strings.Title}} <span class="tag-count">({{ len .Pages }})</span></a
+          >{{ .Title }} <span class="tag-count">({{ len .Pages }})</span></a
         >
         {{ else }}
         <a class="post-title" href="{{ .RelPermalink }}">{{.Title }}</a>

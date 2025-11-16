@@ -1,5 +1,5 @@
 +++
-title =  "The Shanling M0s Media Player"
+title =  "The Shanling M0s Music Player"
 date = 2025-11-15T00:00:00-00:00
 tags = ["hardware", "music"]
 featured_image = ""
