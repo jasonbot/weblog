@@ -30,4 +30,4 @@ Three surprises. Not quite complaint territory but worth knowing about:
 * No touchscreen. Again, coming from Shanling this took a little bit of getting used to. Pure iPod classic ergonomics, buttons only.
 * Build quality is not super solid. The screen is plastic, not glass, and it scratched almost immediately. You can definitely "feel" a center of gravity while the majority of the device fgeels light. No metal in its construction. It doesn't feel brittle but by no means is it a luxury experience.
 
-This thing is a lot of fun to use, though! The novelty will eventually wear off but it feels good to have something iPoad shaped in my life again.
+This thing is a lot of fun to use, though! The novelty will eventually wear off but it feels good to have something iPod shaped in my life again.
