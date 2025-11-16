@@ -18,7 +18,7 @@ The community for this thing is _insane_, it's just as active as the people doin
 
 # Rockbox
 
-I saw you could put [a flavor of Rockbox on the thing](https://github.com/multiwirth/rockbox-y1) so I did that. The UI out of the box isn't nearly as polished but [there's a neat community-supported updater](https://github.com/y1-community/Innioasis-Updater) that goes so far as to install skins for you.
+I saw you could put [a flavor of Rockbox on the thing](https://github.com/rockbox-y1/rockbox) so I did that. The UI out of the box isn't nearly as polished but [there's a neat community-supported updater](https://github.com/y1-community/Innioasis-Updater) that goes so far as to install skins for you.
 
 Rockbox has the ability to create a play log file, so [I can scrobble my commute/work listening again](https://www.last.fm/user/jasonbot)! This is awesome.
 
