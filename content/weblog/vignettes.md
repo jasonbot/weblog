@@ -1,6 +1,6 @@
 +++
 title =  "A Series of Vignettes From My Childhood and Early Career"
-date = 2026-11-27T00:00:00-00:00
+date = 2025-11-27T00:00:00-00:00
 tags = ["llm", "work", "life", "programming"]
 featured_image = ""
 description = ""
