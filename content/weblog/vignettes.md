@@ -95,7 +95,7 @@ When we wrote web crawlers, we wrote them to respect `robots.txt`. We kept them 
 
 We made sure we had explicit permission to collect data for our training corpora.
 
-# The Time Computing Changed Forever and Everyone Who Didn't Move Got Left Behind, Again
+# The Time Computing Changed Forever and Everyone Who Didn't Move Got Left Behind: Again
 
 The dot com boom was a crazy time. The internet has just become mainstream and there was a new gold rush. Money was there just for the taking, so many VC funded business plans were just "_traditional business X, but on the internet!_" and the money _flowed_. How it flowed.
 
