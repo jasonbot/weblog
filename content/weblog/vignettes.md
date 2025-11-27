@@ -10,7 +10,7 @@ A short set of anecdotes, apropos of nothing.
 
 # The Death of Software Engineering as a Profession
 
-When I was younger, I really liked programming! I loved the sense of accomplishment, I loved the problems solving, I loved sharing what I made with the people around them to both amuse them (with games) and help them with real problems (with applications).
+When I was younger, I really liked programming! I loved the sense of accomplishment, I loved the problem solving, I loved sharing what I made with the people around me to both amuse and assist.
 
 One particularly wise adult (somewhere around 1996) took me aside and said, "You know, you're lucky you _enjoy_ programming, because you won't be able to make a living on it in the future. Doing it for love over money is a good idea."
 
@@ -24,11 +24,19 @@ I'm here nearly 30 years later and software continues to pay my bills, despite e
 
 Whenever I'm threatened with a good time and someone proclaims "this is it for you" all that happens is my job becomes more annoying. Haven't gotten the sweet release of extinction quite yet.
 
+# The Time Computing Changed Forever and Everyone Who Didn't Move Got Left Behind
+
+Around 1993 or so was the advent of the "Multimedia Age." Multimedia was the buzzword. Software has to be _multimedia ready_. Education had to teach children to be ready for _the multimedia age_. If your tool, however inappropriate as it was, did not have multimedia features, you were going to be left behind. You _needed_ a video guide. You _needed_ to be on CD-ROM. This is just the new normal.
+
+"Multimedia" just means "sound and video." We had a high concept term for a very direct, low concept concept.
+
+And the multimedia boom fizzled out. It became boring. Nobody is impressed by a video on a website and nobody thinks less of a website that doesn't use sound and video if it's not appropriate. You pop a `<video />` tag in your HTML and your job is done. The amazing thing became mundane. The dream of "multimedia" became commonplace and everyone just accepted it as normal. I'm not aware of any industries that collapsed dramatically due to multimedia. Nobody really reskilled. Video editing is still a pretty rare skill, and we don't commonly have sound engineers working on the audio UX of software products.
+
 # The Death of Software Engineering as a Profession: Again
 
-In 2000 a coworker took me aside and showed me his brand-new copy of the IntelliJ IDE. "It's over for us," he said, "this thing makes it so programmers aren't strictly necessary, like one person can operate this tool and they can lay the rest of us off."
+In 2000 a coworker took me aside and showed me his brand-new copy of IntelliJ IDE. "It's over for us," he said, "this thing makes it so programmers aren't strictly necessary, like one person can operate this tool and they can lay the rest of us off."
 
-I was pretty awestruck, he got some pretty good autocomplete right in the IDE. Without having to have a separate JavaDocs window open to the side, and without having to keep the docs in sync with what he was doing. It gave him feedback before the compile cycle on a bunch of issues that you normally don't see until build. That was a nice bit of preventative work.
+I was pretty awestruck, he got some amazing autocomplete right in the IDE. Without having to have a separate JavaDocs window open to the side, and without having to manually open the page for the class he needed documentation on, it just was there inline. It gave him feedback before the compile cycle on a bunch of issues that you normally don't see until build. That was a nice bit of preventative work and seemed to have the potential to keep a developer in flow longer.
 
 And then he showed me the killer feature "that's going to get us all out of a job:" the refactoring tools.
 
@@ -86,6 +94,16 @@ There were times we'd train models on Wikipedia dumps. They were always comparat
 When we wrote web crawlers, we wrote them to respect `robots.txt`. We kept them on local domains. The `user-agent` field of the crawlers included our email address, and if an angry webmaster didn't like the way we were crawling them we'd fix it. Getting crawled aggressively at once taxed servers and spammed logs so we'd space it out to hours or days. If their `robots.txt` was missing or malformed and they still didn't want us there, we'd block the site from crawling.
 
 We made sure we had explicit permission to collect data for our training corpora.
+
+# The Time Computing Changed Forever and Everyone Who Didn't Move Got Left Behind, Again
+
+The dot com boom was a crazy time. The internet has just become mainstream and there was a new gold rush. Money was there just for the taking, so many VC funded business plans were just "_traditional business X, but on the internet!_" and the money _flowed_. How it flowed.
+
+Most of these companies, however, didn't really have a solid business model other than buying some servers and a domain name and "we'll put this thing on the internet."
+
+Out of this crash came green shoots: Web 2.0, which used the web natively, organically, gave a good web-native experience. Eventually the dream of the internet, the promise of the hype, was made manifest after a lot of people learned a lot of really unnecessary, really painful lessons. They spent less and put their things on the internet because they made sense on the internet of the present, not because the internet was the next big thing.
+
+The dream of the widespread, ubiquitous internet came true, and there were very few fatalities. Some businesses died, but it was more glacial than volcanic in time scale. When ubiquitous online services became commonplace it just felt mundane. It didn't feel forced. It was the opposite of the dot com boom just five years later: _the internet is here and we're here to build a solid business within it_ in contrast with _we should put this solid business on the internet somehow, because it's coming_.
 
 # Closing
 
