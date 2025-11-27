@@ -36,7 +36,7 @@ He then proceeded to show me the tools, easily moving around code to new files, 
 
 After some thought I said, "that's amazing, but does it write new logic too or does it just move code around?"
 
-He didn't seem fazed by that, and doubled down on the insistence that these powerful tools were our doom.
+He didn't seem fazed by that, and doubled down on the insistence that these powerful tools were our doom. I made a distinction between "useful" code and "filler" code, but apparently what is valued is not the quality and nature of the code but its volume and presence. This tool definitely gave both volume and presence to the tiny human-written nuggets within.
 
 # That Time I Automated Someone Out of a Job
 
