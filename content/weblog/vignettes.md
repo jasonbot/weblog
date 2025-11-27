@@ -14,7 +14,7 @@ When I was younger, I really liked programming! I loved the sense of accomplishm
 
 One particularly wise adult (somewhere around 1996) took me aside and said, "You know, you're lucky you _enjoy_ programming, because you won't be able to make a living on it in the future. Doing it for love over money is a good idea."
 
-"Coding is over, with Object Oriented programming one person who is _much smarter than any of us could hope to be_ will develop the library just _once_ and we will all use it gonig forward, forever. Once a problem is solved it never needs solving again.
+"Coding is over, with Object Oriented programming one person who is _much smarter than any of us could hope to be_ will develop the library just _once_ and we will all use it going forward, forever. Once a problem is solved it never needs solving again.
 
 "In 5 years there's going to be a library of objects, like books on a bookshelf, and every software problem will be solved by business people just snapping the object libraries they need together like LEGOs. They won't need you at all."
 
@@ -28,7 +28,7 @@ Whenever I'm threatened with a good time and someone proclaims "this is it for y
 
 In 2000 a coworker took me aside and showed me his brand-new copy of the IntelliJ IDE. "It's over for us," he said, "this thing makes it so programmers aren't strictly necessary, like one person can operate this tool and they can lay the rest of us off."
 
-I was pretty awestruck, he got some pretty good autocomplete right in the IDE without having to have a separate Javadocs window open to the side and it gave him feedback before the compile cycle on a bunch of issues.
+I was pretty awestruck, he got some pretty good autocomplete right in the IDE. Without having to have a separate JavaDocs window open to the side, and without having to keep the docs in sync with what he was doing. It gave him feedback before the compile cycle on a bunch of issues that you normally don't see until build. That was a nice bit of preventative work.
 
 And then he showed me the killer feature "that's going to get us all out of a job:" the refactoring tools.
 
