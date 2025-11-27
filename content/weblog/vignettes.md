@@ -14,15 +14,15 @@ When I was younger, I really liked programming! I loved the sense of accomplishm
 
 One particularly wise adult (somewhere around 1996) took me aside and said, "You know, you're lucky you _enjoy_ programming, because you won't be able to make a living on it in the future. Doing it for love over money is a good idea."
 
-"Coding is over, with Object Oriented programming one person who is _much smarter than any of us could hope to be_ will develop the library
+"Coding is over, with Object Oriented programming one person who is _much smarter than any of us could hope to be_ will develop the library just _once_ and we will all use it gonig forward, forever. Once a problem is solved it never needs solving again.
 
 "In 5 years there's going to be a library of objects, like books on a bookshelf, and every software problem will be solved by business people just snapping the object libraries they need together like LEGOs. They won't need you at all."
 
 I thought about this advice, and how Software Engineering would be ending by the time I entered school. I realized I had not even thought about my education yet. I was in middle school. Programming was not it, though, I knew that.
 
-I'm here nearly 30 years later and software continues to pay my bills, despite everything. Whenever I'm threatened with a good time and someone proclaims "this is it for you" all that happens is my job becomes more annoying.
+I'm here nearly 30 years later and software continues to pay my bills, despite everything. Open source exists, but new problems come up all the time and clicking the LEGOs together continues to be a hard task. Every time we fix it at one level of abstraction we operate one level higher and the world keeps turning.
 
-Haven't gotten the sweet release of extinction quite yet.
+Whenever I'm threatened with a good time and someone proclaims "this is it for you" all that happens is my job becomes more annoying. Haven't gotten the sweet release of extinction quite yet.
 
 # The Death of Software Engineering as a Profession: Again
 
