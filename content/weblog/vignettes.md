@@ -20,7 +20,7 @@ One particularly wise adult (somewhere around 1996) took me aside and said, "You
 
 I thought about this advice, and how Software Engineering would be ending by the time I entered school. I realized I had not even thought about my education yet. I was in middle school. Programming was not it, though, I knew that.
 
-I'm here nearly 30 years later and software continues to pay my bills, despite everything. Open source exists, but new problems come up all the time and clicking the LEGOs together continues to be a hard task. Every time we fix it at one level of abstraction we operate one level higher and the world keeps turning.
+I'm here nearly 30 years later and software continues to pay my bills, despite everything. Open source exists, there are libraries I can use to piece things together to solve all the time. New problem sets not covered by the garden path come up all the time. Clicking the LEGOs together continues to be a hard task. Every time we fix it at one level of abstraction we operate one level higher and the world keeps turning.
 
 Whenever I'm threatened with a good time and someone proclaims "this is it for you" all that happens is my job becomes more annoying. Haven't gotten the sweet release of extinction quite yet.
 
