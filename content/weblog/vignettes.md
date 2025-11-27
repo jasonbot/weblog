@@ -30,7 +30,7 @@ Around 1993 or so was the advent of the "Multimedia Age." Multimedia was the buz
 
 "Multimedia" just means "sound and video." We had a high concept term for a very direct, low concept concept.
 
-And the multimedia boom fizzled out. It became boring. Nobody is impressed by a video on a website and nobody thinks less of a website that doesn't use sound and video if it's not appropriate. You pop a `<video />` tag in your HTML and your job is done. The amazing thing became mundane. The dream of "multimedia" became commonplace and everyone just accepted it as normal. I'm not aware of any industries that collapsed dramatically due to multimedia. Nobody really reskilled. Video editing is still a pretty rare skill, and we don't commonly have sound engineers working on the audio UX of software products.
+And the multimedia boom fizzled out. It became boring. Nobody is impressed by a video on a website and nobody thinks less of a website that doesn't use sound and video if it's not appropriate. You pop a `<video />` tag in your HTML and your job is done. The amazing thing became mundane. The dream of "multimedia" became commonplace and everyone just accepted it as normal. I'm not aware of any industries that collapsed dramatically due to multimedia. Nobody really reskilled. Video editing is still a pretty rare thing to find, and we don't commonly have sound engineers working on the audio UX of software products.
 
 # The Death of Software Engineering as a Profession: Again
 
