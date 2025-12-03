@@ -42,6 +42,8 @@ And then he showed me the killer feature "that's going to get us all out of a jo
 
 He then proceeded to show me the tools, easily moving around code to new files, renaming classes across the codebase, all kinds of manual things that would have taken a person a few days to do on their own. It was magical.
 
+This would divide us into haves and have-nots: hyperproductive developers who were 5x as productive _if they could afford an IntelliJ license_ and the rest of us. The web was a liberating and democratizing experience: anyone with a text editor and a copy of Perl could start writing web applications. Now a closed priesthood of developers would take our hard-won access to the world of writing software and we'd have to go through "official routes" to get there.
+
 After some thought I said, "that's amazing, but does it write new logic too or does it just move code around?"
 
 He didn't seem fazed by that, and doubled down on the insistence that these powerful tools were our doom. I made a distinction between "useful" code and "filler" code, but apparently what is valued is not the quality and nature of the code but its volume and presence. This tool definitely gave both volume and presence to the tiny human-written nuggets within.
