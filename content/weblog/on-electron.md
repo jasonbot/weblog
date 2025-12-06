@@ -10,7 +10,7 @@ Having spent the last 6 months working on [an Electron app full-time](https://ww
 
 It's easy to disparagingly refer to an Electron app as bloated, or a crappy wrapper around a web app. This is lazy, reductive thinking that travels well in short-form media like TikTok and Elon Musk's _𝕏: The Everything App_.
 
-> I'm going to say this in so many words over an over in here: do you hate Electron out of
+> I'm going to say this in so many words over and over: do you hate Electron out of
 >
 > 1. Groupthink,
 > 2. Out of misguided and impractical engineering aesthetics, or
