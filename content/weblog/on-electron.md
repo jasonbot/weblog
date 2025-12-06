@@ -40,7 +40,7 @@ And more! And after all this, it happens to let you place rectangles in those wi
 
 If an Electron app you're using doesn't _feel_ mostly native, it's more an indictment of the nature of the people making the app than the framework they're using.
 
-The whole point of Electron is to provide a decent, native desktop experience and uses HTML/CSS/Javascript as its core language for user interface and the Nodejs runtime and its ecosystem behind the curtain. Familiar tools, fast development. Development that is only _feasible_ in many cases.
+The whole point of Electron is to provide a decent, native desktop experience and uses HTML/CSS/Javascript as its core language for user interface and the Nodejs runtime and its ecosystem behind the curtain. Familiar tools, fast development. In some cases, this development is only _feasible_ via Electron: when you can reuse half your codebase you're halfway there!
 
 # If You're Distributing Containerized Apps or Static Binaries You're Just As Guilty of the Original Sin of Electron
 
