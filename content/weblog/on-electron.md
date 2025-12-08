@@ -20,13 +20,15 @@ That is, is the framework that allows bad apps to proliferate _bad on its own_ f
 
 Oh my oh my do I love being ambivalent on everything and I want to pass that along to you.
 
-# If You're Distributing Containerized Apps or Static Binaries You're Just As Guilty of the Original Sin of Electron Bloat
+# Bloat is in the Eye of the Beholder
+
+## If You're Distributing Containerized Apps or Static Binaries You're Just As Guilty of the Original Sin of Electron Bloat
 
 We already have `libc` back at home. An Electron installation doesn't use system libraries. This is a conscious choice. An Electron app comes batteries included. You can afford 250 megs of HD space for an app you use daily, you disk cheapskate.
 
 Electron bundles all that inside itself. It's the equivalent to a static binary that doesn't use the system libc. It's the equivalent to a full-blown, dozen-gigabyte Ubuntu system used as an image base just to host a single web app process in a container. You accept batteries included software elsewhere: don't be a hypocrite and complain in this case.
 
-# Are You Sure You're Reading the Task Manager Correctly?
+## Are You Sure You're Reading the Task Manager Correctly?
 
 The RAM column on the task manager is showing how much memory the Electron process has asked the Operating System to put aside for it. Keep in mind, in any operating system released since the 1990s this _does not mean there is dedicated hardware RAM allocated to it_. The process may have pre-allocated a gig because it anticipates needing it but hasn't yet, and that "memory" isn't all in RAM anyway: it swaps out into page files on disk when unused! The OS could be managing 4GB for the process but only a few hundred megs of that is being actively accessed in hardware short-term Random Access Memory, the rest being paged out to disk. Operating systems are also clever enough to say "you asked for a 2 gig page but haven't touched it yet, so I'm not going to allocate it until you do. I just know you have dibs."
 
