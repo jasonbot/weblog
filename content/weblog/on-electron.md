@@ -20,6 +20,26 @@ That is, is the framework that allows bad apps to proliferate _bad on its own_ f
 
 Oh my oh my do I love being ambivalent on everything and I want to pass that along to you.
 
+# If You're Distributing Containerized Apps or Static Binaries You're Just As Guilty of the Original Sin of Electron Bloat
+
+We already have `libc` back at home. An Electron installation doesn't use system libraries. This is a conscious choice. An Electron app comes batteries included. You can afford 250 megs of HD space for an app you use daily, you disk cheapskate.
+
+Electron bundles all that inside itself. It's the equivalent to a static binary that doesn't use the system libc. It's the equivalent to a full-blown, dozen-gigabyte Ubuntu system used as an image base just to host a single web app process in a container. You accept batteries included software elsewhere: don't be a hypocrite and complain in this case.
+
+# Are You Sure You're Reading the Task Manager Correctly?
+
+The RAM column on the task manager is showing how much memory the Electron process has asked the Operating System to put aside for it. Keep in mind, in any operating system released since the 1990s this _does not mean there is dedicated hardware RAM allocated to it_. The process may have pre-allocated a gig because it anticipates needing it but hasn't yet, and that "memory" isn't all in RAM anyway: it swaps out into page files on disk when unused! The OS could be managing 4GB for the process but only a few hundred megs of that is being actively accessed in hardware short-term Random Access Memory, the rest being paged out to disk. Operating systems are also clever enough to say "you asked for a 2 gig page but haven't touched it yet, so I'm not going to allocate it until you do. I just know you have dibs."
+
+In this regard Electron is being upfront about how much storage it's using and that storage is ephemeral: the task manager app doesn't tell you how much disk space an app has permanently written to disk. It _does_ tell you how much RAM the app is 'borrowing' and will return when it's done.
+
+## "More processes" = "More Bad" is Just a Silly Take
+
+You may also be angry that Electron has more than one line in Task Manager. "What's a worker?" you say. "Why does it need so many processes?"
+
+Again, weird take and I think it's just surface-level "too many lines on the UI" type knee-jerk reaction. Processes are for safety! Two blocks of code are isolated from each other as separate processes so if one goes down the other does not. Electron has this because Chromium has this because some web developers are maniacs and write cod that take down the entire browser, so now the blast radius is limited to a single browser tab.
+
+Modern operating systems, again, are very good at handling large numbers of processes. It's a perfectly valid bit of software engineering to have child processes. Processes are not your enemy.
+
 # Electron Isn't Just A Browser Wrapper
 
 Aside from wrapping a web page, though, is [a whole truckload of stuff](https://www.electronjs.org/docs/latest/api/app) to make a carefully and comprehensively written Electron app _actually good_:
@@ -33,20 +53,14 @@ Aside from wrapping a web page, though, is [a whole truckload of stuff](https://
 - Sending crash reports to interested parties
 - Writing additional native code in native languages like C++ and Rust via Node extensions _that give better platform-specific runtime characteristics_.
   - I can use the native filesystem.
-  - I can use native builds of machine learning libraries with hoping you're patient enough to watch them run slower and worse in Webassembly.
-  - All of a sudden things that ran slow on your computer or non-privately on some SaaS company's server are happening _quickly, efficiently, on your hardware on your desk_ with _no network round-trips_.
+  - I can use native builds of machine learning libraries versus hoping you're patient enough to watch them run slower and worse in Webassembly.
+  - All of a sudden things that ran slow on your computer or non-privately on some SaaS company's server are happening quickly and efficiently _on your hardware_ on _your desk_ with _no network round-trips_.
 
 And more! And after all this, it happens to let you place rectangles in those windows that are views into the Chromium rendering engine.
 
 If an Electron app you're using doesn't _feel_ mostly native, it's more an indictment of the nature of the people making the app than the framework they're using.
 
 The whole point of Electron is to provide a decent, native desktop experience and uses HTML/CSS/Javascript as its core language for user interface and the Nodejs runtime and its ecosystem behind the curtain. Familiar tools, fast development. In some cases, this development is only _feasible_ via Electron: when you can reuse half your codebase you're halfway there!
-
-# If You're Distributing Containerized Apps or Static Binaries You're Just As Guilty of the Original Sin of Electron
-
-We already have `libc` back at home. An Electron installation doesn't use system libraries. This is a conscious choice. An Electron app comes batteries included. You can afford 250 megs of HD space for an app you use daily, you disk cheapskate.
-
-Electron bundles all that inside itself. It's the equivalent to a static binary that doesn't use the system libc. It's the equivalent to a full-blown, dozen-gigabyte Ubuntu system with apt-get and superfluous apps installed as an image base just to host a single node app in a container. You accept batteries included software elsewhere: don't be a hypocrite and complain in this case.
 
 ## The Operating System Webview is a Lie and a Nightmare and Probably Worse than Nothing
 
