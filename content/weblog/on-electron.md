@@ -14,7 +14,7 @@ It's easy to disparagingly refer to an Electron app as bloated, or a crappy wrap
 >
 > 1. Groupthink,
 > 2. Out of misguided and impractical engineering aesthetics, or
-> 3. Because you would prefer the "bad" apps you see written in it to not exist at all, over existing but being kind of bad?
+> 3. Because you would prefer the "bad" apps you see written in it to not exist at all, over existing but being 'bad' to you?
 
 That is, is the framework that allows bad apps to proliferate _bad on its own_ for enabling bad programmers or _good_ for enabling _skilled and unskilled programmers alike_ to participate in software engineering? Or _both_?
 
