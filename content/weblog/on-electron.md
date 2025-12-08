@@ -66,7 +66,7 @@ In this regard Electron is being upfront about how much storage it's using and t
 
 ## "More processes" = "More Bad" is Just a Silly Take
 
-You may also be angry that Electron has more than one line in Task Manager. "What's a worker?" you say. "Why does it need so many processes?"
+You may also be angry that Electron has more than one line in Task Manager. "What's an Electron Worker Process?" you say. "Why does it need so many?"
 
 Again, weird take and I think it's just surface-level "too many lines on the UI" type knee-jerk reaction. Processes are for safety! Two blocks of code are isolated from each other as separate processes so if one goes down the other does not. Electron has this because Chromium has this because some web developers are maniacs and write cod that take down the entire browser, so now the blast radius is limited to a single browser tab.
 
