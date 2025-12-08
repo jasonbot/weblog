@@ -38,7 +38,7 @@ You may also be angry that Electron has more than one line in Task Manager. "Wha
 
 Again, weird take and I think it's just surface-level "too many lines on the UI" type knee-jerk reaction. Processes are for safety! Two blocks of code are isolated from each other as separate processes so if one goes down the other does not. Electron has this because Chromium has this because some web developers are maniacs and write cod that take down the entire browser, so now the blast radius is limited to a single browser tab.
 
-Modern operating systems, again, are very good at handling large numbers of processes. It's a perfectly valid bit of software engineering to have child processes. Processes are not your enemy.
+Modern operating systems, again, are excellent at handling large numbers of processes. It's a perfectly valid bit of software engineering to have child processes. Processes are not your enemy.
 
 # Electron Isn't Just A Browser Wrapper
 
