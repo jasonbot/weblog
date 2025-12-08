@@ -52,9 +52,9 @@ Packaging a rendering engine gives me guarantees of rendering capabilities indep
 
 # Bloat is in the Eye of the Beholder
 
-## If You're Distributing Containerized Apps or Static Binaries You're Just As Guilty of the Original Sin of Electron Bloat
+## If You're Distributing Containerized Apps or Static Binaries You're Just As Guilty of the Same Original Sin
 
-We already have `libc` back at home. An Electron installation doesn't use system libraries. This is a conscious choice. An Electron app comes batteries included. You can afford 250 megs of HD space for an app you use daily, you disk cheapskate.
+We already have `libc` back at home. An Electron installation brings a lot of its own libraries along. This is a conscious choice. An Electron app comes batteries included. You can afford 250 megs of HD space for an app you use daily, you disk cheapskate.
 
 Electron bundles all that inside itself. It's the equivalent to a static binary that doesn't use the system libc. It's the equivalent to a full-blown, dozen-gigabyte Ubuntu system used as an image base just to host a single web app process in a container. You accept batteries included software elsewhere: don't be a hypocrite and complain in this case.
 
