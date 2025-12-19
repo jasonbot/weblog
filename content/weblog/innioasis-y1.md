@@ -8,7 +8,7 @@ description = "It's an MP3 player"
 
 # Introduction
 
-I've been enjoying standalong MP3 players! The [Innioasis Y1](https://www.innioasis.com/products/y1) kept coming across my radar, I like the the form factor, it was $50.
+I've been enjoying standalone MP3 players lately! The [Innioasis Y1](https://www.innioasis.com/products/y1) kept coming across my radar, I like the form factor, it was $50.
 
 What the heck, why not.
 
