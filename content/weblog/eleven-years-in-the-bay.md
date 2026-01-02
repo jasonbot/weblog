@@ -21,7 +21,7 @@ Technology, and I suppose every industry, is not run by the _best and brightest_
 
 # Lockdown Was a Long Time
 
-Over half of my time here has been over the pandemic age. This set an interesting signpost in the timeline, as the subsequent 5 years have seemed less radical in the amount of changes but significantly larger in terms of the magnitude of them.
+Over half of my time here has been over the pandemic age. This set an interesting signpost in the timeline, as the subsequent 5 years have seemed less radical in the amount of changes but significantly larger in terms of the magnitude of the changes that happened.
 
 A lot of my 'growth' up to then has been in experiencing new things. Now my growth seems to be focused around seeing the same things differently. Both literally and metaphorically it has been an early adulthood of having a new address every year and experiencing the compare-and-contrast of living in a new town. The latter, more recent years have been experiencing the same place as it journeys through time with me, and developing a deeper relationship with the places and faces I already had in my life.
 
