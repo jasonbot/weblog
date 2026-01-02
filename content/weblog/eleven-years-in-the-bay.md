@@ -15,7 +15,7 @@ I've been here long enough that it's no longer a temporary sojourn. It's not a s
 
 San Francisco continue, despite itself, to be the best place to work in tech. My current employer has a presence in NYC as well, and many of the younger programmers are taking advantage of that as a perk and relocating there, but SF is still where the future of software is happening.
 
-This is good and bad as I look over it: outside of this geographic bubble I was an outsider jealously watching my next 5 years as an engineer being paved by the people here. Now that I am here I see how dumb most of the people running things really are. I don't know if this is some unveiling of an existing truth or just my standards bar being raised, but I no longer assume the people here are any better by virtue of who they are just _where_ they are.
+This is good and bad as I look over it: previously outside of this geographic bubble I was an outsider. I was jealously watching my next 5 years as an engineer being roadmapped by an indifferent crowd of people up here, unaware of the influence they had on my professional life. Now that I am here I see how dumb most of the people running things really are. I don't know if this is some unveiling of an existing truth or just my standards bar being raised, but I no longer assume the people here are any better by virtue of who they are; just _where_ they are.
 
 Technology, and I suppose every industry, is not run by the _best and brightest_. It is run by the _self-selecting few who opt to jump into the fray_. You guide the JavaScript ecosystem not by being a superior engineer but by being a superior physical and social presence.
 
