@@ -7,6 +7,7 @@ description = "UI for fun"
 gomodvanityhost = "jasonscheirer.com"
 gomodvanityrepo = "https://codeberg.org/jasonbot/checkbox"
 aliases = ["/checkbox"]
+draft = true
 +++
 
 > **Top Matter**: [Codeberg for the library](https://codeberg.org/jasonbot/checkbox), [doc for the library](https://pkg.go.dev/jasonscheirer.com/checkbox).
