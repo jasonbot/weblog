@@ -6,9 +6,9 @@ featured_image = ""
 draft = false
 +++
 
-My motherboard was dying and [the Nobara project](https://nobaraproject.org/) hates old GPUs, so I recently upgraded my middle-tier 2020 Prebuilt Costco Gaming PC for a middle-tier late 2025 Hand-Built Gaming PC!
+My motherboard was dying and [the Nobara project](https://nobaraproject.org/) hates old GPUs, so I recently upgraded my middle-tier mid-2020 Prebuilt Costco Gaming PC for a middle-tier late-2025 Hand-Built Gaming PC!
 
-I mostly went with a pre-picked set of options that Newegg had suggested, removing the storage and RAM (I had just bought 64 GB of DDR ram in August and replaced my SSD in November). In all, new Case/Cooling unit/Power Supply/CPU/GPU/Motherboard cost about $750. If I were less lazy I could have saved more money scavenging i.e. the old power supply.
+I mostly went with a pre-picked set of options that Newegg had suggested, removing the storage and RAM (I had fortunately just bought 64 GB of DDR4 in August and replaced my SSD in November). In all, new Case/Cooling unit/Power Supply/CPU/GPU/Motherboard cost about $750. If I were less lazy I could have saved more money scavenging i.e. the old power supply.
 
 Part of that was an [Intel Arc B580 GPU](https://www.intel.com/content/www/us/en/products/docs/discrete-gpus/arc/desktop/b-series/overview.html)! It's weird because the drivers _are baked into the kernel_. No extra steps to take. Creepy! It's also weird because it's _new_: there's stuff that it can't quite do yet unlike the ubiquitous yet painful NVidia ecosystem.
 
