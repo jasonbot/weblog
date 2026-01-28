@@ -482,3 +482,7 @@ span.p {
   animation-delay: 0.125s;
   animation: 0.125s ease-in both move-in;
 }
+
+div.dangerous-anthropic-content {
+  display: none;
+}
