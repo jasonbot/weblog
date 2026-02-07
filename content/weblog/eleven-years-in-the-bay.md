@@ -1,10 +1,10 @@
 +++
 title =  "Eleven Years in the Bay Area"
-date = 2026-02-07T06:25:45-08:00
+date = 2026-02-07T00:00:00-08:00
 tags = ["life"]
 featured_image = ""
 description = ""
-draft = true
+draft = false
 +++
 
 February 8th of 2026 marks the eleventh anniversary of me moving to the Bay Area to work for tech startups. I didn't quite have much to say about the tenth so I held off.
