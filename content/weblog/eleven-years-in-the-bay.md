@@ -1,6 +1,6 @@
 +++
 title =  "Eleven Years in the Bay Area"
-date = 2026-02-08T06:25:45-08:00
+date = 2026-02-07T06:25:45-08:00
 tags = ["life"]
 featured_image = ""
 description = ""
@@ -23,7 +23,7 @@ Technology, and I suppose every industry, is not run by the _best and brightest_
 
 Over half of my time here has been over the pandemic age. This set an interesting signpost in the timeline, as the subsequent 5 years have seemed less radical in the amount of changes but significantly larger in terms of the magnitude of the changes that happened.
 
-A lot of my 'growth' up to then has been in experiencing new things. Now my growth seems to be focused around seeing the same things differently. Both literally and metaphorically it has been an early adulthood of having a new address every year and experiencing the compare-and-contrast of living in a new town. The latter, more recent years have been experiencing the same place as it journeys through time with me, and developing a deeper relationship with the places and faces I already had in my life.
+A lot of my 'growth' up to then had been in experiencing new things. Now my growth seems to be focused around seeing the same things differently. Both literally and metaphorically it has been an early adulthood of having a new address every year and experiencing the compare-and-contrast of living in a new town. The recenter years have been experiencing the same place as it journeys through time with me, and developing a deeper relationship with the places and faces I already had in my life.
 
 And I look back again: half of my time here has been in one place, mostly quivering in fear, watching a temporary lockdown become permanent and then when it felt interminable it evaporated like a mist.
 
