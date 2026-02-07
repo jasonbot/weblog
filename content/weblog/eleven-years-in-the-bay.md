@@ -7,7 +7,7 @@ description = ""
 draft = false
 +++
 
-February 8th of 2026 marks the eleventh anniversary of me moving to the Bay Area to work for tech startups. I didn't quite have much to say about the tenth so I held off.
+February 8th of 2026 marks the tenth anniversary of me moving to the Bay Area to work for tech startups. I didn't quite have much to say about the tenth year so I held off.
 
 I've been here long enough that it's no longer a temporary sojourn. It's not a step. It's a quarter of my life and even as I've stepped forward I've managed to sink deeper and deeper roots into the earth around me.
 
