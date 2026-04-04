@@ -1,5 +1,5 @@
 +++
-title = "Webview Installer"
+title = "Golang Webview Installer for Wails 3"
 date = 2026-04-04T00:00:00-08:00
 tags = ["golang", "programming"]
 featured_image = ""
@@ -13,7 +13,7 @@ aliases = ["/webview-installer"]
 
 I've forked [Lea Anthony's library](https://github.com/leaanthony/webview2runtime) that eventually [made its way into core Wails](https://github.com/wailsapp/wails/tree/b748b4625724b36f406d17987335805a83751093/v2/internal/webview2runtime) for two reasons:
 
-1. I want it in Wials 3 and it's not there
+1. I want it in Wails 3 and it's not there
 2. I want to shave a meg off the binary size by not providing the embdded installer exe
 
 So here we are.
