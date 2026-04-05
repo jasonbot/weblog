@@ -14,7 +14,7 @@ What the heck, why not.
 
 # And Then
 
-The community for this thing is _insane_, it's just as active as the people doing weird things with [my RG35XX](/weblog/rg35xx/). It's really cool seeing so many people doing neat things with such a simple piece of hardware. And like the RG35XX, part of the value proposition is this is a cheap peice of commodity hardware that would not have been possible in this way even 5 years ago, but is now inexpensive enough and flexible enough to be an incredible product for the money.
+The community for this thing is _insane_, it's just as active as the people doing weird things with [my RG35XX](/weblog/rg35xx/). It's really cool seeing so many people doing neat things with such a simple piece of hardware. And like the RG35XX, part of the value proposition is this is a cheap piece of commodity hardware that would not have been possible in this way even 5 years ago, but is now inexpensive enough and flexible enough to be an incredible product for the money.
 
 # Rockbox
 

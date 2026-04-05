@@ -62,4 +62,4 @@ Consuming files via an SFTP client is as easy to do as consuming via an HTTP cli
 
 # It works to keep the world working
 
-[SFTP powers the financial world](https://www.treasurysoftware.com/ACH/ssh-sftp.aspx). Every day millions (billions? I honestly have no idea) of financial transactions are compelted via the ACH system, which is text files over SFTP. Similar batch jobs are completed for all kinds of similar systems which may be mainframes running COBOL or "cutting-edge" Enterprise Java rats' nests of code copying files over to a Linux machine somewhere to expose them to the world.
+[SFTP powers the financial world](https://www.treasurysoftware.com/ACH/ssh-sftp.aspx). Every day millions (billions? I honestly have no idea) of financial transactions are completed via the ACH system, which is text files over SFTP. Similar batch jobs are completed for all kinds of similar systems which may be mainframes running COBOL or "cutting-edge" Enterprise Java rats' nests of code copying files over to a Linux machine somewhere to expose them to the world.

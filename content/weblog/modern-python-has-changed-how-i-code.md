@@ -25,7 +25,7 @@ This isn't particularly new to me (or the industry), but a good CI workflow that
 
 ## Black
 
-About two years into writing Go I started using [`gofmt`](https://go.dev/blog/gofmt) to help me clean up a bunch of pre-Go-1.0 code that [still used semicolons](https://go.dev/doc/effective_go#semicolons). I turned on fomrat on save in my editor and never turned it off. A large point of contention over the course of my career is arguing with senior developers over bikesheddy, arbitrary, often cruel and capricious code style standards over the actual semantic behavior of the code.
+About two years into writing Go I started using [`gofmt`](https://go.dev/blog/gofmt) to help me clean up a bunch of pre-Go-1.0 code that [still used semicolons](https://go.dev/doc/effective_go#semicolons). I turned on format on save in my editor and never turned it off. A large point of contention over the course of my career is arguing with senior developers over bikesheddy, arbitrary, often cruel and capricious code style standards over the actual semantic behavior of the code.
 
 Then I found [Prettier](https://prettier.io/) while writing some JSX/React code. While it had knobs to tweak most people didn't tweak them. It made the code I worked with more readable and I got the same delight out of using it as I did `gofmt`.
 

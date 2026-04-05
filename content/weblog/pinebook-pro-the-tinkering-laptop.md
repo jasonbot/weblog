@@ -22,4 +22,4 @@ Then I thought I wanted to learn i3 to deal with the slowness of the Pinebook an
 
 The usability of this environment was bad, and it mde me want something more traditional. I started getting weird and dark. I wanted to feel some nostalgia so I started building old desktop stuff. Like [AmiWM](https://www.lysator.liu.se/~marcus/amiwm.html) and [Windowmaker](https://www.windowmaker.org/) which led to me going ahead and build [the entire GNUStep stack](http://www.gnustep.org/) from scratch.
 
-So I've been spending a lot of time on a highly resource contrained device building source from scratch and fighting with dotfiles. Years ago I would abhor this stage of getting stuff up and running, but nowadays it has an almost meditative, calming quality to it.
+So I've been spending a lot of time on a highly resource constrained device building source from scratch and fighting with dotfiles. Years ago I would abhor this stage of getting stuff up and running, but nowadays it has an almost meditative, calming quality to it.

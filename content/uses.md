@@ -28,7 +28,7 @@ description = "Another /uses page, just like the others"
 ## Editors/Environments
 
 - My muscle memory is [Vim](https://www.vim.org/), I use it everywhere
-- I have hit the point of no return and use [Zed](https://zed.dev/) more than anoy other development tool
+- I have hit the point of no return and use [Zed](https://zed.dev/) more than any other development tool
   - I no longer use LLM code assistance in any measurable amount, I find a lot more value using LLMs as code review tools than code generation tools
 - Much of my polyglot development is via [VS Code](https://code.visualstudio.com/)
 - I like using [Ebitengine](https://ebitengine.org/) to make silly 2D games

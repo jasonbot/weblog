@@ -10,7 +10,7 @@ Wanting a small, pocketable handheld for bus rides, etc., I saw the [Miyoo Mini]
 
 The [Anbernic RG35XX](https://anbernic.com/products/rg35xx) presented itself as an alternative, and it was actually possible to buy one.
 
-I got one for about $60 on Amazon and was immediately in love. It had a decent built in game library, decent battery life, and was the perfect size. Not too big, not to small. Fits in a pants pocket or a little random orner of a carrying bag no problem.
+I got one for about $60 on Amazon and was immediately in love. It had a decent built in game library, decent battery life, and was the perfect size. Not too big, not to small. Fits in a pants pocket or a little random corner of a carrying bag no problem.
 
 The stock SD card and OS is servicable, but I replaced it with my own SD card with my own legally acquired ROM library. I use [GarlicOS](https://www.patreon.com/posts/garlicos-for-76561333) and I'm quite happy with it. At one point [I even made a skin for it](https://github.com/jasonbot/platinum-garlic). I normally play Neo-Geo, PSX, and GBA games. The best part about emulation is that all those quarter munchers become way more playable when you just have to hit select to insert a quarter. On an average Metal Slug run (any sequel) it would have cost me close to $20 based on how many times I get game overs.
 

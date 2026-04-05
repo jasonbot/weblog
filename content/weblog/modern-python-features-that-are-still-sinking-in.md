@@ -32,7 +32,7 @@ and _force_ users to call it like `do_my_task(client=self.client, schema_datacla
 
 Long ago I spent entirely too long fighting with [Twisted](https://twisted.org/) (and writing more boilerplate than substance) and became convinced that asynchronous programming, though its improved performance on I/O bound tasks (that is, every task you'd realistically expect to see in a professional setting) outweigh the pain caused by writing them (allegedly).
 
-I was always a big fan of the [gevent](http://www.gevent.org/) library because it let you write async code that looked like syncronous code. Like a decent language like Go or Java let you do.
+I was always a big fan of the [gevent](http://www.gevent.org/) library because it let you write async code that looked like synchronous code. Like a decent language like Go or Java let you do.
 
 Instead, Python has fallen prey to the nasty [colored functions](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/) bug and added, almost identically, Javascript's approach to async. Booo. It even [abuses the iterator protocol](https://peps.python.org/pep-0492/) to achieve its dark ends.
 
