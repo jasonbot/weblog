@@ -5,7 +5,11 @@ featured_image = ""
 description = "About"
 +++
 
-I am Jason Scheirer, a completely unremarkable software developer in the Bay Area initially from the Inland Empire. A rough timeline of my life as a software engineer:
+I am Jason Scheirer, a completely unremarkable software developer in the Bay Area initially from the Inland Empire.
+
+> I suppose if you're skimming this site for the first time you just want to know what I do now to know if I'm worth listening to: I am a software engineer for [Notion Labs, Inc.](https://www.notion.com/), a purveyor of malleable software. I work on the Desktop team writing Desktop things, and more specifically, I am the Windows domain expert and usually the person who fixes bugs on Notion Desktop in Windows. It's an Electron app, but please don't hold that against me: I do my best to make it not suck, and I do my best to make sure it's more than just the web page with in a different set of window chrome.
+
+A rough timeline of my life as a software engineer:
 
 - Start programming BASIC in elementary school, escalating to pirated QuickBasic and Turbo Pascal, as well as legal but squirrely [DJGPP](http://www.delorie.com/djgpp/)/[RHIDE](https://directory.fsf.org/wiki/RHIDE)/[Allegro](https://liballeg.org/)
 - Get a part-time job in late high school writing "web applications"
