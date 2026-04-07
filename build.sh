@@ -4,7 +4,7 @@ set -eux
 
 hugo
 cd public
-git rm -r pagefind
+git rm -r pagefind || true
 npx -y pagefind --site .
 git add * && git commit -m "Rebuild" && git push
 cd ..
