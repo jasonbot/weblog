@@ -6,7 +6,7 @@ featured_image = ""
 description = "Here I Go (this is a pun and I regret it immediately)"
 gomodvanityhost = "jasonscheirer.com"
 gomodvanityrepo = "https://codeberg.org/jasonbot/webview-installer"
-aliases = ["/webview-installer"]
+aliases = ["/webview-installer", "/weblog/webview-installer/"]
 +++
 
 > **Top Matter**: [Codeberg for the library](https://codeberg.org/jasonbot/webview-installer), [doc for the library](https://pkg.go.dev/jasonscheirer.com/webview-installer).
