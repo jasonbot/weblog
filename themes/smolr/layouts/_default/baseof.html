@@ -26,13 +26,13 @@
 	{{ with .Page.Params.description }}<meta name="og:description" content="{{ . }}">{{ end }}
 	{{ with .Page.Params.author }}<meta name="og:author" content="{{ . }}">{{ end }}
 
-	<link rel="human-json" href="/human.json">
-	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	<link rel="human-json" href="/human.json" />
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
 	{{ range .Site.Params.customCSS -}}
-		<link rel="stylesheet" href="{{ . | relURL }}?rnd={{ now.Unix }}">
+		<link rel="stylesheet" href="{{ . | relURL }}?rnd={{ now.Unix }}" />
 	{{- end }}
 	{{ with .OutputFormats.Get "RSS" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
 </head>
 <body>
