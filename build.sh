@@ -2,7 +2,7 @@
 
 set -eux
 
-hugo
+hugo --minify
 cd public
 git rm -r pagefind || true
 npx -y pagefind --site .

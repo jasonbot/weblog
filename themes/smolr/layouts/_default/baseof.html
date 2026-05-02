@@ -6,9 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="robots" content="nosnippet">
 	<title>{{ .Title }}</title>
-    {{if ( and .Page.Params.gomodvanityhost .Page.Params.gomodvanityrepo ) -}} {{ $hostname :=
-    urls.Parse $.Site.BaseURL }} {{ $pageParams := .Page.Params }} {{ range
-    .Page.Aliases }}
+	{{if ( and .Page.Params.gomodvanityhost .Page.Params.gomodvanityrepo ) -}}
+    {{ $hostname := urls.Parse $.Site.BaseURL }} {{ $pageParams := .Page.Params
+    }}
+    {{ range .Page.Aliases }}
     <meta
       name="go-import"
       content="{{ $pageParams.gomodvanityhost }}{{ . }} git {{$pageParams.gomodvanityrepo}}"
@@ -22,7 +23,10 @@
 	<meta property="og:title" content="{{ .Title }}" />
 	{{ with .Site.Params.description }}<meta name="og:description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="og:author" content="{{ . }}">{{ end }}
+	{{ with .Page.Params.description }}<meta name="og:description" content="{{ . }}">{{ end }}
+	{{ with .Page.Params.author }}<meta name="og:author" content="{{ . }}">{{ end }}
 
+	<link rel="human-json" href="/human.json">
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	{{ range .Site.Params.customCSS -}}
 		<link rel="stylesheet" href="{{ . | relURL }}?rnd={{ now.Unix }}">
@@ -32,6 +36,7 @@
 	{{- end }}
 </head>
 <body>
+    {{ .Page.Params.gomodvanityhost }}, {{ .Page.Params.gomodvanityrepo }}
 	<div class="everything">
 		{{ partial "header" . }}
 		<div class="hello-there-friends">
