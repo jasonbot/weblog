@@ -1,17 +1,14 @@
 <header>
-  <nav>
-    {{ $currentPage := . }} {{ with .Site.Menus.main }} {{ range . }} {{
-    $menu_item_url := .URL }} {{ $page_url:= $currentPage.RelPermalink }}
-
-    <span class="nav-item">
-      {{ if eq $menu_item_url $page_url }}
-      <b>{{ .Name | title }}</b>
-      {{ else }}
-      <a href="{{ .URL | relURL }}"><b>{{ .Name | title }}</b></a>
-      {{ end }}
-    </span>
-
+    <nav>
+        {{- $currentPage := . -}}{{ with .Site.Menus.main }}{{ range . }}{{
+        $menu_item_url := .URL }} {{ $page_url:= $currentPage.RelPermalink }}
+        <span class="nav-item">
+            {{- if eq $menu_item_url $page_url -}}
+            <b>{{- .Name | title -}}</b>
+            {{ else }}
+            <a href="{{ .URL | relURL }}"><b>{{- .Name | title -}}</b></a>
+            {{ end }}</span
+        >{{ end }}
+    </nav>
     {{ end }}
-  </nav>
-  {{ end }}
 </header>
