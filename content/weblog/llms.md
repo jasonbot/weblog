@@ -4,6 +4,7 @@ date = 2025-03-03T00:00:00-00:00
 tags = ["llm"]
 featured_image = ""
 description = ""
+aliases = ["/ai"]
 +++
 
 We're a couple of years into the LLM hype cycle and the volume at this point is _deafening_. I use LLMs, and I find them interesting, and they have played a major part of my professional life for the past two and a half years.
