@@ -1,5 +1,5 @@
 ---
-title: "MSIX as Archive"
+title: "MSIX is an Archive File"
 date: 2026-02-05T12:00:00-07:00
 tags: ["msix"]
 draft: true
