@@ -1,5 +1,5 @@
 +++
-title = "xteSTINK: A command-line utility for doing things to the XTEInk X4"
+title = "xteSTINK: A command-line utility for doing things to the Xteink X4"
 date = 2026-06-20T00:00:00-08:00
 tags = ["golang", "programming"]
 featured_image = ""
