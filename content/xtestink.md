@@ -11,7 +11,7 @@ aliases = ["/xtestink", "/weblog/xtestink/"]
 
 > **Top Matter**: [Codeberg for the library](https://codeberg.org/jasonbot/ebook-finagling), [doc for the library](https://pkg.go.dev/jasonscheirer.com/xtestink).
 
-I bought an [XTEInk X4!](https://www.xteink.com/products/xteink-x4)! It's small! It's cheap! It's hackable!
+I bought an [Xteink X4](https://www.xteink.com/products/xteink-x4)! It's small! It's cheap! It's hackable!
 
 I have an e-book collection, if you could call it that, but I always purchased PDFs. This thing reads epubs by default, which I don't have. I want to use this to read my books!
 
