@@ -13,9 +13,9 @@ single-purpose device that doesn't have the distractions of my glass Everything
 Rectangle and, as the phone ages, a way to mitigate its now-horrible battery
 life by using a different device with a different battery. As God confounded the
 language and scattered the people building the tower of Babel, I have confounded
-the functionality and scattered the responsibiities of the apps on my iPhone.
+the functionality and scattered the responsibilities of the apps on my iPhone.
 
-My wife brought up a point that is compeletely fair: why am I using this $60
+My wife brought up a point that is completely fair: why am I using this $60
 piece of crap when she, through great sacrifice, bought me a top-of-the-line
 iPod Classic 160GB for the same purpose? Sure, that was in 2012, but it was
 _expensive_. It's still worth $350+ today, right?
@@ -30,13 +30,13 @@ Then my first hurdle: I wanted to add some songs to it. I know
 [Rhythmbox](http://www.rhythmbox.org/), my player of choice[^1], has an iPod plugin
 on its list of installed plugins. I plug the iPod in, it shows up! Hooray!
 
-I try to drag music onto it -- no dice. Checking `dmesg` I see some very
+I try to drag music onto it: no dice. Checking `dmesg` I see some very
 threatening notices that HFS+ with journaling is not supported by Linux _at
-all_: so I know on Mac it's a simple command line call to turn it off so it's
-probably a trivial process, but I have no working personal Apple desktop
-machines. Have no fear: [I found a chunk of unvetted C that directly alters the
-raw filesystem](https://gist.github.com/noderat/c8929d41342bc6b63954) to do it
-for me on Linux! Boom! We're in business!
+all_. So I know on Mac it's a simple command line call to turn journaling off
+on a volume so it's probably a trivial process, but I have no working personal
+Apple desktop machines. Have no fear: [I found a chunk of unvetted C that
+directly alters the raw filesystem](https://gist.github.com/noderat/c8929d41342bc6b63954)
+to do it for me on Linux! Boom! We're in business!
 
 Back to Rhythmbox. Drag the music I want over to the iPod. It copies! Bingo!
 
@@ -67,7 +67,7 @@ I already have the Rockbox utility on my machine from installing it onto my Y1.
 It sees my iPod but dies on an SSL handshake talking to rockbox.org while
 downloading resources. I don't remember this happening last time I ran this. I
 downloaded and ran the utility on another Linux machine and got the same result.
-I gave up about 45 minutes into building the tool ymself from source.
+I gave up about 45 minutes into building the tool myself from source.
 
 Damn.
 
@@ -92,7 +92,7 @@ Java together with. Only ever since I set up a local server with GeyserMC and
 Floodgate we've been playing mixed me-on-Java/him-on-iPad-or-Switch-Bedrock so
 the laptop is mostly neglected.
 
-So I install iTunes and wipe the iPod. Takes a while, because I have to install
+So I install iTunes and wipe the iPod. Takes awhile, because I have to install
 a cascading series of drivers, but it eventually works. The firmware was the
 latest for the Classic, released 2009.
 
@@ -104,7 +104,11 @@ Nothing enshittification that's been inflicted on us. No wonder we're so
 complicit, we're pushing a quarter century of Everything Rental now. So to do
 iTunes proper I'd need enough storage on this laptop to hold the music in my
 library on it, be logged in, and sync a selection of it to the iPod. I remember
-this now: they made life harder and worse on purpose. And now we have Spotify.
+this now: they made life harder and worse on purpose. And now we have Spotify,
+where we never had freedom or affordances at all. I remember thinking what
+an incredible act of charity it was that Spotify let your have an offline
+playlist on your device. I would have expected offline first as _a matter of course_
+in prior hardware/software cycles.
 
 Rhythmbox and Gtkpod still don't sync correctly. Same database issues, so
 nothing I'd done with wiping the iPod had fixed the fundamental first issue.
@@ -133,15 +137,17 @@ the crappy Rockbox-in-emulation on an Android device that has absolutely no
 business whatsoever claiming it can run Android. It is responsive, it doesn't
 crash, all the plugins work, etc.
 
-Next rabbit hole is the battery/SSD swap upgrades. There are cheap and expensive
-options. As is my wont, I do not need bluetooth an anything I own, but a modern
-USB-C connector might be nice? Do I want to go the SD card route or a proper SSD?\
+Next rabbit hole is investigating battery/storage upgrades. There are cheap and expensive
+options, I need to go through them. As is my wont, I do not need bluetooth on
+anything I own, but a modern USB-C connector might be nice? Do I want to go the SD card
+route or a proper SSD?
+
 That is for another time.
 
 Anyway, no normal person would inflict this experience on themselves willingly,
 and would likely give up at some point close to the beginning. It is a reminder
-that much like if you stay very quiet near a playing iPod you can hear the whrr
-and rattle of the HDD, if you stand very quietly near me you can hear the
+that much like if you stay very quiet near a playing iPod you can hear the whir
+and rattle of the HDD. If you stand very quietly near me you can hear the
 fluttering and tapping of dozens of moths smashing their bodies against the
 inside of my skull in the space where a brain should be.
 
