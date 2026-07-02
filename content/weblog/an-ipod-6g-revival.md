@@ -43,7 +43,7 @@ Back to Rhythmbox. Drag the music I want over to the iPod. It copies! Bingo!
 Only: no bingo! I disconnect the iPod and it says 'no music.' The music is on
 the device, but the iPod's music database got clobbered. Well crap.
 
-So now I know [Gtkpod](<https://github.com/trinitonesounds/gtkpod) is purpose
+So now I know [Gtkpod](https://github.com/trinitonesounds/gtkpod) is purpose
 built for this. Apparently the iPod Rhythmbox plugin isn't any good on these
 models, so let's try that. No dice. It repeatedly hangs, crashes, and when it
 does work it still fails to correctly update the database. Still 'no music.'
