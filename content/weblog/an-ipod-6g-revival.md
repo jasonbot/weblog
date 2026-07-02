@@ -48,6 +48,12 @@ built for this. Apparently the iPod Rhythmbox plugin isn't any good on these
 models, so let's try that. No dice. It repeatedly hangs, crashes, and when it
 does work it still fails to correctly update the database. Still 'no music.'
 
+Maybe this is all because it's still HFS+ and not FAT? It seems like most tools
+assume you've liberated your iPod and you're using it in Windows mode, not Mac
+mode. So I attempt to wipe the drive, but can't for the life of me figure out
+how to do it _correctly_ with Gtkpod or just plain old partitioning tools. Looks like I need
+to restore the hardware from iTunes for this route.
+
 What about [Rockbox](https://rockbox.org/)? I use it on my Y1. The annoying
 thing is that I have to manually update the database on the actual device,
 whereas the typical iTunes stock experience is one that updates the database
@@ -60,14 +66,10 @@ try](https://themes.rockbox.org/index.php?themeid=4073&target=ipod6g)!
 I already have the Rockbox utility on my machine from installing it onto my Y1.
 It sees my iPod but dies on an SSL handshake talking to rockbox.org while
 downloading resources. I don't remember this happening last time I ran this. I
-downloaded and ran the utility on anothre Linux machine and got the same result.
-Damn.
+downloaded and ran the utility on another Linux machine and got the same result.
+I gave up about 45 minutes into building the tool ymself from source.
 
-Maybe this is all because it's still HFS+ and not FAT? It seems like most tools
-assume you've liberated your iPod and you're using it in Windows mode, not Mac
-mode. So I attempt to wipe the drive, but can't for the life of me figure out
-how to do it _correctly_ with Gtkpod or just plain old partitioning tools. Looks like I need
-to restore the hardware from iTunes.
+Damn.
 
 Now I need a Windows machine to use iTunes in Windows to reformat the iPod. I
 have a debloated Win11 VM in Gnome Boxes, I fire that up and go in to iTunes, I
@@ -75,7 +77,7 @@ plug in the iPod, then I go to set up USB forwarding so the VM can do its magic
 and -- "USB Forwarding is Not Supported in the Flatpak version of Boxes."
 
 So I uninstall the Flatpak and migrate my disk images from
-`~/.var/app/org.Gnome.Boxes` to somewheere less Flatpak-specific and install the
+`~/.var/app/org.Gnome.Boxes` to somewhere less Flatpak-specific and install the
 dnf version of Gnome Boxes. I migrate the machine over, set up forwarding,
 everything seems to be working.
 
