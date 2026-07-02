@@ -1,6 +1,6 @@
 +++
 title =  "A Revival of Sorts: Getting my iPod Classic 6G Working Again"
-date = 2026-07-03T08:00:00-00:00
+date = 2026-07-02T08:00:00-00:00
 tags = ["hardware", "music", "apple"]
 featured_image = ""
 description = "It's an MP3 player"
