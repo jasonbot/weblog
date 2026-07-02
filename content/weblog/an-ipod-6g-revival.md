@@ -106,7 +106,7 @@ library on it, be logged in, and sync a selection of it to the iPod. I remember
 this now: they made life harder and worse on purpose. And now we have Spotify.
 
 Rhythmbox and Gtkpod still don't sync correctly. Same database issues, so
-nothing I've done with wiping the iPod had fixed the fundamnetal fist issue.
+nothing I'd done with wiping the iPod had fixed the fundamental first issue.
 
 Rockbox.
 
