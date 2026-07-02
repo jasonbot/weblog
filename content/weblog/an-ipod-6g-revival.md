@@ -93,7 +93,8 @@ Floodgate we've been playing mixed me-on-Java/him-on-iPad-or-Switch-Bedrock so
 the laptop is mostly neglected.
 
 So I install iTunes and wipe the iPod. Takes a while, because I have to install
-a cascading series of drivers, but it eventually works.
+a cascading series of drivers, but it eventually works. The firmware was the
+latest for the Classic, released 2009.
 
 Then I remember that 18 year old bit of early enshittification of iTunes: the
 iPod can't simply be its own library you add/remove items from. [I was falling
@@ -123,7 +124,7 @@ So I drag music over. 16000
 tracks to start, takes 2 hours to copy. HDDs are _slow_. Afterward I have to
 manually update my database from Rockbox, which takes _hours_. I fall asleep as it runs. I can hear
 the physical spinning platters. It's a very strange experience having a device
-with a real life magnetic disc hard drive again. The future is strange in the UX of the iPod
+with a real life magnetic disc hard drive again. The future we occupy today is strange in the UX of the iPod
 and its software feels modern enough but small aspects like an HDD feel
 anachronistic.
 
