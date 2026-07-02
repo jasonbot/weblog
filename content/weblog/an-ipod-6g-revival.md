@@ -97,7 +97,7 @@ a cascading series of drivers, but it eventually works.
 
 Then I remember that 18 year old bit of early enshittification of iTunes: the
 iPod can't simply be its own library you add/remove items from. [I was falling
-out of live with Apple about that long ago](/weblog/osx-less-and-less/), and I
+out of love with Apple about that long ago](/weblog/osx-less-and-less/), and I
 had forgotten how low and slow we've been dealing with the world of You Will Own
 Nothing enshittification that's been inflicted on us. No wonder we're so
 complicit, we're pushing a quarter century of Everything Rental now. So to do
