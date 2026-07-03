@@ -12,7 +12,7 @@
   {{if eq $listtitle "Tags" }} {{ $links = ( collections.Sort $links "Title"
   "asc" ) }} {{ end }}
 
-  <ul class="links-{{ strings.Replace (.Title | strings.ToLower ) " " "-" }}" data-pagefind-ignore>
+  <ul class="links-{{ strings.Replace (.Title | strings.ToLower ) " " "-" }}">
     {{ range $links }}
     <li>
       <div>
