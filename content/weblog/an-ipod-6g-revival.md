@@ -125,7 +125,7 @@ I flash it again.
 It boots. Hell yes. And I have my cool theme.
 
 So I drag music over. 16000
-tracks to start, takes 2 hours to copy. HDDs are _slow_. Afterward I have to
+tracks to start, takes 2 hours to copy. HDDs are _slow_[^2]. Afterward I have to
 manually update my database from Rockbox, which takes _hours_. I fall asleep as it runs. I can hear
 the physical spinning platters. It's a very strange experience having a device
 with a real life magnetic disc hard drive again. The future we occupy today is strange in the UX of the iPod
@@ -155,3 +155,8 @@ inside of my skull in the space where a brain should be.
     I am not aware of any other MP3 player that can handle large music
     libraries this well and still have a presentable UI. TUIs usually suck,
     "new" apps are all super slow because of Wirth's Law.
+
+[^2]: Though not as slow as I initially thought: transferring files in and out
+    of the device is hampered by USB 2.0 speeds, but the seek times of the HDD
+    are bad. There were two bottlenecks in the file transfer stage, HDD
+    seeks/reads are also slow but faster than the Universal Serial Bus.
