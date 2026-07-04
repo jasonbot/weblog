@@ -9,11 +9,18 @@ gomodvanityrepo = "https://codeberg.org/jasonbot/webview-installer"
 aliases = ["/webview-installer", "/weblog/webview-installer/"]
 +++
 
-> **Top Matter**: [Codeberg for the library](https://codeberg.org/jasonbot/webview-installer), [doc for the library](https://pkg.go.dev/jasonscheirer.com/webview-installer).
+> **Top Matter**:
+> [Codeberg for the library](https://codeberg.org/jasonbot/webview-installer),
+> [doc for the library](https://pkg.go.dev/jasonscheirer.com/webview-installer).
 
-I've forked [Lea Anthony's library](https://github.com/leaanthony/webview2runtime) that eventually [made its way into core Wails](https://github.com/wailsapp/wails/tree/b748b4625724b36f406d17987335805a83751093/v2/internal/webview2runtime) for two reasons:
+I've forked
+[Lea Anthony's library](https://github.com/leaanthony/webview2runtime) that
+eventually
+[made its way into core Wails](https://github.com/wailsapp/wails/tree/b748b4625724b36f406d17987335805a83751093/v2/internal/webview2runtime)
+for two reasons:
 
 1. I want it in Wails 3 and it's not there
-2. I want to shave a meg off the binary size by not providing the embedded installer exe
+2. I want to shave a meg off the binary size by not providing the embedded
+   installer exe
 
 So here we are.

@@ -6,7 +6,9 @@ featured_image = ""
 description = ""
 +++
 
-I have a stupid json-only REST API I implemented in bottle.py. This introspects the default app, gives a dumb readout that should act as an adequate reference for discovery:
+I have a stupid json-only REST API I implemented in bottle.py. This introspects
+the default app, gives a dumb readout that should act as an adequate reference
+for discovery:
 
 ```python
 @bottle.route('/')

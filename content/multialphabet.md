@@ -5,12 +5,11 @@ featured_image = ""
 description = "Make the "
 +++
 
-There are so many tools to do this online and a lot of them are annoying or covered in ads or both. Type text, get transforms.
+There are so many tools to do this online and a lot of them are annoying or
+covered in ads or both. Type text, get transforms.
 
-{{< raw >}}
-    <script>
-      const randomChoice = (array) =>
-        array[Math.floor(Math.random() * array.length)];
+{{< raw >}} <script> const randomChoice = (array) =>
+array[Math.floor(Math.random() * array.length)];
 
       const plainAlphabetMapping = (...alphabetString) => {
         return (mappingString) =>
@@ -23,24 +22,14 @@ There are so many tools to do this online and a lot of them are annoying or cove
                   `So, I want you to get up now. I want all of you to get up out of your chairs. I want you to get up right now and go to the window, open it, and stick your head out and yell, "I'm as mad as hell, and I'm not going to take this anymore!!"`,
                   "Hello from the children of planet Earth.",
                   `I know how hard it is down in Chino
-I know how you struggle just to get by
-I know they got farm fresh eggs down in Chino
-And tract homes reasonably priced`,
-                  `I don't wanna pay for anything
-Clothes and food and drugs for free
-If it was 1970
-I'd have a job at a factory`,
-                ])
-              : mappingString),
-          ]
-            .map((letter, i) => {
-              const charCode = letter.charCodeAt(0);
-              if (charCode >= 65 && charCode <= 91) {
-                return alphabetString[charCode - 65] ?? letter;
-              }
-              if (charCode >= 97 && charCode <= 123) {
-                return alphabetString[charCode - 97 + 26] ?? letter;
-              }
+
+I know how you struggle just to get by I know they got farm fresh eggs down in
+Chino And tract homes reasonably priced`,                   `I don't wanna pay
+for anything Clothes and food and drugs for free If it was 1970 I'd have a job
+at a factory`, ]) : mappingString), ] .map((letter, i) => { const charCode =
+letter.charCodeAt(0); if (charCode >= 65 && charCode <= 91) { return
+alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
+<= 123) { return alphabetString[charCode - 97 + 26] ?? letter; }
 
               return letter;
             })
@@ -1022,4 +1011,5 @@ I'd have a job at a factory`,
         </div>
       </template>
     </div>
-  {{< /raw >}}
+
+{{< /raw >}}

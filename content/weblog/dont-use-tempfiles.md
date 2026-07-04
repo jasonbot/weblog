@@ -6,12 +6,20 @@ featured_image = ""
 description = "Keep it in memory"
 +++
 
-> This was initially a blog post I wrote on my employer's internal system, but it's interestingly useful and it doesn't contain any trade secrets so I figure I'll share.
+> This was initially a blog post I wrote on my employer's internal system, but
+> it's interestingly useful and it doesn't contain any trade secrets so I figure
+> I'll share.
 
-A common pattern that seems obvious when you need to shuttle data around in file form is to use a temporary file against the filesystem using the [tempfile module](https://docs.python.org/3/library/tempfile.html).
+A common pattern that seems obvious when you need to shuttle data around in file
+form is to use a temporary file against the filesystem using the
+[tempfile module](https://docs.python.org/3/library/tempfile.html).
 
-You very seldom ACTUALLY need to do this. The [BytesIO](https://docs.python.org/3/library/io.html#binary-i-o) class follows [the exact same protocol](https://docs.python.org/3/glossary.html#term-file-object), the file protocol, so any API that accepts a "file-like object" will accept an in-memory piece of information in addition to a file on disk. It's faster, safer, and less ugly.
-
+You very seldom ACTUALLY need to do this. The
+[BytesIO](https://docs.python.org/3/library/io.html#binary-i-o) class follows
+[the exact same protocol](https://docs.python.org/3/glossary.html#term-file-object),
+the file protocol, so any API that accepts a "file-like object" will accept an
+in-memory piece of information in addition to a file on disk. It's faster,
+safer, and less ugly.
 
 ```python3
 xyz = '/tmp/dingus'
@@ -22,13 +30,13 @@ with open(xyz, 'w') as file_handle:
 
 can be replaced with
 
-
 ```python3
 xyz = io.BytesIO()
 xyz.write(b'My brilliant string')
 ```
 
-You don't even have to `with` the BytesIO -- in fact, if you do, it'll delete the buffer.
+You don't even have to `with` the BytesIO -- in fact, if you do, it'll delete
+the buffer.
 
 **TL;DR**
 
@@ -86,4 +94,5 @@ do this:
 json.dump(x, file_handle)
 ```
 
-there are usually two functions exposed when an API deals with I/O: a string version and a file-like version.
+there are usually two functions exposed when an API deals with I/O: a string
+version and a file-like version.

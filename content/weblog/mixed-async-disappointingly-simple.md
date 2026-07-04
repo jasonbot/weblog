@@ -6,13 +6,19 @@ featured_image = ""
 description = "Python: Yeah."
 +++
 
-One thing I love about Python's practical approach to type annotations and enforcement is that it's gradual: you can rapidly code a large ball of mud and get it working, then refine it to make it safer with typing later on.
+One thing I love about Python's practical approach to type annotations and
+enforcement is that it's gradual: you can rapidly code a large ball of mud and
+get it working, then refine it to make it safer with typing later on.
 
-Chalk this up as another good idea (possibly by accident) for Python: you can do the same with async.
+Chalk this up as another good idea (possibly by accident) for Python: you can do
+the same with async.
 
-At work, someone lamented that threads aren't quite safe but they needed to do multiple http requests in parallel.
+At work, someone lamented that threads aren't quite safe but they needed to do
+multiple http requests in parallel.
 
-After being _that asshole_ and suggesting they rewrite the entire app as an async app, I went in and poked around for a few hours. I experimented and coded and came up with a simple, almost disappointingly so, solution:
+After being _that asshole_ and suggesting they rewrite the entire app as an
+async app, I went in and poked around for a few hours. I experimented and coded
+and came up with a simple, almost disappointingly so, solution:
 
 ```python
 import asyncio
@@ -49,8 +55,13 @@ def main_sync_route():
 
 The three parts to make this work:
 
-* `async`-colored functions
-* [`asyncio.gather`](https://docs.python.org/3/library/asyncio-task.html#asyncio.gather) to run a pool of jobs
-* [`asyncio.run`](https://docs.python.org/3/library/asyncio-task.html#asyncio.run) to run a block of async code in a sync context
+- `async`-colored functions
+- [`asyncio.gather`](https://docs.python.org/3/library/asyncio-task.html#asyncio.gather)
+  to run a pool of jobs
+- [`asyncio.run`](https://docs.python.org/3/library/asyncio-task.html#asyncio.run)
+  to run a block of async code in a sync context
 
-Long story short: `asyncio.run` does exactly what it says on the tin with minimal fuss. If you're not in an async event loop in the current thread, it starts one for you, runs the async function as its main, then blocks until it's done.
+Long story short: `asyncio.run` does exactly what it says on the tin with
+minimal fuss. If you're not in an async event loop in the current thread, it
+starts one for you, runs the async function as its main, then blocks until it's
+done.

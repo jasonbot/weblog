@@ -6,16 +6,34 @@ featured_image = ""
 description = ""
 +++
 
-I'm an enthusiast of playing around with different window management schemes. I like the _idea_ of a tiling window manager, but I'm not smart enough to ever get really productive in something like i3 or sway.
+I'm an enthusiast of playing around with different window management schemes. I
+like the _idea_ of a tiling window manager, but I'm not smart enough to ever get
+really productive in something like i3 or sway.
 
-for the past few years [I've been using Rectangle on MacOS](/weblog/trying-out-rectangle/) as something of a band-aid
+for the past few years
+[I've been using Rectangle on MacOS](/weblog/trying-out-rectangle/) as something
+of a band-aid
 
-I've been using [the Tiling WM Extension ion Gnome](https://extensions.gnome.org/extension/7065/tiling-shell/) for a while, and I've been pretty happy with it. It does a good job of emulating [one of the better features on Win11](https://support.microsoft.com/en-us/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241), a progressive way to arrange windows in an ordered way.
+I've been using
+[the Tiling WM Extension ion Gnome](https://extensions.gnome.org/extension/7065/tiling-shell/)
+for a while, and I've been pretty happy with it. It does a good job of emulating
+[one of the better features on Win11](https://support.microsoft.com/en-us/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241),
+a progressive way to arrange windows in an ordered way.
 
-Now I'm [trying out PaperWM](https://extensions.gnome.org/extension/6099/paperwm/). The concept simplifies and streamlines windows from occupying a fully two dimensional space into something resembling 1.5 dimensions: windows are all arranged side-by-side infinitely, and you just traverse along the line of windows to find what you're looking for.
+Now I'm
+[trying out PaperWM](https://extensions.gnome.org/extension/6099/paperwm/). The
+concept simplifies and streamlines windows from occupying a fully two
+dimensional space into something resembling 1.5 dimensions: windows are all
+arranged side-by-side infinitely, and you just traverse along the line of
+windows to find what you're looking for.
 
-I've been using it full time for a week and I'm pretty happy with it. Maybe this will stick for a while.
+I've been using it full time for a week and I'm pretty happy with it. Maybe this
+will stick for a while.
 
-> **Update 2024-11-22:** PaperWM hard crashes when I launch games that try to switch to fullscreen from Steam. Back to the drawing board!
+> **Update 2024-11-22:** PaperWM hard crashes when I launch games that try to
+> switch to fullscreen from Steam. Back to the drawing board!
 
-> **Update 2025-03-12:** [Here's a fun blog post about Niri](https://ersei.net/en/blog/niri), another window manager inspired by Gnome Paper. I might try that next, though I'd have to get swaybar and friends up and running so it may be a test of patience.
+> **Update 2025-03-12:**
+> [Here's a fun blog post about Niri](https://ersei.net/en/blog/niri), another
+> window manager inspired by Gnome Paper. I might try that next, though I'd have
+> to get swaybar and friends up and running so it may be a test of patience.

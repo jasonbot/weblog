@@ -10,6 +10,8 @@ aliases = ["/checkbox"]
 draft = true
 +++
 
-> **Top Matter**: [Codeberg for the library](https://codeberg.org/jasonbot/checkbox), [doc for the library](https://pkg.go.dev/jasonscheirer.com/checkbox).
+> **Top Matter**:
+> [Codeberg for the library](https://codeberg.org/jasonbot/checkbox),
+> [doc for the library](https://pkg.go.dev/jasonscheirer.com/checkbox).
 
 _This is a work-in-progress._

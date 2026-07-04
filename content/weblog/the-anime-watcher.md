@@ -6,7 +6,8 @@ featured_image = ""
 description = "I did this for my own amusement."
 +++
 
-[I wrote another game game](https://jasonbot.itch.io/anime-watcher) for a [Weekend Game Jam with an Anime theme](https://itch.io/jam/mini-jam-114-anime).
+[I wrote another game game](https://jasonbot.itch.io/anime-watcher) for a
+[Weekend Game Jam with an Anime theme](https://itch.io/jam/mini-jam-114-anime).
 
 A short bit of interactive fiction.
 
