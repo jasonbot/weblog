@@ -8,8 +8,10 @@ description = "Make the "
 There are so many tools to do this online and a lot of them are annoying or
 covered in ads or both. Type text, get transforms.
 
-{{< raw >}} <script> const randomChoice = (array) =>
-array[Math.floor(Math.random() * array.length)];
+{{< raw >}}
+    <script>
+      const randomChoice = (array) =>
+        array[Math.floor(Math.random() * array.length)];
 
       const plainAlphabetMapping = (...alphabetString) => {
         return (mappingString) =>
@@ -22,14 +24,24 @@ array[Math.floor(Math.random() * array.length)];
                   `So, I want you to get up now. I want all of you to get up out of your chairs. I want you to get up right now and go to the window, open it, and stick your head out and yell, "I'm as mad as hell, and I'm not going to take this anymore!!"`,
                   "Hello from the children of planet Earth.",
                   `I know how hard it is down in Chino
-
-I know how you struggle just to get by I know they got farm fresh eggs down in
-Chino And tract homes reasonably priced`,                   `I don't wanna pay
-for anything Clothes and food and drugs for free If it was 1970 I'd have a job
-at a factory`, ]) : mappingString), ] .map((letter, i) => { const charCode =
-letter.charCodeAt(0); if (charCode >= 65 && charCode <= 91) { return
-alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
-<= 123) { return alphabetString[charCode - 97 + 26] ?? letter; }
+I know how you struggle just to get by
+I know they got farm fresh eggs down in Chino
+And tract homes reasonably priced`,
+                  `I don't wanna pay for anything
+Clothes and food and drugs for free
+If it was 1970
+I'd have a job at a factory`,
+                ])
+              : mappingString),
+          ]
+            .map((letter, i) => {
+              const charCode = letter.charCodeAt(0);
+              if (charCode >= 65 && charCode <= 91) {
+                return alphabetString[charCode - 65] ?? letter;
+              }
+              if (charCode >= 97 && charCode <= 123) {
+                return alphabetString[charCode - 97 + 26] ?? letter;
+              }
 
               return letter;
             })
@@ -89,7 +101,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝐰",
           "𝐱",
           "𝐲",
-          "𝐳"
+          "𝐳",
         ),
         Italic: plainAlphabetMapping(
           "𝐴",
@@ -143,7 +155,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝑤",
           "𝑥",
           "𝑦",
-          "𝑧"
+          "𝑧",
         ),
         "Bold Italic": plainAlphabetMapping(
           "𝑨",
@@ -197,7 +209,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝒘",
           "𝒙",
           "𝒚",
-          "𝒛"
+          "𝒛",
         ),
         "Italic Cursive": plainAlphabetMapping(
           "𝒜",
@@ -251,7 +263,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝓌",
           "𝓍",
           "𝓎",
-          "𝓏"
+          "𝓏",
         ),
         "Bold Italic Cursive": plainAlphabetMapping(
           "𝓐",
@@ -305,7 +317,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝔀",
           "𝔁",
           "𝔂",
-          "𝔃"
+          "𝔃",
         ),
         Fraktur: plainAlphabetMapping(
           "𝔄",
@@ -359,7 +371,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝔴",
           "𝔵",
           "𝔶",
-          "𝔷"
+          "𝔷",
         ),
         "Bold Fraktur": plainAlphabetMapping(
           "𝕬",
@@ -413,7 +425,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝖜",
           "𝖝",
           "𝖞",
-          "𝖟"
+          "𝖟",
         ),
         Draftsman: plainAlphabetMapping(
           "𝔸",
@@ -467,7 +479,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝕨",
           "𝕩",
           "𝕪",
-          "𝕫"
+          "𝕫",
         ),
         Wide: plainAlphabetMapping(
           "𝖠",
@@ -521,7 +533,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝗐",
           "𝗑",
           "𝗒",
-          "𝗓"
+          "𝗓",
         ),
         "Bold Wide": plainAlphabetMapping(
           "𝗔",
@@ -575,7 +587,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝘄",
           "𝘅",
           "𝘆",
-          "𝘇"
+          "𝘇",
         ),
         "Wide Italic": plainAlphabetMapping(
           "𝘈",
@@ -629,7 +641,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝘸",
           "𝘹",
           "𝘺",
-          "𝘻"
+          "𝘻",
         ),
         "Bold Wide Italic": plainAlphabetMapping(
           "𝘼",
@@ -683,7 +695,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝙬",
           "𝙭",
           "𝙮",
-          "𝙯"
+          "𝙯",
         ),
         Typewriter: plainAlphabetMapping(
           "𝙰",
@@ -737,7 +749,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "𝚠",
           "𝚡",
           "𝚢",
-          "𝚣"
+          "𝚣",
         ),
         Doublewide: plainAlphabetMapping(
           "Ａ",
@@ -791,7 +803,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
           "ｗ",
           "ｘ",
           "ｙ",
-          "ｚ"
+          "ｚ",
         ),
       };
 
@@ -816,7 +828,7 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
         if (!!text && activeTranslations.length === 0) {
           addToListOfActiveTranslations(
             randomChoice(Object.keys(translators)),
-            true
+            true,
           );
         }
 
@@ -846,13 +858,12 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
 
         const translationElt = document.importNode(
           template.content,
-          true
+          true,
         ).firstElementChild;
         resultElt.appendChild(translationElt);
 
-        translationElt.querySelector(
-          ".name"
-        ).innerText = `${name} (${translators[name](name)})`;
+        translationElt.querySelector(".name").innerText =
+          `${name} (${translators[name](name)})`;
 
         const translationTextelt = translationElt.querySelector(".translation");
         const copyButton = translationElt.querySelector(".copy-button");
@@ -943,19 +954,42 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
         user-select: none;
         display: flex;
         flex-direction: row;
+        align-items: center;
 
         .translator-name {
           text-align: center;
+          flex-grow: 1;
         }
 
         & > * {
-          flex-grow: 1;
           align-items: center;
         }
 
-        .copy-button,
-        .remove-button {
+        div.button-bar {
           flex-grow: 0;
+          overflow: hidden;
+          padding: 0;
+          border: 1px solid var(--borders);
+          background: var(--main-border);
+          border-radius: 4px;
+          color: var(--dark-4);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          & > *:not(:first-child) {
+            border-left: 1px solid var(--borders);
+          }
+
+          .copy-button,
+          .remove-button {
+            padding: 4px;
+            flex-grow: 0;
+          }
+
+          button {
+            border: none;
+          }
         }
       }
 
@@ -974,7 +1008,11 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
         justify-content: center;
 
         #multi-alphabet-selector {
-          font-size: x-large;
+          @media (width > 800px) {
+            max-width: 75vw;
+            font-size: x-large;
+          }
+          max-width: 95vw;
         }
       }
 
@@ -1004,12 +1042,13 @@ alphabetString[charCode - 65] ?? letter; } if (charCode >= 97 && charCode
         <div class="translation-item">
           <div class="translation-header">
             <div class="name translator-name"></div>
-            <button class="copy-button">⧉Copy</button>
-            <button class="remove-button">×</button>
+            <div class="button-bar">
+              <button class="copy-button">⧉Copy</button>
+              <button class="remove-button">×</button>
+            </div>
           </div>
           <div class="translation translation-text"></div>
         </div>
       </template>
     </div>
-
-{{< /raw >}}
+  {{< /raw >}}

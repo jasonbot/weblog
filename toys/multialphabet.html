@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -116,7 +116,7 @@ I'd have a job at a factory`,
           "𝐰",
           "𝐱",
           "𝐲",
-          "𝐳"
+          "𝐳",
         ),
         Italic: plainAlphabetMapping(
           "𝐴",
@@ -170,7 +170,7 @@ I'd have a job at a factory`,
           "𝑤",
           "𝑥",
           "𝑦",
-          "𝑧"
+          "𝑧",
         ),
         "Bold Italic": plainAlphabetMapping(
           "𝑨",
@@ -224,7 +224,7 @@ I'd have a job at a factory`,
           "𝒘",
           "𝒙",
           "𝒚",
-          "𝒛"
+          "𝒛",
         ),
         "Italic Cursive": plainAlphabetMapping(
           "𝒜",
@@ -278,7 +278,7 @@ I'd have a job at a factory`,
           "𝓌",
           "𝓍",
           "𝓎",
-          "𝓏"
+          "𝓏",
         ),
         "Bold Italic Cursive": plainAlphabetMapping(
           "𝓐",
@@ -332,7 +332,7 @@ I'd have a job at a factory`,
           "𝔀",
           "𝔁",
           "𝔂",
-          "𝔃"
+          "𝔃",
         ),
         Fraktur: plainAlphabetMapping(
           "𝔄",
@@ -386,7 +386,7 @@ I'd have a job at a factory`,
           "𝔴",
           "𝔵",
           "𝔶",
-          "𝔷"
+          "𝔷",
         ),
         "Bold Fraktur": plainAlphabetMapping(
           "𝕬",
@@ -440,7 +440,7 @@ I'd have a job at a factory`,
           "𝖜",
           "𝖝",
           "𝖞",
-          "𝖟"
+          "𝖟",
         ),
         Draftsman: plainAlphabetMapping(
           "𝔸",
@@ -494,7 +494,7 @@ I'd have a job at a factory`,
           "𝕨",
           "𝕩",
           "𝕪",
-          "𝕫"
+          "𝕫",
         ),
         Wide: plainAlphabetMapping(
           "𝖠",
@@ -548,7 +548,7 @@ I'd have a job at a factory`,
           "𝗐",
           "𝗑",
           "𝗒",
-          "𝗓"
+          "𝗓",
         ),
         "Bold Wide": plainAlphabetMapping(
           "𝗔",
@@ -602,7 +602,7 @@ I'd have a job at a factory`,
           "𝘄",
           "𝘅",
           "𝘆",
-          "𝘇"
+          "𝘇",
         ),
         "Wide Italic": plainAlphabetMapping(
           "𝘈",
@@ -656,7 +656,7 @@ I'd have a job at a factory`,
           "𝘸",
           "𝘹",
           "𝘺",
-          "𝘻"
+          "𝘻",
         ),
         "Bold Wide Italic": plainAlphabetMapping(
           "𝘼",
@@ -710,7 +710,7 @@ I'd have a job at a factory`,
           "𝙬",
           "𝙭",
           "𝙮",
-          "𝙯"
+          "𝙯",
         ),
         Typewriter: plainAlphabetMapping(
           "𝙰",
@@ -764,7 +764,7 @@ I'd have a job at a factory`,
           "𝚠",
           "𝚡",
           "𝚢",
-          "𝚣"
+          "𝚣",
         ),
         Doublewide: plainAlphabetMapping(
           "Ａ",
@@ -818,7 +818,7 @@ I'd have a job at a factory`,
           "ｗ",
           "ｘ",
           "ｙ",
-          "ｚ"
+          "ｚ",
         ),
       };
 
@@ -843,7 +843,7 @@ I'd have a job at a factory`,
         if (!!text && activeTranslations.length === 0) {
           addToListOfActiveTranslations(
             randomChoice(Object.keys(translators)),
-            true
+            true,
           );
         }
 
@@ -873,13 +873,12 @@ I'd have a job at a factory`,
 
         const translationElt = document.importNode(
           template.content,
-          true
+          true,
         ).firstElementChild;
         resultElt.appendChild(translationElt);
 
-        translationElt.querySelector(
-          ".name"
-        ).innerText = `${name} (${translators[name](name)})`;
+        translationElt.querySelector(".name").innerText =
+          `${name} (${translators[name](name)})`;
 
         const translationTextelt = translationElt.querySelector(".translation");
         const copyButton = translationElt.querySelector(".copy-button");
@@ -970,19 +969,42 @@ I'd have a job at a factory`,
         user-select: none;
         display: flex;
         flex-direction: row;
+        align-items: center;
 
         .translator-name {
           text-align: center;
+          flex-grow: 1;
         }
 
         & > * {
-          flex-grow: 1;
           align-items: center;
         }
 
-        .copy-button,
-        .remove-button {
+        div.button-bar {
           flex-grow: 0;
+          overflow: hidden;
+          padding: 0;
+          border: 1px solid var(--borders);
+          background: var(--main-border);
+          border-radius: 4px;
+          color: var(--dark-4);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          & > *:not(:first-child) {
+            border-left: 1px solid var(--borders);
+          }
+
+          .copy-button,
+          .remove-button {
+            padding: 4px;
+            flex-grow: 0;
+          }
+
+          button {
+            border: none;
+          }
         }
       }
 
@@ -1001,7 +1023,11 @@ I'd have a job at a factory`,
         justify-content: center;
 
         #multi-alphabet-selector {
-          font-size: x-large;
+          @media (width > 800px) {
+            max-width: 75vw;
+            font-size: x-large;
+          }
+          max-width: 95vw;
         }
       }
 
@@ -1031,8 +1057,10 @@ I'd have a job at a factory`,
         <div class="translation-item">
           <div class="translation-header">
             <div class="name translator-name"></div>
-            <button class="copy-button">⧉Copy</button>
-            <button class="remove-button">×</button>
+            <div class="button-bar">
+              <button class="copy-button">⧉Copy</button>
+              <button class="remove-button">×</button>
+            </div>
           </div>
           <div class="translation translation-text"></div>
         </div>
