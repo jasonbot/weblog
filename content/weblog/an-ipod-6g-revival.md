@@ -24,7 +24,7 @@ today, right?
 
 So what the hell, I dug it out of my Closet of Cables and Mystery. Plugged it
 in. Battery charged. It booted. My music was still in it, last addition to the
-library wa 2014. Fantastic! I bought a protective case, some new 30-pin USB
+library was 2014. Fantastic! I bought a protective case, some new 30-pin USB
 cables because the ones I had remaining were all frayed and kind of scary, and I
 got ready to swap the Y1 with the iPod for a while as an experiment.
 
