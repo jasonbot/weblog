@@ -1,5 +1,5 @@
 +++
-title =  "A Revival of Sorts: Getting my iPod Classic 6G Working Again"
+title =  "A Revival of Sorts: Getting my iPod Classic 7th Gen Working Again"
 date = 2026-07-02T08:00:00-00:00
 tags = ["hardware", "music", "apple"]
 featured_image = ""
@@ -16,8 +16,7 @@ language and scattered the people building the tower of Babel, I have confounded
 the functionality and scattered the responsibilities of the apps on my iPhone.
 
 My wife brought up a point that is completely fair: why am I using this
-$60
-piece of crap when she, through great sacrifice, bought me a top-of-the-line
+$60 piece of crap when she, through great sacrifice, bought me a top-of-the-line
 iPod Classic 160GB for the same purpose? Sure, that was in 2012, but it was
 _expensive_. It's still worth $350+
 today, right?
