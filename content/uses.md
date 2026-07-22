@@ -33,8 +33,9 @@ description = "Another /uses page, just like the others"
 - I use [Solid](https://www.solidjs.com/) and
   [plain old JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) at
   home, [React](https://react.dev/) at work
-- I use [Ollama](https://ollama.com/) on Windows, Mac and Linux to locally run
-  LLMs
+- I use [Ollama](https://ollama.com/) on Windows and Linux to locally run LLMs,
+  sometimes building a `llama.cpp` binary if needed.
+- I use [oMLX](https://omlx.ai/) on Mac for the same.
 
 ## Editors/Environments
 
@@ -92,8 +93,8 @@ description = "Another /uses page, just like the others"
   acquired from their release pages)
 
   [^1]:
-      This is missing in ChimeraOS for some reason and the only part absent from a
-      working podman setup on my handheld
+      This is missing in ChimeraOS for some reason and the only part absent from
+      a working podman setup on my handheld
 
 ## Cloud Stuff
 
@@ -231,9 +232,15 @@ I have a handful of computers I use regularly!
 
 This is not meant as a moral stance or a political position: I use LLMs at work
 because I have to. They save me typing for boilerplate. I don't want to risk
-losing a job because I am slow at boilerplate or I am openly insubordinate. I do
-not find enough value in them to use them in personal projects. My interest
-begins and ends in the "fun" part (to me) of the LLM thing, which is
+losing a job because I am slow at boilerplate or I am openly insubordinate.
+
+I have a humanities degree, I find the idea of using LLMs to generate English
+prose to be silly at best as I can do the same thing, but terser and better. I
+do not find enough value in them to use them in personal projects for any
+substantial coding work. I find they do not add much in terms for proportional
+value versus developing understanding, and developing understanding is a luxury
+I can afford in personal projects. My interest begins and ends in the "fun" part
+(to me) of the LLM thing, which is
 [writing and managing harnesses](https://codeberg.org/jasonbot/ollama-desktop-with-wails).
 
 If using the tools makes you feel better and
