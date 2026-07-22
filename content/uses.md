@@ -10,14 +10,14 @@ description = "Another /uses page, just like the others"
 
 ## Languages/Technologies
 
+- I do most of my personal dev projects in Go
+- Over the last 3-5 years, Typescript has become the dominant language I use at
+  work
 - I am primarily a Python expert (25 years!)
 - I am primarily a [FastAPI](https://github.com/fastapi/fastapi) user, and I am
   better than average at doing async programming (which sucks and is bad, but
   it's fun to do bad things)
 - I primarily choose Postgres as my database
-- I do most of my personal dev projects in Go
-- Over the last 3-5 years, Typescript has become the dominant language I use at
-  work
 - If you ask me to write something in C++ I will say no but I _will_ write C++
   to spite you
 - I prefer Linux on the desktop to Mac on the desktop at this point
@@ -90,9 +90,10 @@ description = "Another /uses page, just like the others"
 - Same with [Deno](https://deno.com/)
 - Currently in `~/bin`: `btm` `slirp4netns`[^1] `tmux` `tic80` (static binaries
   acquired from their release pages)
+
   [^1]:
-      This is missing in ChimeraOS for some reason and the only part absent from
-      a working podman setup on my handheld
+      This is missing in ChimeraOS for some reason and the only part absent from a
+      working podman setup on my handheld
 
 ## Cloud Stuff
 
@@ -211,8 +212,10 @@ I have a handful of computers I use regularly!
 
 ## Toys
 
-- [Shanling M0s](https://en.shanling.com/article-IntroM0s.html) for listening to
-  music outside of my home office
+- [Innioasis Y1](https://www.innioasis.com/products/y1) with
+  [Rockbox](https://www.rockbox.org/) (with the
+  [LookAtMe](https://themes.rockbox.org/index.php?themeid=4082) theme) for
+  listening to music outside of my home office
 - [RG35XX](https://anbernic.com/products/rg35xx) running
   [MyMinUI](https://github.com/Turro75/MyMinUI) for video games during my
   commute hours
@@ -223,3 +226,16 @@ I have a handful of computers I use regularly!
 - The
   [Peak Design Everyday Backpack](https://www.peakdesign.com/products/everyday-backpack)
   as a backpack
+
+# AI Statement
+
+This is not meant as a moral stance or a political position: I use LLMs at work
+because I have to. They save me typing for boilerplate. I don't want to risk
+losing a job because I am slow at boilerplate or I am openly insubordinate. I do
+not find enough value in them to use them in personal projects. My interest
+begins and ends in the "fun" part (to me) of the LLM thing, which is
+[writing and managing harnesses](https://codeberg.org/jasonbot/ollama-desktop-with-wails).
+
+If using the tools makes you feel better and
+[you can honestly address these questions with a clear mind](/weblog/llms/#conclusion),
+best of luck to you.
