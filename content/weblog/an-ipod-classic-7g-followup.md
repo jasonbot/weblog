@@ -1,6 +1,6 @@
 +++
-title =  "A Revival of Sorts: Where I wound up with my iPod Classic 7th Gen"
-date = 2026-10-02T08:00:00-00:00
+title =  "A Revival of Sorts: Where I Wound up With my iPod Classic 7th Gen"
+date = 2026-10-01T08:00:00-00:00
 tags = ["hardware", "music", "apple"]
 featured_image = ""
 description = "It's an MP3 player with a liver of copper"
