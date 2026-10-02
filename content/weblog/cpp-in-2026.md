@@ -43,8 +43,8 @@ After the C++ APIs on Windows, doing systems programming at the lowest common
 denominator let us bend the computer to our own will with less supply chain
 debt. We are superpowered by C++ in a world where nobody knows C/C++ anymore.
 
-I'm writing little tiny bits of NodeJS C++ libraries to integrate features
-Electron has worked well. I can add things Electron Just Doesn't Have. The
+I'm writing little tiny bits of NodeJS C++ libraries to integrate new features
+Electron lacks has worked well. I can add things Electron Just Doesn't Have. The
 process is a lot quicker than asking someone on the Electron project to write it
 for me, or writing it myself and spending my nights and weekends shepherding the
 itch-scratch PR through the bureaucracy of Electron. I can _add value now,
