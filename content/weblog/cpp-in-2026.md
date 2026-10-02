@@ -44,12 +44,12 @@ denominator let us bend the computer to our own will with less supply chain
 debt. We are superpowered by C++ in a world where nobody knows C/C++ anymore.
 
 I'm writing little tiny bits of NodeJS C++ libraries to integrate new features
-Electron lacks has worked well. I can add things Electron Just Doesn't Have. The
-process is a lot quicker than asking someone on the Electron project to write it
-for me, or writing it myself and spending my nights and weekends shepherding the
-itch-scratch PR through the bureaucracy of Electron. I can _add value now,
-goddammit_ and make our Electron app something that _should be an Electron app,
-because it does actual desktop shit_.
+Electron lacks, and this has worked well. I can add things Electron Just Doesn't
+Have. The process is a lot quicker than asking someone on the Electron project
+to write it for me, or writing it myself and spending my nights and weekends
+shepherding the itch-scratch PR through the bureaucracy of Electron. I can _add
+value now, goddammit_ and make our Electron app something that _should be an
+Electron app, because it does actual desktop shit_.
 
 Here are some good things about C++:
 
