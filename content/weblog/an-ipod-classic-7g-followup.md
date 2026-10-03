@@ -21,8 +21,8 @@ re-encode everything that isn't that bitrate.
 So now I have a system that works:
 
 - Reboot the iPod in stock firmware for disk use (it randomly trips on its feet
-  and stops working when you copy lots of files)
-- Treat the music library not as a _synced copy_ of my core music library but a
+  and stops working when you copy lots of files in Rockbox derivatives)
+- Treat the music library not as a _synced copy _ of my core music library but a
   _transformed copy_ -- the Rhythmbox library is the point of truth and the iPod
   data is an adaptation of it that plays on the iPod.
 
