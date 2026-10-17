@@ -33,8 +33,8 @@ description = "Another /uses page, just like the others"
 - I use [Solid](https://www.solidjs.com/) and
   [plain old JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) at
   home, [React](https://react.dev/) at work
-- I use [Ollama](https://ollama.com/) on Windows and Linux to locally run LLMs,
-  sometimes building a `llama.cpp` binary if needed.
+- I use [plain old llama.cpp](https://github.com/ggml-org/llama.cpp) on Windows
+  and Linux to locally run LLMs.
 - I use [oMLX](https://omlx.ai/) on Mac for the same.
 
 ## Editors/Environments
@@ -114,9 +114,9 @@ description = "Another /uses page, just like the others"
 - Hosted on [Github Pages](https://pages.github.com/) through the magic of
   [a CNAME](https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
 - **Fonts**: I'm using [Forevs](https://ohnotype.co/fonts/forevs),
-  [Instrument Sans](https://github.com/Instrument/instrument-sans) and
-  [Paper Mono](https://github.com/paper-design/paper-mono) (hosted here with this page and
-  not on Google Fonts).
+  [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) and
+  [Paper Mono](https://github.com/paper-design/paper-mono) (hosted here with
+  this page and not on Google Fonts).
 
 # Productivity
 
@@ -142,7 +142,7 @@ description = "Another /uses page, just like the others"
 
 - I have
   [a script I wrote for work](https://github.com/jasonbot/bootstrap-windows-development-machine)
-  to boostrap a new Windows machine; it installs and configures most of the
+  to bootstrap a new Windows machine; it installs and configures most of the
   tools below
 - I run [Win11Debloat](https://github.com/Raphire/Win11Debloat) immediately upon
   starting on a new Windows desktop machine
@@ -179,11 +179,9 @@ description = "Another /uses page, just like the others"
   music library
 - [Boxes](https://flathub.org/apps/org.gnome.Boxes) for light virtualization
   work
-- [Podman Desktop](https://podman-desktop.io/) for container-fu
+- [Podman Desktop](https://podman-desktop.io/) for container management
 - [virt-manager](https://virt-manager.org/) for my Windows VMs
 - [Prism Launcher](https://prismlauncher.org/) to play Minecraft with my kid
-- [Alpaca](https://flathub.org/apps/com.jeffser.Alpaca) as a standalone frontend
-  to Ollama
 - [Steam](https://store.steampowered.com/about/) for Steam
 - [Ghostty](https://ghostty.org/) as my terminal emulator
 
@@ -213,9 +211,9 @@ I have a handful of computers I use regularly!
 
 ## Toys
 
-- A [heavily refurbished iPod Classic 7g](/weblog/an-ipod-classic-7g-followup/) with
-  [Rockbox](https://www.rockbox.org/) for
-  listening to music outside of my home office
+- A [heavily refurbished iPod Classic 7g](/weblog/an-ipod-classic-7g-followup/)
+  with [Rockbox](https://www.rockbox.org/) for listening to music outside of my
+  home office
 - [RG35XX](https://anbernic.com/products/rg35xx) running
   [MyMinUI](https://github.com/Turro75/MyMinUI) for video games during my
   commute hours
