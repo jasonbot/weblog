@@ -1,10 +1,9 @@
 +++
 title =  "A Revival of Sorts: Getting my iPod Classic 7th Gen Working Again"
 date = 2026-07-02T08:00:00-00:00
-tags = ["hardware", "music", "apple"]
+tags = ["hardware", "music", "apple", "ipod"]
 featured_image = ""
 description = "It's an MP3 player with a heart of gold"
-aliases = ["/weblog/an-ipod-6g-revival/"]
 +++
 
 I've been very happy with my [Y1 MP3 player](/weblog/innioasis-y1/) over the

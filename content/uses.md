@@ -115,7 +115,7 @@ description = "Another /uses page, just like the others"
   [a CNAME](https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
 - **Fonts**: I'm using [Forevs](https://ohnotype.co/fonts/forevs),
   [Instrument Sans](https://github.com/Instrument/instrument-sans) and
-  [0xProto](https://github.com/0xType/0xProto) (hosted here with this page and
+  [Paper Mono](https://github.com/paper-design/paper-mono) (hosted here with this page and
   not on Google Fonts).
 
 # Productivity
@@ -213,9 +213,8 @@ I have a handful of computers I use regularly!
 
 ## Toys
 
-- [Innioasis Y1](https://www.innioasis.com/products/y1) with
-  [Rockbox](https://www.rockbox.org/) (with the
-  [LookAtMe](https://themes.rockbox.org/index.php?themeid=4082) theme) for
+- A [heavily refurbished iPod Classic 7g](/weblog/an-ipod-classic-7g-followup/) with
+  [Rockbox](https://www.rockbox.org/) for
   listening to music outside of my home office
 - [RG35XX](https://anbernic.com/products/rg35xx) running
   [MyMinUI](https://github.com/Turro75/MyMinUI) for video games during my

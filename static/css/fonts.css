@@ -88,7 +88,8 @@
 /* Webfont: Reforma 1918 Blanca */
 @font-face {
   font-family: "Reforma1918";
-  src: url("/fonts/Reforma1918-Blanca.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1918-Blanca.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1918-Blanca.woff")
       format("woff"),
     url("/fonts/Reforma1918-Blanca.eot") format("woff"),
@@ -101,7 +102,8 @@
 /* Webfont: Reforma 1918 BlancaItalica */
 @font-face {
   font-family: "Reforma1918";
-  src: url("/fonts/Reforma1918-BlancaItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1918-BlancaItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1918-BlancaItalica.woff")
       format("woff"),
     url("/fonts/Reforma1918-BlancaItalica.eot") format("woff"),
@@ -114,7 +116,8 @@
 /* Webfont: Reforma1918 Gris */
 @font-face {
   font-family: "Reforma1918";
-  src: url("/fonts/Reforma1918-Gris.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1918-Gris.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1918-Gris.woff")
       format("woff"),
     url("/fonts/Reforma1918-Gris.eot") format("woff"),
@@ -127,7 +130,8 @@
 /* Webfont: Reforma1918 GrisItalica */
 @font-face {
   font-family: "Reforma1918";
-  src: url("/fonts/Reforma1918-GrisItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1918-GrisItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1918-GrisItalica.woff")
       format("woff"),
     url("/fonts/Reforma1918-GrisItalica.eot") format("woff"),
@@ -140,7 +144,8 @@
 /* Webfont: Reforma1918 Negra */
 @font-face {
   font-family: "Reforma1918";
-  src: url("/fonts/Reforma1918-Negra.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1918-Negra.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1918-Negra.woff")
       format("woff"),
     url("/fonts/Reforma1918-Negra.eot") format("woff"),
@@ -153,7 +158,8 @@
 /* Webfont: Reforma1918 NegraItalica */
 @font-face {
   font-family: "Reforma1918";
-  src: url("/fonts/Reforma1918-NegraItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1918-NegraItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1918-NegraItalica.woff")
       format("woff"),
     url("/fonts/Reforma1918-NegraItalica.eot") format("woff"),
@@ -168,7 +174,8 @@
 /* Webfont: Reforma1969 Blanca */
 @font-face {
   font-family: "Reforma1969";
-  src: url("/fonts/Reforma1969-Blanca.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1969-Blanca.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1969-Blanca.woff")
       format("woff"),
     url("/fonts/Reforma1969-Blanca.eot") format("woff"),
@@ -181,7 +188,8 @@
 /* Webfont: Reforma1969 BlancaItalica */
 @font-face {
   font-family: "Reforma1969";
-  src: url("/fonts/Reforma1969-BlancaItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1969-BlancaItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1969-BlancaItalica.woff")
       format("woff"),
     url("/fonts/Reforma1969-BlancaItalica.eot") format("woff"),
@@ -194,7 +202,8 @@
 /* Webfont: Reforma1969 Gris */
 @font-face {
   font-family: "Reforma1969";
-  src: url("/fonts/Reforma1969-Gris.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1969-Gris.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1969-Gris.woff")
       format("woff"),
     url("/fonts/Reforma1969-Gris.eot") format("woff"),
@@ -207,7 +216,8 @@
 /* Webfont: Reforma1969 GrisItalica */
 @font-face {
   font-family: "Reforma1969";
-  src: url("/fonts/Reforma1969-GrisItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1969-GrisItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1969-GrisItalica.woff")
       format("woff"),
     url("/fonts/Reforma1969-GrisItalica.eot") format("woff"),
@@ -220,7 +230,8 @@
 /* Webfont: Reforma1969 Negra */
 @font-face {
   font-family: "Reforma1969";
-  src: url("/fonts/Reforma1969-Negra.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1969-Negra.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1969-Negra.woff")
       format("woff"),
     url("/fonts/Reforma1969-Negra.eot") format("woff"),
@@ -233,7 +244,8 @@
 /* Webfont: Reforma1969 NegraItalica */
 @font-face {
   font-family: "Reforma1969";
-  src: url("/fonts/Reforma1969-NegraItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma1969-NegraItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma1969-NegraItalica.woff")
       format("woff"),
     url("/fonts/Reforma1969-NegraItalica.eot") format("woff"),
@@ -248,7 +260,8 @@
 /* Webfont: Reforma2018 Blanca */
 @font-face {
   font-family: "Reforma2018";
-  src: url("/fonts/Reforma2018-Blanca.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma2018-Blanca.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma2018-Blanca.woff")
       format("woff"),
     url("/fonts/Reforma2018-Blanca.eot") format("woff"),
@@ -261,7 +274,8 @@
 /* Webfont: Reforma2018 BlancaItalica */
 @font-face {
   font-family: "Reforma2018";
-  src: url("/fonts/Reforma2018-BlancaItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma2018-BlancaItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma2018-BlancaItalica.woff")
       format("woff"),
     url("/fonts/Reforma2018-BlancaItalica.eot") format("woff"),
@@ -274,7 +288,8 @@
 /* Webfont: Reforma2018 Gris */
 @font-face {
   font-family: "Reforma2018";
-  src: url("/fonts/Reforma2018-Gris.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma2018-Gris.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma2018-Gris.woff")
       format("woff"),
     url("/fonts/Reforma2018-Gris.eot") format("woff"),
@@ -287,7 +302,8 @@
 /* Webfont: Reforma2018 GrisItalica */
 @font-face {
   font-family: "Reforma2018";
-  src: url("/fonts/Reforma2018-GrisItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma2018-GrisItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma2018-GrisItalica.woff")
       format("woff"),
     url("/fonts/Reforma2018-GrisItalica.eot") format("woff"),
@@ -300,7 +316,8 @@
 /* Webfont: Reforma2018 Negra */
 @font-face {
   font-family: "Reforma2018";
-  src: url("/fonts/Reforma2018-Negra.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma2018-Negra.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma2018-Negra.woff")
       format("woff"),
     url("/fonts/Reforma2018-Negra.eot") format("woff"),
@@ -313,7 +330,8 @@
 /* Webfont: Reforma2018 NegraItalica */
 @font-face {
   font-family: "Reforma2018";
-  src: url("/fonts/Reforma2018-NegraItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma2018-NegraItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma2018-NegraItalica.woff")
       format("woff"),
     url("/fonts/Reforma2018-NegraItalica.eot") format("woff"),
@@ -326,7 +344,8 @@
 /* Webfont: Reforma2018 UltraNegra */
 @font-face {
   font-family: "Reforma2018";
-  src: url("/fonts/Reforma2018-UltraNegra.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma2018-UltraNegra.woff2") format("woff2"),
     /*  Super Modern Browsers */ url("/fonts/Reforma2018-UltraNegra.woff")
       format("woff"),
     url("/fonts/Reforma2018-UltraNegra.eot") format("woff"),
@@ -339,7 +358,8 @@
 /* Webfont: Reforma2018 UltraNegraItalica */
 @font-face {
   font-family: "Reforma2018";
-  src: url("/fonts/Reforma2018-UltraNegraItalica.woff2") format("woff2"),
+  src:
+    url("/fonts/Reforma2018-UltraNegraItalica.woff2") format("woff2"),
     /*  Super Modern Browsers */
       url("/fonts/Reforma2018-UltraNegraItalica.woff") format("woff"),
     url("/fonts/Reforma2018-UltraNegraItalica.eot") format("woff"),
@@ -354,7 +374,8 @@
   font-family: "Business";
   font-style: normal;
   font-weight: 400;
-  src: local(""),
+  src:
+    local(""),
     /* Modern Browsers */ url("/fonts/business.ttf") format("truetype");
 }
 
@@ -364,7 +385,8 @@
   font-style: normal;
   font-weight: 400;
   src: url("/fonts/fira-code-v9-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
+  src:
+    local(""),
     url("/fonts/fira-code-v9-latin-regular.eot?#iefix")
       format("embedded-opentype"),
     /* IE6-IE8 */ url("/fonts/fira-code-v9-latin-regular.woff2") format("woff2"),
@@ -381,28 +403,36 @@
   font-family: "0xProto";
   font-style: normal;
   font-weight: 200;
-  src: local(""), url("/fonts/0xProto-Regular.woff2") format("woff2");
+  src:
+    local(""),
+    url("/fonts/0xProto-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "0xProto";
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("/fonts/0xProto-Bold.woff2") format("woff2");
+  src:
+    local(""),
+    url("/fonts/0xProto-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "0xProto";
   font-style: normal;
   font-weight: 200;
-  src: local(""), url("/fonts/0xProto-Italic.woff2") format("woff2");
+  src:
+    local(""),
+    url("/fonts/0xProto-Italic.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "0xProto";
   font-style: normal;
   font-weight: 200;
-  src: local(""), url("/fonts/0xProto-Regular.woff2") format("woff2");
+  src:
+    local(""),
+    url("/fonts/0xProto-Regular.woff2") format("woff2");
 }
 
 /* Berkeley Mono */
@@ -410,7 +440,8 @@
   font-family: "Berkeley Mono";
   font-style: normal;
   font-weight: 200;
-  src: local(""),
+  src:
+    local(""),
     url("/fonts/BerkeleyMonoVariable-Regular.woff2") format("woff2"),
     url("/fonts/BerkeleyMonoVariable-Regular.woff") format("woff");
 }
@@ -421,7 +452,8 @@
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url("/fonts/Inter-Thin.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-Thin.woff2") format("woff2"),
     url("/fonts/Inter-Thin.woff") format("woff");
 }
 @font-face {
@@ -429,7 +461,8 @@
   font-style: italic;
   font-weight: 100;
   font-display: swap;
-  src: url("/fonts/Inter-ThinItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-ThinItalic.woff2") format("woff2"),
     url("/fonts/Inter-ThinItalic.woff") format("woff");
 }
 
@@ -438,7 +471,8 @@
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url("/fonts/Inter-ExtraLight.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-ExtraLight.woff2") format("woff2"),
     url("/fonts/Inter-ExtraLight.woff") format("woff");
 }
 @font-face {
@@ -446,7 +480,8 @@
   font-style: italic;
   font-weight: 200;
   font-display: swap;
-  src: url("/fonts/Inter-ExtraLightItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-ExtraLightItalic.woff2") format("woff2"),
     url("/fonts/Inter-ExtraLightItalic.woff") format("woff");
 }
 
@@ -455,7 +490,8 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("/fonts/Inter-Light.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-Light.woff2") format("woff2"),
     url("/fonts/Inter-Light.woff") format("woff");
 }
 @font-face {
@@ -463,7 +499,8 @@
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url("/fonts/Inter-LightItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-LightItalic.woff2") format("woff2"),
     url("/fonts/Inter-LightItalic.woff") format("woff");
 }
 
@@ -472,7 +509,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/Inter-Regular.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-Regular.woff2") format("woff2"),
     url("/fonts/Inter-Regular.woff") format("woff");
 }
 @font-face {
@@ -480,7 +518,8 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/Inter-Italic.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-Italic.woff2") format("woff2"),
     url("/fonts/Inter-Italic.woff") format("woff");
 }
 
@@ -489,7 +528,8 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Inter-Medium.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-Medium.woff2") format("woff2"),
     url("/fonts/Inter-Medium.woff") format("woff");
 }
 @font-face {
@@ -497,7 +537,8 @@
   font-style: italic;
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Inter-MediumItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-MediumItalic.woff2") format("woff2"),
     url("/fonts/Inter-MediumItalic.woff") format("woff");
 }
 
@@ -506,7 +547,8 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("/fonts/Inter-SemiBold.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-SemiBold.woff2") format("woff2"),
     url("/fonts/Inter-SemiBold.woff") format("woff");
 }
 @font-face {
@@ -514,7 +556,8 @@
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("/fonts/Inter-SemiBoldItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-SemiBoldItalic.woff2") format("woff2"),
     url("/fonts/Inter-SemiBoldItalic.woff") format("woff");
 }
 
@@ -523,7 +566,8 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Inter-Bold.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-Bold.woff2") format("woff2"),
     url("/fonts/Inter-Bold.woff") format("woff");
 }
 @font-face {
@@ -531,7 +575,8 @@
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Inter-BoldItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-BoldItalic.woff2") format("woff2"),
     url("/fonts/Inter-BoldItalic.woff") format("woff");
 }
 
@@ -540,7 +585,8 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("/fonts/Inter-ExtraBold.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-ExtraBold.woff2") format("woff2"),
     url("/fonts/Inter-ExtraBold.woff") format("woff");
 }
 @font-face {
@@ -548,7 +594,8 @@
   font-style: italic;
   font-weight: 800;
   font-display: swap;
-  src: url("/fonts/Inter-ExtraBoldItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-ExtraBoldItalic.woff2") format("woff2"),
     url("/fonts/Inter-ExtraBoldItalic.woff") format("woff");
 }
 
@@ -557,7 +604,8 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url("/fonts/Inter-Black.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-Black.woff2") format("woff2"),
     url("/fonts/Inter-Black.woff") format("woff");
 }
 @font-face {
@@ -565,7 +613,8 @@
   font-style: italic;
   font-weight: 900;
   font-display: swap;
-  src: url("/fonts/Inter-BlackItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Inter-BlackItalic.woff2") format("woff2"),
     url("/fonts/Inter-BlackItalic.woff") format("woff");
 }
 
@@ -634,7 +683,8 @@ explicitly, e.g.
   font-family: "Instrument Sans";
   font-style: normal;
   font-display: swap;
-  src: local("Instrument Sans"),
+  src:
+    local("Instrument Sans"),
     url("/fonts/InstrumentSans[wdth\,wght].woff2") format("woff2");
 }
 
@@ -864,4 +914,13 @@ explicitly, e.g.
   font-style: italic;
   font-weight: 600;
   src: url(/fonts/Luciole-BoldItalic.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Paper Mono";
+  /* Declare the supported range (e.g., 100 to 900) */
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/PaperMonoVariable.woff2") format("woff2");
 }
